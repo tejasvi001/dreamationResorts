@@ -47,7 +47,7 @@ const ClientsSay = () => {
   };
 
   return (
-    <div className="relative w-full border-2 border-black  mx-auto px-4 py-12 text-center bg-amber-50">
+    <div className="relative w-full   mx-auto px-4 py-12 text-center bg-amber-50">
     <div className=" flex justify-between ">
           {/* Left Image */}
                
