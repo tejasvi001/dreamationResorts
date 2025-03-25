@@ -9,7 +9,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const menuItems = [
-    { title: "Accommodations", href: "#" },
+    { title: "Accommodations", href: "/Accomodation" },
     { title: "Activities", href: "#" },
     { title: "Contact", href: "#" },
     { title: "News", href: "#" },
@@ -125,12 +125,12 @@ const GetInTouch = () => {
 
 const Logo = () => {
   return (
-    <div className='flex-shrink-0'>
+    <a href='/' className='flex-shrink-0'>
       <Image
         className='size-[100px] sm:size-[130px] object-contain md:w-[165px] mg:h-[165px]'
         src={LogoIcon}
         alt='Logo'
       />
-    </div>
+    </a>
   );
 };
