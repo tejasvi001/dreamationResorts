@@ -9,6 +9,7 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import ClientsSay from "../../components/HomePageComp/ClientsSay.jsx";
 import BedIcon from "../../assets/bed.png";
+import { div } from "framer-motion/client";
 export default function page() {
   return (
     <div>
@@ -249,27 +250,72 @@ function AmenitiesList() {
 
 function AmazingView() {
   return (
-    <div className='container mx-auto px-4 py-16'>
-      <div className='flex flex-col lg:flex-row relative'>
-        {/* Right section - Image */}
-        <div className='w-full lg:w-2/3 lg:ml-auto relative order-1 lg:order-2'>
-          <div className='w-full h-full relative aspect-[4/3]'>
-            <Image
-              src='/images/ResidentialRoom/AmazingView.png'
-              alt='Paragliders over mountains'
-              fill
-              className='min-h-screen'
-              priority
-            />
-          </div>
-        </div>
+    // <div className='container mx-auto px-4 py-16'>
+    //   <div className=''>
+    //     {/* Right section - Image */}
+    //     <div className='w-full border-2 border-red-700'>
+    //       <div className='w-full h-full'>
+         
+    //       </div>
+    //     </div>
 
-        {/* Left section - Amazing Views */}
-        <div className='w-full lg:w-[60%] bg-[#D69D52] p-8 md:p-12 lg:p-16 order-2 lg:order-1 lg:absolute lg:top-1/2 lg:transform lg:-translate-y-1/2 lg:z-10 lg:my-8'>
-          <h3 className='text-white text-4xl font-lato font-bold mb-2'>
+    //     {/* Left section - Amazing Views */}
+    //     <div className='w-4/5 mx-auto lg:w-[60%] bg-[#D69D52] p-8 md:p-12 lg:p-16 order-2 lg:order-1 absolute  md:top-[45%] lg:transform lg:-translate-y-1/2 z-10 lg:my-8 top-1/2'>
+    //       <h3 className='text-white text-4xl font-lato font-bold mb-2'>
+    //         Outdoor Patio
+    //       </h3>
+    //       <h2 className='text-white text-2xl  lg:text-[80px] font-AbhayaLibre  mb-6 font-normal '>
+    //         Amazing Views
+    //       </h2>
+    //       <p className='text-white font-Lato  font-normal text-lg'>
+    //         Pellentesque nulla magna, accumsan sed ante quis, gravida feugiat
+    //         turpis. Vivamus et fringilla ligula. Etiam sapien tellus, imperdiet
+    //         eget posuere nec, cursus vel arcu. Ut molestie at posuere ante, at
+    //         volutpat tellus egestas. Sed ut nunc egestas, porta tortor a, tempor
+    //         sem. Praesent commodo cursus magna, vel scelerisque nisl consectetur
+    //         et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
+    //         eget lacinia odio sem nec elit.
+    //       </p>
+    //     </div>
+    //   </div>
+    // </div>
+
+  //   <div className="border-2 border-red-700">
+  //   <div className="border-2 border-red-700">
+  //   <Image
+  //           src='/images/ResidentialRoom/AmazingView.png'
+  //           alt='Paragliders over mountains'
+  //           fill
+  //           className='w-full min-h-screen'
+  //           priority
+  //         />
+     
+  //   </div>
+  //   <div className='w-4/5 mx-auto lg:w-[60%] bg-[#D69D52] p-8 md:p-12 lg:p-16 order-2 lg:order-1 absolute  md:top-[45%] lg:transform lg:-translate-y-1/2 z-10 lg:my-8 top-1/2'>
+  //       <h3 className='text-white text-4xl font-lato font-bold mb-2'>
+  //         Outdoor Patio
+  //       </h3>
+  //       <h2 className='text-white text-2xl  lg:text-[80px] font-AbhayaLibre  mb-6 font-normal '>
+  //         Amazing Views
+  //       </h2>
+  //       <p className='text-white font-Lato  font-normal text-lg'>
+  //         Pellentesque nulla magna, accumsan sed ante quis, gravida feugiat
+  //         turpis. Vivamus et fringilla ligula. Etiam sapien tellus, imperdiet
+  //         eget posuere nec, cursus vel arcu. Ut molestie at posuere ante, at
+  //         volutpat tellus egestas. Sed ut nunc egestas, porta tortor a, tempor
+  //         sem. Praesent commodo cursus magna, vel scelerisque nisl consectetur
+  //         et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
+  //         eget lacinia odio sem nec elit.
+  //       </p>
+  //     </div>
+  // </div>
+     <div className="  flex flex-col md:flex-row">
+      <div className="md:w-1/2 flex justify-center items-center ">
+      <div className=' bg-[#D69D52]  p-8 relative md:left-[20%] lg:w-4/5 md:w-full w-4/5 top-[100px] z-10'>
+          <h3 className='text-white  font-lato font-bold mb-2 text-2xl'>
             Outdoor Patio
           </h3>
-          <h2 className='text-white text-3xl md:text-4xl lg:text-[80px] font-AbhayaLibre  mb-6 font-normal '>
+          <h2 className='text-white text-2xl lg:text-4xl   font-AbhayaLibre  mb-6 font-normal '>
             Amazing Views
           </h2>
           <p className='text-white font-Lato  font-normal text-lg'>
@@ -283,7 +329,10 @@ function AmazingView() {
           </p>
         </div>
       </div>
-    </div>
+               <div style={{backgroundImage: "url('/images/ResidentialRoom/AmazingView.png')"}} className="  bg-cover bg-center md:w-1/2 min-h-[600px] ">
+                
+               </div>
+     </div>
   );
 }
 
