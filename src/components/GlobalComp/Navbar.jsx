@@ -16,7 +16,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className=' w-full z-50 bg-black/10'>
+    <nav className=' w-full fixed top-0 z-50 bg-black/10'>
       {/* Main Navbar */}
       <div className='bg-transparent'>
         <div className='max-w-7xl mx-auto px-8'>

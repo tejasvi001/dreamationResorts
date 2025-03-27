@@ -22,13 +22,13 @@ const HeroSection = () => {
       {/* <div className="absolute inset-0  bg-opacity-50"></div> */}
 
       {/* Navbar */}
-      <div className='absolute top-0 w-full flex justify-between items-center p-5 md:px-16'>
+      {/* <div className='absolute top-0 w-full flex justify-between items-center p-5 md:px-16'>
         <button className='text-white text-3xl'>☰</button>
         <img src='/logo.png' alt='Dreamation Logo' className='h-8vw w-8vw' />
         <button className='border border-white text-white px-4 py-2 rounded-full'>
           Get in Touch
         </button>
-      </div>
+      </div> */}
 
       <div className='absolute inset-0 flex flex-col items-center justify-center text-center px-4'>
         <div>
