@@ -273,7 +273,7 @@ function AmenitiesList() {
         >
           <h3 className="text-white text-4xl font-lato font-bold mb-2">Outdoor Patio</h3>
           <h2 className="text-white text-3xl md:text-4xl lg:text-[80px] font-AbhayaLibre  mb-6 font-normal ">Amazing Views</h2>
-          <p className="text-white font-Lato  font-normal text-4xl">
+          <p className="text-white font-Lato  font-normal text-lg">
             Pellentesque nulla magna, accumsan sed ante quis, gravida feugiat turpis. Vivamus et fringilla ligula. Etiam
             sapien tellus, imperdiet eget posuere nec, cursus vel arcu. Ut molestie at posuere ante, at volutpat tellus
             egestas. Sed ut nunc egestas, porta tortor a, tempor sem. Praesent commodo cursus magna, vel scelerisque
