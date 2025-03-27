@@ -1,17 +1,21 @@
 "use client";
 import React from "react";
 
+import Image from "next/image"
 import { useState } from "react";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { FaCalendarAlt } from "react-icons/fa";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import ClientsSay from "../../components/HomePageComp/ClientsSay.jsx"
 export default function page() {
   return (
     <div>
       <HeroSection />
       <RoomOverview />
-      <AmenitiesCard /> <AmazingView />
+      <AmenitiesCard /> 
+      <AmazingView />
+      <ClientsSay />
     </div>
   );
 }
@@ -211,32 +215,73 @@ function AmenitiesList() {
   );
 }
 
-const AmazingView = () => {
+// const AmazingView = () => {
+//   return (
+//     <div className='half-background-3 min-h-[600px] w-full grid grid-cols-2 border-4 border-black'>
+//       <div className='flex border-4 border-black justify-center items-center'>
+//         {" "}
+//         <div className='break-all  p-16 h-auto bg-[#d69d52] text-white md:text-[60px] sm:text-[40px] font-normal font-Abhaya_Libre'>
+//           <div className=' relative'>
+//             <div className='justify-start text-white text-4xl font-bold font-Lato'>
+//               Outdoor Patio
+//             </div>
+//             <div className='justify-start text-white text-[80px] font-normal font-Abhaya_Libre'>
+//               Amazing Views
+//             </div>
+//             <div className=' justify-start text-white text-4xl font-normal font-Lato'>
+//               Pellentesque nulla magna, accumsan sed ante quis, gravida feugiat
+//               turpis. Vivamus et fringilla ligula. Etiam sapien tellus,
+//               imperdiet eget posuere nec, cursus vel arcu. Ut molestie at
+//               posuere ante, at volutpat tellus egestas. Sed ut nunc egestas,
+//               porta tortor a, tempor sem. Praesent commodo cursus magna, vel
+//               scelerisque nisl consectetur et. Duis mollis, est non commodo
+//               luctus, nisi erat porttitor ligula, eget lacinia odio sem nec
+//               elit.
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+
+
+ function AmazingView() {
   return (
-    <div className='half-background-3 min-h-[600px] w-full grid grid-cols-2 border-4 border-black'>
-      <div className='flex border-4 border-black justify-center items-center'>
-        {" "}
-        <div className='break-all  p-16 h-auto bg-[#d69d52] text-white md:text-[60px] sm:text-[40px] font-normal font-Abhaya_Libre'>
-          <div className=' relative'>
-            <div className='justify-start text-white text-4xl font-bold font-Lato'>
-              Outdoor Patio
-            </div>
-            <div className='justify-start text-white text-[80px] font-normal font-Abhaya_Libre'>
-              Amazing Views
-            </div>
-            <div className=' justify-start text-white text-4xl font-normal font-Lato'>
-              Pellentesque nulla magna, accumsan sed ante quis, gravida feugiat
-              turpis. Vivamus et fringilla ligula. Etiam sapien tellus,
-              imperdiet eget posuere nec, cursus vel arcu. Ut molestie at
-              posuere ante, at volutpat tellus egestas. Sed ut nunc egestas,
-              porta tortor a, tempor sem. Praesent commodo cursus magna, vel
-              scelerisque nisl consectetur et. Duis mollis, est non commodo
-              luctus, nisi erat porttitor ligula, eget lacinia odio sem nec
-              elit.
-            </div>
+    <div className="container mx-auto px-4 py-16">
+      <div className="flex flex-col lg:flex-row relative">
+        {/* Right section - Image */}
+        <div className="w-full lg:w-2/3 lg:ml-auto relative order-1 lg:order-2">
+          <div className="w-full h-full relative aspect-[4/3]">
+            <Image
+              src="/images/ResidentialRoom/AmazingView.png"
+              alt="Paragliders over mountains"
+              fill
+              className="min-h-screen"
+              priority
+            />
           </div>
+        </div>
+
+        {/* Left section - Amazing Views */}
+        <div
+          className="w-full lg:w-[60%] bg-[#D69D52] p-8 md:p-12 lg:p-16 
+                      order-2 lg:order-1 
+                      lg:absolute lg:top-1/2 lg:transform lg:-translate-y-1/2 
+                      lg:z-10 lg:my-8"
+        >
+          <h3 className="text-white text-4xl font-lato font-bold mb-2">Outdoor Patio</h3>
+          <h2 className="text-white text-3xl md:text-4xl lg:text-[80px] font-AbhayaLibre  mb-6 font-normal ">Amazing Views</h2>
+          <p className="text-white font-Lato  font-normal text-4xl">
+            Pellentesque nulla magna, accumsan sed ante quis, gravida feugiat turpis. Vivamus et fringilla ligula. Etiam
+            sapien tellus, imperdiet eget posuere nec, cursus vel arcu. Ut molestie at posuere ante, at volutpat tellus
+            egestas. Sed ut nunc egestas, porta tortor a, tempor sem. Praesent commodo cursus magna, vel scelerisque
+            nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem
+            nec elit.
+          </p>
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
