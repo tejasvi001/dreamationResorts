@@ -120,11 +120,11 @@ const HeroSection = () => {
 
 function RoomOverview() {
   return (
-    <div className='relative half-background w-full min-h-[500px] '>
+    <div className='relative half-background flex justify-center items-center w-full min-h-[500px] '>
       {/* Text Container */}
-      <div className='origin-center absolute top-1/3 left-1/2 transform -translate-x-1/2 w-[80%] bg-[#d69d52] text-white p-8 text-center'>
+      <div className='origin-bottom font-Lato w-[80%] bg-[#d69d52] text-white p-8 text-center'>
         <div className='mb-2'>Room Overview</div>
-        <h2 className='text-3xl font-serif mb-4'>Residential Room</h2>
+        <h2 className='text-3xl  mb-4'>Residential Room</h2>
 
         <p className='text-sm mb-4'>
           Pellentesque nulla magna, accumsan sed ante quis, gravida feugiat
@@ -152,7 +152,7 @@ const AmenitiesCard = () => {
   return (
     <div className='grid grid-cols-2  gap-5 '>
       <div className='relative h-[600px] half-background-2 flex justify-center flex-col'>
-        <div className='p-8 break-all bg-[#d69d52] ml-[25%] max-w-md text-white md:text-[60px] sm:text-[40px] font-normal font-Abhaya_Libre'>
+        <div className='p-8 min-h-[300px] break-all bg-[#d69d52]  max-w-[530px]  ml-auto text-white md:text-[60px] sm:text-[40px] font-normal font-Abhaya_Libre'>
           Residential Room Amenities
         </div>
       </div>
@@ -190,7 +190,7 @@ function AmenitiesList() {
   ];
 
   return (
-    <div className='flex justify-center'>
+    <div className='flex justify-center font-Lato'>
       <div className='grid grid-cols-2 gap-8 p-8 max-w-2xl'>
         <ul className='space-y-3'>
           {amenities.map((item, index) => (

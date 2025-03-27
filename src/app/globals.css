@@ -1,10 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
 @import "tailwindcss";
 
 .half-background {
   background-image: url("../assets/dubed.png");
   background-repeat: no-repeat;
   background-position: top left;
-  background-size: 100%;
+  background-size: 100% 50%;
   background-color: white;
 }
 
@@ -21,4 +23,9 @@
   background-position: right top;
   background-size: 50% 100%;
   background-color: white;
+}
+
+@theme {
+  --font-Lato: "Lato", sans-serif;
+  --font-Abhaya_Libre: "Abhaya Libre", serif;
 }
