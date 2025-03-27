@@ -1,21 +1,23 @@
 "use client";
 import React from "react";
 
-import Image from "next/image"
+import Image from "next/image";
 import { useState } from "react";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { FaCalendarAlt } from "react-icons/fa";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import ClientsSay from "../../components/HomePageComp/ClientsSay.jsx"
+import ClientsSay from "../../components/HomePageComp/ClientsSay.jsx";
+import BedIcon from "../../assets/bed.png";
 export default function page() {
   return (
     <div>
       <HeroSection />
       <RoomOverview />
-      <AmenitiesCard /> 
+      <AmenitiesCard />
       <AmazingView />
       <ClientsSay />
+      <RoomGrid />
     </div>
   );
 }
@@ -124,7 +126,7 @@ const HeroSection = () => {
 
 function RoomOverview() {
   return (
-    <div className='relative half-background flex justify-center items-center w-full min-h-[500px] '>
+    <div className='relative half-background py-5 flex justify-center items-center w-full min-h-[500px] '>
       {/* Text Container */}
       <div className='origin-bottom font-Lato w-[80%] bg-[#d69d52] text-white p-8 text-center'>
         <div className='mb-2'>Room Overview</div>
@@ -154,9 +156,9 @@ function RoomOverview() {
 
 const AmenitiesCard = () => {
   return (
-    <div className='grid grid-cols-2  gap-5 '>
+    <div className='grid lg:grid-cols-2  gap-5 '>
       <div className='relative h-[600px] half-background-2 flex justify-center flex-col'>
-        <div className='p-8 min-h-[300px] break-all bg-[#d69d52]  max-w-[530px]  ml-auto text-white md:text-[60px] sm:text-[40px] font-normal font-Abhaya_Libre'>
+        <div className='p-8 min-h-[300px] break-all bg-[#d69d52]  max-w-[530px]  ml-auto text-white text-[60px] font-normal font-Abhaya_Libre'>
           Residential Room Amenities
         </div>
       </div>
@@ -245,43 +247,116 @@ function AmenitiesList() {
 //   );
 // };
 
-
-
- function AmazingView() {
+function AmazingView() {
   return (
-    <div className="container mx-auto px-4 py-16">
-      <div className="flex flex-col lg:flex-row relative">
+    <div className='container mx-auto px-4 py-16'>
+      <div className='flex flex-col lg:flex-row relative'>
         {/* Right section - Image */}
-        <div className="w-full lg:w-2/3 lg:ml-auto relative order-1 lg:order-2">
-          <div className="w-full h-full relative aspect-[4/3]">
+        <div className='w-full lg:w-2/3 lg:ml-auto relative order-1 lg:order-2'>
+          <div className='w-full h-full relative aspect-[4/3]'>
             <Image
-              src="/images/ResidentialRoom/AmazingView.png"
-              alt="Paragliders over mountains"
+              src='/images/ResidentialRoom/AmazingView.png'
+              alt='Paragliders over mountains'
               fill
-              className="min-h-screen"
+              className='min-h-screen'
               priority
             />
           </div>
         </div>
 
         {/* Left section - Amazing Views */}
-        <div
-          className="w-full lg:w-[60%] bg-[#D69D52] p-8 md:p-12 lg:p-16 
-                      order-2 lg:order-1 
-                      lg:absolute lg:top-1/2 lg:transform lg:-translate-y-1/2 
-                      lg:z-10 lg:my-8"
-        >
-          <h3 className="text-white text-4xl font-lato font-bold mb-2">Outdoor Patio</h3>
-          <h2 className="text-white text-3xl md:text-4xl lg:text-[80px] font-AbhayaLibre  mb-6 font-normal ">Amazing Views</h2>
-          <p className="text-white font-Lato  font-normal text-lg">
-            Pellentesque nulla magna, accumsan sed ante quis, gravida feugiat turpis. Vivamus et fringilla ligula. Etiam
-            sapien tellus, imperdiet eget posuere nec, cursus vel arcu. Ut molestie at posuere ante, at volutpat tellus
-            egestas. Sed ut nunc egestas, porta tortor a, tempor sem. Praesent commodo cursus magna, vel scelerisque
-            nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem
-            nec elit.
+        <div className='w-full lg:w-[60%] bg-[#D69D52] p-8 md:p-12 lg:p-16 order-2 lg:order-1 lg:absolute lg:top-1/2 lg:transform lg:-translate-y-1/2 lg:z-10 lg:my-8'>
+          <h3 className='text-white text-4xl font-lato font-bold mb-2'>
+            Outdoor Patio
+          </h3>
+          <h2 className='text-white text-3xl md:text-4xl lg:text-[80px] font-AbhayaLibre  mb-6 font-normal '>
+            Amazing Views
+          </h2>
+          <p className='text-white font-Lato  font-normal text-lg'>
+            Pellentesque nulla magna, accumsan sed ante quis, gravida feugiat
+            turpis. Vivamus et fringilla ligula. Etiam sapien tellus, imperdiet
+            eget posuere nec, cursus vel arcu. Ut molestie at posuere ante, at
+            volutpat tellus egestas. Sed ut nunc egestas, porta tortor a, tempor
+            sem. Praesent commodo cursus magna, vel scelerisque nisl consectetur
+            et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
+            eget lacinia odio sem nec elit.
           </p>
         </div>
       </div>
     </div>
-  )
+  );
 }
+
+const rooms = [
+  { title: "Residential", bg: "bg-white", textColor: "text-black" },
+  { title: "Executive", bg: "bg-orange-300", textColor: "text-white" },
+  { title: "Deluxe", bg: "bg-white", textColor: "text-black" },
+  { title: "Premium", bg: "bg-orange-300", textColor: "text-white" },
+];
+
+const RoomCard = ({ order, title }) => {
+  return (
+    <div className='relative flex flex-col sm:flex-row w-full'>
+      <Image
+        src={BedIcon} // Replace with actual image path
+        alt={title}
+        className={`sm:w-1/2 md:w-1/2 order-${
+          order === 1 ? "last" : "first"
+        } object-cover border-2 grid border-blue-500`}
+      />
+      <div
+        className={`sm:max-w-1/3 p-6 bg-white text-black flex flex-col justify-center`}
+      >
+        <h2 className='justify-start text-[#484848] text-5xl font-normal font-Abhaya_Libre'>
+          {title}
+        </h2>
+        <p className='mt-2 justify-start text-[#484848] text-2xl font-normal font-Lato'>
+          Aliquam vulputate ligula et nisl dapibus ultrices sed dolores ipsums.
+        </p>
+        <button className='mt-4 px-4 w-full max-w-[340px] py-2 border border-[#b16c11] text-sm rounded-full text-[#b16c11] transition-all'>
+          View More Details
+        </button>
+      </div>
+    </div>
+  );
+};
+const RoomCardRTL = ({ order, title }) => {
+  return (
+    <div className='relative flex flex-col sm:flex-row w-full'>
+      <div
+        className={`sm:max-w-1/2 bg-[#d69d52] p-6 w-full text-black flex flex-col justify-center`}
+      >
+        <div className='sm:max-w-lg  mx-auto'>
+          <h2 className='justify-start text-[#484848] text-5xl font-normal font-Abhaya_Libre'>
+            {title}
+          </h2>
+          <p className='mt-2 justify-start text-[#484848] text-2xl font-normal font-Lato'>
+            Aliquam vulputate ligula et nisl dapibus ultrices sed dolores
+            ipsums.
+          </p>
+          <button className='mt-4 px-4 w-full max-w-[340px] py-2 border border-[#b16c11] text-sm rounded-full text-[#b16c11] transition-all'>
+            View More Details
+          </button>
+        </div>
+      </div>
+      <Image
+        src={BedIcon} // Replace with actual image path
+        alt={title}
+        className={`sm:w-1/2 md:w-1/2 order-${
+          order === 1 ? "last" : "first"
+        } object-cover border-2 grid border-blue-500`}
+      />
+    </div>
+  );
+};
+
+const RoomGrid = () => {
+  return (
+    <div className='grid grid-cols-1 gap-4 p-4 mx-auto'>
+      <RoomCard key={0} {...rooms[0]} />
+      <RoomCardRTL key={1} {...rooms[1]} />
+      <RoomCard key={2} {...rooms[2]} />
+      <RoomCardRTL key={3} {...rooms[3]} />
+    </div>
+  );
+};

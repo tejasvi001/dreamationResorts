@@ -85,7 +85,7 @@ const RoomCard = ({ order, title }) => {
 };
 const RoomCardRTL = ({ order, title }) => {
   return (
-    <div className='relative flex flex-col md:flex-row w-full'>
+    <div className='relative flex flex-col sm:flex-row w-full'>
       <div
         className={`sm:max-w-1/2 bg-[#d69d52] p-6 w-full text-black flex flex-col justify-center`}
       >
