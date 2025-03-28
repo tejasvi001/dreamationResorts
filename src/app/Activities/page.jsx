@@ -1,9 +1,14 @@
-import React from 'react'
+import Gallery from "../../components/Activities/Gallery.jsx";
+import Topbox from "../../components/Activities/Topbox.jsx";
+import Bottombox from "../../components/Activities/Bottombox.jsx";
 
-const page = () => {
+
+export default function Home() {
   return (
-    <div>page</div>
-  )
+    <div>
+      <Topbox/>
+      <Gallery />
+      <Bottombox/>
+    </div>
+  );
 }
-
-export default page
