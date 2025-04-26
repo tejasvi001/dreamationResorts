@@ -10,6 +10,7 @@ export default function page() {
       <div className='header bg-black w-full h-full border-0 overflow-auto min-h-[80svh]'>
         <Image
           src={roomImage}
+          alt=""
           className='w-full max-w-[90%] brightness-50 ml-auto object-cover h-screen pt-56'
         />
         {/* <div className=' h-[838px] bg-white' /> */}
@@ -19,6 +20,7 @@ export default function page() {
       <div className='horiztalBetimage my-16 relative min-h-[480px] h-full'>
         <Image
           src={DuBedIcon}
+          alt=""
           className='absolute inset-0 w-full min-h-[450px] py-8 h-auto -z-10'
         />
         <div className='md:w-1/2 w-2/3 ml-auto flex items-center  flex-col justify-center'>

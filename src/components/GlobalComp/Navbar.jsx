@@ -10,8 +10,8 @@ const Navbar = () => {
 
   const menuItems = [
     { title: "Accommodations", href: "/Accomodation" },
-    { title: "Activities", href: "#" },
-    { title: "Contact", href: "#" },
+    { title: "Activities", href: "/Activities" },
+    { title: "Contact", href: "/Contact" },
     { title: "News", href: "#" },
   ];
 
