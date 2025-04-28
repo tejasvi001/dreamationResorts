@@ -8,7 +8,7 @@ const slides = [
     title: "Amazing pool in the Mountains",
     description:
       "Pool is more than just a place to swim: it's a focal point of relaxation, socializing, and enjoyment for guests of all ages.",
-    image: "/activities/img1.png", // You'll replace this with your actual image
+    image: "/logo.png", // You'll replace this with your actual image
   },
   {
     title: "Luxurious Beach Villas",
@@ -75,7 +75,7 @@ export default function Activities() {
 
       {/* Left Arrow */}
       <div className="absolute top-1/2 left-8 -translate-y-1/2 cursor-pointer" onClick={prevSlide}>
-        <div className="w-14 h-14  flex items-center justify-center  text-white hover:bg-white hover:text-blue-900 transition-colors">
+        <div className="w-14 h-14  flex items-center justify-center  text-white hover:scale-110 hover:text-blue-900 transition-colors">
        
          <img src="/activities/left.png" alt=""  />
         </div>
@@ -83,7 +83,7 @@ export default function Activities() {
 
       {/* Right Arrow */}
       <div className="absolute top-1/2 right-8 -translate-y-1/2 cursor-pointer" onClick={nextSlide}>
-        <div className="w-14 h-14  flex items-center justify-center  text-white hover:bg-white hover:text-blue-900 transition-colors">
+        <div className="w-14 h-14  flex items-center justify-center  text-white hover:scale-110 hover:text-blue-900 transition-colors">
         <img src="/activities/right.png" alt=""  />
         </div>
       </div>

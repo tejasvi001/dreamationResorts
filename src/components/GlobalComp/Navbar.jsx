@@ -16,7 +16,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className=' w-full fixed top-0 z-50 bg-black/10'>
+    <nav className=' w-full fixed top-0 z-50 bg-black/20'>
       {/* Main Navbar */}
       <div className='bg-transparent'>
         <div className='max-w-7xl mx-auto px-8'>
@@ -30,7 +30,7 @@ const Navbar = () => {
               {isOpen ? (
                 <X className='h-8 w-8' />
               ) : (
-                <Menu className='h-16 w-16 stroke-1' />
+                <Menu className='h-12 w-12 stroke-1' />
               )}
             </button>
 
@@ -50,7 +50,7 @@ const Navbar = () => {
 
       {/* Full Screen Menu */}
       <div
-        className={`fixed inset-0 z-50 bg-black/90 backdrop-blur-sm transform ${
+        className={`fixed inset-0 z-50 bg-black backdrop-blur-sm transform ${
           isOpen ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
         } transition-all duration-500 ease-in-out`}
       >

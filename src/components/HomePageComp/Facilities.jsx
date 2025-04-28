@@ -31,7 +31,7 @@ const Facilities = () => {
               communal fire pit for cozy evenings spent sharing stories and
               making memories with fellow campers.
             </p>
-            <button className="text-sm w-32 md:text-[1.9vw] border-2 py-[1vw] md:w-[18vw] border-gray-300 rounded-full cursor-pointer hover:scale-105 duration-1000">
+            <button className="text-sm w-32 md:text-[1.9vw] border-2 py-[1vw] md:w-[18vw] border-gray-300 rounded-full cursor-pointer hover:bg-white hover:text-black duration-1000">
               Discover More?
             </button>
           </div>
@@ -72,7 +72,7 @@ const Facilities = () => {
           <p className="text-md text-center md:text-[2vw]">
             Create an unforgettable memories at our Dreamation resorts!
           </p>
-          <button className="text-sm md:text-[1.5vw] border-2 py-[1vw] w-40 md:w-[20vw] border-gray-300 rounded-full cursor-pointer hover:scale-105 duration-1000">
+          <button className="text-sm md:text-[1.5vw] border-2 py-[1vw] w-40 md:w-[20vw] border-gray-300 hover:text-black hover:bg-white rounded-full cursor-pointer hover:scale-105 duration-1000">
             Get started with Avava
           </button>
         </div>

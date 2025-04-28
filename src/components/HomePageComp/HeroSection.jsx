@@ -32,13 +32,13 @@ const HeroSection = () => {
 
       <div className='absolute inset-0 flex flex-col items-center justify-center text-center px-4'>
         <div>
-          <h1 className='text-4xl text-white md:text-6xl font-bold'>
+          <h1 className='text-4xl text-white md:text-6xl font-bold hover:scale-125 duration-4000 cursor-pointer'>
             <span className='text-[#d69e54]'>Welcome</span> to <br />
             <span className='text-white'>Dreamation Resort!</span>
           </h1>
         </div>
         <div className='pt-14'>
-          <button className='pt-4 h-[5vw] w-[18vw] border border-white text-2xl text-white rounded-full hover:bg-white hover:text-black transition flex items-center justify-center'>
+          <button className='h-[5vw] w-[18vw] border border-white text-2xl text-white rounded-full hover:bg-white hover:text-black transition flex items-center justify-center cursor-pointer duration-1000'>
             Explore More !
           </button>
         </div>
@@ -118,7 +118,7 @@ const HeroSection = () => {
           <IoMdArrowDropdown className='text-white' />
         </div>
         {/* Book Now Button */}
-        <button className='w-40 px-4 py-2 border border-white rounded-sm bg-transparent text-white hover:bg-white hover:text-black transition'>
+        <button className='w-60 px-4 py-2 border border-white rounded-sm bg-transparent text-white hover:bg-white hover:text-black transition'>
           Book Now!
         </button>
       </div>

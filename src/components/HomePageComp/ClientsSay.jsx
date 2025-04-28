@@ -131,7 +131,7 @@ const ClientsSay = () => {
       <div className="flex justify-between items-center w-[90%] mx-auto  ">
         <button
           onClick={goToPrevious}
-          className="text-amber-700 hover:text-amber-500 transition transform scale-110"
+          className="text-amber-700 hover:text-amber-500 transition transform scale-110 cursor-pointer"
         >
         <img src="/leftButton.svg" alt="" className="w-12 h-12" />
         </button>
@@ -145,7 +145,7 @@ const ClientsSay = () => {
         </div>
         <button
           onClick={goToNext}
-          className="text-amber-700 hover:text-amber-500 transition transform scale-110"
+          className="text-amber-700 hover:text-amber-500 transition transform scale-110 cursor-pointer"
         >
                   
         <img src="/rightButton.svg" alt="" className="w-12 h-12" />
