@@ -1,136 +1,255 @@
-"use client";
-import React, { useState } from "react";
-import { Menu, X } from "lucide-react";
-import Image from "next/image";
-import LogoIcon from "../../assets/logo.png";
-import resortImage from "../../assets/resort.png";
+'use client';
 
-const Navbar = () => {
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Menu, X, Phone, Mail, MapPin, ChevronDown } from "lucide-react";
+import { useRouter } from 'next/navigation';
+
+const pages = [
+  { name: "Home", path: "/", image: "/Facility1.png" },
+  {
+    name: "Accommodations",
+    path: "/Accomodation",
+    image: "/Facility2.png",
+    submenu: [
+      { name: "Acorn Luxery Cottages", path: "/accommodations/rooms", image: "/Facility3.png" },
+      { name: "Fern Luxery Swisstents", path: "/accommodations/rooms", image: "/Facility4.png" },
+      { name: "Earthen Echo Mud House", path: "/accommodations/rooms", image: "/FacilityBg.png" },
+    ]
+  },
+  { name: "Activities", path: "/Activities", image: "/activities/Rectangle 73.png" },
+  { name: "Spa", path: "/Spa", image: "/activities/Rectangle 65.png" },
+  {
+    name: "Dine/Drink", path: "/blog", image: "/activities/Rectangle 67.png",
+    submenu: [
+      { name: "Bamboo And Brew Cafe", path: "/accommodations/rooms", image: "/activities/Rectangle 57.png" },
+      { name: "Akhada Bar", path: "/accommodations/rooms", image: "/activities/Rectangle 59.png" },
+      { name: "Indoor Restaurant", path: "/accommodations/rooms", image: "/activities/Rectangle 61.png" },
+    ]
+  },
+];
+
+export default function KeyholeNavbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [activeImage, setActiveImage] = useState(pages[0].image);
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+  const [openSubmenu, setOpenSubmenu] = useState(null);
+  const [hoveredSubmenuItem, setHoveredSubmenuItem] = useState(null);
+  const [isHovered, setIsHovered] = useState(false);
 
-  const menuItems = [
-    { title: "Accommodations", href: "/Accomodation" },
-    { title: "Activities", href: "/Activities" },
-    { title: "Contact", href: "/Contact" },
-    { title: "News", href: "#" },
-  ];
+  const router = useRouter();
+  const handleClick = () => {
+    router.push('/Contact');
+  };
+
+  useEffect(() => {
+    const handleEsc = (event) => {
+      if (event.key === "Escape") setIsOpen(false);
+    };
+    window.addEventListener("keydown", handleEsc);
+    return () => window.removeEventListener("keydown", handleEsc);
+  }, []);
 
   return (
-    <nav className=' w-full fixed top-0 z-50 bg-black/20'>
-      {/* Main Navbar */}
-      <div className='bg-transparent'>
-        <div className='max-w-7xl mx-auto px-8'>
-          <div className='flex items-center justify-between '>
-            {/* Menu Button */}
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className='text-white p-2'
-              aria-label='Toggle menu'
-            >
-              {isOpen ? (
-                <X className='h-8 w-8' />
-              ) : (
-                <Menu className='h-12 w-12 stroke-1' />
-              )}
-            </button>
+    <>
+      <div className="px-10 cursor-pointer">
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="fixed top-4 left-6 z-50 p-2 rounded-full bg-black text-white"
+          aria-label={isOpen ? "Close menu" : "Open menu"}
+        >
+          {isOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
 
-            {/* Logo */}
-            {/* <div className='flex-shrink-0'>
-              <Image
-                className='w-[165px] object-contain'
-                src={LogoIcon}
-                alt='Logo'
-              />
-            </div> */}
-            <Logo />
-            <GetInTouch />
-          </div>
+        <div className="">
+          <img
+            src="logo.png"
+            alt="Logo"
+            className="fixed top-4 left-1/2 -translate-x-1/2 z-50 h-24 w-24"
+            onClick={() => window.location.href = '/'}
+          />
         </div>
-      </div>
 
-      {/* Full Screen Menu */}
-      <div
-        className={`fixed inset-0 z-50 bg-black backdrop-blur-sm transform ${
-          isOpen ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
-        } transition-all duration-500 ease-in-out`}
-      >
-        <div className='h-full flex flex-col'>
-          {/* Top Bar in Menu */}
-          <div className='px-8'>
-            <div className='flex items-center justify-between'>
-              <button
-                onClick={() => setIsOpen(false)}
-                className='text-white p-2'
-                aria-label='Close menu'
-              >
-                <X className='h-16 stroke-1 w-16' />
-              </button>
-
-              {/* Logo */}
-              <Logo />
-
-              <GetInTouch />
-            </div>
-          </div>
-
-          {/* Menu Items */}
-          <div className='flex mt-5 px-5 items-center justify-center'>
-            <div className=' flex gap-5 flex-wrap justify-evenly w-full items-center'>
-              {menuItems.map((item, index) => (
-                <React.Fragment key={item.title}>
-                  <a
-                    href={item.href}
-                    className=' text-neutral-50 items-center flex text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-normal font-Abhaya_Libre hover:text-gray-300 transition-colors'
-                    onClick={() => setIsOpen(false)}
-                  >
-                    {index !== 0 && (
-                      <span className='text-white text-4xl mx-4'>•</span>
-                    )}
-                    {item.title}
-                  </a>
-                </React.Fragment>
-              ))}
-            </div>
-          </div>
-
-          {/* Contact Info */}
-          <div className=' grid grid-cols-3 gap-5 items-center justify-center overflow-hidden px-5 mt-16 pb-20 flex-1'>
-            <div className=' text-white break-all text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-normal font-Abhaya_Libre'>
-              Dreamation Resort!
-            </div>
-            <Image
-              src={resortImage}
-              className='w-auto h-auto object-contain mx-auto'
-              alt='dreamation_resort'
+        <div className="">
+          <button
+            onClick={handleClick}
+            className="fixed top-4 right-6 z-50 p-2 cursor-pointer overflow-hidden px-6 py-3 rounded-full border border-black bg-white font-medium group"
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+          >
+            <span className={`relative z-10 transition-colors duration-300 ${isHovered ? 'text-white' : 'text-black'}`}>
+              GET IN TOUCH
+            </span>
+            <motion.span
+              initial={{ height: 0 }}
+              animate={{ height: isHovered ? '100%' : '0%' }}
+              transition={{ duration: 0.4, ease: 'easeInOut' }}
+              className="absolute bottom-0 left-0 w-full bg-black z-0"
             />
-            <div className='text-white break-all text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-normal font-Abhaya_Libre'>
-              info@dreamationresorts.com
-            </div>
-          </div>
+          </button>
         </div>
       </div>
-    </nav>
-  );
-};
 
-export default Navbar;
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            className="fixed inset-0 z-40 bg-black/95 flex items-center justify-center"
+          >
+            <div className="w-full h-full max-w-7xl mx-auto flex flex-col md:flex-row">
+              <motion.div
+                initial={{ x: -100, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ delay: 0.2, duration: 0.5 }}
+                className="flex items-center justify-center"
+              >
+                <nav>
+                  <ul className="space-y-6 text-right px-20">
+                    {pages.map((page, index) => (
+                      <motion.li
+                        key={page.name}
+                        initial={{ x: -50, opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        transition={{ delay: 0.3 + index * 0.1, duration: 0.5 }}
+                        onMouseEnter={() => {
+                          setActiveImage(page.image);
+                          setHoveredIndex(index);
+                          if (page.submenu) setOpenSubmenu(index);
+                        }}
+                        onMouseLeave={() => {
+                          setHoveredIndex(null);
+                          setHoveredSubmenuItem(null);
+                          setOpenSubmenu(null);
+                          setActiveImage(pages[0].image);
+                        }}
+                        className="relative group"
+                      >
+                        <div className="flex items-center gap-2">
+                          <a
+                            href={page.path}
+                            className={`text-3xl md:text-4xl font-bold text-white hover:text-gray-300 transition-colors duration-300 ${hoveredIndex === index ? "text-gray-300" : ""}`}
+                          >
+                            {page.name}
+                          </a>
+                          {page.submenu && (
+                            <div className="text-white cursor-pointer">
+                              <ChevronDown
+                                size={24}
+                                className={`transition-transform duration-300 ${openSubmenu === index ? 'rotate-180' : ''}`}
+                              />
+                            </div>
+                          )}
+                        </div>
 
-const GetInTouch = () => {
-  return (
-    <button className='py-2 px-8 min-[400px]:block hidden rounded-[25.05px] border-[2.51px] border-white justify-start text-white md:text-2xl texl lg:text-3xl font-bold font-Abhaya_Libre'>
-      Get in Touch
-    </button>
-  );
-};
+                        {page.submenu && (
+                          <AnimatePresence>
+                            {openSubmenu === index && (
+                              <motion.div
+                                initial={{ height: 0, opacity: 0 }}
+                                animate={{ height: 'auto', opacity: 1 }}
+                                exit={{ height: 0, opacity: 0 }}
+                                transition={{ duration: 0.3 }}
+                                className="overflow-hidden"
+                              >
+                                <ul className="mt-2 space-y-2 pl-4">
+                                  {page.submenu.map((subitem, subIndex) => (
+                                    <motion.li
+                                      key={subitem.name}
+                                      initial={{ x: -20, opacity: 0 }}
+                                      animate={{ x: 0, opacity: 1 }}
+                                      transition={{ duration: 0.2 }}
+                                      onMouseEnter={() => {
+                                        setActiveImage(subitem.image);
+                                        setHoveredSubmenuItem(subIndex);
+                                      }}
+                                      onMouseLeave={() => {
+                                        setHoveredSubmenuItem(null);
+                                        setActiveImage(page.image);
+                                      }}
+                                    >
+                                      <a
+                                        href={subitem.path}
+                                        className="text-xl text-gray-300 hover:text-white transition-colors duration-200 block py-1"
+                                        onClick={() => setIsOpen(false)}
+                                      >
+                                        {subitem.name}
+                                      </a>
+                                    </motion.li>
+                                  ))}
+                                </ul>
+                              </motion.div>
+                            )}
+                          </AnimatePresence>
+                        )}
+                      </motion.li>
+                    ))}
+                  </ul>
+                </nav>
+              </motion.div>
 
-const Logo = () => {
-  return (
-    <a href='/' className='flex-shrink-0'>
-      <Image
-        className='size-[100px] sm:size-[130px] object-contain md:w-[165px] mg:h-[165px]'
-        src={LogoIcon}
-        alt='Logo'
-      />
-    </a>
+              <motion.div
+                initial={{ scale: 0, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ delay: 0.4, duration: 0.5 }}
+                className="flex-1 flex justify-center items-center p-4"
+              >
+                <div className="relative w-64 h-80 md:w-80 md:h-96">
+                  <div className="absolute w-full h-full z-50 overflow-hidden rounded-[2vw] hover:rounded-[5vw] duration-1000">
+                    <img
+                      src={activeImage || "/food.png"}
+                      alt="Navigation preview"
+                      className="object-cover w-full h-full"
+                    />
+                  </div>
+                  <div className="absolute inset-0 keyhole-mask" />
+                </div>
+              </motion.div>
+
+              <motion.div
+                initial={{ x: 100, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ delay: 0.2, duration: 0.5 }}
+                className="flex items-center justify-center px-20"
+              >
+                <div className="space-y-8">
+                  <motion.div
+                    initial={{ x: 50, opacity: 0 }}
+                    animate={{ x: 0, opacity: 1 }}
+                    transition={{ delay: 0.3, duration: 0.5 }}
+                    className="flex items-center space-x-4"
+                  >
+                    <Phone className="text-white" size={24} />
+                    <span className="text-xl text-white">+1 (555) 123-4567</span>
+                  </motion.div>
+
+                  <motion.div
+                    initial={{ x: 50, opacity: 0 }}
+                    animate={{ x: 0, opacity: 1 }}
+                    transition={{ delay: 0.4, duration: 0.5 }}
+                    className="flex items-center space-x-4"
+                  >
+                    <Mail className="text-white" size={24} />
+                    <span className="text-xl text-white">contact@example.com</span>
+                  </motion.div>
+
+                  <motion.div
+                    initial={{ x: 50, opacity: 0 }}
+                    animate={{ x: 0, opacity: 1 }}
+                    transition={{ delay: 0.5, duration: 0.5 }}
+                    className="flex items-center space-x-4"
+                  >
+                    <MapPin className="text-white" size={24} />
+                    <span className="text-xl text-white">123 Main Street, City</span>
+                  </motion.div>
+                </div>
+              </motion.div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </>
   );
-};
+}
