@@ -70,7 +70,7 @@ export default function KeyholeNavbar() {
           />
         </div>
 
-        <div>
+        <div className="">
           <button
             onClick={handleClick}
             className="fixed top-4 right-6 z-50 p-2 cursor-pointer overflow-hidden px-6 py-3 rounded-full border border-black bg-white font-medium group"
