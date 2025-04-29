@@ -1,26 +1,36 @@
-"use client"
+'use client';
+
 
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { Menu, X, Phone, Mail, MapPin, ChevronDown } from "lucide-react"
+import { useRouter } from 'next/navigation';
+
+
 
 const pages = [
-  { name: "Home", path: "/", image: "/food.png" },
+
+  
+  { name: "Home", path: "/", image: "/Facility1.png" },
   { 
     name: "Accommodations", 
     path: "/Accomodation", 
-    image: "/Acc1.png",
+    image:  "/Facility2.png",
     submenu: [
-      { name: "Rooms", path: "/accommodations/rooms", image: "/cutlery.png" },
-      { name: "Suites", path: "/accommodations/suites", image: "/getQuote.png" },
-      { name: "Villas", path: "/accommodations/villas", image: "/logo.png" },
-      { name: "Amenities", path: "/accommodations/amenities", image: "/facility1.png" }
+      { name: "Acorn Luxery Cottages", path: "/accommodations/rooms", image:  "/Facility3.png" },
+      { name: "Fern Luxery Swisstents", path: "/accommodations/rooms", image:  "/Facility4.png" },
+      { name: "Residental Room", path: "/accommodations/rooms", image: "/FacilityBg.png" },
+      { name: "Delux Room", path: "/accommodations/suites", image: "/activities/Rectangle 57.png" },
+      { name: "Exclusive", path: "/accommodations/villas", image: "/activities/Rectangle 59.png" },
+      { name: "Prenium", path: "/accommodations/amenities", image: "/activities/Rectangle 61.png" }
     ]
   },
-  { name: "Activities", path: "/Activities", image: "/Acc2.png" },
-  { name: "Spa", path: "/portfolio", image: "/bg.png" },
-  { name: "Dine/Drink", path: "/blog", image: "/car-rental.png" },
-]
+  { name: "Activities", path: "/Activities", image: "/activities/Rectangle 73.png" },
+  { name: "Spa", path: "/Spa", image: "/activities/Rectangle 65.png" },
+  { name: "Dine/Drink", path: "/blog", image:"/activities/Rectangle 67.png" },
+  ]
+  
+
 
 export default function KeyholeNavbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -28,6 +38,12 @@ export default function KeyholeNavbar() {
   const [hoveredIndex, setHoveredIndex] = useState(null)
   const [openSubmenu, setOpenSubmenu] = useState(null)
   const [hoveredSubmenuItem, setHoveredSubmenuItem] = useState(null)
+  const [isHovered, setIsHovered] = useState(false);
+
+  const router = useRouter()
+  const handleClick = () => {
+    router.push('/Contact'); // Change this to your target route
+  };
 
   useEffect(() => {
     const handleEsc = (event) => {
@@ -43,13 +59,53 @@ export default function KeyholeNavbar() {
 
   return (
     <>
-      <button
-        onClick={() => setIsOpen(!isOpen)}
-        className="fixed top-6 right-6 z-50 p-2 rounded-full bg-black text-white"
-        aria-label={isOpen ? "Close menu" : "Open menu"}
+    <div className="px-10">
+  <button
+    onClick={() => setIsOpen(!isOpen)}
+    className="fixed top-4 left-6 z-50 p-2 rounded-full bg-black text-white"
+    aria-label={isOpen ? "Close menu" : "Open menu"}
+  >
+    {isOpen ? <X size={24} /> : <Menu size={24} />}
+  </button>
+
+  <div className="">
+    <img
+      src="logo.png"
+      alt="Logo"
+      className="fixed top-4 left-1/2 -translate-x-1/2 z-50 h-24 w-24"
+      onClick={() => window.location.href = '/'}
+
+    />
+    
+  </div>
+
+  <div>
+  <button
+        onClick={handleClick}
+
+      className="fixed top-4 right-6 z-50 p-2 overflow-hidden px-6 py-3 rounded-full border border-black bg-white font-medium group"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      {/* Text */}
+      <span
+        className={`relative z-10 transition-colors duration-300 ${
+          isHovered ? 'text-white' : 'text-black'
+        }`}
       >
-        {isOpen ? <X size={24} /> : <Menu size={24} />}
-      </button>
+        GET IN TOUCH
+      </span>
+
+      {/* Animated background */}
+      <motion.span
+        initial={{ height: 0 }}
+        animate={{ height: isHovered ? '100%' : '0%' }}
+        transition={{ duration: 0.4, ease: 'easeInOut' }}
+        className="absolute bottom-0 left-0 w-full bg-black z-0"
+      />
+    </button>
+  </div>
+</div>
 
       <AnimatePresence>
         {isOpen && (
@@ -174,7 +230,7 @@ export default function KeyholeNavbar() {
                 initial={{ scale: 0, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ delay: 0.4, duration: 0.5 }}
-                className="flex-1 flex justify-center items-center p-4 border-2 border-red-700"
+                className="flex-1 flex justify-center items-center p-4 "
               >
                 <div className="relative w-64 h-80 md:w-80 md:h-96">
                   <div className="absolute inset-0 overflow-hidden">
