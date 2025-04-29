@@ -18,42 +18,36 @@ const Footer = () => {
   return (
     <footer className='bg-black/95 text-white pt-16 pb-8'>
       <div className=''>
-        <div className='max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-3 gap-12'>
+        <div className='max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-3 gap-12 border-b border-white/10'>
           {/* Address Section */}
           <div className='justify-start text-white text-2xl lg:text-3xl font-normal font-Lato'>
             <p className='max-w-[550px] '>
               Aamation Tourism & Hospitality Private Limited Hadbast No - 1037,
-              Mohal – Ghornala Post Office – Bir, Tehsil – Baijnath District –
-              Kangra (H.P.) 176077
+             – Baijnath District – Kangra (H.P.) 176077
             </p>
           </div>
 
           {/* Navigation Links */}
           <div className='flex flex-col space-y-3'>
             <a
-              href='#'
+              href='Accomodation'
               className='hover:text-gray-300 transition-colors justify-start text-neutral-50 text-2xl lg:text-3xl font-normal font-Lato leading-[48px] tracking-wide'
             >
               Accommodations
             </a>
             <a
-              href='#'
+              href='Activities'
               className='hover:text-gray-300 transition-colors justify-start text-neutral-50 text-2xl lg:text-3xl font-normal font-Lato leading-[48px] tracking-wide'
             >
               Activities
             </a>
             <a
-              href='#'
+              href='Contact'
               className='hover:text-gray-300 transition-colors justify-start text-neutral-50 text-2xl lg:text-3xl font-normal font-Lato leading-[48px] tracking-wide'
             >
               Contact
             </a>
-            <a
-              href='#'
-              className='hover:text-gray-300 transition-colors justify-start text-neutral-50 text-2xl lg:text-3xl font-normal font-Lato leading-[48px] tracking-wide'
-            >
-              News
-            </a>
+            
           </div>
 
           {/* Newsletter Section */}
@@ -69,20 +63,18 @@ const Footer = () => {
                   placeholder='Enter your email adress'
                   className='bg-transparent border-0 outline-none border-b border-white/30 justify-start text-white text-xl font-light font-Lato leading-loose tracking-tight transition-colors'
                 />
+                <div className="pb-8 border-b border-white/10">
                 <button
                   type='submit'
-                  className='self-start border-2 flex justify-center items-center backdrop-blur-sm text-white px-8 py-1 md:py-2 rounded-full text-lg md:text-2xl font-bold font-Abhaya_Libre hover:bg-white/30 transition-colors'
+                  className='self-start border-2 flex justify-center items-center backdrop-blur-sm text-white px-8 py-1 md:py-2 rounded-full text-lg md:text-2xl font-bold font-Abhaya_Libre hover:bg-white/30 transition-colors '
                 >
                   Send
                 </button>
+                </div>
               </div>
             </form>
-          </div>
-        </div>
-
-        {/* Contact Information */}
-        <div className='flex flex-col w-full md:flex-row justify-between items-center mt-12 pb-8 border-b border-white/10'>
-          <div className='flex sm:items-center max-w-7xl sm:flex-row flex-col mx-auto px-8 w-full justify-center sm:space-x-8 mb-6 md:mb-0'>
+            <div className='flex flex-col w-full md:flex-row justify-between items-center mt-12 '>
+          <div className=' sm:items-center max-w-7xl sm:flex-row flex-col mx-auto px-8 w-full justify-center sm:space-x-8 mb-6 md:mb-0'>
             <a
               href='mailto:info@dreamationresorts.com'
               className='flex items-center space-x-2 hover:text-gray-300 transition-colors'
@@ -99,6 +91,11 @@ const Footer = () => {
             </a>
           </div>
         </div>
+          </div>
+        </div>
+
+        {/* Contact Information */}
+       
 
         {/* Copyright */}
         <div className='flex max-w-7xl mx-auto sm:flex-row flex-col px-8 items-center justify-between mt-8 text-sm text-gray-400'>

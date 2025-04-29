@@ -10,26 +10,32 @@ import { useRouter } from 'next/navigation';
 
 const pages = [
 
-  
+
   { name: "Home", path: "/", image: "/Facility1.png" },
-  { 
-    name: "Accommodations", 
-    path: "/Accomodation", 
-    image:  "/Facility2.png",
+  {
+    name: "Accommodations",
+    path: "/Accomodation",
+    image: "/Facility2.png",
     submenu: [
-      { name: "Acorn Luxery Cottages", path: "/accommodations/rooms", image:  "/Facility3.png" },
-      { name: "Fern Luxery Swisstents", path: "/accommodations/rooms", image:  "/Facility4.png" },
-      { name: "Residental Room", path: "/accommodations/rooms", image: "/FacilityBg.png" },
-      { name: "Delux Room", path: "/accommodations/suites", image: "/activities/Rectangle 57.png" },
-      { name: "Exclusive", path: "/accommodations/villas", image: "/activities/Rectangle 59.png" },
-      { name: "Prenium", path: "/accommodations/amenities", image: "/activities/Rectangle 61.png" }
+      { name: "Acorn Luxery Cottages", path: "/accommodations/rooms", image: "/Facility3.png" },
+      { name: "Fern Luxery Swisstents", path: "/accommodations/rooms", image: "/Facility4.png" },
+      { name: "Earthen Echo Mud House", path: "/accommodations/rooms", image: "/FacilityBg.png" },
+
     ]
   },
   { name: "Activities", path: "/Activities", image: "/activities/Rectangle 73.png" },
   { name: "Spa", path: "/Spa", image: "/activities/Rectangle 65.png" },
-  { name: "Dine/Drink", path: "/blog", image:"/activities/Rectangle 67.png" },
-  ]
-  
+  {
+    name: "Dine/Drink", path: "/blog", image: "/activities/Rectangle 67.png",
+    submenu: [
+      { name: "Bamboo And Brew Cafe", path: "/accommodations/rooms", image: "/Facility3.png" },
+      { name: "Akhada Bar", path: "/accommodations/rooms", image: "/Facility4.png" },
+      { name: "Indoor Restaurant", path: "/accommodations/rooms", image: "/FacilityBg.png" },
+
+    ]
+  },
+]
+
 
 
 export default function KeyholeNavbar() {
@@ -59,53 +65,52 @@ export default function KeyholeNavbar() {
 
   return (
     <>
-    <div className="px-10">
-  <button
-    onClick={() => setIsOpen(!isOpen)}
-    className="fixed top-4 left-6 z-50 p-2 rounded-full bg-black text-white"
-    aria-label={isOpen ? "Close menu" : "Open menu"}
-  >
-    {isOpen ? <X size={24} /> : <Menu size={24} />}
-  </button>
+      <div className="px-10 cursor-pointer">
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="fixed top-4 left-6 z-50 p-2 rounded-full bg-black text-white"
+          aria-label={isOpen ? "Close menu" : "Open menu"}
+        >
+          {isOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
 
-  <div className="">
-    <img
-      src="logo.png"
-      alt="Logo"
-      className="fixed top-4 left-1/2 -translate-x-1/2 z-50 h-24 w-24"
-      onClick={() => window.location.href = '/'}
+        <div className="">
+          <img
+            src="logo.png"
+            alt="Logo"
+            className="fixed top-4 left-1/2 -translate-x-1/2 z-50 h-24 w-24"
+            onClick={() => window.location.href = '/'}
 
-    />
-    
-  </div>
+          />
 
-  <div>
-  <button
-        onClick={handleClick}
+        </div>
 
-      className="fixed top-4 right-6 z-50 p-2 overflow-hidden px-6 py-3 rounded-full border border-black bg-white font-medium group"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-    >
-      {/* Text */}
-      <span
-        className={`relative z-10 transition-colors duration-300 ${
-          isHovered ? 'text-white' : 'text-black'
-        }`}
-      >
-        GET IN TOUCH
-      </span>
+        <div>
+          <button
+            onClick={handleClick}
 
-      {/* Animated background */}
-      <motion.span
-        initial={{ height: 0 }}
-        animate={{ height: isHovered ? '100%' : '0%' }}
-        transition={{ duration: 0.4, ease: 'easeInOut' }}
-        className="absolute bottom-0 left-0 w-full bg-black z-0"
-      />
-    </button>
-  </div>
-</div>
+            className="fixed top-4 right-6 z-50 p-2 cursor-pointer overflow-hidden px-6 py-3 rounded-full border border-black bg-white font-medium group"
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+          >
+            {/* Text */}
+            <span
+              className={`relative z-10 transition-colors duration-300 ${isHovered ? 'text-white' : 'text-black'
+                }`}
+            >
+              GET IN TOUCH
+            </span>
+
+            {/* Animated background */}
+            <motion.span
+              initial={{ height: 0 }}
+              animate={{ height: isHovered ? '100%' : '0%' }}
+              transition={{ duration: 0.4, ease: 'easeInOut' }}
+              className="absolute bottom-0 left-0 w-full bg-black z-0"
+            />
+          </button>
+        </div>
+      </div>
 
       <AnimatePresence>
         {isOpen && (
@@ -146,20 +151,19 @@ export default function KeyholeNavbar() {
                         <div className="flex items-center  gap-2">
                           <a
                             href={page.path}
-                            className={`text-3xl md:text-4xl font-bold text-white hover:text-gray-300 transition-colors duration-300 ${
-                              hoveredIndex === index ? "text-gray-300" : ""
-                            }`}
+                            className={`text-3xl md:text-4xl font-bold text-white hover:text-gray-300 transition-colors duration-300 ${hoveredIndex === index ? "text-gray-300" : ""
+                              }`}
                           >
                             {page.name}
                           </a>
                           {page.submenu && (
-                            <button 
+                            <button
                               onClick={() => toggleSubmenu(index)}
                               className="text-white focus:outline-none"
                               onMouseEnter={() => setActiveImage(page.image)}
                             >
-                              <ChevronDown 
-                                size={24} 
+                              <ChevronDown
+                                size={24}
                                 className={`transition-transform duration-300 ${openSubmenu === index ? 'rotate-180' : ''}`}
                               />
                             </button>
@@ -182,7 +186,7 @@ export default function KeyholeNavbar() {
                               >
                                 <ul className="mt-2 space-y-2 pl-4">
                                   {page.submenu.map((subitem, subIndex) => (
-                                    <motion.li 
+                                    <motion.li
                                       key={subitem.name}
                                       initial={{ x: -20, opacity: 0 }}
                                       animate={{ x: 0, opacity: 1 }}
@@ -230,17 +234,15 @@ export default function KeyholeNavbar() {
                 initial={{ scale: 0, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ delay: 0.4, duration: 0.5 }}
-                className="flex-1 flex justify-center items-center p-4 "
+                className="flex-1 flex justify-center   items-center p-4 "
               >
-                <div className="relative w-64 h-80 md:w-80 md:h-96">
-                  <div className="absolute inset-0 overflow-hidden">
-                    <div className="w-full h-full relative">
-                      <img
-                        src={activeImage || "/food.png"}
-                        alt="Navigation preview"
-                        className="object-cover w-full h-full"
-                      />
-                    </div>
+                <div className="relative w-64 h-80 md:w-80 md:h-96 ">
+                  <div className="absolute w-full h-full z-50 overflow-hidden rounded-[2vw] hover:rounded-[5vw] duration-1000">
+                    <img
+                      src={activeImage || "/food.png"}
+                      alt="Navigation preview"
+                      className="object-cover w-full h-full"
+                    />
                   </div>
                   <div className="absolute inset-0 keyhole-mask" />
                 </div>
