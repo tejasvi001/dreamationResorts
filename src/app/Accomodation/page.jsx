@@ -6,6 +6,8 @@ import Image from "next/image";
 import RoomGrid from "../../components/Residentailcomp/RoomGrid.jsx";
 import AttractionEvents from "../../components/HomePageComp/AttractionEvents";
 import FeaturedRoom from "../../components/Accomodation/FeaturedRoom.jsx";
+import BlackBackground from "../../components/Accomodation/BlackBackground.jsx";
+import ImageContainer from "../../components/Accomodation/ImageContainer.jsx";
 
 const rooms = [
   {
@@ -36,18 +38,11 @@ const rooms = [
 export default function page() {
   return (
     <div>
-      <div className='header bg-black w-full h-full border-0 overflow-auto min-h-[80svh]'>
-        <Image
-          src={roomImage}
-          alt=""
-          className='w-full max-w-[90%] brightness-50 ml-auto object-cover h-screen pt-56'
-        />
-        {/* <div className=' h-[838px] bg-white' /> */}
-      </div>
-    
-     <RoomGrid rooms={rooms} />
-     <FeaturedRoom />
-     <AttractionEvents />
+      <BlackBackground />
+      <ImageContainer />
+      <RoomGrid rooms={rooms} />
+      <FeaturedRoom />
+      <AttractionEvents />
         
       </div>
   );
