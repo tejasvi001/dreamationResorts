@@ -1,7 +1,7 @@
 const StatsSection = () => {
   return (
     <section
-      className="relative bg-cover bg-center text-white mt-8"
+      className="relative bg-cover bg-center text-white "
       style={{ backgroundImage: 'url("/activities/Rectangle 4561.png")' }}
     >
       <div className="absolute inset-0 bg-black/50"></div>
