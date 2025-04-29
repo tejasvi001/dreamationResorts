@@ -1,16 +1,11 @@
 'use client';
 
-
-import { useState, useEffect } from "react"
-import { motion, AnimatePresence } from "framer-motion"
-import { Menu, X, Phone, Mail, MapPin, ChevronDown } from "lucide-react"
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Menu, X, Phone, Mail, MapPin, ChevronDown } from "lucide-react";
 import { useRouter } from 'next/navigation';
 
-
-
 const pages = [
-
-
   { name: "Home", path: "/", image: "/Facility1.png" },
   {
     name: "Accommodations",
@@ -20,7 +15,6 @@ const pages = [
       { name: "Acorn Luxery Cottages", path: "/accommodations/rooms", image: "/Facility3.png" },
       { name: "Fern Luxery Swisstents", path: "/accommodations/rooms", image: "/Facility4.png" },
       { name: "Earthen Echo Mud House", path: "/accommodations/rooms", image: "/FacilityBg.png" },
-
     ]
   },
   { name: "Activities", path: "/Activities", image: "/activities/Rectangle 73.png" },
@@ -28,40 +22,33 @@ const pages = [
   {
     name: "Dine/Drink", path: "/blog", image: "/activities/Rectangle 67.png",
     submenu: [
-      { name: "Bamboo And Brew Cafe", path: "/accommodations/rooms", image: "/Facility3.png" },
-      { name: "Akhada Bar", path: "/accommodations/rooms", image: "/Facility4.png" },
-      { name: "Indoor Restaurant", path: "/accommodations/rooms", image: "/FacilityBg.png" },
-
+      { name: "Bamboo And Brew Cafe", path: "/accommodations/rooms", image: "/activities/Rectangle 57.png" },
+      { name: "Akhada Bar", path: "/accommodations/rooms", image: "/activities/Rectangle 59.png" },
+      { name: "Indoor Restaurant", path: "/accommodations/rooms", image: "/activities/Rectangle 61.png" },
     ]
   },
-]
-
-
+];
 
 export default function KeyholeNavbar() {
-  const [isOpen, setIsOpen] = useState(false)
-  const [activeImage, setActiveImage] = useState(pages[0].image)
-  const [hoveredIndex, setHoveredIndex] = useState(null)
-  const [openSubmenu, setOpenSubmenu] = useState(null)
-  const [hoveredSubmenuItem, setHoveredSubmenuItem] = useState(null)
+  const [isOpen, setIsOpen] = useState(false);
+  const [activeImage, setActiveImage] = useState(pages[0].image);
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+  const [openSubmenu, setOpenSubmenu] = useState(null);
+  const [hoveredSubmenuItem, setHoveredSubmenuItem] = useState(null);
   const [isHovered, setIsHovered] = useState(false);
 
-  const router = useRouter()
+  const router = useRouter();
   const handleClick = () => {
-    router.push('/Contact'); // Change this to your target route
+    router.push('/Contact');
   };
 
   useEffect(() => {
     const handleEsc = (event) => {
-      if (event.key === "Escape") setIsOpen(false)
-    }
-    window.addEventListener("keydown", handleEsc)
-    return () => window.removeEventListener("keydown", handleEsc)
-  }, [])
-
-  const toggleSubmenu = (index) => {
-    setOpenSubmenu(openSubmenu === index ? null : index)
-  }
+      if (event.key === "Escape") setIsOpen(false);
+    };
+    window.addEventListener("keydown", handleEsc);
+    return () => window.removeEventListener("keydown", handleEsc);
+  }, []);
 
   return (
     <>
@@ -80,28 +67,19 @@ export default function KeyholeNavbar() {
             alt="Logo"
             className="fixed top-4 left-1/2 -translate-x-1/2 z-50 h-24 w-24"
             onClick={() => window.location.href = '/'}
-
           />
-
         </div>
 
         <div>
           <button
             onClick={handleClick}
-
             className="fixed top-4 right-6 z-50 p-2 cursor-pointer overflow-hidden px-6 py-3 rounded-full border border-black bg-white font-medium group"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
-            {/* Text */}
-            <span
-              className={`relative z-10 transition-colors duration-300 ${isHovered ? 'text-white' : 'text-black'
-                }`}
-            >
+            <span className={`relative z-10 transition-colors duration-300 ${isHovered ? 'text-white' : 'text-black'}`}>
               GET IN TOUCH
             </span>
-
-            {/* Animated background */}
             <motion.span
               initial={{ height: 0 }}
               animate={{ height: isHovered ? '100%' : '0%' }}
@@ -137,36 +115,32 @@ export default function KeyholeNavbar() {
                         animate={{ x: 0, opacity: 1 }}
                         transition={{ delay: 0.3 + index * 0.1, duration: 0.5 }}
                         onMouseEnter={() => {
-                          setActiveImage(page.image)
-                          setHoveredIndex(index)
+                          setActiveImage(page.image);
+                          setHoveredIndex(index);
+                          if (page.submenu) setOpenSubmenu(index);
                         }}
                         onMouseLeave={() => {
-                          setHoveredIndex(null)
-                          if (!hoveredSubmenuItem) {
-                            setActiveImage(pages[0].image)
-                          }
+                          setHoveredIndex(null);
+                          setHoveredSubmenuItem(null);
+                          setOpenSubmenu(null);
+                          setActiveImage(pages[0].image);
                         }}
                         className="relative group"
                       >
-                        <div className="flex items-center  gap-2">
+                        <div className="flex items-center gap-2">
                           <a
                             href={page.path}
-                            className={`text-3xl md:text-4xl font-bold text-white hover:text-gray-300 transition-colors duration-300 ${hoveredIndex === index ? "text-gray-300" : ""
-                              }`}
+                            className={`text-3xl md:text-4xl font-bold text-white hover:text-gray-300 transition-colors duration-300 ${hoveredIndex === index ? "text-gray-300" : ""}`}
                           >
                             {page.name}
                           </a>
                           {page.submenu && (
-                            <button
-                              onClick={() => toggleSubmenu(index)}
-                              className="text-white focus:outline-none"
-                              onMouseEnter={() => setActiveImage(page.image)}
-                            >
+                            <div className="text-white cursor-pointer">
                               <ChevronDown
                                 size={24}
                                 className={`transition-transform duration-300 ${openSubmenu === index ? 'rotate-180' : ''}`}
                               />
-                            </button>
+                            </div>
                           )}
                         </div>
 
@@ -179,10 +153,6 @@ export default function KeyholeNavbar() {
                                 exit={{ height: 0, opacity: 0 }}
                                 transition={{ duration: 0.3 }}
                                 className="overflow-hidden"
-                                onMouseLeave={() => {
-                                  setHoveredSubmenuItem(null)
-                                  setActiveImage(page.image)
-                                }}
                               >
                                 <ul className="mt-2 space-y-2 pl-4">
                                   {page.submenu.map((subitem, subIndex) => (
@@ -192,12 +162,12 @@ export default function KeyholeNavbar() {
                                       animate={{ x: 0, opacity: 1 }}
                                       transition={{ duration: 0.2 }}
                                       onMouseEnter={() => {
-                                        setActiveImage(subitem.image)
-                                        setHoveredSubmenuItem(subIndex)
+                                        setActiveImage(subitem.image);
+                                        setHoveredSubmenuItem(subIndex);
                                       }}
                                       onMouseLeave={() => {
-                                        setHoveredSubmenuItem(null)
-                                        setActiveImage(page.image)
+                                        setHoveredSubmenuItem(null);
+                                        setActiveImage(page.image);
                                       }}
                                     >
                                       <a
@@ -214,16 +184,6 @@ export default function KeyholeNavbar() {
                             )}
                           </AnimatePresence>
                         )}
-
-                        {hoveredIndex === index && (
-                          <motion.div
-                            layoutId="underline"
-                            className="absolute -right-2 top-1/2 w-2 h-2 bg-white rounded-full"
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            exit={{ opacity: 0 }}
-                          />
-                        )}
                       </motion.li>
                     ))}
                   </ul>
@@ -234,9 +194,9 @@ export default function KeyholeNavbar() {
                 initial={{ scale: 0, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ delay: 0.4, duration: 0.5 }}
-                className="flex-1 flex justify-center   items-center p-4 "
+                className="flex-1 flex justify-center items-center p-4"
               >
-                <div className="relative w-64 h-80 md:w-80 md:h-96 ">
+                <div className="relative w-64 h-80 md:w-80 md:h-96">
                   <div className="absolute w-full h-full z-50 overflow-hidden rounded-[2vw] hover:rounded-[5vw] duration-1000">
                     <img
                       src={activeImage || "/food.png"}
@@ -252,7 +212,7 @@ export default function KeyholeNavbar() {
                 initial={{ x: 100, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ delay: 0.2, duration: 0.5 }}
-                className=" flex items-center justify-center px-20"
+                className="flex items-center justify-center px-20"
               >
                 <div className="space-y-8">
                   <motion.div
@@ -291,5 +251,5 @@ export default function KeyholeNavbar() {
         )}
       </AnimatePresence>
     </>
-  )
+  );
 }
