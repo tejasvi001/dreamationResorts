@@ -37,7 +37,7 @@ const rooms = [
 ]
 export default function page() {
   return (
-    <div>
+    <div className="w-full h-full">
       <BlackBackground />
       <ImageContainer />
       <RoomGrid rooms={rooms} />
