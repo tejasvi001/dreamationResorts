@@ -20,7 +20,7 @@ const RoomCardRTL = ({ order, title, imageSrc, description, buttonText }) => {
       <Image
         src={imageSrc}
         alt={title}
-        className={`sm:w-1/2 md:w-1/2 order-${order === 1 ? "last" : "first"} object-cover border-2 grid border-blue-500`}
+        className={`sm:w-1/2 md:w-1/2 order-${order === 1 ? "last" : "first"} object-cover grid`}
       />
     </div>
   );
