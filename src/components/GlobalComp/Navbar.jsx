@@ -190,17 +190,17 @@ export default function ResponsiveNavbar() {
         <div className="px-10 cursor-pointer">
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="fixed top-4 left-6 z-50 p-2 rounded-full bg-black text-white"
+            className="fixed top-4 left-6 z-50 p-2 rounded-full bg-black text-white cursor-pointer"
             aria-label={isOpen ? "Close menu" : "Open menu"}
           >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
+            {isOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
 
           <div className="">
             <img
               src="/logo.png"
               alt="Logo"
-              className="fixed top-4 left-1/2 -translate-x-1/2 z-50 h-24 w-24"
+              className="fixed top-4 left-1/2 -translate-x-1/2 z-50 h-20 w-44"
               onClick={() => (window.location.href = "/")}
             />
           </div>
