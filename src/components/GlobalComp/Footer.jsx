@@ -16,11 +16,11 @@ const Footer = () => {
   };
 
   return (
-    <footer className='bg-black/95 text-white pt-16 pb-8'>
-      <div className=''>
+    <footer className='bg-black/95 text-white pt-4 pb-4'>
+      <div className='px-6'>
         <div className='max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-3 gap-12 border-b border-white/10'>
           {/* Address Section */}
-          <div className='justify-start text-white text-xl lg:text-2xl font-normal font-Lato'>
+          <div className='justify-start text-white text-lg lg:text-xl font-normal font-Lato'>
             <p className='max-w-[550px] '>
               Aamation Tourism & Hospitality Private Limited Hadbast No - 1037,
              – Baijnath District – Kangra (H.P.) 176077
@@ -28,22 +28,22 @@ const Footer = () => {
           </div>
 
           {/* Navigation Links */}
-          <div className='flex flex-col space-y-3'>
+          <div className='flex flex-col space-y-2'>
             <a
               href='Accomodation'
-              className='hover:text-gray-300 transition-colors justify-start text-neutral-50 text-xl lg:text-2xl font-normal font-Lato leading-[48px] tracking-wide'
+              className='hover:text-gray-300 transition-colors justify-start text-neutral-50 text-lg lg:text-xl font-normal font-Lato leading-[48px] tracking-wide'
             >
               Accommodations
             </a>
             <a
               href='Activities'
-              className='hover:text-gray-300 transition-colors justify-start text-neutral-50 text-xl lg:text-2xl font-normal font-Lato leading-[48px] tracking-wide'
+              className='hover:text-gray-300 transition-colors justify-start text-neutral-50 text-lg lg:text-xl font-normal font-Lato leading-[48px] tracking-wide'
             >
               Activities
             </a>
             <a
               href='Contact'
-              className='hover:text-gray-300 transition-colors justify-start text-neutral-50 text-xl lg:text-xl font-normal font-Lato leading-[48px] tracking-wide'
+              className='hover:text-gray-300 transition-colors justify-start text-neutral-50 text-lg lg:text-xl font-normal font-Lato leading-[48px] tracking-wide'
             >
               Contact
             </a>
@@ -52,21 +52,21 @@ const Footer = () => {
 
           {/* Newsletter Section */}
           <div>
-            <h3 className='justify-start text-white text-xl lg:text-2xl font-bold font-Lato md:leading-10 lg:leading-[48px] tracking-wide'>
+            <h3 className='justify-start text-white text-lg lg:text-xl font-bold font-Lato md:leading-10 lg:leading-[48px] tracking-wide'>
               Newsletter
             </h3>
             <form onSubmit={handleNewsletterSubmit}>
-              <div className='flex flex-col space-y-3'>
+              <div className='flex flex-col space-y-2'>
                 {/* <div className="w-[300.59px] justify-start text-white text-xl font-light font-['Lato'] leading-loose tracking-tight">Enter your email adress</div> */}
                 <input
                   type='email'
                   placeholder='Enter your email adress'
                   className='bg-transparent border-0 outline-none border-b border-white/30 justify-start text-white text-xl font-light font-Lato leading-loose tracking-tight transition-colors'
                 />
-                <div className="pb-8 border-b border-white/10">
+                <div className="pb-2 border-b border-white/10">
                 <button
                   type='submit'
-                  className='self-start border-2 flex justify-center items-center backdrop-blur-sm text-white px-8 py-1 md:py-2 rounded-full text-lg md:text-2xl font-bold font-Abhaya_Libre hover:bg-white/30 transition-colors '
+                  className='self-start border-2 flex justify-center items-center backdrop-blur-sm text-white px-8 py-1 md:py-2 rounded-full text-lg md:text-xl font-bold font-Abhaya_Libre hover:bg-white/30 transition-colors '
                 >
                   Send
                 </button>
@@ -98,7 +98,7 @@ const Footer = () => {
        
 
         {/* Copyright */}
-        <div className='flex max-w-7xl mx-auto sm:flex-row flex-col px-8 items-center justify-between mt-8 text-sm text-gray-400'>
+        <div className='flex max-w-7xl mx-auto sm:flex-row flex-col px-8 items-center justify-between mt-1 text-sm text-gray-400'>
           <p className='justify-start text-neutral-50 text-xl font-normal font-Lato leading-loose tracking-tight'>
             {" "}
             © Copyright 2025. All Rights Reserved.
