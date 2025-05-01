@@ -8,6 +8,7 @@ import AttractionEvents from "../../components/HomePageComp/AttractionEvents";
 import FeaturedRoom from "../../components/Accomodation/FeaturedRoom.jsx";
 import BlackBackground from "../../components/Accomodation/BlackBackground.jsx";
 import ImageContainer from "../../components/Accomodation/ImageContainer.jsx";
+import Header from "../../components/Accomodation/Header.jsx";
 
 const rooms = [
   {
@@ -37,9 +38,8 @@ const rooms = [
 ]
 export default function page() {
   return (
-    <div>
-      <BlackBackground />
-      <ImageContainer />
+    <div className="w-full h-full">
+      <Header />
       <RoomGrid rooms={rooms} />
       <FeaturedRoom />
       <AttractionEvents />
