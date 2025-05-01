@@ -1,4 +1,4 @@
-import { BrewPageData } from '../../data2.js';
+import { BrewPageData } from '../../data.js';
 import Image from "next/image";
 
 export default function Coff() {

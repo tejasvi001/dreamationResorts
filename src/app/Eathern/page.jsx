@@ -7,17 +7,17 @@ import RoomOverview from "../../components/Residentailcomp/RoomOverview.jsx";
 import AmenitiesCard from "../../components/Residentailcomp/AmenitiesCard.jsx";
 import RoomGrid from "../../components/Residentailcomp/RoomGrid.jsx";
 import HeroSection from "../../components/Residentailcomp/HeroSection.jsx";
+import {Earthern} from "../../data.js"
 
-
-export default function ResidentialRoom({data}) {
+export default function ResidentialRoom() {
   return (
     <div>
-      <HeroSection heroData={data.heroData} />
-      <RoomOverview roomOverview={data.roomOverview}/>
-      <AmenitiesCard amenititesData = {data.amenititesData}/>
-      <View viewData = {data.viewData}/>
-      <ClientsSay clientsSayData={data.clientsSayData} />
-      <RoomGrid rooms={data.rooms} />
+      <HeroSection heroData={Earthern.heroData} />
+      <RoomOverview roomOverview={Earthern.roomOverview}/>
+      <AmenitiesCard amenititesData = {Earthern.amenititesData}/>
+      <View viewData = {Earthern.viewData}/>
+      <ClientsSay clientsSayData={Earthern.clientsSayData} />
+      <RoomGrid rooms={Earthern.rooms} />
     </div>
   );
 }

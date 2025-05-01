@@ -6,9 +6,6 @@ import { Menu, X, Phone, Mail, MapPin, ChevronDown } from "lucide-react"
 import Link from "next/link"
 import { useRouter } from "next/navigation"
 
-import {Acorn,Fern,Earthern} from "../../data"
-
-
 // Navigation data
 const pages = [
   { name: "Home", path: "/", image: "/Facility1.png" },
@@ -17,9 +14,9 @@ const pages = [
     path: "/Accomodation",
     image: "/Facility2.png",
     submenu: [
-      { name: "Acorn Luxery Cottages", path: "/ResidentialRoom", image: "/Facility3.png" },
-      { name: "Fern Luxery Swisstents", path: "/ResidentialRoom", image: "/Facility4.png" },
-      { name: "Earthen Echo Mud House", path: "/ResidentialRoom", image: "/FacilityBg.png" },
+      { name: "Acorn Luxery Cottages", path: "/Acorn", image: "/Facility3.png" },
+      { name: "Fern Luxery Swisstents", path: "/Fern", image: "/Facility4.png" },
+      { name: "Earthen Echo Mud House", path: "/Eathern", image: "/FacilityBg.png" },
     ],
   },
   { name: "Activities", path: "/Activities", image: "/activities/Rectangle 73.png" },
@@ -29,9 +26,9 @@ const pages = [
     path: "/blog",
     image: "/activities/Rectangle 67.png",
     submenu: [
-      { name: "Bamboo And Brew Cafe", path: "/accommodations/rooms", image: "/activities/Rectangle 57.png" },
-      { name: "Akhada Bar", path: "/accommodations/rooms", image: "/activities/Rectangle 59.png" },
-      { name: "Indoor Restaurant", path: "/accommodations/rooms", image: "/activities/Rectangle 61.png" },
+      { name: "Bamboo And Brew Cafe", path: "/BrewCafe", image: "/activities/Rectangle 57.png" },
+      { name: "Akhada Bar", path: "/AkhadaBar", image: "/activities/Rectangle 59.png" },
+      { name: "Indoor Restaurant", path: "/IndoorRestaurant", image: "/activities/Rectangle 61.png" },
     ],
   },
 ]

@@ -5,8 +5,10 @@ import { IoMdArrowDropdown } from "react-icons/io";
 import { FaCalendarAlt } from "react-icons/fa";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import { useRouter } from "next/navigation";
 
 const HeroSection = () => {
+  const router = useRouter()
   const [adults, setAdults] = useState("Adults");
   const [room, setRoom] = useState("Room");
   const [departDate, setDepartDate] = useState(null);
@@ -46,7 +48,7 @@ const HeroSection = () => {
       {/* Form Section */}
       <div className="absolute bottom-5 w-full px-4 z-10 flex flex-wrap gap-4 md:gap-6 justify-center">
         {/* Arrival */}
-        <div className="relative border border-white rounded-sm">
+        {/* <div className="relative border border-white rounded-sm">
           <DatePicker
             selected={arrivalDate}
             onChange={(date) => setArrivalDate(date)}
@@ -63,10 +65,10 @@ const HeroSection = () => {
                 ?.focus();
             }}
           />
-        </div>
+        </div> */}
 
         {/* Departure */}
-        <div className="relative border border-white rounded-sm">
+        {/* <div className="relative border border-white rounded-sm">
           <DatePicker
             selected={departDate}
             onChange={(date) => setDepartDate(date)}
@@ -83,10 +85,10 @@ const HeroSection = () => {
                 ?.focus();
             }}
           />
-        </div>
+        </div> */}
 
         {/* Adults Dropdown */}
-        <div className="relative border border-white px-3 py-2 rounded-sm text-white w-32 sm:w-40 flex items-center justify-between cursor-pointer">
+        {/* <div className="relative border border-white px-3 py-2 rounded-sm text-white w-32 sm:w-40 flex items-center justify-between cursor-pointer">
           <span>{adults}</span>
           <select
             value={adults}
@@ -98,10 +100,10 @@ const HeroSection = () => {
             <option value="3">3</option>
           </select>
           <IoMdArrowDropdown className="text-white" />
-        </div>
+        </div> */}
 
         {/* Room Dropdown */}
-        <div className="relative border border-white px-3 py-2 rounded-sm text-white w-32 sm:w-40 flex items-center justify-between cursor-pointer">
+        {/* <div className="relative border border-white px-3 py-2 rounded-sm text-white w-32 sm:w-40 flex items-center justify-between cursor-pointer">
           <span>{room}</span>
           <select
             value={room}
@@ -113,10 +115,11 @@ const HeroSection = () => {
             <option value="Suite">Suite</option>
           </select>
           <IoMdArrowDropdown className="text-white" />
-        </div>
+        </div> */}
 
         {/* Book Now Button */}
-        <button className="w-full sm:w-48 px-4 py-2 border border-white rounded-sm bg-transparent text-white hover:bg-white hover:text-black transition">
+        <button className="w-full sm:w-48 px-4 py-2 border border-white rounded-sm bg-transparent text-white hover:bg-white hover:text-black transition cursor-pointer"
+        onClick={()=>router.push('/Contact')}>
           Book Now!
         </button>
       </div>

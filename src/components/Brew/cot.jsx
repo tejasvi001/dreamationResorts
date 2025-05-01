@@ -1,4 +1,4 @@
-import { BrewPageData } from '../../data2.js';
+import { BrewPageData } from '../../data';
 
 export default function CoffeeInfoSection() {
   const { CoffeeInfoSection } = BrewPageData;

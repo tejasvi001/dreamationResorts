@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { BrewPageData } from '../../data2.js';
+import { BrewPageData } from '../../data.js';
 
 export default function Coffee() {
   const coffeeFeature = BrewPageData.CoffeeFeature;
