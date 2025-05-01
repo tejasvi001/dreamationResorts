@@ -31,7 +31,7 @@ const testimonials = [
   },
 ];
 
-const ClientsSay = () => {
+const ClientsSay = ({ClientsSayData}) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const goToPrevious = () => {
