@@ -6,6 +6,9 @@ import { Menu, X, Phone, Mail, MapPin, ChevronDown } from "lucide-react"
 import Link from "next/link"
 import { useRouter } from "next/navigation"
 
+import {Acorn,Fern,Earthern} from "../../data"
+
+
 // Navigation data
 const pages = [
   { name: "Home", path: "/", image: "/Facility1.png" },
@@ -14,9 +17,9 @@ const pages = [
     path: "/Accomodation",
     image: "/Facility2.png",
     submenu: [
-      { name: "Acorn Luxery Cottages", path: "/accommodations/rooms", image: "/Facility3.png" },
-      { name: "Fern Luxery Swisstents", path: "/accommodations/rooms", image: "/Facility4.png" },
-      { name: "Earthen Echo Mud House", path: "/accommodations/rooms", image: "/FacilityBg.png" },
+      { name: "Acorn Luxery Cottages", path: "/ResidentialRoom", image: "/Facility3.png" },
+      { name: "Fern Luxery Swisstents", path: "/ResidentialRoom", image: "/Facility4.png" },
+      { name: "Earthen Echo Mud House", path: "/ResidentialRoom", image: "/FacilityBg.png" },
     ],
   },
   { name: "Activities", path: "/Activities", image: "/activities/Rectangle 73.png" },
@@ -184,6 +187,8 @@ export default function ResponsiveNavbar() {
           )}
         </AnimatePresence>
       </header>
+
+
 
       {/* Desktop Keyhole Navbar (lg screens) */}
       <div className="hidden lg:block">

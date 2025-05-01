@@ -4,7 +4,7 @@ import { FaCalendarAlt } from 'react-icons/fa';
 import 'react-datepicker/dist/react-datepicker.css';
 import { IoMdArrowDropdown } from 'react-icons/io';
 
-const HeroSection = ({ title, backgroundImage }) => {
+const HeroSection = ({ heroData}) => {
   const [arrivalDate, setArrivalDate] = useState(null);
   const [departDate, setDepartDate] = useState(null);
   const [adults, setAdults] = useState('Adult');
@@ -12,12 +12,12 @@ const HeroSection = ({ title, backgroundImage }) => {
   return (
     <div
       className='relative w-full h-screen bg-cover bg-center'
-      style={{ backgroundImage: `url('${backgroundImage}')` }}
+      style={{ backgroundImage: `url('${heroData.backgroundImage}')` }}
     >
       <div className='absolute inset-0 flex flex-col items-center justify-center text-center px-4'>
         <div>
           <div className="text-center text-white text-4xl sm:text-6xl md:text-8xl lg:text-[105px] font-normal font-['Abhaya_Libre']">
-            {title}
+            {heroData.title}
           </div>
         </div>
       </div>
