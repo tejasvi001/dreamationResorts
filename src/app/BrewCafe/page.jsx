@@ -5,7 +5,7 @@ import Coffee from "../../components/Brew/coffee.jsx";
 import Coff from "../../components/Brew/coff.jsx";
 import Cup from "../../components/Brew/cup.jsx";
 import Cot from "../../components/Brew/cot.jsx";
-
+import {AkhadaPageData} from "../../data.js"
 import { useRef } from "react";
 
 const page = () => {
@@ -13,19 +13,19 @@ const page = () => {
   return (
     <div>
       <div>
-        <Page sectionRef={sectionRef} />
+        <Page sectionRef={sectionRef} Pagedata ={AkhadaPageData.Page} />
       </div>
       <div>
-        <Coffee />
+        <Coffee Coffeedata ={AkhadaPageData.CoffeeFeature}/>
       </div>
       <div ref={sectionRef}>
-        <Coff />
+        <Coff Coffdata ={AkhadaPageData.Coff}/>
       </div>
       <div>
-        <Cup />
+        <Cup Cupdata ={AkhadaPageData.Cup}/>
       </div>
       <div>
-        <Cot />
+        <Cot Cotdata ={AkhadaPageData.CoffeeInfoSection}/>
       </div>
     </div>
   );

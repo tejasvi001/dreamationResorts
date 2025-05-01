@@ -4,15 +4,14 @@ import { BrewPageData } from '../../data';
 
 
 
-const Page = ({ sectionRef }) => {
-  const { backgroundImage, introText, cards } = BrewPageData.Page; 
+const Page = ({ sectionRef,Pagedata }) => {
 
   return (
     <section className="relative h-screen w-full bg-black text-white">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src={backgroundImage} 
+          src={Pagedata.backgroundImage} 
           alt="Background"
           className="object-cover w-full h-full opacity-60"
         />
@@ -22,9 +21,9 @@ const Page = ({ sectionRef }) => {
       <div className="relative z-10 flex flex-col md:flex-row justify-between items-center h-full px-6 md:px-20 py-10">
         {/* Left Text Content */}
         <div className="max-w-xl space-y-6">
-          <p className="text-orange-500 font-semibold">{introText.subtitle}</p>
+          <p className="text-orange-500 font-semibold">{Pagedata.introText.subtitle}</p>
           <h1 className="text-5xl font-bold leading-tight">
-            {introText.title} 
+            {Pagedata.introText.title} 
           </h1>
           <button
             onClick={() => {
@@ -32,13 +31,13 @@ const Page = ({ sectionRef }) => {
             }}
             className="mt-6 px-6 py-3 border border-orange-500 text-white hover:bg-orange-500 transition"
           >
-            {introText.buttonText} <span className="ml-1">▼</span>
+            {Pagedata.introText.buttonText} <span className="ml-1">▼</span>
           </button>
         </div>
 
         {/* Right Bottom Cards */}
         <div className="flex gap-4 mt-12 md:mt-0">
-          {cards.map((card, index) => (
+          {Pagedata.cards.map((card, index) => (
             <div
               key={index}
               className="bg-white bg-opacity-10 backdrop-blur-sm p-4 w-48 h-48 flex flex-col justify-end text-white relative overflow-hidden group"
