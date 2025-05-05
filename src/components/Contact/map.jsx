@@ -100,7 +100,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row min-h-screen">
+    <div className="flex flex-col-reverse lg:flex-row min-h-screen">
       {/* Left: Contact Info */}
       <div className="bg-orange-50 w-full lg:w-1/2 flex items-center justify-center px-6 py-10">
         <div className="max-w-md w-full space-y-5 text-center lg:text-left">
