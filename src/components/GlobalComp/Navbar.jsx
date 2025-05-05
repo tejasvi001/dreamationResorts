@@ -14,9 +14,9 @@ const pages = [
     path: "/Accomodation",
     image: "/Facility2.png",
     submenu: [
-      { name: "Acorn Luxery Cottages", path: "/accommodations/rooms", image: "/Facility3.png" },
-      { name: "Fern Luxery Swisstents", path: "/accommodations/rooms", image: "/Facility4.png" },
-      { name: "Earthen Echo Mud House", path: "/accommodations/rooms", image: "/FacilityBg.png" },
+      { name: "Acorn Luxery Cottages", path: "/Acorn", image: "/Facility3.png" },
+      { name: "Fern Luxery Swisstents", path: "/Fern", image: "/Facility4.png" },
+      { name: "Earthen Echo Mud House", path: "/Eathern", image: "/FacilityBg.png" },
     ],
   },
   { name: "Activities", path: "/Activities", image: "/activities/Rectangle 73.png" },
@@ -26,9 +26,9 @@ const pages = [
     path: "/blog",
     image: "/activities/Rectangle 67.png",
     submenu: [
-      { name: "Bamboo And Brew Cafe", path: "/accommodations/rooms", image: "/activities/Rectangle 57.png" },
-      { name: "Akhada Bar", path: "/accommodations/rooms", image: "/activities/Rectangle 59.png" },
-      { name: "Indoor Restaurant", path: "/accommodations/rooms", image: "/activities/Rectangle 61.png" },
+      { name: "Bamboo And Brew Cafe", path: "/BrewCafe", image: "/activities/Rectangle 57.png" },
+      { name: "Akhada Bar", path: "/AkhadaBar", image: "/activities/Rectangle 59.png" },
+      { name: "Indoor Restaurant", path: "/IndoorRestaurant", image: "/activities/Rectangle 61.png" },
     ],
   },
 ]
@@ -185,22 +185,24 @@ export default function ResponsiveNavbar() {
         </AnimatePresence>
       </header>
 
+
+
       {/* Desktop Keyhole Navbar (lg screens) */}
       <div className="hidden lg:block">
         <div className="px-10 cursor-pointer">
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="fixed top-4 left-6 z-50 p-2 rounded-full bg-black text-white"
+            className="fixed top-4 left-6 z-50 p-2 rounded-full bg-black text-white cursor-pointer"
             aria-label={isOpen ? "Close menu" : "Open menu"}
           >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
+            {isOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
 
           <div className="">
             <img
               src="/logo.png"
               alt="Logo"
-              className="fixed top-4 left-1/2 -translate-x-1/2 z-50 h-24 w-24"
+              className="fixed top-4 left-1/2 -translate-x-1/2 z-50 h-20 w-44"
               onClick={() => (window.location.href = "/")}
             />
           </div>

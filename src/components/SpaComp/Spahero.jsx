@@ -1,6 +1,9 @@
+"use client"
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const SpaHero = () => {
+  const router = useRouter()
   return (
     <div className="relative w-full min-h-screen flex items-center justify-center bg-gray-900">
       {/* Background Image */}
@@ -43,8 +46,8 @@ const SpaHero = () => {
               Suspendisse dictum orci eget cursus viverra. <br />
               Vestibulum a mauris urna. Aliquam eget risus vitae lorem.
             </p>
-            <button className="mt-6 px-6 py-2 border border-white rounded-full text-white 
-            hover:bg-white hover:text-black transition-all">
+            <button className="mt-6 px-6 py-2 border border-white rounded-full text-white cursor-pointer 
+            hover:bg-white hover:text-black transition-all" onClick={()=> router.push('/Contact')}>
               Book Now!
             </button>
           </div>
