@@ -12,13 +12,13 @@ import mud2 from "./assets/mud2.jpg";
 import mud3 from "./assets/mud3.png";
 export const Acorn = {
   heroData: {
-    title: "Acorn Luxery Cottage ",
+    title: "Acorn Luxury Cottage ",
     backgroundImage: "/bg.jpg",
   },
 
   roomOverview: {
     heading: "Cottage Overview",
-    subheading: "Acorn Luxery Cottage ",
+    subheading: "Acorn Luxury Cottage ",
     paragraphs: [
       "Stylish Interiors: Tastefully furnished with a blend of modern amenities and classic or country-style décor — think wooden beams, stone fireplaces, and plush furniture.",
       "Luxury Amenities: Features like a private hot tub, underfloor heating, spa-style bathrooms, high-thread-count linens, and possibly a wood-burning stove or firepit.",
@@ -157,13 +157,13 @@ export const Acorn = {
 
 export const Fern = {
   heroData: {
-    title: "Fern Luxery Swisstents",
+    title: "Fern Luxury Swisstents",
     backgroundImage: "/tent.jpg",
   },
 
   roomOverview: {
     heading: "Room Overview",
-    subheading: "Fern Luxery Swisstents",
+    subheading: "Fern Luxury Swisstents",
     paragraphs: [
       "The Fern Seaside Luxurious Tent Resort offers a unique blend of upscale comfort and eco-conscious design, providing guests with an exceptional glamping experience along the scenic coasts. The resort is meticulously designed to offer a harmonious balance between nature and luxury, featuring spacious, fully furnished luxury tents that provide an immersive experience in nature without sacrificing the comforts of modern living. With elegant interiors, plush bedding, and state-of-the-art amenities, guests can enjoy a five-star experience while surrounded by the tranquil beauty of the sea, beaches, and lush greenery. The resort also emphasizes sustainability by using eco-friendly materials, energy-efficient systems, and water conservation practices, ensuring that guests can enjoy their stay while minimizing their environmental footprint."
     ],
@@ -172,7 +172,7 @@ export const Fern = {
   },
 
   amenititesData: {
-    title: "Fern Luxery Swisstents Amenities",
+    title: "Fern Luxury Swisstents Amenities",
     backgroundColor: "#D69D52",
     textColor: "text-white",
     layout: "right",

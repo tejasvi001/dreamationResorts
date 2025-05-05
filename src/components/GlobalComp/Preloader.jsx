@@ -49,7 +49,7 @@ const Preloader = () => {
         className="relative flex items-center justify-center"
         style={{
           transform: scaleUp ? "scale(50)" : loading ? "scale(1)" : "scale(1.5)",
-          transition: "transform 2s ease-in-out",
+          transition: "transform 3s ease-in-out",
         }}
       >
         <svg

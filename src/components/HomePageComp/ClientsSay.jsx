@@ -1,11 +1,7 @@
-
-
-
 "use client";
 import { useState } from "react";
 
 import Image from "next/image";
-
 
 const testimonials = [
   {
@@ -13,7 +9,7 @@ const testimonials = [
     name: "Anuj Kumar",
     quote:
       "Staying at Dreamation was an absolute delight! From the warm welcome at check-in to the impeccable service throughout my stay, every moment felt like a luxurious escape.",
-    image: "/user1.jpg", // Replace with actual image paths
+    image: "/user1.jpg",
   },
   {
     id: 2,
@@ -31,7 +27,7 @@ const testimonials = [
   },
 ];
 
-const ClientsSay = ({clientsSayData}) => {
+const ClientsSay = ({ clientsSayData }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const goToPrevious = () => {
@@ -47,93 +43,64 @@ const ClientsSay = ({clientsSayData}) => {
   };
 
   return (
-    <div className="relative w-full   mx-auto px-4 py-12 text-center bg-amber-50">
-    <div className=" flex justify-between ">
-          {/* Left Image */}
-               
-          <div className="ml-28    md:block ">
-          <div className="w-24 h-24 relative -rotate-6 ">
+    <div className="relative w-full mx-auto px-4 py-12 text-center bg-amber-50">
+
+      <div className=" flex justify-between">
+        {/* Left Image */}
+
+        <div className="md:ml-28 md:block ">
+          <div className="w-20 h-20 md:w-40 md:h-40 relative -rotate-6 ">
             <Image
-              src={testimonials[(currentIndex - 1 + testimonials.length) % testimonials.length].image}
+              src={
+                testimonials[
+                  (currentIndex - 1 + testimonials.length) % testimonials.length
+                ].image
+              }
               alt="Previous Testimonial"
-              width={80}
-              height={80}
+              width={100}
+              height={100}
               className="object-cover border-4 border-white shadow-md rounded-md"
             />
           </div>
         </div>
 
         <div className=" ">
-          <img src="/getQuote.png" alt="" className="h-20 w-20 relative top-14"  />
+          <img
+            src="/getQuote.png"
+            alt=""
+            className="h-20 md:h-28 md:w-28 w-20 relative top-14"
+          />
         </div>
-          {/* Right image */}
-        <div className="   md:block  mt-4 ">
-          <div className="w-24 h-24 relative rotate-6 mt-4">
+        {/* Right image */}
+        <div className="md:block  mt-4 ">
+          <div className="w-20 h-20  md:w-40 md:h-40 relative rotate-6 mt-4">
             <Image
               src={testimonials[(currentIndex + 1) % testimonials.length].image}
               alt="Next Testimonial"
-              width={80}
-              height={80}
+              width={100}
+              height={100}
               className="object-cover border-4 border-white shadow-md rounded-md"
             />
           </div>
         </div>
-    </div>
-      {/* <h2 className="text-4xl font-serif text-amber-700 mb-6">
-        What Our Clients Say?
-      </h2> */}
-       
-<div className="  mt-4">
-<div>
-        <h2 className="text-4xl font-serif text-amber-700 mb-6">
-        What Our Clients Say?
-      </h2>
-        </div>
-<div className="flex items-center justify-center mt-9  ">
-        {/* Left Image
-        <div className="absolute left-0 -top-4 hidden md:block border-2 border-red-700">
-          <div className="w-24 h-24 relative -rotate-6">
-            <Image
-              src={testimonials[(currentIndex - 1 + testimonials.length) % testimonials.length].image}
-              alt="Previous Testimonial"
-              width={80}
-              height={80}
-              className="object-cover border-4 border-white shadow-md rounded-md"
-            />
-          </div>
-        </div> */}
-      
-        {/* Quotation Marks */}
-     
-
-        {/* Testimonial Content */}
-    
-
-        {/* Quotation Marks */}
-     
-
-        {/* Right Image */}
-        {/* <div className="absolute right-0 -top-4 hidden md:block">
-          <div className="w-24 h-24 relative rotate-6">
-            <Image
-              src={testimonials[(currentIndex + 1) % testimonials.length].image}
-              alt="Next Testimonial"
-              width={80}
-              height={80}
-              className="object-cover border-4 border-white shadow-md rounded-md"
-            />
-          </div>
-        </div> */}
       </div>
-</div>
+
+      <div className="mt-4">
+        <div>
+          <h2 className="text-4xl font-serif text-amber-700 mb-6">
+            What Our Clients Say?
+          </h2>
+        </div>
+        <div className="flex items-center justify-center mt-9  "></div>
+      </div>
 
       {/* Navigation Arrows */}
-      <div className="flex justify-between items-center w-[90%] mx-auto  ">
+      <div className="flex justify-between items-center w-[90%] mx-auto h-60 md:h-[10vw] ">
         <button
           onClick={goToPrevious}
           className="text-amber-700 hover:text-amber-500 transition transform scale-110 cursor-pointer"
         >
-        <img src="/leftButton.svg" alt="" className="w-12 h-12" />
+          <img src="/leftButton.svg" alt="" className="w-12 h-12" />
         </button>
         <div className="max-w-lg px-4">
           <p className="text-lg text-gray-800 italic">
@@ -147,8 +114,7 @@ const ClientsSay = ({clientsSayData}) => {
           onClick={goToNext}
           className="text-amber-700 hover:text-amber-500 transition transform scale-110 cursor-pointer"
         >
-                  
-        <img src="/rightButton.svg" alt="" className="w-12 h-12" />
+          <img src="/rightButton.svg" alt="" className="w-12 h-12" />
         </button>
       </div>
     </div>
