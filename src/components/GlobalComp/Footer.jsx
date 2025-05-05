@@ -22,7 +22,7 @@ const Footer = () => {
           {/* Address Section */}
           <div className='justify-start text-white text-lg lg:text-xl font-normal font-Lato'>
             <p className='max-w-[550px] '>
-              Aamation Tourism & Hospitality Private Limited Hadbast No - 1037,
+              Dremations Tourism & Hospitality Private Limited Hadbast No - 1037,
              – Baijnath District – Kangra (H.P.) 176077
             </p>
           </div>
