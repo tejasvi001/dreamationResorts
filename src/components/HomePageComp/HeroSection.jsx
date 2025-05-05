@@ -20,7 +20,8 @@ const HeroSection = ({HomeRef}) => {
       {/* Overlay */}
       <div className="absolute inset-0 flex flex-col items-center justify-evenly md:justify-center text-center px-4 md:mt-[5%] gap-[6vw]">
         <div>
-          <h1 className="text-4xl sm:text-4xl md:text-6xl text-white font-bold hover:scale-125 duration-2000 cursor-pointer">
+          <h1 className="text-4xl sm:text-4xl md:text-6xl text-white font-bold hover:scale-125 duration-2000 cursor-pointer"
+          style={{fontFamily:'memv1'}}>
             <span className="text-[#d69e54]">Welcome</span> to <br />
             <span className="text-white">Dreamation Resorts!</span>
           </h1>

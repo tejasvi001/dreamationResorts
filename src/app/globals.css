@@ -1,6 +1,88 @@
 @import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
-
 @import "tailwindcss";
+
+
+/* style={{fontFamily : 'arialBold'}} */
+/* fonts */
+@font-face {
+  font-family: 'arialBold';
+  src: url('/fonts/Arial-BoldMT.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'faBrand';
+  src: url('/fonts/fa-brands-400.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'faLight';
+  src: url('/fonts/fa-light-300.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'faRegular';
+  src: url('/fonts/fa-regular-400.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'faSolid';
+  src: url('/fonts/fa-solid-900.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'jazminLight';
+  src: url('/fonts/Jazmin-Light.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'jazminMedium';
+  src: url('/fonts/Jazmin-Medium.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'jazminRegular';
+  src: url('/fonts/Jazmin-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'memv1';
+  src: url('/fonts/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'memv2';
+  src: url('/fonts/RWmPoKKX6u8sp8fIWdnDKqDSroEH.woff2') format('woff2');
+  font-weight: 500;
+  font-display: swap;
+}
+
 
 .half-background {
   background-image: url("../assets/dubed.png");
@@ -17,6 +99,17 @@
   background-size: 60% 100%;
   background-color: white;
 }
+
+*{
+  font-family: 'memv2';
+}
+button{
+  font-family: 'jazminMedium';
+}
+h1{
+  font-family: 'jazminRegular';
+}
+
 
 @theme {
   --font-Lato: "Lato", sans-serif;

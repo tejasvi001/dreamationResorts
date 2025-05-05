@@ -36,7 +36,7 @@ const pages = [
     path: "/Activities",
     image: "/activities/Rectangle 73.png",
   },
-  { name: "Spa", path: "/Spa", image: "/images/Spaimg/Rectangle 81.png" },
+  // { name: "Spa", path: "/Spa", image: "/images/Spaimg/Rectangle 81.png" },
   {
     name: "Dine/Drink",
     path: "/Dinning",
@@ -208,15 +208,21 @@ export default function ResponsiveNavbar() {
                   </div>
                   <div className="flex items-center space-x-3">
                     <Phone className="text-gray-400" size={18} />
-                    <span className="text-sm">+1 (555) 123-4567</span>
+                    <a href="tel:8580758626">
+                    <span className="text-sm">+91 8580758626</span>
+                    </a>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Mail className="text-gray-400" size={18} />
-                    <span className="text-sm">contact@example.com</span>
+                    <a href="mailto:info@dreamationresorts.com">
+                    <span className="text-sm">info@dreamationresorts.com</span>
+                    </a>
                   </div>
                   <div className="flex items-center space-x-3">
                     <MapPin className="text-gray-400" size={18} />
-                    <span className="text-sm">123 Main Street, City</span>
+                    <a href="https://maps.app.goo.gl/xiUZZVMoVkXfCZtb8">
+                    <span className="text-sm">Dreamation Resorts, Ghornala, Bir, Baijnath, Kangra</span>
+                    </a>
                   </div>
                 </div>
               </nav>
@@ -434,9 +440,11 @@ export default function ResponsiveNavbar() {
                       className="flex items-center space-x-4"
                     >
                       <Phone className="text-white" size={24} />
+                      <a href="tel:8580758626">
                       <span className="text-xl text-white">
-                        +1 (555) 123-4567
+                        +91 8580758626
                       </span>
+                      </a>
                     </motion.div>
 
                     <motion.div
@@ -446,9 +454,11 @@ export default function ResponsiveNavbar() {
                       className="flex items-center space-x-4"
                     >
                       <Mail className="text-white" size={24} />
+                      <a href="mailto:info@dreamationresorts.com">
                       <span className="text-xl text-white">
-                        contact@example.com
+                      info@dreamationresorts.com
                       </span>
+                      </a>
                     </motion.div>
 
                     <motion.div
@@ -458,9 +468,11 @@ export default function ResponsiveNavbar() {
                       className="flex items-center space-x-4"
                     >
                       <MapPin className="text-white" size={24} />
+                      <a href="https://maps.app.goo.gl/xiUZZVMoVkXfCZtb8">
                       <span className="text-xl text-white">
-                        123 Main Street, City
+                        Dreamation Resorts, Ghornala,<br/> Bir, Baijnath, Kangra
                       </span>
+                      </a>
                     </motion.div>
                   </div>
                 </motion.div>
