@@ -2,10 +2,10 @@ import BedIcon from "./assets/bed.png";
 import BedIcon1 from "./assets/bed1.jpg";
 import BedIcon2 from "./assets/bed2.jpg";
 import BedIcon3 from "./assets/bed3.jpg";
-import tent from "./assets/tent.webp";
-import tent2 from "./assets/tent2.webp";
-import tent3 from "./assets/tent3.webp";
-import tent4 from "./assets/tent4.webp";
+import tent from "./assets/tent.jpg";
+import tent2 from "./assets/tent2.jpg";
+import tent3 from "./assets/tent3.jpg";
+import tent4 from "./assets/tent4.jpg";
 import mud from "./assets/mud.jpg";
 import mud1 from "./assets/mud1.jpg";  
 import mud2 from "./assets/mud2.jpg";
@@ -38,24 +38,19 @@ export const Acorn = {
     amenities: [
       "Air conditioning",
       "Room service",
-      "Spa Service for Free",
       "Wireless Internet",
-      "Shared Swimming Pool",
-      "24-Hour Fitness Facility",
+      "Swimming Pool",
       "Valet Parking",
-      "Concierge Service",
-      "1000 sq ft",
-      "60” LCD TV",
+      "60” LED TV",
       "Coffee and tea set",
       "Hair Dryer",
       "Telephone",
-      "Seaside view",
+      "Valley view",
       "Free Mini Bar",
       "Luxurious bathroom",
       "Bath cosmetics",
       "Handmade bed",
-      "2 Queen Beds",
-      "3 Person Maximum",
+      "King Size Beds",
     ],
   },
 
