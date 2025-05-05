@@ -1,10 +1,10 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import { motion, AnimatePresence } from "framer-motion"
-import { Menu, X, Phone, Mail, MapPin, ChevronDown } from "lucide-react"
-import Link from "next/link"
-import { useRouter } from "next/navigation"
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Menu, X, Phone, Mail, MapPin, ChevronDown } from "lucide-react";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 // Navigation data
 const pages = [
@@ -14,64 +14,92 @@ const pages = [
     path: "/Accomodation",
     image: "/Facility2.png",
     submenu: [
-      { name: "Acorn Luxery Cottages", path: "/Acorn", image: "/Facility3.png" },
-      { name: "Fern Luxery Swisstents", path: "/Fern", image: "/Facility4.png" },
-      { name: "Earthen Echo Mud House", path: "/Eathern", image: "/FacilityBg.png" },
+      {
+        name: "Acorn Luxery Cottages",
+        path: "/Acorn",
+        image: "/Facility3.png",
+      },
+      {
+        name: "Fern Luxery Swisstents",
+        path: "/Fern",
+        image: "/Facility4.png",
+      },
+      {
+        name: "Earthen Echo Mud House",
+        path: "/Eathern",
+        image: "/FacilityBg.png",
+      },
     ],
   },
-  { name: "Activities", path: "/Activities", image: "/activities/Rectangle 73.png" },
+  {
+    name: "Activities",
+    path: "/Activities",
+    image: "/activities/Rectangle 73.png",
+  },
   { name: "Spa", path: "/Spa", image: "/activities/Rectangle 65.png" },
   {
     name: "Dine/Drink",
     path: "/blog",
     image: "/activities/Rectangle 67.png",
     submenu: [
-      { name: "Bamboo And Brew Cafe", path: "/BrewCafe", image: "/activities/Rectangle 57.png" },
-      { name: "Akhada Bar", path: "/AkhadaBar", image: "/activities/Rectangle 59.png" },
-      { name: "Indoor Restaurant", path: "/IndoorRestaurant", image: "/activities/Rectangle 61.png" },
+      {
+        name: "Bamboo And Brew Cafe",
+        path: "/BrewCafe",
+        image: "/activities/Rectangle 57.png",
+      },
+      {
+        name: "Akhada Bar",
+        path: "/AkhadaBar",
+        image: "/activities/Rectangle 59.png",
+      },
+      {
+        name: "Indoor Restaurant",
+        path: "/IndoorRestaurant",
+        image: "/activities/Rectangle 61.png",
+      },
     ],
   },
-]
+];
 
 export default function ResponsiveNavbar() {
-  const [isOpen, setIsOpen] = useState(false)
-  const [activeImage, setActiveImage] = useState(pages[0].image)
-  const [hoveredIndex, setHoveredIndex] = useState(null)
-  const [openSubmenu, setOpenSubmenu] = useState(null)
-  const [hoveredSubmenuItem, setHoveredSubmenuItem] = useState(null)
-  const [isHovered, setIsHovered] = useState(false)
-  const [mobileSubmenu, setMobileSubmenu] = useState(null)
+  const [isOpen, setIsOpen] = useState(false);
+  const [activeImage, setActiveImage] = useState(pages[0].image);
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+  const [openSubmenu, setOpenSubmenu] = useState(null);
+  const [hoveredSubmenuItem, setHoveredSubmenuItem] = useState(null);
+  const [isHovered, setIsHovered] = useState(false);
+  const [mobileSubmenu, setMobileSubmenu] = useState(null);
 
-  const router = useRouter()
+  const router = useRouter();
 
   const handleGetInTouch = () => {
-    router.push("/Contact")
-    setIsOpen(false)
-  }
+    router.push("/Contact");
+    setIsOpen(false);
+  };
 
   useEffect(() => {
     const handleEsc = (event) => {
-      if (event.key === "Escape") setIsOpen(false)
-    }
-    window.addEventListener("keydown", handleEsc)
-    return () => window.removeEventListener("keydown", handleEsc)
-  }, [])
+      if (event.key === "Escape") setIsOpen(false);
+    };
+    window.addEventListener("keydown", handleEsc);
+    return () => window.removeEventListener("keydown", handleEsc);
+  }, []);
 
   // Close mobile menu on screen resize
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 1024 && isOpen) {
-        setIsOpen(false)
+        setIsOpen(false);
       }
-    }
-    window.addEventListener("resize", handleResize)
-    return () => window.removeEventListener("resize", handleResize)
-  }, [isOpen])
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [isOpen]);
 
   // Toggle mobile submenu
   const toggleMobileSubmenu = (index) => {
-    setMobileSubmenu(mobileSubmenu === index ? null : index)
-  }
+    setMobileSubmenu(mobileSubmenu === index ? null : index);
+  };
 
   return (
     <>
@@ -114,11 +142,19 @@ export default function ResponsiveNavbar() {
               <nav className="px-4 py-4">
                 <ul className="space-y-4">
                   {pages.map((page, index) => (
-                    <li key={page.name} className="border-b text-white border-gray-100 pb-2">
+                    <li
+                      key={page.name}
+                      className="border-b text-white border-gray-100 pb-2"
+                    >
                       {page.submenu ? (
                         <div>
-                          <div className="flex items-center justify-between" onClick={() => toggleMobileSubmenu(index)}>
-                            <span className="text-lg font-medium">{page.name}</span>
+                          <div
+                            className="flex items-center justify-between"
+                            onClick={() => toggleMobileSubmenu(index)}
+                          >
+                            <span className="text-lg font-medium">
+                              {page.name}
+                            </span>
                             <ChevronDown
                               size={20}
                               className={`transition-transform  duration-300 ${
@@ -153,7 +189,11 @@ export default function ResponsiveNavbar() {
                           </AnimatePresence>
                         </div>
                       ) : (
-                        <Link href={page.path} className="text-lg  font-medium block" onClick={() => setIsOpen(false)}>
+                        <Link
+                          href={page.path}
+                          className="text-lg  font-medium block"
+                          onClick={() => setIsOpen(false)}
+                        >
                           {page.name}
                         </Link>
                       )}
@@ -185,8 +225,6 @@ export default function ResponsiveNavbar() {
         </AnimatePresence>
       </header>
 
-
-
       {/* Desktop Keyhole Navbar (lg screens) */}
       <div className="hidden lg:block">
         <div className="px-10 cursor-pointer">
@@ -215,7 +253,9 @@ export default function ResponsiveNavbar() {
               onMouseLeave={() => setIsHovered(false)}
             >
               <span
-                className={`relative z-10 transition-colors duration-300 ${isHovered ? "text-white" : "text-black"}`}
+                className={`relative z-10 transition-colors duration-300 ${
+                  isHovered ? "text-white" : "text-black"
+                }`}
               >
                 GET IN TOUCH
               </span>
@@ -252,17 +292,20 @@ export default function ResponsiveNavbar() {
                           key={page.name}
                           initial={{ x: -50, opacity: 0 }}
                           animate={{ x: 0, opacity: 1 }}
-                          transition={{ delay: 0.3 + index * 0.1, duration: 0.5 }}
+                          transition={{
+                            delay: 0.3 + index * 0.1,
+                            duration: 0.5,
+                          }}
                           onMouseEnter={() => {
-                            setActiveImage(page.image)
-                            setHoveredIndex(index)
-                            if (page.submenu) setOpenSubmenu(index)
+                            setActiveImage(page.image);
+                            setHoveredIndex(index);
+                            if (page.submenu) setOpenSubmenu(index);
                           }}
                           onMouseLeave={() => {
-                            setHoveredIndex(null)
-                            setHoveredSubmenuItem(null)
-                            setOpenSubmenu(null)
-                            setActiveImage(pages[0].image)
+                            setHoveredIndex(null);
+                            setHoveredSubmenuItem(null);
+                            setOpenSubmenu(null);
+                            setActiveImage(pages[0].image);
                           }}
                           className="relative group"
                         >
@@ -305,12 +348,12 @@ export default function ResponsiveNavbar() {
                                         animate={{ x: 0, opacity: 1 }}
                                         transition={{ duration: 0.2 }}
                                         onMouseEnter={() => {
-                                          setActiveImage(subitem.image)
-                                          setHoveredSubmenuItem(subIndex)
+                                          setActiveImage(subitem.image);
+                                          setHoveredSubmenuItem(subIndex);
                                         }}
                                         onMouseLeave={() => {
-                                          setHoveredSubmenuItem(null)
-                                          setActiveImage(page.image)
+                                          setHoveredSubmenuItem(null);
+                                          setActiveImage(page.image);
                                         }}
                                       >
                                         <a
@@ -339,7 +382,7 @@ export default function ResponsiveNavbar() {
                   transition={{ delay: 0.4, duration: 0.5 }}
                   className="flex-1 flex justify-center items-center p-4"
                 >
-                  <div className="relative w-64 h-80 md:w-80 md:h-96">
+                  {/* <div className="relative w-64 h-80 md:w-80 md:h-96">
                     <div className="absolute w-full h-full z-50 overflow-hidden rounded-[2vw] hover:rounded-[5vw] duration-1000">
                       <img
                         src={activeImage || "/Facility1.png"}
@@ -348,6 +391,32 @@ export default function ResponsiveNavbar() {
                       />
                     </div>
                     <div className="absolute inset-0 keyhole-mask" />
+                  </div> */}
+                  <div className="hidden md:flex scale-90 hover:scale-105 duration-1000 cursor-pointer">
+                    <svg
+                      width="33vw"
+                      height="60vh"
+                      viewBox="0 0 300 500"
+                      preserveAspectRatio="xMidYMid meet"
+                      style={{ maxWidth: "100%", maxHeight: "100%" }}
+                    >
+                      <defs>
+                        <clipPath
+                          id="keyholeClip"
+                          clipPathUnits="userSpaceOnUse"
+                        >
+                          <path d="M 150 0 C 210 0, 270 60, 270 120 C 270 180, 210 240, 150 240 C 90 240, 30 180, 30 120 C 30 60, 90 0, 150 0 Z M 90 220 L 210 220 L 240 450 L 60 450 Z" />
+                        </clipPath>
+                      </defs>
+
+                      <image
+                        href={activeImage || "/Facility1.png"}
+                        width="300"
+                        height="500"
+                        clipPath="url(#keyholeClip)"
+                        preserveAspectRatio="xMidYMid slice"
+                      />
+                    </svg>
                   </div>
                 </motion.div>
 
@@ -365,7 +434,9 @@ export default function ResponsiveNavbar() {
                       className="flex items-center space-x-4"
                     >
                       <Phone className="text-white" size={24} />
-                      <span className="text-xl text-white">+1 (555) 123-4567</span>
+                      <span className="text-xl text-white">
+                        +1 (555) 123-4567
+                      </span>
                     </motion.div>
 
                     <motion.div
@@ -375,7 +446,9 @@ export default function ResponsiveNavbar() {
                       className="flex items-center space-x-4"
                     >
                       <Mail className="text-white" size={24} />
-                      <span className="text-xl text-white">contact@example.com</span>
+                      <span className="text-xl text-white">
+                        contact@example.com
+                      </span>
                     </motion.div>
 
                     <motion.div
@@ -385,7 +458,9 @@ export default function ResponsiveNavbar() {
                       className="flex items-center space-x-4"
                     >
                       <MapPin className="text-white" size={24} />
-                      <span className="text-xl text-white">123 Main Street, City</span>
+                      <span className="text-xl text-white">
+                        123 Main Street, City
+                      </span>
                     </motion.div>
                   </div>
                 </motion.div>
@@ -398,5 +473,5 @@ export default function ResponsiveNavbar() {
       {/* Spacer for fixed mobile header */}
       <div className="h-20 lg:h-0"></div>
     </>
-  )
+  );
 }
