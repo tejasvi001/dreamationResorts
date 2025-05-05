@@ -19,8 +19,12 @@ const HomeRef = useRef(null)
         </div>
         <AttractionEvents />
         <Banner />
+        <div className="bg-amber-50 md:h-[155vh]">
         <ClientsSay />
+        <div className="md:absolute md:z-90 w-full">
         <Activities />
+        </div>
+        </div>
       </div>
   );
 };

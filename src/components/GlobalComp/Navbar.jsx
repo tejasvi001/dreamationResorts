@@ -15,12 +15,12 @@ const pages = [
     image: "/Facility2.png",
     submenu: [
       {
-        name: "Acorn Luxery Cottages",
+        name: "Acorn Luxury Cottages",
         path: "/Acorn",
         image: "/Facility3.png",
       },
       {
-        name: "Fern Luxery Swisstents",
+        name: "Fern Luxury Swisstents",
         path: "/Fern",
         image: "/Facility4.png",
       },

@@ -6,14 +6,14 @@ import { useRouter } from "next/navigation";
 
 const slides = [
   {
-    title: "Acorn Luxery cottage",
+    title: "Acorn Luxury cottage",
     description:
       "Stylish Interiors: Tastefully furnished with a blend of modern amenities and classic or country-style décor — think wooden beams, stone fireplaces, and plush furniture.",
     image: "/bg.jpg",
     redirectTo: "/Acorn",
   },
   {
-    title: "Fern Luxery Swisstents",
+    title: "Fern Luxury Swisstents",
     description:
       "The Fern Seaside Luxurious Tent Resort offers a unique blend of upscale comfort and eco-conscious design, providing guests with an exceptional glamping experience along the scenic coasts.",
     image: "/activities/img1.png", // You'll replace this with your actual image
@@ -45,9 +45,9 @@ export default function Activities() {
   };
 
   return (
-    <div className="relative  w-4/5 mx-auto">
+    <div className="relative  w-4/5 mx-auto h-full md:h-[90vh]">
       <div
-        className="absolute inset-0 bg-cover bg-center"
+        className="absolute inset-0 bg-cover bg-center rounded-4xl"
         style={{
           backgroundImage: `url(/activities/background.png)`,
           backgroundPosition: "center",
@@ -57,23 +57,23 @@ export default function Activities() {
       ></div>
 
       {/* Content Container */}
-      <div className="relative h-full flex flex-col items-center justify-between py-16 px-8 text-white ">
+      <div className="relative h-full flex flex-col items-center justify-between py-4 md:py-8 px-8 text-white gap-4 md:gap-0">
         {/* Heading */}
-        <h1 className="text-5xl font-normal mt-8 font-Abhaya-Libre">
+        <h1 className="text-2xl md:text-5xl font-normal md:mt-8 font-Abhaya-Libre text-center">
           Activities & Properties
         </h1>
 
         {/* Main Content */}
-        <div className="flex flex-col items-center max-w-2xl text-center  mt-8">
-          <img src={slides[currentIndex].image} alt="" className="w-72 h-72 " />
-          <h2 className="text-4xl font-light absolute font-AbhayaLibre top-[59%] ">
+        <div className="flex flex-col items-center max-w-2xl text-center  md:mt-8 h-full overflow-hidden gap-4">
+          <img src={slides[currentIndex].image} alt="" className="w-72 h-72 rounded-2xl" />
+          <h2 className="text-2xl md:text-4xl font-light absolute font-AbhayaLibre top-[40%] md:top-[50%] ">
             {slides[currentIndex].title}
           </h2>
-          <p className="text-lg mb-8 font-normal font-Lato">
+          <p className="text-md md:text-lg mb-2 font-normal font-Lato">
             {slides[currentIndex].description}
           </p>
           <button
-            className="border-2 border-white hover:bg-white hover:text-blue-900 transition-colors px-8 py-3 rounded-full cursor-pointer"
+            className="border-2 border-white hover:bg-white hover:text-black transition-colors px-8 py-3 rounded-full cursor-pointer"
             onClick={() => router.push(slides[currentIndex].redirectTo)}
           >
             Find Properties
@@ -83,20 +83,20 @@ export default function Activities() {
 
       {/* Left Arrow */}
       <div
-        className="absolute top-1/2 left-8 -translate-y-1/2 cursor-pointer"
+        className="absolute top-1/2 -left-4 md:left-8 -translate-y-1/2 cursor-pointer"
         onClick={prevSlide}
       >
-        <div className="w-14 h-14  flex items-center justify-center  text-white hover:scale-110 hover:text-blue-900 transition-colors">
+        <div className="w-14 h-14  flex items-center justify-center  text-white hover:scale-110 hover:text-black transition-colors">
           <img src="/activities/left.png" alt="" />
         </div>
       </div>
 
       {/* Right Arrow */}
       <div
-        className="absolute top-1/2 right-8 -translate-y-1/2 cursor-pointer"
+        className="absolute top-1/2 -right-4 md:right-8 -translate-y-1/2 cursor-pointer"
         onClick={nextSlide}
       >
-        <div className="w-14 h-14  flex items-center justify-center  text-white hover:scale-110 hover:text-blue-900 transition-colors">
+        <div className="w-14 h-14  flex items-center justify-center  text-white hover:scale-110 hover:text-black transition-colors">
           <img src="/activities/right.png" alt="" />
         </div>
       </div>

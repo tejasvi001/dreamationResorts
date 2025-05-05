@@ -5,7 +5,7 @@ export default function CoffeeInfoSection({Cotdata}) {
 
 
   return (
-    <section className="flex flex-col md:flex-row items-center bg-white">
+    <section className="flex flex-col md:flex-row items-center bg-white py-12">
       {/* Text Block */}
       <div className="md:w-1/2 bg-[#F8F6F2] p-10">
         <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">
@@ -27,7 +27,7 @@ export default function CoffeeInfoSection({Cotdata}) {
       </div>
 
       {/* Image Block */}
-      <div className="md:w-1/2">
+      <div className="md:w-1/2 hover:scale-95 rounded-2xl overflow-hidden duration-1000 cursor-pointer">
         <img
           src={Cotdata.image} 
           alt={Cotdata.imageAlt}

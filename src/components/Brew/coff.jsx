@@ -14,7 +14,7 @@ export default function Coff({Coffdata}) {
         <p className="text-gray-600 text-lg leading-relaxed mb-8">
           {Coffdata.description}
         </p>
-        <button className="bg-orange-500 text-white px-6 py-3 rounded hover:bg-orange-600 transition flex items-center gap-2">
+        <button className="bg-orange-500 cursor-pointer text-white px-6 py-3 rounded hover:bg-orange-600 transition flex items-center gap-2">
           {Coffdata.buttonText}
           <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
