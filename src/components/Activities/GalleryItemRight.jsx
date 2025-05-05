@@ -1,6 +1,10 @@
+"use client"
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
-const GalleryItemRight = ({ image, title }) => {
+const GalleryItemRight = ({ image, title,  description }) => {
+  const router = useRouter();
+
   return (
     <div className="relative w-full md:w-1/2 mt-[-11vh] ml-[50%]">
       {/* Right Image */}
@@ -19,9 +23,12 @@ const GalleryItemRight = ({ image, title }) => {
   flex flex-col justify-center"
 >
   <h3 className="text-3xl font-semibold mb-6">{title}</h3>
+  <p className="text-lg mb-4">
+  {description}
+  </p>
   <button className="w-[200px] py-2 border border-white rounded-full text-white 
-  hover:bg-white hover:text-black transition-all mx-auto">
-    View More Details
+  hover:bg-white hover:text-black transition-all cursor-pointer mx-auto"  onClick={() => router.push("/Contact")}>
+    Let's Explore
   </button>
 </div>
 

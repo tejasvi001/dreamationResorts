@@ -36,26 +36,26 @@ const pages = [
     path: "/Activities",
     image: "/activities/Rectangle 73.png",
   },
-  { name: "Spa", path: "/Spa", image: "/activities/Rectangle 65.png" },
+  { name: "Spa", path: "/Spa", image: "/images/Spaimg/Rectangle 81.png" },
   {
     name: "Dine/Drink",
-    path: "/blog",
-    image: "/activities/Rectangle 67.png",
+    path: "/Dinning",
+    image: "/activities/Rectangle 67.jpg",
     submenu: [
       {
         name: "Bamboo And Brew Cafe",
         path: "/BrewCafe",
-        image: "/activities/Rectangle 57.png",
+        image: "/images/brew/download (2).jpeg",
       },
       {
         name: "Akhada Bar",
         path: "/AkhadaBar",
-        image: "/activities/Rectangle 59.png",
+        image: "/activities/Rectangle 59.jpg",
       },
       {
         name: "Indoor Restaurant",
         path: "/IndoorRestaurant",
-        image: "/activities/Rectangle 61.png",
+        image: "/activities/Rectangle 61.webp",
       },
     ],
   },

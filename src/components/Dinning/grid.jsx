@@ -1,6 +1,11 @@
+"use client"
+
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const bottle = ({ image, title }) => {
+  const router = useRouter();
+
   return (
     <div className="absolute w-full md:w-1/2 mt-[-90vh]">
       <Image
@@ -29,7 +34,7 @@ const bottle = ({ image, title }) => {
         </p>
         <button
           className="w-[200px] py-2 border border-white rounded-full text-white 
-  hover:bg-white hover:text-black transition-all mx-auto"
+  hover:bg-white hover:text-black transition-all cursor-pointer mx-auto" onClick={() => router.push("/Contact")}
         >
           Book Now
         </button>
