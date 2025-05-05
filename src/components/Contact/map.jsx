@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import emailjs from '@emailjs/browser'; // make sure to install emailjs
+import emailjs from '@emailjs/browser';
 
 export default function Contact() {
   const [selectedPackage, setSelectedPackage] = useState('');
@@ -26,7 +26,7 @@ export default function Contact() {
     const PhoneNoRegex = /^[0-9]{10}$/;
     const NumberOfPeopleRegex = /^[1-9][0-9]*$/;
     const DateRegex = /^\d{4}-\d{2}-\d{2}$/;
-    
+
     if (!formData.Name.trim()) errors.Name = "Name is required.";
     if (!EmailRegex.test(formData.Email)) errors.Email = "Invalid email address.";
     if (!PhoneNoRegex.test(formData.PhoneNo)) errors.PhoneNo = "Phone number must be 10 digits.";
@@ -37,7 +37,7 @@ export default function Contact() {
       errors.ArrivingDate = "Invalid arriving date.";
     if (formData.DepartingDate && !DateRegex.test(formData.DepartingDate))
       errors.DepartingDate = "Invalid departing date.";
-  
+
     return errors;
   };
 
@@ -100,30 +100,32 @@ export default function Contact() {
   };
 
   return (
-    <div className="flex flex-col md:flex-row min-h-screen">
-      <div className="bg-orange-50 p-10 md:w-1/2">
-        <h2 className="text-3xl font-semibold mb-4">Get in Touch!</h2>
-        <div className="space-y-4">
+    <div className="flex flex-col lg:flex-row min-h-screen">
+      {/* Left: Contact Info */}
+      <div className="bg-orange-50 w-full lg:w-1/2 flex items-center justify-center px-6 py-10">
+        <div className="max-w-md w-full space-y-5 text-center lg:text-left">
+          <h2 className="text-2xl sm:text-3xl font-bold">Get in Touch!</h2>
           <p>📍 <strong>Corporate Location</strong><br />12345 N. Main St, New York, NY 555555</p>
-          <p>📞 <strong>Call Us at</strong><br />1.800.555.6789</p>
+          <p>📞 <strong>Call Us</strong><br />1.800.555.6789</p>
           <p>📧 <strong>Email</strong><br />reservations@company.com</p>
         </div>
       </div>
 
-      <div className="relative md:w-1/2">
-        <div className="relative bg-white p-6 md:p-10 z-10 m-4 md:m-10">
-          <form className="space-y-3" onSubmit={handleSubmit}>
-            <input name="Name" value={formData.Name} onChange={handleChange} className="w-full border p-2" type="text" placeholder="Your Name" />
+      {/* Right: Form */}
+      <div className="w-full lg:w-1/2 flex items-center justify-center px-4 sm:px-6 py-10">
+        <div className="w-full max-w-lg bg-white shadow-lg rounded-lg p-6 space-y-4">
+          <form onSubmit={handleSubmit} className="space-y-4">
+            <input name="Name" value={formData.Name} onChange={handleChange} className="w-full border p-2 rounded" type="text" placeholder="Your Name" />
             {errors.Name && <p className="text-red-500 text-sm">{errors.Name}</p>}
 
-            <input name="Email" value={formData.Email} onChange={handleChange} className="w-full border p-2" type="email" placeholder="Email" />
+            <input name="Email" value={formData.Email} onChange={handleChange} className="w-full border p-2 rounded" type="email" placeholder="Email" />
             {errors.Email && <p className="text-red-500 text-sm">{errors.Email}</p>}
 
-            <input name="PhoneNo" value={formData.PhoneNo} onChange={handleChange} className="w-full border p-2" type="tel" pattern="[0-9]{10}" placeholder="Contact No" />
+            <input name="PhoneNo" value={formData.PhoneNo} onChange={handleChange} className="w-full border p-2 rounded" type="tel" placeholder="Contact No" />
 
             <select
               name="PackageName"
-              className="w-full border p-2"
+              className="w-full border p-2 rounded"
               value={formData.PackageName}
               onChange={(e) => {
                 const value = e.target.value;
@@ -142,32 +144,36 @@ export default function Contact() {
                 name="OtherPackage"
                 value={formData.OtherPackage}
                 onChange={handleChange}
-                className="w-full border p-2"
+                className="w-full border p-2 rounded"
                 type="text"
                 placeholder="Please specify your package"
               />
             )}
 
-            <input name="NumberOfPeople" value={formData.NumberOfPeople} onChange={handleChange} className="w-full border p-2" type="number" placeholder="No. of People" />
+            <input name="NumberOfPeople" value={formData.NumberOfPeople} onChange={handleChange} className="w-full border p-2 rounded" type="number" placeholder="No. of People" />
 
-            <label className="block text-sm font-medium">Arriving Date</label>
-            <input name="ArrivingDate" value={formData.ArrivingDate} onChange={handleChange} className="w-full border p-2" type="date" />
+            <div>
+              <label className="block text-sm font-medium mb-1">Arriving Date</label>
+              <input name="ArrivingDate" value={formData.ArrivingDate} onChange={handleChange} className="w-full border p-2 rounded" type="date" />
+            </div>
 
-            <label className="block text-sm font-medium">Departing Date</label>
-            <input name="DepartingDate" value={formData.DepartingDate} onChange={handleChange} className="w-full border p-2" type="date" />
+            <div>
+              <label className="block text-sm font-medium mb-1">Departing Date</label>
+              <input name="DepartingDate" value={formData.DepartingDate} onChange={handleChange} className="w-full border p-2 rounded" type="date" />
+            </div>
 
-            <textarea name="Message" value={formData.Message} onChange={handleChange} className="w-full border p-2" rows="3" placeholder="Your Message"></textarea>
+            <textarea name="Message" value={formData.Message} onChange={handleChange} className="w-full border p-2 rounded" rows="3" placeholder="Your Message"></textarea>
             {errors.Message && <p className="text-red-500 text-sm">{errors.Message}</p>}
 
             <button
               disabled={isSubmitting}
               type="submit"
-              className="border border-orange-400 text-orange-600 px-6 py-2 rounded hover:bg-orange-100 transition disabled:opacity-50"
+              className="w-full bg-orange-500 text-white py-2 rounded hover:bg-orange-600 transition disabled:opacity-50"
             >
               {isSubmitting ? "Sending..." : "Send Message"}
             </button>
 
-            {successMessage && <p className="text-green-600 mt-2">{successMessage}</p>}
+            {successMessage && <p className="text-green-600 text-sm">{successMessage}</p>}
           </form>
         </div>
       </div>
