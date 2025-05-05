@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 
 const HeroSection = ({HomeRef}) => {  
-  const backgroundImages = ["/bgg1.png", "/bgg2.png","/bgg1.png",  "/bgg2.png"]; 
+  const backgroundImages = ["/bbg1.jpg", "/bbg2.jpg","/bbg1.jpg",  "/bbg2.jpg"]; 
   const [bgIndex, setBgIndex] = useState(0);
 
   useEffect(() => {
