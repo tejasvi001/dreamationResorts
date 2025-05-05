@@ -532,43 +532,43 @@ export const BrewPageData = {
   export const AkhadaPageData = {
     Page: {
       backgroundImage:
-        "/images/brew/how-to-brew-the-healthiest-cup-of-coffee-1440x810.jpg",
+        "/images/brew/9c518dbb8b940a7fb6077b3fbeba14a5.webp",
       introText: {
-        subtitle: "A real Italian cafe",
-        title: "Discover the\ntaste of real\ncoffee",
+        subtitle: "A USA cafe",
+        title: "Donec gravida elit ac porta interdum. ",
         buttonText: "MEET US",
       },
       cards: [
         {
-          image: "/images/brew/istockphoto-1093593288-612x612.jpg",
+          image: "/images/brew/images.jpeg",
           alt: "Beans",
-          text: "Explore the history of the cafe",
+          text: "the history of the cafe",
         },
         {
-          image: "/images/brew/pexels-pixabay-159291.jpg",
+          image: "/images/brew/download.jpeg",
           alt: "Coffee Machine",
-          text: "Discover our unique coffee",
+          text: " our unique coffee",
         },
       ],
     },
   
   
     CoffeeFeature: {
-      image: "/images/brew/home_coffee2_pic1.jpg",
+      image: "/images/brew/download (1).jpeg",
       altText: "Coffee brewing",
-      heading: "Vivamus in diam\ncondimentum\nmaximus",
+      heading: "Vivamus in nmaximus",
       paragraph:
-        "Maecenas non laoreet odio. Fusce lobortis porttitor purus, vel vestibulum libero pharetra vel. Pellentesque lorem augue, fermentum nec nibh et, fringilla sollicitudin orci. Integer pharetra magna non ante blandit lobortis. Sed mollis.",
+        "Aliquam sit amet erat ut nulla ultrices dignissim. Praesent congue justo vel eros blandit, nec efficitur leo egestas.",
     },
   
     
     Coff: {
-      title: "Integer pharetra magna non ante blandit lobortis",
+      title: " Pharetra magna non ante blandit lobortis",
       description:
-        "Libero pharetra vel. Pellentesque lorem augue, fermentum nec nibh et, fringilla sollicitudin orci. Integer pharetra magna non ante blandit lobortis. Sed mollis.",
+        "Pellentesque habitant morbi tristique senectus et netus. Curabitur tincidunt eros nec justo vulputate, nec fermentum nisl pharetra.",
       buttonText: "SEE MENU CART",
       image:
-        "/images/brew/feature_image_88786a36-1b01-40fb-a4d2-b6f0a661d850.webp",
+        "/images/brew/download (2).jpeg",
       imageAlt: "Reading group",
     },
     Cup: {
@@ -577,23 +577,23 @@ export const BrewPageData = {
           path: "M5 21h14M12 17v4M8 5h8M7 9h10v6H7z",
           size: "w-16 h-16 text-white",
         },
-        title: "Fusce interdum justo quis libero ultricies",
+        title: " justo quis libero ultricies",
         description:
-          "Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros.",
+          "Sed euismod sapien ac risus tincidunt, ac fermentum massa gravida. Morbi in libero sed nisi convallis malesuada",
         backgroundColor: "bg-orange-500",
         padding: "p-10",
         textColor: "text-gray-500",
       },
       centerImage: {
-        src: "/images/brew/home_coffee2_pic4.png",
+        src: "/images/brew/download (3).jpeg",
         alt: "Coffee Cup",
         width: 300,
         height: 300,
         className: "rounded-full shadow-2xl",
       },
       rightColumn: {
-        title: "Fusce ut velit",
-        price: "599",
+        title: "velit",
+        price: "99",
         buttonText: "READ MORE",
         buttonLink: "#",
         textColor: "text-gray-800",
@@ -606,12 +606,12 @@ export const BrewPageData = {
       paragraph:
         "Nunc urna libero, congue porta nibh a, semper feugiat sem. Sed auctor dui eleifend, scelerisque eros ut, pellentesque nibh. Nam lacinia suscipit accumsan. Donec sodales, neque.",
       listItems: [
-        "Suspendisse a pellentesque dui, non felis.",
-        "Quisque lorem tortor fringilla sed.",
-        "Quisque cursus et, porttitor risus.",
-        "Nulla ipsum dolor lacus, suscipit adipiscing.",
+        "Vestibulum ante ipsum primis in faucibus.",
+        "Mauris euismod nulla sed sapien varius.",
+        "Curabitur vel sem sit amet magna fermentum.",
+        "Praesent id metus at dolor tincidunt.",
       ],
-      image: "/images/brew/black-iced-coffee-beans-on-600nw-2481549469.webp",
+      image: "/images/brew/images (1).jpeg",
       imageAlt: "Coffee Beans",
     },
   };
@@ -619,39 +619,39 @@ export const BrewPageData = {
   export const IndoorPageData = {
     Page: {
       backgroundImage:
-        "/images/brew/how-to-brew-the-healthiest-cup-of-coffee-1440x810.jpg",
+        "/images/brew/download (4).jpeg",
       introText: {
         subtitle: "A real Italian cafe",
-        title: "Discover the\ntaste of real\ncoffee",
+        title: "Detailed descriptions and prices ",
         buttonText: "MEET US",
       },
       cards: [
         {
-          image: "/images/brew/istockphoto-1093593288-612x612.jpg",
+          image: "/images/brew/download (5).jpeg",
           alt: "Beans",
           text: "Explore the history of the cafe",
         },
         {
-          image: "/images/brew/pexels-pixabay-159291.jpg",
+          image: "/images/brew/download (6).jpeg",
           alt: "Coffee Machine",
-          text: "Discover our unique coffee",
+          text: "Detailed descriptions and prices ",
         },
       ],
     },
     CoffeeFeature: {
-      image: "/images/brew/home_coffee2_pic1.jpg",
+      image: "/images/brew/download (7).jpeg",
       altText: "Coffee brewing",
-      heading: "Vivamus in diam\ncondimentum\nmaximus",
+      heading: "Story of the cafe and its origins ",
       paragraph:
-        "Maecenas non laoreet odio. Fusce lobortis porttitor purus, vel vestibulum libero pharetra vel. Pellentesque lorem augue, fermentum nec nibh et, fringilla sollicitudin orci. Integer pharetra magna non ante blandit lobortis. Sed mollis.",
+        "Brief overview of the cafe's mission and valuevel vestibulum libero pharetra vel. Pellentesque lorem augue, fermentum nec nibh et, fringilla sollicitudin orci. Integer pharetra magna non ante blandit lobortis. Sed mollis.",
     },
     Coff: {
-      title: "Integer pharetra magna non ante blandit lobortis",
+      title: "Use easy-to-read fonts and a clear visual hierarchy to ensure information is readily accessible. ",
       description:
-        "Libero pharetra vel. Pellentesque lorem augue, fermentum nec nibh et, fringilla sollicitudin orci. Integer pharetra magna non ante blandit lobortis. Sed mollis.",
+        "A blog section to share insights about coffee, promotions, or special events,",
       buttonText: "SEE MENU CART",
       image:
-        "/images/brew/feature_image_88786a36-1b01-40fb-a4d2-b6f0a661d850.webp",
+        "/images/brew/download (1) copy.jpeg",
       imageAlt: "Reading group",
     },
     Cup: {
@@ -660,23 +660,23 @@ export const BrewPageData = {
           path: "M5 21h14M12 17v4M8 5h8M7 9h10v6H7z",
           size: "w-16 h-16 text-white",
         },
-        title: "Fusce interdum justo quis libero ultricies",
+        title: "A section that tells the story of the cafe, its mission, and its dedication to quality coffee and customer service.",
         description:
-          "Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros.",
+          "Fusce  faucibus lorem eget, egestas eros.",
         backgroundColor: "bg-orange-500",
         padding: "p-10",
         textColor: "text-gray-500",
       },
       centerImage: {
-        src: "/images/brew/home_coffee2_pic4.png",
+        src: "/images/brew/feature_image_88786a36-1b01-40fb-a4d2-b6f0a661d850 copy.webp",
         alt: "Coffee Cup",
         width: 300,
         height: 300,
         className: "rounded-full shadow-2xl",
       },
       rightColumn: {
-        title: "Fusce ut velit",
-        price: "599",
+        title: "Maecenas imperdiet ante eget",
+        price: "299",
         buttonText: "READ MORE",
         buttonLink: "#",
         textColor: "text-gray-800",
@@ -689,12 +689,12 @@ export const BrewPageData = {
       paragraph:
         "Nunc urna libero, congue porta nibh a, semper feugiat sem. Sed auctor dui eleifend, scelerisque eros ut, pellentesque nibh. Nam lacinia suscipit accumsan. Donec sodales, neque.",
       listItems: [
-        "Suspendisse a pellentesque dui, non felis.",
-        "Quisque lorem tortor fringilla sed.",
+        "Integer a sapien vitae nisl tristique scelerisque",
+        "Maecenas eu arcu nec justo dictum posuere..",
         "Quisque cursus et, porttitor risus.",
         "Nulla ipsum dolor lacus, suscipit adipiscing.",
       ],
-      image: "/images/brew/black-iced-coffee-beans-on-600nw-2481549469.webp",
+      image: "/images/brew/download (2) copy.jpeg",
       imageAlt: "Coffee Beans",
     },
   };
