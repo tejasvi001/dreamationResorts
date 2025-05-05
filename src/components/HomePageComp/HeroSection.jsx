@@ -7,7 +7,7 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { useRouter } from "next/navigation";
 
-const HeroSection = () => {
+const HeroSection = ({HomeRef}) => {
   const router = useRouter()
   const [adults, setAdults] = useState("Adults");
   const [room, setRoom] = useState("Room");
@@ -39,7 +39,10 @@ const HeroSection = () => {
           </h1>
         </div>
         <div className="pt-10">
-          <button className="h-[12vw] sm:h-[8vw] md:h-[5vw] w-[60vw] sm:w-[40vw] md:w-[18vw] border border-white text-lg sm:text-xl md:text-2xl text-white rounded-full hover:bg-white hover:text-black transition flex items-center justify-center cursor-pointer duration-1000">
+          <button className="h-[12vw] sm:h-[8vw] md:h-[5vw] w-[60vw] sm:w-[40vw] md:w-[18vw] border border-white text-lg sm:text-xl md:text-2xl text-white rounded-full hover:bg-white hover:text-black transition flex items-center justify-center cursor-pointer duration-1000"
+          onClick={() => {
+            HomeRef.current.scrollIntoView({ behavior: "smooth" });
+          }}>
             Explore More!
           </button>
         </div>

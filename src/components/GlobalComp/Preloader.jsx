@@ -43,7 +43,7 @@ const Preloader = () => {
   if (!isVisible) return null;
 
   return (
-    <div className="w-full h-screen bg-white flex flex-col items-center justify-center overflow-hidden relative">
+    <div className="w-full h-[90vh] md:h-screen bg-white flex flex-col items-center justify-center overflow-hidden relative">
       {/* The clip-path container */}
       <div
         className="relative flex items-center justify-center"
@@ -79,7 +79,7 @@ const Preloader = () => {
       {/* Loading Progress Bar */}
       {!scaleUp && (
         <div
-          className="absolute bottom-[5vw] w-full flex flex-col gap-[1vw]"
+          className="absolute bottom-[10%] md:bottom-[5vw] w-full flex flex-col gap-[1vw]"
           style={{ maxWidth: "80vw" }}
         >
           <div className="text-red-500 text-4xl flex justify-between">

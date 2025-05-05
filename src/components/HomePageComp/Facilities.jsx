@@ -1,6 +1,8 @@
+import { useRouter } from "next/navigation";
 import React from "react";
 
 const Facilities = () => {
+  const router = useRouter()
   return (
     <div className="w-full h-full relative">
       <div className="w-full h-full z-20 text-white p-12 md:p-[6vw] flex flex-col gap-12 md:gap-[5vw] px-[5vw] md:px-0">
@@ -31,7 +33,8 @@ const Facilities = () => {
               communal fire pit for cozy evenings spent sharing stories and
               making memories with fellow campers.
             </p>
-            <button className="text-sm w-32 md:text-[1.9vw] border-2 py-[1vw] md:w-[18vw] border-gray-300 rounded-full cursor-pointer hover:bg-white hover:text-black duration-1000">
+            <button className="text-sm w-32 md:text-[1.9vw] border-2 py-[1vw] md:w-[18vw] border-gray-300 rounded-full cursor-pointer hover:bg-white hover:text-black duration-1000"
+            onClick={()=>router.push('/Activities')}>
               Discover More?
             </button>
           </div>
@@ -72,7 +75,9 @@ const Facilities = () => {
           <p className="text-md text-center md:text-[2vw]">
             Create an unforgettable memories at our Dreamation resorts!
           </p>
-          <button className="text-sm md:text-[1.5vw] border-2 py-[1vw] w-40 md:w-[20vw] border-gray-300 hover:text-black hover:bg-white rounded-full cursor-pointer hover:scale-105 duration-1000">
+          <button className="text-sm md:text-[1.5vw] border-2 py-[1vw] w-40 md:w-[20vw] border-gray-300 hover:text-black hover:bg-white rounded-full cursor-pointer hover:scale-105 duration-1000"
+          onClick={()=>router.push('/Contact')}>
+            
             Get started with Avava
           </button>
         </div>
@@ -121,7 +126,7 @@ const Facilities = () => {
         <img
           className="w-full h-full object-cover object-center"
           src="\FacilityBg.png"
-          alt=""
+          alt="j"
         />
       </div>
     </div>
