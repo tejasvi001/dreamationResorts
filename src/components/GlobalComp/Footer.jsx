@@ -26,8 +26,7 @@ const Footer = () => {
           <div className="justify-start text-white text-lg lg:text-xl font-normal font-Lato leading-8 md:leading-[2vw]">
             <a href="https://maps.app.goo.gl/xiUZZVMoVkXfCZtb8">
               <p className="max-w-[550px] ">
-                Dreamation Tourism & Hospitality Private Limited Hadbast No -
-                1037, – Baijnath District – Kangra (H.P.) 176077
+              Dreamation Resorts, Ghornala, Bir, Baijnath, Kangra
               </p>
             </a>
           </div>
@@ -92,7 +91,7 @@ const Footer = () => {
                   className="flex items-center hover:text-gray-300 py-2 transition-colors gap-2 justify-start"
                 >
                   <Phone className="h-5 w-5" />
-                  <span className="text-md md:text-lg">8580758626</span>
+                  <span className="text-md md:text-lg">+91 8580758626</span>
                 </a>
               </div>
             </div>
@@ -110,7 +109,7 @@ const Footer = () => {
 
           {/* Social Links */}
           <div className="flex space-x-6">
-            <a href="#" className="hover:text-gray-300 transition-colors">
+            <a href="https://www.instagram.com/dreamationresorts?igsh=aTlyaWo5MWo1Ym4z&utm_source=qr" className="hover:text-gray-300 transition-colors">
               <Instagram className="h-5 w-5" />
             </a>
             <a href="#" className="hover:text-gray-300 transition-colors">
