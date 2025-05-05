@@ -21,19 +21,19 @@ const Gallery = () => {
       <GalleryItemRight 
       image="/activities/Rectangle 59.jpg" 
       title=" Bird Watching" 
-      description="Bird watching is a serene and rewarding activity that invites individuals to connect with nature while observing the beauty and diversity of avian life. Whether in urban parks, wetlands, forests, or coastal areas, bird watchers can enjoy the thrill of spotting various species, learning about their behaviors, and appreciating their unique adaptations. This peaceful pursuit fosters mindfulness, patience, and a deeper appreciation for the environment."
+      description="Bird watching is a serene and rewarding activity that invites individuals to connect with nature while observing the beauty and diversity of avian life. Whether in urban parks, wetlands, forests, or coastal areas, bird watchers can enjoy the thrill of spotting various species, learning about their behaviors, and appreciating their unique adaptations."
       />
         
       <GalleryItemLeft
       image="/activities/Rectangle 61.webp"  
       title=" Yoga & Meditation"
-      description="Yoga and meditation are transformative practices that promote physical, mental, and emotional well-being. Yoga combines physical postures, breath control, and mindfulness to enhance flexibility, strength, and relaxation. Meditation cultivates inner peace and clarity through focused attention and awareness. Together, they foster a holistic approach to health, reducing stress, improving concentration, and nurturing a deeper connection to oneself."
+      description="Yoga and meditation are transformative practices that promote physical, mental, and emotional well-being. Yoga combines physical postures, breath control, and mindfulness to enhance flexibility, strength, and relaxation. Meditation cultivates inner peace and clarity through focused attention and awareness. "
       />
 
       <GalleryItemRight
       image="/activities/Rectangle 63.jpg"
       title="Bonfire Nights"
-      description="Bonfire nights are enchanting gatherings that bring people together around a warm, crackling fire under the stars. These evenings are filled with laughter, storytelling, and the comforting aroma of roasting marshmallows. The flickering flames create a cozy ambiance, fostering connections and camaraderie among friends and family. Whether sharing songs, enjoying delicious snacks, or simply basking in the glow, bonfire nights create cherished memories and a sense of community."
+      description="Bonfire nights are enchanting gatherings that bring people together around a warm, crackling fire under the stars. These evenings are filled with laughter, storytelling, and the comforting aroma of roasting marshmallows. The flickering flames create a cozy ambiance, fostering connections and camaraderie among friends and family."
       />
 
       <GalleryItemLeft
@@ -45,7 +45,7 @@ const Gallery = () => {
       <GalleryItemRight
       image="/activities/Rectangle 67.jpg"
       title=" Photography Walks "
-      description="Photography walks are immersive experiences that blend exploration and creativity, inviting individuals to capture the beauty of their surroundings through the lens of a camera. These walks encourage participants to observe details often overlooked in daily life, fostering a deeper connection to nature and urban environments. Whether in bustling city streets or serene landscapes, photography walks inspire creativity, mindfulness, and a fresh perspective on the world."
+      description="Photography walks are immersive experiences that blend exploration and creativity, inviting individuals to capture the beauty of their surroundings through the lens of a camera. These walks encourage participants to observe details often overlooked in daily life, fostering a deeper connection to nature and urban environments."
       />
 
       

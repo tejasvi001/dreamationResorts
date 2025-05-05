@@ -2,53 +2,46 @@ import Image from "next/image";
 
 const Contact = () => {
   return (
-    <div className="relative w-full min-h-screen flex items-center justify-center">
-      {/* Background image with overlay */}
-      <div className="inset-0">
+    <div className="w-full min-h-screen">
+      {/* Top Hero Section */}
+      <div className="relative w-full h-[500px] flex items-center justify-center">
         <Image
           src="/images/ResidentialRoom/Rectangle 8.png"
-          alt="Spa Image"
+          alt="Room Background"
           fill
-          className="object-cover w-full h-full"
+          className="object-cover"
         />
-        <div className="inset-0 bg-black opacity-50"></div>
-      </div>
-
-      {/* Content wrapper */}
-      <div className="relative z-10 text-white w-full px-4 sm:px-8 lg:px-20 py-20">
-        {/* Title */}
-        <h1 className="text-5xl md:text-6xl font-semibold text-center mt-8 md:mt-16">
+        <div className="absolute inset-0 bg-black/40"></div>
+        <h1 className="absolute text-white text-4xl md:text-6xl font-semibold z-10">
           Contact Us
         </h1>
+      </div>
 
-        {/* Main content */}
-        <div className="flex flex-col lg:flex-row items-center ">
-          {/* Image section */}
-          <div className="  relative mt-16 lg:mt-58 order-last lg:order-first  w-full lg:w-1/2">
-            <Image
-              src="/images/Spaimg/Rectangle 85.png"
-              alt="Spa card Image"
-              width={1200}
-              height={900}
-              className=" relative shadow-lg w-full h-auto rounded-xl "
-            />
-          </div>
-
-          {/* Text section */}
-          <div className="bg-[#D69D52] p-8 w-full lg:w-1/2 text-left rounded-xl shadow-md mt-20 absolute bottom-16 right-0">
-            <h2 className="text-3xl md:text-4xl mb-4">Contat Us Today</h2>
-            <h1 className="text-2xl md:text-3xl">Book Your Next</h1>
-            <h1 className="text-2xl md:text-3xl mb-6">Vacation</h1>
-            <p className="leading-relaxed text-sm md:text-base">
-              Mauris varius interdum erat, et ultrices justo imperdiet nec.{" "}
-              <br />
-              Cras ac porttitor tortor, id iaculis neque. <br />
-              Fusce et malesuada nibh, et consectetur risus. <br />
-              Suspendisse dictum orci eget cursus viverra. <br />
-              Vestibulum a mauris urna. Aliquam eget risus vitae lorem.
-            </p>
-          </div>
+      {/* Full-width Overlapping Section */}
+      <div className="w-full flex flex-col lg:flex-row mt-0">
+        {/* Left Image (Overlapping Only) */}
+        <div className="relative w-full lg:w-1/2 h-[529.px] -mt-32 z-20">
+          <Image
+            src="/images/Spaimg/Rectangle 85.png"
+            alt="Vacation Image"
+            fill
+            className="object-cover"
+          />
         </div>
+
+        {/* Right Text Content (No Padding Around Section) */}
+        <div className="w-full lg:w-1/2 bg-[#D69D52] px-6 py-10 sm:px-8 sm:py-12 md:px-10 md:py-16 text-white flex flex-col justify-center mt-8 lg:mt-0 h-auto min-h-[400px]">
+  <h3 className="text-sm sm:text-base md:text-lg mb-2">Contact Us Today</h3>
+  <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold">Book Your Next Vacation!</h2>
+  <p className="mt-4 text-xs sm:text-sm md:text-base leading-relaxed">
+    Mauris varius interdum erat, et ultrices justo imperdiet nec. <br />
+    Cras ac porttitor tortor, id iaculis neque. <br />
+    Fusce et malesuada nibh, et consectetur risus. <br />
+    Suspendisse dictum orci eget cursus viverra. <br />
+    Vestibulum a mauris urna. Aliquam eget risus vitae lorem.
+  </p>
+</div>
+
       </div>
     </div>
   );

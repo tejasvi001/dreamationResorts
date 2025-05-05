@@ -108,7 +108,7 @@ export default function Contact() {
   
 
   return (
-    <div className="flex flex-col md:min-h-screen relative">
+    <div className="flex flex-col-reverse lg:flex-row min-h-screen">
       {/* Left: Contact Info */}
       <div className="bg-orange-50 w-full flex items-center px-6 md:px-[7vw] py-[4vw]">
         <div className="w-full md:w-1/2 h-full flex flex-col gap-[1vw]">
