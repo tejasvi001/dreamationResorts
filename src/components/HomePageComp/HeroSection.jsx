@@ -35,7 +35,7 @@ const HeroSection = () => {
         <div>
           <h1 className="text-3xl sm:text-4xl md:text-6xl text-white font-bold hover:scale-125 duration-1000 cursor-pointer">
             <span className="text-[#d69e54]">Welcome</span> to <br />
-            <span className="text-white">Dreamation Resort!</span>
+            <span className="text-white">Dreamation Resorts!</span>
           </h1>
         </div>
         <div className="pt-10">

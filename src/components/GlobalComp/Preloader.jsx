@@ -11,7 +11,7 @@ const images = [
   "/Facility1.png",
   "/Facility2.png",
   "/Facility3.png",
-  "/logo.png",
+  "/bgg1.png",
 ];
 
 const Preloader = () => {
