@@ -6,12 +6,12 @@ const images = [
   "/images/Rectangle4560.png",
   "/bg.png",
   "/Facility3.png",
-  "/bgg2.png",
+  "/bbg2.jpg",
   "/cutlery.png",
   "/Facility1.png",
   "/Facility2.png",
-  "/Facility3.png",
-  "/bgg1.png",
+  "/Facility3.jpg",
+  "/bbg1.jpg",
 ];
 
 const Preloader = () => {
