@@ -27,6 +27,8 @@ const RoomCardRTL = ({ order, title, imageSrc, description, buttonText }) => {
       <div className="w-full md:w-1/2 h-full overflow-hidden">
         <Image
           src={imageSrc}
+          width={500}
+          height={500}
           alt={title}
           className={`w-full h-full order-${
             order === 1 ? "last" : "first"

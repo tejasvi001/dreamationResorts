@@ -6,7 +6,7 @@ const AttractionEvents = () => {
       <div className="w-full h-[60vw] sm:h-[30vw] relative flex items-center justify-center">
         <img
           className="w-full h-full object-cover object-center"
-          src="/LocalAttraction1.webp"
+          src="/images/Accomodationimg/nheiyd6dycyhbdagjsac.webp"
           alt=""
         />
         <div className="absolute z-20">

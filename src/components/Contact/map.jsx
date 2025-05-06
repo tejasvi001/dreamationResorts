@@ -6,12 +6,12 @@ import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 
 const containerStyle = {
   width: "100%",
-  height: "400px",
+  height: "70vh",
 };
 
-const center = {
-  lat: 28.6139, // Example: Delhi
-  lng: 77.209,
+const fixedPosition = {
+  lat: 32.06127147066075,
+  lng: 76.71208370502602,
 };
 
 export default function Contact() {
@@ -77,11 +77,11 @@ export default function Contact() {
     }
 
     try {
-      const googleSheetURL = process.env.NEXT_PUBLIC_SHEET_KEY;
-      const emailJsServiceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
-      const emailJsPublicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
-      const templateIdRegistrationForm =
-        process.env.NEXT_PUBLIC_EMAILJS_CONTACT_FORM_TEMPLATE_ID;
+      const googleSheetURL =
+        "https://script.google.com/macros/s/AKfycbx-dszRsgRKfvFgCAWCh9G6bQ_HkvbrKBBakjsZobII8alisfBc8fbuVuI42q2UgkvH/exec";
+      const emailJsServiceID = "service_6qdd0uh";
+      const emailJsPublicKey = "u1JJ_0wWpDDp-jC36";
+      const templateIdRegistrationForm = "template_csd9hn1";
 
       const googleResponse = await fetch(googleSheetURL, {
         method: "POST",
@@ -119,9 +119,9 @@ export default function Contact() {
   };
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col h-full bg-gray-200">
       {/* Left: Contact Info */}
-      <div className="flex flex-col-reverse md:flex-row relative">
+      <div className="flex flex-col-reverse md:flex-row relative w-full p-[5vw] md:p-0 md:h-[70vh] gap-[5vw] md:gap-0">
         <div className="bg-orange-50 w-full lg:w-1/2 flex items-center justify-center px-6 py-10">
           <div className="max-w-md w-full space-y-5 text-center lg:text-left flex flex-col gap-1">
             <h2 className="text-2xl sm:text-3xl font-bold">Get in Touch!</h2>
@@ -151,14 +151,14 @@ export default function Contact() {
         </div>
 
         {/* Right: Form */}
-        <div className="w-full lg:w-1/2 flex items-center justify-center px-4 sm:px-6 py-10"></div>
-        <div className="absolute right-24 top-12 w-full max-w-lg bg-white shadow-lg rounded-lg p-6 space-y-4">
-          <form onSubmit={handleSubmit} className="space-y-4">
+        <div className="w-full hidden md:flex h-full lg:w-1/2 items-center justify-center px-4 sm:px-6 py-10"></div>
+        <div className="md:absolute right-[8vw] top-[2vw] w-full md:w-[35vw] bg-white shadow-lg rounded-3xl p-6 md:p-[3vw] space-y-4 z-10">
+          <form onSubmit={handleSubmit} className=" space-y-3 md:space-y-4">
             <input
               name="Name"
               value={formData.Name}
               onChange={handleChange}
-              className="w-full border p-2 rounded"
+              className="w-full border p-1 md:p-2 rounded"
               type="text"
               placeholder="Your Name"
             />
@@ -170,7 +170,7 @@ export default function Contact() {
               name="Email"
               value={formData.Email}
               onChange={handleChange}
-              className="w-full border p-2 rounded"
+              className="w-full border p-1 md:p-2 rounded"
               type="email"
               placeholder="Email"
             />
@@ -182,14 +182,14 @@ export default function Contact() {
               name="PhoneNo"
               value={formData.PhoneNo}
               onChange={handleChange}
-              className="w-full border p-2 rounded"
+              className="w-full border  p-1 md:p-2 rounded"
               type="tel"
               placeholder="Contact No"
             />
 
             <select
               name="PackageName"
-              className="w-full border p-2 rounded"
+              className="w-full border  p-1 md:p-2 rounded"
               value={formData.PackageName}
               onChange={(e) => {
                 const value = e.target.value;
@@ -198,10 +198,18 @@ export default function Contact() {
               }}
             >
               <option value="">Select Service</option>
-              <option value="Lahore">Ultra Luxury Acorn Cottages</option>
-              <option value="Lahore">Luxury Acorn Cottages</option>
-              <option value="Delhi">Fern Luxury Swisstents</option>
-              <option value="Delhi">Earthen Echo Mud House</option>
+              <option value="Ultra Luxury Acorn Cottages">
+                Ultra Luxury Acorn Cottages
+              </option>
+              <option value="Luxury Acorn Cottages">
+                Luxury Acorn Cottages
+              </option>
+              <option value="Fern Luxury Swisstents">
+                Fern Luxury Swisstents
+              </option>
+              <option value="Earthen Echo Mud House">
+                Earthen Echo Mud House
+              </option>
               <option value="other">Other</option>
             </select>
 
@@ -210,7 +218,7 @@ export default function Contact() {
                 name="OtherPackage"
                 value={formData.OtherPackage}
                 onChange={handleChange}
-                className="w-full border p-2 rounded"
+                className="w-full border  p-1 md:p-2 rounded"
                 type="text"
                 placeholder="Please specify your package"
               />
@@ -220,7 +228,7 @@ export default function Contact() {
               name="NumberOfPeople"
               value={formData.NumberOfPeople}
               onChange={handleChange}
-              className="w-full border p-2 rounded"
+              className="w-full border  p-1 md:p-2 rounded"
               type="number"
               placeholder="No. of People"
             />
@@ -233,7 +241,7 @@ export default function Contact() {
                 name="ArrivingDate"
                 value={formData.ArrivingDate}
                 onChange={handleChange}
-                className="w-full border p-2 rounded"
+                className="w-full border  p-1 md:p-2 rounded"
                 type="date"
               />
             </div>
@@ -246,7 +254,7 @@ export default function Contact() {
                 name="DepartingDate"
                 value={formData.DepartingDate}
                 onChange={handleChange}
-                className="w-full border p-2 rounded"
+                className="w-full border p-1 md:p-2 rounded"
                 type="date"
               />
             </div>
@@ -255,7 +263,7 @@ export default function Contact() {
               name="Message"
               value={formData.Message}
               onChange={handleChange}
-              className="w-full border p-2 rounded"
+              className="w-full border p-1 md:p-2 rounded"
               rows="3"
               placeholder="Your Message"
             ></textarea>
@@ -278,18 +286,15 @@ export default function Contact() {
         </div>
       </div>
 
-      
-{/* map */}
+      {/* map */}
       <div className="w-full h-full">
-        <LoadScript
-          googleMapsApiKey=''
-        >
+        <LoadScript googleMapsApiKey="AIzaSyAYeUr7IJ2HLtjaDebKgMlTIWcmKqqcsBY">
           <GoogleMap
             mapContainerStyle={containerStyle}
-            center={center}
-            zoom={10}
+            center={fixedPosition}
+            zoom={16}
           >
-            <Marker position={center} />
+            <Marker position={fixedPosition} />
           </GoogleMap>
         </LoadScript>
       </div>
