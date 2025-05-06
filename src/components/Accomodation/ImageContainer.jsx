@@ -6,7 +6,7 @@ export default function ImageContainer() {
     <div
       className="absolute right-0 w-full max-w-[1200px] mx-auto h-full shadow-lg z-10 overflow-hidden"
       style={{
-        backgroundImage: "url('/images/Accomodationimg/Rectangle13.png')",
+        backgroundImage: "url('/images/Accomodationimg/b5wrkonddwzymupskqto.webp')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
@@ -17,7 +17,7 @@ export default function ImageContainer() {
       <div className="flex flex-col md:flex-row pt-12 md:pt-14 h-[120vh] md:h-[80vh] gap-4 relative">
         {/* Image div */}
         <img
-          src="/images/Accomodationimg/Rectangle 37.png"
+          src="/images/Accomodationimg/iakywbn5nixqn01lmosp.webp"
           alt="Deluxe Room"
           className="w-full h-[350px] md:w-2/3 md:h-auto object-cover"
         />
