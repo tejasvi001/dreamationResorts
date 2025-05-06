@@ -2,8 +2,8 @@
 import { useState, useEffect } from "react";
 
 const images = [
-  "/images/Rectangle4559.png",
-  "/images/Rectangle4560.png",
+  "/images/Rectangle4559.webp",
+  "/images/Rectangle4560.webp",
   "/bg.webp",
   "/Facility3.webp",
   "/bbg2.webp",
