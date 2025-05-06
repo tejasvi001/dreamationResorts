@@ -6,7 +6,7 @@ const Contact = () => {
       {/* Top Hero Section */}
       <div className="relative w-full h-[500px] flex items-center justify-center">
         <Image
-          src="/images/ResidentialRoom/Rectangle 8.png"
+          src="/images/Accomodationimg/b5wrkonddwzymupskqto.webp"
           alt="Room Background"
           fill
           className="object-cover"
