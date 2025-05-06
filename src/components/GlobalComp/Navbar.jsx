@@ -208,8 +208,8 @@ export default function ResponsiveNavbar() {
                   </div>
                   <div className="flex items-center space-x-3">
                     <Phone className="text-gray-400" size={18} />
-                    <a href="tel:8580758626">
-                    <span className="text-sm">+91 8580758626</span>
+                    <a href="tel:7837000888">
+                    <span className="text-sm">+91 7837000888 </span>
                     </a>
                   </div>
                   <div className="flex items-center space-x-3">
@@ -440,9 +440,9 @@ export default function ResponsiveNavbar() {
                       className="flex items-center space-x-4"
                     >
                       <Phone className="text-white" size={24} />
-                      <a href="tel:8580758626">
+                      <a href="tel:7837000888 ">
                       <span className="text-xl text-white">
-                        +91 8580758626
+                        +91 7837000888 
                       </span>
                       </a>
                     </motion.div>

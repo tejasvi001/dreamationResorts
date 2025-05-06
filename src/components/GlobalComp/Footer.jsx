@@ -87,11 +87,11 @@ const Footer = () => {
                   </span>
                 </a>
                 <a
-                  href="tel:8580758626"
+                  href="tel:7837000888"
                   className="flex items-center hover:text-gray-300 py-2 transition-colors gap-2 justify-start"
                 >
                   <Phone className="h-5 w-5" />
-                  <span className="text-md md:text-lg">+91 8580758626</span>
+                  <span className="text-md md:text-lg">+91 7837000888</span>
                 </a>
               </div>
             </div>

@@ -48,7 +48,7 @@ const Bottombox = () => {
           <div className="flex flex-col items-center border-l border-r border-gray-400 px-8">
             <FaPhoneAlt className="text-3xl mb-4" />
             <h3 className="text-lg font-semibold">Call Us at</h3>
-            <p>8580758626, 7837000888 Today!</p>
+            <p>85 Today!</p>
           </div>
           
           {/* Email */}

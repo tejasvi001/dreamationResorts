@@ -41,7 +41,6 @@ export default function Cup({Cupdata}) {
           </a>
         </div>
         <div className="bg-gray-900 p-6 flex justify-center">
-          {/* Optional Icon */}
         </div>
       </div>
     </div>

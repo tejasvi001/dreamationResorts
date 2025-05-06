@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import HomePage from "./Home/page.jsx";
-import Preloader from "../components/GlobalComp/Preloader.jsx";
+import Preloader from "../components/GlobalComp/Preloader.jsx"; // adjust path if needed
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -13,11 +13,12 @@ export default function Home() {
 
   return (
     <div className="relative">
-      <HomePage />
-      {loading && (
-        <div className="absolute top-0 left-0 w-full h-full z-50">
+      {loading ? (
+        <div className="absolute top-0 left-0 w-full h-full z-50 bg-white">
           <Preloader />
         </div>
+      ) : (
+        <HomePage />
       )}
     </div>
   );

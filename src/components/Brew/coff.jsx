@@ -2,8 +2,6 @@ import { BrewPageData } from '../../data.js';
 import Image from "next/image";
 
 export default function Coff({Coffdata}) {
-  
-
   return (
     <section className="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-10 items-center">
       <div>
