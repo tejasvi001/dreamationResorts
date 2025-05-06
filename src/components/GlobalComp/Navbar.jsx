@@ -68,6 +68,8 @@ export default function ResponsiveNavbar() {
   const [openSubmenu, setOpenSubmenu] = useState(null);
   const [hoveredSubmenuItem, setHoveredSubmenuItem] = useState(null);
   const [isHovered, setIsHovered] = useState(false);
+  const [isHoveredd, setIsHoveredd] = useState(false);
+
   const [mobileSubmenu, setMobileSubmenu] = useState(null);
 
   const router = useRouter();
@@ -104,12 +106,12 @@ export default function ResponsiveNavbar() {
   return (
     <>
       {/* Mobile Navbar (sm and md screens) */}
-      <header className="lg:hidden fixed top-0 left-0 right-0 z-50 bg-black shadow-sm">
+      <header className="lg:hidden fixed top-0 left-0 right-0 z-50 bg-white text-black shadow-sm">
         <div className="flex items-center justify-between px-4 py-4">
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="p-2 text-gray-300"
+            className="p-2"
             aria-label={isOpen ? "Close menu" : "Open menu"}
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -144,7 +146,7 @@ export default function ResponsiveNavbar() {
                   {pages.map((page, index) => (
                     <li
                       key={page.name}
-                      className="border-b text-white border-gray-100 pb-2"
+                      className="border-b border-gray-100 pb-2"
                     >
                       {page.submenu ? (
                         <div>
@@ -202,7 +204,7 @@ export default function ResponsiveNavbar() {
                 </ul>
 
                 {/* Contact Info */}
-                <div className="mt-8 space-y-4  text-white border-gray-100 pt-2">
+                <div className="mt-8 space-y-4  border-gray-100 pt-2">
                   <div>
                     <h1 className="text-lg">Contact INFO.</h1>
                   </div>
@@ -236,7 +238,11 @@ export default function ResponsiveNavbar() {
         <div className="px-10 cursor-pointer">
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="fixed top-4 left-6 z-50 p-2 rounded-full bg-black text-white cursor-pointer"
+            className={`fixed top-4 left-1/2 -translate-x-1/2 z-50 p-2 border-4 bg-black border-gray-800 rounded-full cursor-pointer ${
+              isHoveredd ? "text-white" : "text-gray-500"
+            }` }
+            onMouseEnter={() => setIsHoveredd(true)}
+              onMouseLeave={() => setIsHoveredd(false)}
             aria-label={isOpen ? "Close menu" : "Open menu"}
           >
             {isOpen ? <X size={28} /> : <Menu size={28} />}
@@ -246,7 +252,7 @@ export default function ResponsiveNavbar() {
             <img
               src="/logo.png"
               alt="Logo"
-              className="fixed top-4 left-1/2 -translate-x-1/2 z-50 h-20 w-44"
+              className="fixed top-4 left-6   z-50 h-15 w-36"
               onClick={() => (window.location.href = "/")}
             />
           </div>
@@ -254,7 +260,7 @@ export default function ResponsiveNavbar() {
           <div className="">
             <button
               onClick={handleGetInTouch}
-              className="fixed top-4 right-6 z-50 p-2 cursor-pointer overflow-hidden px-6 py-3 rounded-full border border-black bg-white font-medium group"
+              className="fixed top-4 right-6 z-50 p-2 border-2  cursor-pointer overflow-hidden px-6 py-3 rounded-full  border-black bg-white font-medium group"
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
             >
@@ -282,9 +288,9 @@ export default function ResponsiveNavbar() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.3 }}
-              className="fixed inset-0 z-40 bg-black/95 flex items-center justify-center"
+              className="fixed inset-0 z-40 bg-white  flex items-center justify-center"
             >
-              <div className="w-full h-full max-w-7xl mx-auto flex flex-col md:flex-row">
+              <div className="w-full h-full max-w-7xl  mx-auto flex flex-col md:flex-row">
                 <motion.div
                   initial={{ x: -100, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
@@ -318,14 +324,14 @@ export default function ResponsiveNavbar() {
                           <div className="flex items-center gap-2">
                             <a
                               href={page.path}
-                              className={`text-3xl md:text-4xl font-bold text-white hover:text-gray-300 transition-colors duration-300 ${
-                                hoveredIndex === index ? "text-gray-300" : ""
+                              className={`text-3xl md:text-4xl font-bold text-black hover:text-gray-500 transition-colors duration-300 ${
+                                hoveredIndex === index ? "text-gray-500" : "text-black"
                               }`}
                             >
                               {page.name}
                             </a>
                             {page.submenu && (
-                              <div className="text-white cursor-pointer">
+                              <div className="text-black cursor-pointer">
                                 <ChevronDown
                                   size={24}
                                   className={`transition-transform duration-300 ${
@@ -364,7 +370,7 @@ export default function ResponsiveNavbar() {
                                       >
                                         <a
                                           href={subitem.path}
-                                          className="text-xl text-gray-300 hover:text-white transition-colors duration-200 block py-1"
+                                          className="text-xl text-black hover:text-gray-700 transition-colors duration-200 block py-1"
                                           onClick={() => setIsOpen(false)}
                                         >
                                           {subitem.name}
@@ -439,9 +445,9 @@ export default function ResponsiveNavbar() {
                       transition={{ delay: 0.3, duration: 0.5 }}
                       className="flex items-center space-x-4"
                     >
-                      <Phone className="text-white" size={24} />
+                      <Phone className="" size={24} />
                       <a href="tel:7837000888 ">
-                      <span className="text-xl text-white">
+                      <span className="text-xl ">
                         +91 7837000888 
                       </span>
                       </a>
@@ -453,9 +459,9 @@ export default function ResponsiveNavbar() {
                       transition={{ delay: 0.4, duration: 0.5 }}
                       className="flex items-center space-x-4"
                     >
-                      <Mail className="text-white" size={24} />
+                      <Mail className="" size={24} />
                       <a href="mailto:info@dreamationresorts.com">
-                      <span className="text-xl text-white">
+                      <span className="text-xl ">
                       info@dreamationresorts.com
                       </span>
                       </a>
@@ -467,9 +473,9 @@ export default function ResponsiveNavbar() {
                       transition={{ delay: 0.5, duration: 0.5 }}
                       className="flex items-center space-x-4"
                     >
-                      <MapPin className="text-white" size={24} />
+                      <MapPin className="" size={24} />
                       <a href="https://maps.app.goo.gl/xiUZZVMoVkXfCZtb8">
-                      <span className="text-xl text-white">
+                      <span className="text-xl ">
                         Dreamation Resorts, Ghornala,<br/> Bir, Baijnath, Kangra
                       </span>
                       </a>
