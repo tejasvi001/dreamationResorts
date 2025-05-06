@@ -1,5 +1,5 @@
 import React from "react";
-import BedIcon from "../../assets/bed.png";
+// import BedIcon from "../../assets/bed.png";
 import DuBedIcon from "../../assets/dubed.png";
 import roomImage from "../../assets/room.png";
 import Image from "next/image";
@@ -13,29 +13,37 @@ import Header from "../../components/Accomodation/Header.jsx";
 const rooms = [
   {
     title: "Residential",
-    imageSrc: BedIcon,
+    imageSrc: "/images/Accomodationimg/zrr34yc0jw1ip47byz0u.webp",
+    width: 500,
+    height: 500,
     description: "Aliquam vulputate ligula et nisl dapibus ultrices sed dolores ipsums.",
     buttonText: "View More Details",
+    imgAlt: "Residential Room",
   },
   {
     title: "Executive",
-    imageSrc: BedIcon,
+    imageSrc: "/images/Accomodationimg/ofqa9cva1kkgkizumnsi.webp",
+    width: 500,
+    height: 500,
     description: "Aliquam vulputate ligula et nisl dapibus ultrices sed dolores ipsums.",
     buttonText: "View More Details",
+    imgAlt: "Executive Room",
   },
   {
     title: "Deluxe",
-    imageSrc: BedIcon,
+    imageSrc: "/images/Accomodationimg/wmm1on7se9tjvjncr10e.webp",
     description: "Aliquam vulputate ligula et nisl dapibus ultrices sed dolores ipsums.",
     buttonText: "View More Details",
+    imgAlt: "Deluxe Room",
   },
   {
     title: "Premium",
-    imageSrc: BedIcon,
+    imageSrc: "/images/Accomodationimg/nrdauuexkyqsyeuhhx0q.webp",
     description: "Aliquam vulputate ligula et nisl dapibus ultrices sed dolores ipsums.",
     buttonText: "View More Details",
+    imgAlt: "Premium Room",
   },
-]
+];
 export default function page() {
   return (
     <div className="w-full h-full">
