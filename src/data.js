@@ -1,7 +1,7 @@
-import BedIcon from "./assets/bed.png";
-import BedIcon1 from "./assets/bed1.jpg";
-import BedIcon2 from "./assets/bed2.jpg";
-import BedIcon3 from "./assets/bed3.jpg";
+import BedIcon from "./assets/bed.webp";
+import BedIcon1 from "./assets/bed1.webp";
+import BedIcon2 from "./assets/bed2.webp";
+import BedIcon3 from "./assets/bed3.webp";
 import tent from "./assets/tent.jpg";
 import tent2 from "./assets/tent2.jpg";
 import tent3 from "./assets/tent3.jpg";
@@ -14,7 +14,7 @@ import mud3 from "./assets/mud3.png";
 export const Acorn = {
   heroData: {
     title: "Acorn Luxury Cottage ",
-    backgroundImage: "/bg.jpg",
+    backgroundImage: "/ng1.webp",
   },
 
   roomOverview: {
@@ -64,7 +64,7 @@ export const Acorn = {
       "  Outdoor Dining Area: A patio or deck with furniture for al fresco dining.",
       " Fire Pit or BBQ Grill: For cozy evenings or casual cookouts.",
     ],
-    imageUrl: "/images/ResidentialRoom/Rectangle20.jpg",
+    imageUrl: "/images/ResidentialRoom/Rectangle20.webp",
     backgroundColor: "#D69D52",
   },
 
@@ -124,28 +124,28 @@ export const Acorn = {
       title: "Residential",
       imageSrc: BedIcon,
       description:
-        "Residential rooms in an Acorn Luxury Cottage are thoughtfully designed to blend comfort, elegance, and functionality, making guests feel at home while offering a premium lodging experience. Each room is crafted to reflect a rustic yet refined aesthetic, often with natural materials, cozy textures, and luxurious touches.",
+        "Residential rooms in an Acorn Luxury Cottage are thoughtfully designed to blend comfort, elegance, and functionality, making guests feel at home while offering a premium lodging experience.",
       buttonText: "View More Details",
     },
     {
       title: "Executive",
       imageSrc: BedIcon1,
       description:
-        "An Executive Room in an Acorn Luxury Cottage is designed to offer a premium blend of comfort, functionality, and understated luxury. It caters to both leisure and business travelers who desire more than just a standard stay — it’s ideal for guests looking for a refined yet cozy environment with elevated amenities.",
+        "An Executive Room in an Acorn Luxury Cottage is designed to offer a premium blend of comfort, functionality, and understated luxury. ",
       buttonText: "View More Details",
     },
     {
       title: "Deluxe",
       imageSrc: BedIcon2,
       description:
-        "A Deluxe Room in an Acorn Luxury Cottage offers a spacious, thoughtfully designed environment focused on comfort, elegance, and a touch of rustic charm. Positioned between standard and executive rooms in terms of luxury, deluxe rooms are perfect for guests seeking a high-quality, cozy stay with premium features and a serene ambiance.",
+        "A Deluxe Room in an Acorn Luxury Cottage offers a spacious, thoughtfully designed environment focused on comfort, elegance, and a touch of rustic charm.",
       buttonText: "View More Details",
     },
     {
       title: "Premium",
       imageSrc: BedIcon3,
       description:
-        "A Premium Room in an Acorn Luxury Cottage represents the highest tier of luxury and comfort, designed for guests seeking an indulgent, exclusive, and immersive experience. These rooms go beyond the basics, offering extra space, superior materials, and enhanced features — all wrapped in a warm, nature-inspired setting.",
+        "A Premium Room in an Acorn Luxury Cottage represents the highest tier of luxury and comfort, designed for guests seeking an indulgent, exclusive, and immersive experience. ",
       buttonText: "View More Details",
     },
   ],
@@ -191,7 +191,7 @@ export const Fern = {
     title: "Outdoor Patio",
     subheading: "Amazing Views",
     description:
-      "The Fern Seaside Luxurious Tent Resort offers an incredible outdoor patio experience that enhances the overall glamping adventure. Each of the luxury tents is designed with an attached private outdoor patio, where guests can unwind and soak in the serene views of the surrounding landscapes. Whether you're enjoying the gentle sea breeze, watching the sunset over the Arabian Sea, or relaxing in the lush garden settings, the patio becomes a perfect space for quiet moments or social gatherings.",
+      "The Fern Seaside Luxurious Tent Resort offers an incredible outdoor patio experience that enhances the overall glamping adventure. Each of the luxury tents is designed with an attached private outdoor patio, where guests can unwind and soak in the serene views of the surrounding landscapes. ",
     imageUrl: "/images/ResidentialRoom/Rectangle56.jpg",
     backgroundColor: "#D69D52",
   },
@@ -256,28 +256,28 @@ export const Fern = {
       title: "Residential",
       imageSrc: tent,
       description:
-        "The Residential Tent at The Fern Seaside Luxurious Tent Resort offers a perfect blend of nature-inspired luxury and modern comfort, designed for guests seeking a unique, upscale glamping experience. These spacious tents are not only a retreat into nature but also an embodiment of comfort and style, with every detail thoughtfully designed to ensure a pleasant stay.",
+        "The Residential Tent at The Fern Seaside Luxurious Tent Resort offers a perfect blend of nature-inspired luxury and modern comfort, designed for guests seeking a unique, upscale glamping experience. ",
       buttonText: "View More Details",
     },
     {
       title: "Executive",
       imageSrc: tent2,
       description:
-        "The Exclusive Tent at The Fern Seaside Luxurious Tent Resort offers a premium, elevated glamping experience for guests who seek the finest in luxury and privacy. Designed to provide the utmost comfort and exclusive amenities, the Exclusive Tent is perfect for those who want a truly exceptional escape amidst nature, while still enjoying high-end accommodations.",
+        "The Exclusive Tent at The Fern Seaside Luxurious Tent Resort offers a premium, elevated glamping experience for guests who seek the finest in luxury and privacy. ",
       buttonText: "View More Details",
     },
     {
       title: "Deluxe",
       imageSrc: tent3,
       description:
-        "The Exclusive Tent at The Fern Seaside Luxurious Tent Resort offers an unparalleled blend of elegance, comfort, and exclusivity, providing an extraordinary glamping experience for those seeking the highest level of luxury and privacy. Designed to cater to discerning guests, this accommodation promises a truly exceptional stay in the heart of nature without compromising on modern amenities and services.",
+        "The Exclusive Tent at The Fern Seaside Luxurious Tent Resort offers an unparalleled blend of elegance, comfort, and exclusivity, providing an extraordinary glamping experience for those seeking the highest level of luxury and privacy. ",
       buttonText: "View More Details",
     },
     {
       title: "Premium",
       imageSrc: tent4,
       description:
-        "The Premium Tent at The Fern Seaside Luxurious Tent Resort offers a superior glamping experience with a perfect blend of comfort, style, and nature. Designed for guests who desire a luxurious and immersive experience while maintaining a connection to the outdoors, the Premium Tent promises a unique and memorable stay.",
+        "The Premium Tent at The Fern Seaside Luxurious Tent Resort offers a superior glamping experience with a perfect blend of comfort, style, and nature. Designed for guests who desire a luxurious and immersive experience while maintaining a connection to the outdoors.",
       buttonText: "View More Details",
     },
   ],
