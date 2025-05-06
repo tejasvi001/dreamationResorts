@@ -121,7 +121,7 @@ export const Acorn = {
 
   rooms: [
     {
-      title: "Residential",
+      title: "Ultra Luxury",
       imageSrc: BedIcon,
       description:
         "Residential rooms in an Acorn Luxury Cottage are thoughtfully designed to blend comfort, elegance, and functionality, making guests feel at home while offering a premium lodging experience.",
@@ -135,7 +135,7 @@ export const Acorn = {
       buttonText: "View More Details",
     },
     {
-      title: "Deluxe",
+      title: "Luxury",
       imageSrc: BedIcon2,
       description:
         "A Deluxe Room in an Acorn Luxury Cottage offers a spacious, thoughtfully designed environment focused on comfort, elegance, and a touch of rustic charm.",

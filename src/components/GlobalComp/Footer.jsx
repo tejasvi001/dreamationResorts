@@ -19,7 +19,7 @@ const Footer = () => {
   // };
 
   return (
-    <footer className="bg-black/95 text-white py-8 md:py-[3vw] w-full md:pt-[10vw]">
+    <footer className="bg-black/95 text-white py-8 md:py-[3vw] w-full">
       <div className="flex flex-col gap-[2vw]">
         <div className="w-full md:max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-[5vw]">
           {/* Address Section */}
