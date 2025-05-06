@@ -12,7 +12,7 @@ const Accommodations = () => {
         <div className="flex justify-center">
           <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 transform rotate-[15deg]">
             <Image
-              src="/Acc1.png"
+              src="/Acc1.webp"
               alt="Accommodation 1"
               width={269}
               height={310}
@@ -35,7 +35,7 @@ const Accommodations = () => {
         <div className="flex justify-center">
           <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 transform -rotate-[15deg]">
             <Image
-              src="/Acc2.png"
+              src="/Acc2.webp"
               alt="Accommodation 2"
               width={269}
               height={310}
