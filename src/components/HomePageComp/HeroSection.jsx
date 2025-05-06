@@ -14,8 +14,8 @@ const HeroSection = ({HomeRef}) => {
 
   return (
     <div
-      className="relative w-full h-screen bg-cover bg-center transition-all duration-1000 flex flex-col items-center justi"
-      style={{ backgroundImage: `url('${backgroundImages[bgIndex]}')` }}
+      className="relative w-full h-screen bg-cover bg-center  transition-all duration-1000 flex flex-col items-center justi"
+      style={{ backgroundImage: `url('${backgroundImages[bgIndex]}') ` }}
     >
       {/* Overlay */}
       <div className="absolute inset-0 flex flex-col items-center justify-evenly md:justify-center text-center px-4 md:mt-[5%] gap-[6vw]">
