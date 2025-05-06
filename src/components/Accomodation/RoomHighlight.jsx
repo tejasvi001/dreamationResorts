@@ -17,7 +17,7 @@ export default function RoomHighlight() {
         <li><span className="text-[#B16C11] text-2xl font-bold mr-2">•</span>Free Spa</li>
       </ul>
 
-      <button className="border border-[#B16C11] text-[#B16C11] text-sm px-4 py-2 w-full sm:w-[180px] rounded hover:bg-amber-400 transition rounded-3xl">
+      <button className="border border-[#B16C11] text-[#B16C11] text-sm px-4 py-2 w-full sm:w-[180px]  hover:bg-amber-400 transition rounded-3xl">
         View More Details
       </button>
     </div>

@@ -336,7 +336,7 @@ export const Earthern = {
     title: "Outdoor Patio",
     subheading: "Amazing Views",
     description:
-      "Earthen Echo Mud House should serve as a living extension of the home, embodying the principles of sustainability, comfort, and a harmonious relationship with nature. By incorporating elements like native plants, eco-friendly materials, passive design techniques, and renewable energy solutions, the outdoor space can foster a sense of peace, connection, and self-sufficiency. Whether used for relaxation, communal gatherings, or growing food, the patio can become an integral part of the home’s lifestyle and a natural sanctuary that emphasizes eco-conscious living.",
+      "Earthen Echo Mud House should serve as a living extension of the home, embodying the principles of sustainability,embodying the principles of sustainability embodying the principles of sustainability  .",
     imageUrl: "/images/ResidentialRoom/Rectangle56.jpg",
     backgroundColor: "#D69D52",
   },
