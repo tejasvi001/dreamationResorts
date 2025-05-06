@@ -4,14 +4,14 @@ import { useState, useEffect } from "react";
 const images = [
   "/images/Rectangle4559.png",
   "/images/Rectangle4560.png",
-  "/bg.png",
-  "/Facility3.png",
-  "/bbg2.jpg",
+  "/bg.webp",
+  "/Facility3.webp",
+  "/bbg2.webp",
   "/cutlery.png",
-  "/Facility1.png",
-  "/Facility2.png",
-  "/Facility3.jpg",
-  "/bbg1.jpg",
+  "/Facility1.webp",
+  "/Facility2.webp",
+  "/Facility3.webp",
+  "/bbg1.webp",
 ];
 
 const Preloader = () => {

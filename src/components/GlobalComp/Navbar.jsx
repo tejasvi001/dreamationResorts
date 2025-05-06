@@ -8,26 +8,26 @@ import { useRouter } from "next/navigation";
 
 // Navigation data
 const pages = [
-  { name: "Home", path: "/", image: "/Facility1.png" },
+  { name: "Home", path: "/", image: "/Facility1.webp" },
   {
     name: "Accommodations",
     path: "/Accomodation",
-    image: "/Facility2.png",
+    image: "/Facility2.webp",
     submenu: [
       {
         name: "Acorn Luxury Cottages",
         path: "/Acorn",
-        image: "/Facility3.png",
+        image: "/Facility4.webp",
       },
       {
         name: "Fern Luxury Swisstents",
         path: "/Fern",
-        image: "/Facility4.png",
+        image: "/Facility3.webp",
       },
       {
         name: "Earthen Echo Mud House",
         path: "/Eathern",
-        image: "/FacilityBg.png",
+        image: "/earth.webp",
       },
     ],
   },
@@ -416,7 +416,7 @@ export default function ResponsiveNavbar() {
                       </defs>
 
                       <image
-                        href={activeImage || "/Facility1.png"}
+                        href={activeImage || "/Facility1.webp"}
                         width="300"
                         height="500"
                         clipPath="url(#keyholeClip)"

@@ -18,7 +18,7 @@ const bottle = ({ image, title }) => {
 
       {/* Floating Text Boxcd */}
       <div
-        className="absolute md:left-180 md:top-1/2 transform md:-translate-y-1/2
+        className="absolute md:left-130 md:top-1/2 transform md:-translate-y-1/2
   bg-[#D69D52] text-white p-10 rounded-lg shadow-lg w-[52vw] h-120 
   flex flex-col justify-center"
       >
