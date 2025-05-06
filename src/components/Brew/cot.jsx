@@ -27,7 +27,7 @@ export default function CoffeeInfoSection({Cotdata}) {
       </div>
 
       {/* Image Block */}
-      <div className="md:w-1/2 hover:scale-95 rounded-2xl overflow-hidden duration-1000 cursor-pointer">
+      <div className="md:w-1/2   overflow-hidden duration-1000 cursor-pointer">
         <img
           src={Cotdata.image} 
           alt={Cotdata.imageAlt}
