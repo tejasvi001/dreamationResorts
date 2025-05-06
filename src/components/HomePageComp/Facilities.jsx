@@ -14,14 +14,14 @@ const Facilities = () => {
             <div className="absolute w-9/12 h-9/12 overflow-hidden bottom-0 left-0 z-20 hover:z-40 hover:scale-105 duration-1000 rounded-[1vw] hover:rounded-[3vw] cursor-pointer">
               <img
                 className="w-full h-full object-cover object-center"
-                src="/Facility1.png"
+                src="/Facility4.webp"
                 alt=""
               />
             </div>
             <div className="absolute z-30 w-7/12 h-9/12 overflow-hidden top-0 right-0 hover:scale-110 duration-1000 rounded-[1vw] hover:rounded-[3vw] cursor-pointer">
               <img
                 className="w-full h-full object-cover object-center"
-                src="/Facility2.png"
+                src="/Facility3.webp"
                 alt=""
               />
             </div>
@@ -48,7 +48,7 @@ const Facilities = () => {
             <div className="w-3/4 sm:w-1/2 md:w-1/4 h-60 md:h-[25vw] rounded-[1vw] overflow-hidden">
               <img
                 className="w-full h-full object-top object-cover"
-                src="/Facility3.png"
+                src="/cutlery.webp"
                 alt=""
               />
             </div>
@@ -112,7 +112,7 @@ const Facilities = () => {
             <div className="w-full h-full md:h-[40vw] overflow-hidden z-20 hover:z-40 hover:scale-105 duration-1000 rounded-[1.5vw] hover:rounded-[5vw] cursor-pointer">
               <img
                 className="w-full h-full object-cover object-center"
-                src="/Facility4.png"
+                src="/Facility2.webp"
                 alt=""
               />
             </div>
@@ -127,7 +127,7 @@ const Facilities = () => {
       <div className="w-full h-full overflow-hidden absolute top-0 -z-20">
         <img
           className="w-full h-full object-cover object-center"
-          src="\FacilityBg.png"
+          src="\Facility1.webp"
           alt="j"
         />
       </div>

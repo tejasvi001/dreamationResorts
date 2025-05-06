@@ -9,14 +9,14 @@ const slides = [
     title: "Acorn Luxury cottage",
     description:
       "Stylish Interiors: Tastefully furnished with a blend of modern amenities and classic or country-style décor — think wooden beams, stone fireplaces, and plush furniture.",
-    image: "/bg.jpg",
+    image: "/bg.webp", // You'll replace this with your actual image
     redirectTo: "/Acorn",
   },
   {
     title: "Fern Luxury Swisstents",
     description:
       "The Fern Seaside Luxurious Tent Resort offers a unique blend of upscale comfort and eco-conscious design, providing guests with an exceptional glamping experience along the scenic coasts.",
-    image: "/activities/img1.png", // You'll replace this with your actual image
+    image: "/activities/img1.webp", // You'll replace this with your actual image
     redirectTo: "/Fern",
   },
   {
@@ -45,11 +45,11 @@ export default function Activities() {
   };
 
   return (
-    <div className="relative  w-4/5 mx-auto h-full md:h-[90vh]">
+    <div className="relative   w-4/5 mx-auto h-full md:h-[90vh]">
       <div
         className="absolute inset-0 bg-cover bg-center rounded-4xl"
         style={{
-          backgroundImage: `url(/activities/background.png)`,
+          backgroundImage: `url(/activities/background.webp)`,
           backgroundPosition: "center",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
@@ -69,7 +69,7 @@ export default function Activities() {
           <h2 className="text-2xl md:text-4xl font-light absolute font-AbhayaLibre top-[40%] md:top-[50%] ">
             {slides[currentIndex].title}
           </h2>
-          <p className="text-md md:text-lg mb-2 font-normal font-Lato">
+          <p className="text-md md:text-xl mb-2 font-semibold font-Lato">
             {slides[currentIndex].description}
           </p>
           <button
