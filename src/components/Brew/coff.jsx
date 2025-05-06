@@ -23,8 +23,8 @@ export default function Coff({Coffdata}) {
         <Image
           src={Coffdata.image}
           alt={Coffdata.imageAlt}
-          layout="fill"
-          objectFit="cover"
+          fill
+          style={{ objectFit: 'cover' }}
           className="shadow-lg"
         />
       </div>

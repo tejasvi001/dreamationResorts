@@ -10,7 +10,7 @@ const bottle = ({ image, title }) => {
     <div className="absolute w-full md:w-1/2 mt-[-90vh]">
       <Image
         src={image}
-        alt={title}
+        alt={title || 'sdf'}
         width={960}
         height={640}
         className="w-full h-[80vh] object-cover"

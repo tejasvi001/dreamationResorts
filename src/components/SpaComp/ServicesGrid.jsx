@@ -3,14 +3,14 @@
 import Image from 'next/image';
 
 const services = [
-    { title: 'Good Health', image: '/images/Spaimg/Rectangle 81.png' },
+    { title: 'Good Health', image: '/images/Spaimg/Rectangle81.png' },
     { title: 'Wellness', image: '' },
-    { title: 'Steam Room', image: '/images/Spaimg/Rectangle 81.png' },
+    { title: 'Steam Room', image: '/images/Spaimg/Rectangle81.png' },
     { title: 'Boutique', image: '' },
     { title: 'Relaxation', image: '' },
-    { title: 'Yoga Classes', image: '/images/Spaimg/Rectangle 81.png' },
+    { title: 'Yoga Classes', image: '/images/Spaimg/Rectangle81.png' },
     { title: 'Massages', image: '' },
-    { title: 'Private Spa', image: '/images/Spaimg/Rectangle 81.png' }
+    { title: 'Private Spa', image: '/images/Spaimg/Rectangle81.png' }
   ];
 
 export default function ServicesGrid() {
@@ -25,12 +25,12 @@ export default function ServicesGrid() {
         >
           {service.image && (
             <Image
-              src={service.image}
-              alt={service.title}
-              layout="fill"
-              objectFit="cover"
-              className="absolute inset-0 opacity-50"
-            />
+            src={service.image}
+            alt={service.title}
+            fill
+            style={{ objectFit: 'cover' }}
+            className="absolute inset-0 opacity-50"
+          />
           )}
           <div className="relative z-10 text-center">
             <h3 className="text-xl font-semibold text-gold-500">{service.title}</h3>
