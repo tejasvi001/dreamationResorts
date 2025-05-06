@@ -19,9 +19,9 @@ const HomeRef = useRef(null)
         </div>
         <AttractionEvents />
         <Banner />
-        <div className="bg-amber-50 md:h-[155vh]">
+        <div className="bg-amber-50 py-[6vw] md:py-[3vw]">
         <ClientsSay />
-        <div className="md:absolute md:z-90 w-full">
+        <div className="w-full">
         <Activities />
         </div>
         </div>
