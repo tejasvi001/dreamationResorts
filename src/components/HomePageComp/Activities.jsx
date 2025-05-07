@@ -45,16 +45,18 @@ export default function Activities() {
   };
 
   return (
-    <div className="relative   w-4/5 mx-auto h-full md:h-[90vh]">
+    <div className="relative w-4/5 mx-auto h-full md:h-[95vh]">
       <div
-        className="absolute inset-0 bg-cover bg-center rounded-4xl"
+        className="absolute inset-0 bg-cover bg-center rounded-4xl overflow-hidden"
         style={{
           backgroundImage: `url(/activities/background.webp)`,
           backgroundPosition: "center",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
         }}
-      ></div>
+      >
+        <div className="w-full h-full opacity-30 bg-gray-900"></div>
+      </div>
 
       {/* Content Container */}
       <div className="relative h-full flex flex-col items-center justify-between py-4 md:py-8 px-8 text-white gap-4 md:gap-0">
@@ -65,8 +67,11 @@ export default function Activities() {
 
         {/* Main Content */}
         <div className="flex flex-col items-center max-w-2xl text-center  md:mt-8 h-full overflow-hidden gap-4">
+          <div className="w-full h-full flex justify-center relative">
+            <div className="absolute w-72 h-72 rounded-2xl opacity-30 bg-black"></div>
           <img src={slides[currentIndex].image} alt="" className="w-72 h-72 rounded-2xl" />
-          <h2 className="text-2xl md:text-4xl font-light absolute font-AbhayaLibre top-[40%] md:top-[50%] ">
+          </div>
+          <h2 className="text-2xl md:text-4xl font-bold absolute font-AbhayaLibre top-[40%] md:top-[50%] ">
             {slides[currentIndex].title}
           </h2>
           <p className="text-md md:text-xl mb-2 font-semibold font-Lato">

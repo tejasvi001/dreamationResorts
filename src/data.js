@@ -9,7 +9,7 @@ import tent4 from "./assets/tent4.jpg";
 import mud from "./assets/mud.jpg";
 import mud1 from "./assets/mud1.jpg";
 import mud2 from "./assets/mud2.jpg";
-import mud3 from "./assets/mud3.png";
+import mud3 from "./assets/mud3.webp";
 
 export const Acorn = {
   heroData: {
@@ -52,6 +52,7 @@ export const Acorn = {
       "Bath cosmetics",
       "Handmade bed",
       "King Size Beds",
+      
     ],
   },
 

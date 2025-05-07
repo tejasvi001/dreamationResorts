@@ -28,6 +28,14 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" type="image/png" href="/logo.png" />
+        {/* Preload only if the font is used above-the-fold */}
+        <link
+          rel="preload"
+          href="/fonts/Arial-BoldMT.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

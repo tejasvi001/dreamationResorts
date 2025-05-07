@@ -10,7 +10,6 @@ import { useRef } from "react";
 
 const page = () => {
   const sectionRef = useRef(null);
-  console.log(AkhadaPageData.Page.introText,"fa5")
   return (
     <div>
       <div>

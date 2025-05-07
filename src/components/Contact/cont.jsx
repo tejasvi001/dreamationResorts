@@ -31,17 +31,20 @@ const Contact = () => {
 
             {/* Right Text Content (No Padding Around Section) */}
         <div className="w-full lg:w-1/2 bg-[#D69D52] px-6 py-10 sm:px-8 sm:py-12 md:px-10 md:py-16 text-white flex flex-col justify-center mt-8 lg:mt-0 h-auto min-h-[400px]">
-  <h3 className="text-sm sm:text-base md:text-lg mb-2">Contact Us Today</h3>
-  <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold">Book Your Next Vacation!</h2>
-  <p className="mt-4 text-xs sm:text-sm md:text-base leading-relaxed">
-    Mauris varius interdum erat, et ultrices justo imperdiet nec. <br />
-    Cras ac porttitor tortor, id iaculis neque. <br />
-    Fusce et malesuada nibh, et consectetur risus. <br />
-    Suspendisse dictum orci eget cursus viverra. <br />
-    Vestibulum a mauris urna. Aliquam eget risus vitae lorem.
-  </p>
-</div>
-
+          <h3 className="text-sm sm:text-base md:text-lg mb-2">
+            Contact Us Today
+          </h3>
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold">
+            Book Your Next Vacation!
+          </h2>
+          <p className="mt-4 text-xs sm:text-sm md:text-base leading-relaxed">
+            Mauris varius interdum erat, et ultrices justo imperdiet nec. <br />
+            Cras ac porttitor tortor, id iaculis neque. <br />
+            Fusce et malesuada nibh, et consectetur risus. <br />
+            Suspendisse dictum orci eget cursus viverra. <br />
+            Vestibulum a mauris urna. Aliquam eget risus vitae lorem.
+          </p>
+        </div>
       </div>
     </div>
   );

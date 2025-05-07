@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import HomePage from "./Home/page.jsx";
-import Preloader from "../components/GlobalComp/Preloader.jsx"; // adjust path if needed
+import Preloader from "../components/GlobalComp/Preloader.jsx";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
