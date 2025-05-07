@@ -10,30 +10,21 @@ const page = () => {
     return (
         <>
             <div className="">
-                <div className="relative bg-center h-[180vh]" style={{ backgroundImage: "url('/images/Rectangle4560.webp')" }}>
+                <div className="relative bg-center h-screen" style={{ backgroundImage: "url('/images/Rectangle4560.webp')" }}>
                     <div className="absolute inset-0 bg-black/30" />
-                    <div className="flex justify-center h-full mt-">
-                        <h2 className="text-5xl md:text-2xl lg:text-[100px]  text-black mt-40  ">
+                    <div className="flex justify-center h-full">
+                        <h2 className="text-5xl md:text-2xl lg:text-[100px] font-semibold text-black mt-30">
                             Restaurants
                         </h2>
                     </div>
-
-                    
+                    <div className="absolute bottom-0 w-full h-1/2">
+                        <Grid image="/images/Rectangle4559.webp" />
                     </div>
                 </div>
-                <Grid
-                image="/images/Rectangle4559.webp"/>
-
-                <div className="my-">
-                    <ServicesGrid />
-                </div>
-                <div className="">
-                    <StatsSection />
-                </div>
-                <div className="">
-                    <ClientsSay />
-                </div>
-            {/* </div> */}
+            </div>
+            <ServicesGrid />
+            <StatsSection />
+            <ClientsSay />
         </>
     );
 };

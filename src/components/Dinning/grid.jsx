@@ -7,39 +7,39 @@ const bottle = ({ image, title }) => {
   const router = useRouter();
 
   return (
-    <div className="absolute w-full md:w-1/2 mt-[-90vh]">
-      <Image
-        src={image}
-        alt={title || 'sdf'}
-        width={960}
-        height={640}
-        className="w-full h-[80vh] object-cover"
-      />
+    <div className="w-full h-full flex flex-col lg:flex-row mt-0">
+               
+                <div className="relative w-full lg:w-1/2 h-[529.px] -mt-32 z-20">
+              <Image
+                src="/images/Accomodationimg/zrr34yc0jw1ip47byz0u.webp"
+                alt="Vacation Image"
+                fill
+                className="object-cover rounded-t-3xl"
+              />
+                </div>
+    
+                {/* Right Text Content (No Padding Around Section) */}
+            <div className="w-full lg:w-1/2 bg-[#D69D52] px-6 py-8 sm:px-8 sm:py-12 md:px-10 md:py-16 text-white flex flex-col justify-baseline mt-8 lg:mt-0 h-auto min-h-[300px]">
+      {/* <h3 className="text-sm sm:text-base md:text-lg ">Best Service</h3> */}
+      <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mt-6">Dinnig Service</h2>
+      <p className="mt-4 text-xs sm:text-sm md:text-base leading-relaxed">
+        Mauris varius interdum erat, et ultrices justo imperdiet nec. <br />
+        Cras ac porttitor tortor, id iaculis neque. <br />
+        Fusce et malesuada nibh, et consectetur risus. <br />
+        Suspendisse dictum orci eget cursus viverra. <br />
+        Vestibulum a mauris urna. Aliquam eget risus vitae lorem.
+      </p>
 
-      {/* Floating Text Boxcd */}
-      <div
-        className="absolute md:left-130 md:top-1/2 transform md:-translate-y-1/2
-  bg-[#D69D52] text-white p-10 rounded-lg shadow-lg w-[52vw] h-120 
-  flex flex-col justify-center"
-      >
-        <h3 className="text-2xl mb-6">Best Restuants</h3>
-        <p className="text-3xl font-bold mb-6">Dinning Service</p>
-        <p className="text-lg mb-6">
-          Dining services in a resort are designed to enhance the guest
-          experience by offering a range of culinary options in diverse
-          settings, from casual and relaxed to upscale and elegant. Whether
-          guests are seeking a romantic dinner for two, a family-friendly meal,
-          or a lively gathering with friends, resorts strive to provide
-          memorable dining experiences that cater to every palate.
-        </p>
-        <button
-          className="w-[200px] py-2 border border-white rounded-full text-white 
-  hover:bg-white hover:text-black transition-all cursor-pointer mx-auto" onClick={() => router.push("/Contact")}
+      <button
+          className="w-full md:w-[200px] py-2 border border-white rounded-full text-white 
+          hover:bg-white hover:text-black transition-all cursor-pointer mx-auto mt-1 "
+          onClick={() => router.push("/Contact")}
         >
           Book Now
         </button>
-      </div>
     </div>
+    
+          </div>
   );
 };
 
