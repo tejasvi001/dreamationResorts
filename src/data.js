@@ -52,6 +52,7 @@ export const Acorn = {
       "Bath cosmetics",
       "Handmade bed",
       "King Size Beds",
+      
     ],
   },
 
