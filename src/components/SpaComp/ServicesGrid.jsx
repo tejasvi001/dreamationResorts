@@ -12,14 +12,6 @@ const services = [
   { title: 'Yoga Classes', image: '/images/Spaimg/Rectangle 81.png' },
   { title: 'Massages', image: '' },
   { title: 'Private Spa', image: '/images/Spaimg/Rectangle 81.png' }
-    { title: 'Good Health', image: '/images/Spaimg/Rectangle81.png' },
-    { title: 'Wellness', image: '' },
-    { title: 'Steam Room', image: '/images/Spaimg/Rectangle81.png' },
-    { title: 'Boutique', image: '' },
-    { title: 'Relaxation', image: '' },
-    { title: 'Yoga Classes', image: '/images/Spaimg/Rectangle81.png' },
-    { title: 'Massages', image: '' },
-    { title: 'Private Spa', image: '/images/Spaimg/Rectangle81.png' }
   ];
 
 export default function ServicesGrid() {
