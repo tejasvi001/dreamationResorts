@@ -53,8 +53,8 @@ const pages = [
         image: "/activities/Rectangle 59.jpg",
       },
       {
-        name: "Indoor Restaurant",
-        path: "/IndoorRestaurant",
+        name: "Hamlet Eatery",
+        path: "/HamletEatery",
         image: "/activities/Rectangle 61.webp",
       },
     ],
