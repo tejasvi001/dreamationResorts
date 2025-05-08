@@ -66,7 +66,7 @@ export default function Activities() {
         </h1>
 
         {/* Main Content */}
-        <div className="flex border-2 flex-col items-center max-w-2xl text-center  md:mt-1 h-full overflow-hidden gap-4">
+        <div className="flex  flex-col items-center max-w-2xl text-center  md:mt-1 h-full overflow-hidden gap-4">
           <div className="w-full h-full flex justify-center relative">
             <div className="absolute w-72 h-72 rounded-2xl opacity-30 bg-black"></div>
           <img src={slides[currentIndex].image} alt="" className="w-72 h-72 rounded-2xl" />
