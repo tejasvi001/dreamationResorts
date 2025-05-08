@@ -34,7 +34,7 @@ const pages = [
   {
     name: "Activities",
     path: "/Activities",
-    image: "/activities/Rectangle 73.png",
+    image: "/activities/Rectangle 61.webp",
   },
   // { name: "Spa", path: "/Spa", image: "/images/Spaimg/Rectangle 81.png" },
   {
