@@ -616,31 +616,31 @@ export const IndoorPageData = {
     buttonText: "MEET US",
     cards: [
       {
-        image: "/images/brew/download (4).jpeg",
+        image: "/images/brew/fvxbywipxxrn4uyxhlhh_2_11zon.webp",
         alt: "Beans",
-        subtitle: "A real Italian cafe",
-        title: "Explore the history of the cafe",
+        subtitle: "A real Hamlet Eatery",
+        title: "Explore the history of the Eatery",
       },
       {
-        image: "/images/brew/download (5).jpeg",
+        image: "/images/brew/fvxbywipxxrn4uyxhlhh_2_11zon.webp",
         alt: "Beans",
-        subtitle: "A real Italian cafe",
-        title: "Explore the history of the cafe",
+        subtitle: "A real Hamlet Eatery",
+        title: "Explore the history of the Eatery",
       },
       {
-        image: "/images/brew/download (6).jpeg",
+        image: "/images/brew/vj7xmxtadx03ipjcu0zq_3_11zon.webp",
         alt: "Coffee Machine",
-        subtitle: "A real Italian cafe",
+        subtitle: "A real Hamlet Eatery",
         title: "Detailed descriptions and prices",
       },
     ],
   },
   CoffeeFeature: {
-    image: "/images/brew/download (7).jpeg",
-    altText: "Coffee brewing",
-    heading: "Story of the cafe and its origins ",
+    image: "/images/brew/fvxbywipxxrn4uyxhlhh_2_11zon.webp",
+    altText: "Hamlet Eatery",
+    heading: "Story of theEatery and its origins ",
     paragraph:
-      "Brief overview of the cafe's mission and valuevel vestibulum libero pharetra vel. Pellentesque lorem augue, fermentum nec nibh et, fringilla sollicitudin orci. Integer pharetra magna non ante blandit lobortis. Sed mollis.",
+      "Brief overview of the Eatery mission and valuevel vestibulum libero pharetra vel. Pellentesque lorem augue, fermentum nec nibh et, fringilla sollicitudin orci. Integer pharetra magna non ante blandit lobortis. Sed mollis.",
   },
   Coff: {
     title:
@@ -648,7 +648,7 @@ export const IndoorPageData = {
     description:
       "A blog section to share insights about coffee, promotions, or special events,",
     buttonText: "SEE MENU CART",
-    image: "/images/brew/download (1) copy.jpeg",
+    image: "/images/brew/vsod9uur68oucbirmp9b_4_11zon.webp",
     imageAlt: "Reading group",
   },
   Cup: {
@@ -691,7 +691,7 @@ export const IndoorPageData = {
       "Quisque cursus et, porttitor risus.",
       "Nulla ipsum dolor lacus, suscipit adipiscing.",
     ],
-    image: "/images/brew/download (2) copy.jpeg",
+    image: "/images/brew/ybcmos0kbnizas6ib2t1_5_11zon.webp",
     imageAlt: "Coffee Beans",
   },
 };
