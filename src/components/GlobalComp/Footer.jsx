@@ -26,7 +26,7 @@ const Footer = () => {
           <div className="justify-start text-white text-lg lg:text-xl font-normal font-Lato leading-8 md:leading-[2vw]">
             <a href="https://maps.app.goo.gl/xiUZZVMoVkXfCZtb8">
               <p className="max-w-[550px] ">
-              Dreamation Resorts, Ghornala, Bir, Baijnath, Kangra
+              Dreamation Resorts, Ghornala, Bir, Baijnath, Himachal Pradesh
               </p>
             </a>
           </div>

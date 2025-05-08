@@ -20,8 +20,8 @@ const Gallery = () => {
 
       <GalleryItemRight 
       image="/activities/Rectangle 59.jpg" 
-      title=" Bird Watching" 
-      description="Bird watching is a serene and rewarding activity that invites individuals to connect with nature while observing the beauty and diversity of avian life. Whether in urban parks, wetlands, forests, or coastal areas, bird watchers can enjoy the thrill of spotting various species, learning about their behaviors, and appreciating their unique adaptations."
+      title="Avi Fauna Exploration" 
+      description="Chirping is a serene and rewarding activity that invites individuals to connect with nature while observing the beauty and diversity of avian life. Whether in urban parks, wetlands, forests, or coastal areas, bird watchers can enjoy the thrill of spotting various species, learning about their behaviors, and appreciating their unique adaptations."
       />
         
       <GalleryItemLeft

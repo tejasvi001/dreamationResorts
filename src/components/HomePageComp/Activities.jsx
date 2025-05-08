@@ -22,7 +22,7 @@ const slides = [
   {
     title: "Earthen echo mud house",
     description:
-      "An Earthon Echo Mud House is a sustainable, eco-friendly housing concept typically designed using mud as a primary building material. These types of homes are often seen as a solution to climate-conscious living, especially in regions with hot climates.",
+      "An Earthon Echo Mud House is a sustainable, eco-friendly housing concept typically designed using mud as a primary building material. ",
     image: "/earth.webp", // You'll replace this with your actual image
     redirectTo: "/Eathern",
   },
@@ -66,7 +66,7 @@ export default function Activities() {
         </h1>
 
         {/* Main Content */}
-        <div className="flex flex-col items-center max-w-2xl text-center  md:mt-8 h-full overflow-hidden gap-4">
+        <div className="flex border-2 flex-col items-center max-w-2xl text-center  md:mt-1 h-full overflow-hidden gap-4">
           <div className="w-full h-full flex justify-center relative">
             <div className="absolute w-72 h-72 rounded-2xl opacity-30 bg-black"></div>
           <img src={slides[currentIndex].image} alt="" className="w-72 h-72 rounded-2xl" />

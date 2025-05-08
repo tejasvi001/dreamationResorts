@@ -31,7 +31,7 @@ const HeroSection = ({HomeRef}) => {
           onClick={() => {
             HomeRef.current.scrollIntoView({ behavior: "smooth" });
           }}>
-            Explore More!
+            Explore More
           </button>
         </div>
       </div>
