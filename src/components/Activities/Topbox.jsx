@@ -22,12 +22,15 @@ const HeroSection = ({HomeRef}) => {
         <div>
           <h1 className="text-4xl sm:text-4xl md:text-6xl text-white font-bold hover:scale-125 duration-2000 cursor-pointer"
           style={{fontFamily:'memv1'}}>
+<<<<<<< HEAD
           
+=======
+            {/* <span className="text-[#d69e54]">Welcome</span> to <br /> */}
+>>>>>>> 58a67c4dc7282c4db3a81c34d6a08bb7c8f5ad10
             <span className="text-white">Activities</span>
           </h1>
         </div>
         <div className="pt-10">
-          
         </div>
       </div>
     </div>
