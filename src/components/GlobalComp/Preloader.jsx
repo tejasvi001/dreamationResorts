@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useState, useEffect } from "react";
 
 const images = [
@@ -15,11 +15,31 @@ const images = [
 ];
 
 const Preloader = () => {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const [progress, setProgress] = useState(0);
   const [scaleUp, setScaleUp] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
 
+  // Preload images first
+  useEffect(() => {
+    const preloadAllImages = async () => {
+      await Promise.all(
+        images.map((src) => {
+          return new Promise((resolve) => {
+            const img = new Image();
+            img.src = src;
+            img.onload = resolve;
+            img.onerror = resolve;
+          });
+        })
+      );
+      setLoading(true); // All images loaded
+    };
+
+    preloadAllImages();
+  }, []);
+
+  // Progress bar logic
   useEffect(() => {
     if (loading) {
       const interval = setInterval(() => {
@@ -35,6 +55,8 @@ const Preloader = () => {
           return prev + 1;
         });
       }, 20);
+
+      return () => clearInterval(interval);
     }
   }, [loading]);
 
@@ -44,7 +66,7 @@ const Preloader = () => {
 
   return (
     <div className="w-full h-[90vh] md:h-screen bg-white flex flex-col items-center justify-center overflow-hidden relative">
-      {/* The clip-path container */}
+      {/* Keyhole clip-path container */}
       <div
         className="relative flex items-center justify-center"
         style={{
@@ -70,7 +92,6 @@ const Preloader = () => {
             height="500"
             clipPath="url(#keyholeClip)"
             preserveAspectRatio="xMidYMid slice"
-            onLoad={() => setLoading(false)}
             className="bg-transparent"
           />
         </svg>
