@@ -22,10 +22,7 @@ const GalleryItemLeft = ({ image, title, description }) => {
       >
         <h3 className="text-xl  sm:text-3xl font-semibold mb-4 sm:mb-6">{title}</h3>
         <p className="text-sm  sm:text-lg mb-4">{description}</p>
-        <button className="w-full py-2 border border-white rounded-full text-white 
-          hover:bg-white hover:text-black transition-all">
-          Let's Explore
-        </button>
+        
       </div>
     </div>
   );

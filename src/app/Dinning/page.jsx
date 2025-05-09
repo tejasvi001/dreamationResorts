@@ -13,7 +13,7 @@ const page = () => {
                 <div className="relative bg-center h-screen" style={{ backgroundImage: "url('/images/Rectangle4560.webp')" }}>
                     <div className="absolute inset-0 bg-black/30" />
                     <div className="flex justify-center h-full">
-                        <h2 className="text-5xl md:text-2xl lg:text-[100px] font-semibold text-black mt-30">
+                        <h2 className="text-5xl md:text-2xl lg:text-[100px] font-semibold text-black mt-16">
                             Restaurants
                         </h2>
                     </div>

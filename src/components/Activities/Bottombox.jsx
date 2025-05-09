@@ -41,7 +41,7 @@ const Bottombox = () => {
             <FaMapMarkerAlt className="text-3xl mb-4" />
             <h3 className="text-lg font-semibold">Corporate Location</h3>
             <p>Dremations Tourism & Hospitality Private Limited Hadbast No - 1037,
-            – Baijnath District – Kangra (H.P.) 176077</p>
+            – Baijnath District – Himachal Pradesh, 176077</p>
           </div>
           
           {/* Phone */}

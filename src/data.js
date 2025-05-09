@@ -23,9 +23,9 @@ export const Acorn = {
     paragraphs: [
       "Stylish Interiors: Tastefully furnished with a blend of modern amenities and classic or country-style décor — think wooden beams, stone fireplaces, and plush furniture.",
       "Luxury Amenities: Features like a private hot tub, underfloor heating, spa-style bathrooms, high-thread-count linens, and possibly a wood-burning stove or firepit.",
-      "Fully Equipped Kitchen: Modern appliances, cookware, dining areas, and often local or welcome treats like fresh bread or wine.",
+     
       "Privacy and Comfort: Often detached or semi-detached with private outdoor spaces, scenic views, and minimal disturbance — ideal for couples, small families, or solo travelers seeking peace.",
-      "Tech and Entertainment: Smart TVs, high-speed Wi-Fi, Bluetooth speakers, and sometimes curated book or game selections.",
+      "Tech and Entertainment: Bravia, High-speed Wi-Fi, Bluetooth speakers, and sometimes curated book or game selections.",
     ],
     backgroundColor: "#d69d52",
     textColor: "text-white",
@@ -37,21 +37,24 @@ export const Acorn = {
     textColor: "text-white",
     layout: "right",
     amenities: [
-      "Air Conditioning",
+      "Centeral Heated",
       "Room Service",
       "Wireless Internet",
       "Swimming Pool",
       "Valet Parking",
-      "60” LED TV",
+      "Indoor Games",
+      "60” Bravia",
       "Coffee and Teaset",
-      "Hair Dryer",
-      "Telephone",
+      "Attic For Kids",
+      "Personal Hair Dryer",
+      "Study Table",
+      "Intercom",
       "Valley View",
       "Free Mini Bar",
       "Luxurious Bathroom",
       "Bath Cosmetics",
-      "Handmade Bed",
-      "King Size Beds",
+      "Handmade King Size Beds ",
+      
       "Lower Cottage: Room- 13'2 * 18'6, Bathroom - 5' * 13'2",
       "Upper Cottage: Room - 17'6 * 14', Bathroom - 5' * 7'4, Balcony - 5'8 * 8' ",
       "Hut: Room - 12' * 15'6 (including bathroom), Balcony - 6' * 13'8",
@@ -77,25 +80,25 @@ export const Acorn = {
       title: "Residental",
       imageSrc: BedIcon,
       description: "",
-      buttonText: "View More Details",
+      buttonText: "For More Details",
     },
     {
       title: "Executive",
       imageSrc: BedIcon,
       description: "",
-      buttonText: "View More Details",
+      buttonText: "For More Details",
     },
     {
       title: "Deluxe",
       imageSrc: BedIcon,
       description: "",
-      buttonText: "View More Details",
+      buttonText: "For More Details",
     },
     {
       title: "Premium",
       imageSrc: BedIcon,
       description: "",
-      buttonText: "View More Details",
+      buttonText: "For More Details",
     },
   ],
 
@@ -129,28 +132,28 @@ export const Acorn = {
       imageSrc: BedIcon,
       description:
         "Residential rooms in an Acorn Luxury Cottage are thoughtfully designed to blend comfort, elegance, and functionality, making guests feel at home while offering a premium lodging experience.",
-      buttonText: "View More Details",
+      buttonText: "For More Details",
     },
     {
       title: "Executive",
       imageSrc: BedIcon1,
       description:
         "An Executive Room in an Acorn Luxury Cottage is designed to offer a premium blend of comfort, functionality, and understated luxury. ",
-      buttonText: "View More Details",
+      buttonText: "For More Details",
     },
     {
       title: "Luxury",
       imageSrc: BedIcon2,
       description:
         "A Deluxe Room in an Acorn Luxury Cottage offers a spacious, thoughtfully designed environment focused on comfort, elegance, and a touch of rustic charm.",
-      buttonText: "View More Details",
+      buttonText: "For More Details",
     },
     {
       title: "Premium",
       imageSrc: BedIcon3,
       description:
         "A Premium Room in an Acorn Luxury Cottage represents the highest tier of luxury and comfort, designed for guests seeking an indulgent, exclusive, and immersive experience. ",
-      buttonText: "View More Details",
+      buttonText: "For More Details",
     },
   ],
 };
@@ -177,15 +180,15 @@ export const Fern = {
     textColor: "text-white",
     layout: "right",
     amenities: [
-      "Swimming",
-      "Valet",
-      "Led",
-      "Coffee",
-      "Hair",
-      "Telephone",
+      "Swimming Pool",
+      "Valet Parking",
+      "Bravia",
+      "Coffee and Tea",
+      "Personal Hair Dryer",
+      "Intercom",
       "Luxurious Bathroom ",
       "Bath Cosmetic",
-      "King Size Bed",
+      "Handmade King Size Bed",
       "Study Table ",
     
 
@@ -207,28 +210,28 @@ export const Fern = {
       imageSrc: tent,
       description:
         "Aliquam vulputate ligula et nisl dapibus ultrices sed dolores ipsums.",
-      buttonText: "View More Details",
+      buttonText: "For More Details",
     },
     {
       title: "Executive",
       imageSrc: BedIcon,
       description:
         "Aliquam vulputate ligula et nisl dapibus ultrices sed dolores ipsums.",
-      buttonText: "View More Details",
+      buttonText: "For More Details",
     },
     {
       title: "Deluxe",
       imageSrc: BedIcon,
       description:
         "Aliquam vulputate ligula et nisl dapibus ultrices sed dolores ipsums.",
-      buttonText: "View More Details",
+      buttonText: "For More Details",
     },
     {
       title: "Premium",
       imageSrc: BedIcon,
       description:
         "Aliquam vulputate ligula et nisl dapibus ultrices sed dolores ipsums.",
-      buttonText: "View More Details",
+      buttonText: "For More Details",
     },
   ],
 
@@ -262,28 +265,28 @@ export const Fern = {
       imageSrc: tent,
       description:
         "The Residential Tent at The Fern Seaside Luxurious Tent Resort offers a perfect blend of nature-inspired luxury and modern comfort, designed for guests seeking a unique, upscale glamping experience. ",
-      buttonText: "View More Details",
+      buttonText: "For More Details",
     },
     {
       title: "Executive",
       imageSrc: tent2,
       description:
         "The Exclusive Tent at The Fern Seaside Luxurious Tent Resort offers a premium, elevated glamping experience for guests who seek the finest in luxury and privacy. ",
-      buttonText: "View More Details",
+      buttonText: "For More Details",
     },
     {
       title: "Deluxe",
       imageSrc: tent3,
       description:
         "The Exclusive Tent at The Fern Seaside Luxurious Tent Resort offers an unparalleled blend of elegance, comfort, and exclusivity, providing an extraordinary glamping experience for those seeking the highest level of luxury and privacy. ",
-      buttonText: "View More Details",
+      buttonText: "For More Details",
     },
     {
       title: "Premium",
       imageSrc: tent4,
       description:
         "The Premium Tent at The Fern Seaside Luxurious Tent Resort offers a superior glamping experience with a perfect blend of comfort, style, and nature. Designed for guests who desire a luxurious and immersive experience while maintaining a connection to the outdoors.",
-      buttonText: "View More Details",
+      buttonText: "For More Details",
     },
   ],
 };
@@ -323,17 +326,16 @@ export const Earthern = {
       "Earthen Floors",
       "Concierge Service",
       "1000 sq ft",
-      "60” LCD TV",
-      "Coffee and Teaset",
-      "Hair Dryer",
-      "Telephone",
+      "60” Bravia",
+      "Coffee and Tea",
+      "Personal Hair Dryer",
+      "Intercom",
       "Seaside View",
       "Free Mini Bar",
       "Luxurious Bathroom",
       "Bath Cosmetics",
-      "Handmade Bed",
-      "2 Queen Beds",
-      "3 Person Maximum",
+      "Handmade 2 Queen Beds",
+          "3 Person Maximum",
 
         
         ],
@@ -354,28 +356,28 @@ export const Earthern = {
       imageSrc: BedIcon,
       description:
         "Aliquam vulputate ligula et nisl dapibus ultrices sed dolores ipsums.",
-      buttonText: "View More Details",
+      buttonText: "For More Details",
     },
     {
       title: "Executive",
       imageSrc: BedIcon,
       description:
         "Aliquam vulputate ligula et nisl dapibus ultrices sed dolores ipsums.",
-      buttonText: "View More Details",
+      buttonText: "For More Details",
     },
     {
       title: "Deluxe",
       imageSrc: BedIcon,
       description:
         "Aliquam vulputate ligula et nisl dapibus ultrices sed dolores ipsums.",
-      buttonText: "View More Details",
+      buttonText: "For More Details",
     },
     {
       title: "Premium",
       imageSrc: BedIcon,
       description:
         "Aliquam vulputate ligula et nisl dapibus ultrices sed dolores ipsums.",
-      buttonText: "View More Details",
+      buttonText: "For More Details",
     },
   ],
 
@@ -409,28 +411,28 @@ export const Earthern = {
       imageSrc: mud,
       description:
         "The Earthen Echo Mud House is rooted in the concept of sustainable living, offering a natural, earthy aesthetic while maintaining modern comforts. The house is primarily built using earth-based materials such as mud bricks, clay, stone, straw, and cob, creating an atmosphere that is both rustic and environmentally conscious. The architectural design is inspired by traditional earthen houses but integrates contemporary features to ensure practicality and comfort..",
-      buttonText: "View More Details",
+      buttonText: "For More Details",
     },
     {
       title: "Executive",
       imageSrc: mud1,
       description:
         "An Exclusive Earthen Echo Mud House takes the concept of sustainability and eco-friendly living to a whole new level, offering a luxurious, private, and bespoke experience. It combines the natural charm of mud houses with upscale amenities, personalized design, and high-end features for a unique and exclusive living experience.",
-      buttonText: "View More Details",
+      buttonText: "For More Details",
     },
     {
       title: "Deluxe",
       imageSrc: mud2,
       description:
         "A Deluxe Earthen Echo Mud House offers a refined and sophisticated approach to eco-luxury living. This type of mud house combines sustainable materials and building techniques with premium finishes and cutting-edge amenities. It focuses on providing ultimate comfort, luxury, and exclusivity while staying true to eco-friendly principles.",
-      buttonText: "View More Details",
+      buttonText: "For More Details",
     },
     {
       title: "Premium",
       imageSrc: mud3,
       description:
         "A Premium Earthen Echo Mud House offers an elevated yet still eco-conscious living experience, where luxury is paired with sustainable building practices. It’s designed to cater to those who want the charm and environmental benefits of mud houses with high-end finishes and advanced comforts.",
-      buttonText: "View More Details",
+      buttonText: "For More Details",
     },
   ],
 };
@@ -441,19 +443,19 @@ export const BrewPageData = {
     cards: [
       {
         image:
-          "/images/brew/how-to-brew-the-healthiest-cup-of-coffee-1440x810.jpg",
+          "/images/brew/NIK00271.webp",
         alt: "Coffee Machine",
         title: "Discover the taste of real coffee",
         subtitle: "A real Italian cafe",
       },
       {
-        image: "/images/brew/istockphoto-1093593288-612x612.jpg",
+        image: "/images/brew/NIK00272.webp",
         alt: "Beans",
         title: "Explore the history of the cafe",
         subtitle: "A real Italian cafe",
       },
       {
-        image: "/images/brew/pexels-pixabay-159291.jpg",
+        image: "/images/brew/NIK00273.webp",
         alt: "Coffee Machine",
         title: "Discover our unique coffee",
         subtitle: "A real Italian cafe",
@@ -462,7 +464,7 @@ export const BrewPageData = {
   },
 
   CoffeeFeature: {
-    image: "/images/brew/home_coffee2_pic1.jpg",
+    image: "/images/brew/NIK00274.webp",
     altText: "Coffee brewing",
     heading: "Vivamus in diam\ncondimentum\nmaximus",
     paragraph:
@@ -475,7 +477,7 @@ export const BrewPageData = {
       "Libero pharetra vel. Pellentesque lorem augue, fermentum nec nibh et, fringilla sollicitudin orci. Integer pharetra magna non ante blandit lobortis. Sed mollis.",
     buttonText: "SEE MENU CART",
     image:
-      "/images/brew/feature_image_88786a36-1b01-40fb-a4d2-b6f0a661d850.webp",
+      "/images/brew/NIK00275.webp",
     imageAlt: "Reading group",
   },
 
@@ -520,7 +522,7 @@ export const BrewPageData = {
       "Quisque cursus et, porttitor risus.",
       "Nulla ipsum dolor lacus, suscipit adipiscing.",
     ],
-    image: "/images/brew/black-iced-coffee-beans-on-600nw-2481549469.webp",
+    image: "/images/brew/NIK00281.webp",
     imageAlt: "Coffee Beans",
   },
 };
@@ -530,19 +532,19 @@ export const AkhadaPageData = {
         buttonText: "MEET US",
       cards: [
       {
-        image: "/images/brew/9c518dbb8b940a7fb6077b3fbeba14a5.webp",
+        image: "/images/akhada/NIK00289-Enhanced-NR_1_11zon.webp",
         alt: "Beans",
         title: "Donec gravida elit ac porta interdum. ",
         subtitle: "A USA cafe",
       },
       {
-        image: "/images/brew/images.jpeg",
+        image: "/images/akhada/NIK00290_2_11zon.webp",
         alt: "Beans",
         title: "The history of the cafe",
         subtitle: "A USA cafe",
       },
       {
-        image: "/images/brew/download.jpeg",
+        image: "/images/akhada/NIK00291_3_11zon.webp",
         alt: "Coffee Machine",
         title: " our unique coffee",
         subtitle: "A USA cafe",
@@ -551,7 +553,7 @@ export const AkhadaPageData = {
   },
 
   CoffeeFeature: {
-    image: "/images/brew/download (1).jpeg",
+    image: "/images/akhada/NIK00292_4_11zon.webp",
     altText: "Coffee brewing",
     heading: "Vivamus in nmaximus",
     paragraph:
@@ -563,7 +565,7 @@ export const AkhadaPageData = {
     description:
       "Pellentesque habitant morbi tristique senectus et netus. Curabitur tincidunt eros nec justo vulputate, nec fermentum nisl pharetra.",
     buttonText: "SEE MENU CART",
-    image: "/images/brew/download (2).jpeg",
+    image: "/images/brew/NIK00281.webp",
     imageAlt: "Reading group",
   },
   Cup: {
@@ -606,7 +608,7 @@ export const AkhadaPageData = {
       "Curabitur vel sem sit amet magna fermentum.",
       "Praesent id metus at dolor tincidunt.",
     ],
-    image: "/images/brew/images (1).jpeg",
+    image: "/images/akhada/NIK00293_5_11zon.webp",
     imageAlt: "Coffee Beans",
   },
 };
