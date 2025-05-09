@@ -43,7 +43,7 @@ const pages = [
     image: "/activities/Rectangle 67.jpg",
     submenu: [
       {
-        name: "Bamboo And Brew Cafe'",
+        name: "Bamboo And Brew Café ",
         path: "/BrewCafe",
         image: "/images/brew/download (2).jpeg",
       },
