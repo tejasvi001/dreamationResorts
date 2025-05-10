@@ -19,7 +19,7 @@ export default function Coff({Coffdata}) {
           </svg>
         </button>
       </div>
-      <div className="relative w-full h-[400px]">
+      <div className="relative w-full h-[400px] rounded-2xl md:rounded-[2vw] overflow-hidden">
         <Image
           src={Coffdata.image}
           alt={Coffdata.imageAlt}

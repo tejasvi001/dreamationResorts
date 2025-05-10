@@ -1,15 +1,3 @@
-import BedIcon from "./assets/bed.webp";
-import BedIcon1 from "./assets/bed1.webp";
-import BedIcon2 from "./assets/bed2.webp";
-import BedIcon3 from "./assets/bed3.webp";
-import tent from "./assets/tent.jpg";
-import tent2 from "./assets/tent2.jpg";
-import tent3 from "./assets/tent3.jpg";
-import tent4 from "./assets/tent4.jpg";
-import mud from "./assets/mud.jpg";
-import mud1 from "./assets/mud1.jpg";
-import mud2 from "./assets/mud2.jpg";
-import mud3 from "./assets/mud3.webp";
 
 export const Acorn = {
   heroData: {
@@ -77,25 +65,25 @@ export const Acorn = {
   roomGrid: [
     {
       title: "Residental",
-      imageSrc: BedIcon,
+      imageSrc: '/assets/bed.webp',
       description: "",
       buttonText: "For More Details",
     },
     {
       title: "Executive",
-      imageSrc: BedIcon,
+      imageSrc: '/assets/bed.webp',
       description: "",
       buttonText: "For More Details",
     },
     {
       title: "Deluxe",
-      imageSrc: BedIcon,
+      imageSrc: '/assets/bed.webp',
       description: "",
       buttonText: "For More Details",
     },
     {
       title: "Premium",
-      imageSrc: BedIcon,
+      imageSrc: '/assets/bed.webp',
       description: "",
       buttonText: "For More Details",
     },
@@ -128,28 +116,28 @@ export const Acorn = {
   rooms: [
     {
       title: "Ultra Luxury",
-      imageSrc: BedIcon,
+      imageSrc: '/assets/bed.webp',
       description:
         "Residential rooms in an Acorn Luxury Cottage are thoughtfully designed to blend comfort, elegance, and functionality, making guests feel at home while offering a premium lodging experience.",
       buttonText: "For More Details",
     },
     {
       title: "Executive",
-      imageSrc: BedIcon1,
+      imageSrc: '/assets/bed1.webp',
       description:
         "An Executive Room in an Acorn Luxury Cottage is designed to offer a premium blend of comfort, functionality, and understated luxury. ",
       buttonText: "For More Details",
     },
     {
       title: "Luxury",
-      imageSrc: BedIcon2,
+      imageSrc: '/assets/bed2.webp',
       description:
         "A Deluxe Room in an Acorn Luxury Cottage offers a spacious, thoughtfully designed environment focused on comfort, elegance, and a touch of rustic charm.",
       buttonText: "For More Details",
     },
     {
       title: "Premium",
-      imageSrc: BedIcon3,
+      imageSrc: '/assets/bed3.webp',
       description:
         "A Premium Room in an Acorn Luxury Cottage represents the highest tier of luxury and comfort, designed for guests seeking an indulgent, exclusive, and immersive experience. ",
       buttonText: "For More Details",
@@ -214,28 +202,28 @@ export const Fern = {
   roomGrid: [
     {
       title: "Residential",
-      imageSrc: tent,
+      imageSrc: '/assets/tent.jpg',
       description:
         "Aliquam vulputate ligula et nisl dapibus ultrices sed dolores ipsums.",
       buttonText: "For More Details",
     },
     {
       title: "Executive",
-      imageSrc: BedIcon,
+      imageSrc: '/assets/bed.webp',
       description:
         "Aliquam vulputate ligula et nisl dapibus ultrices sed dolores ipsums.",
       buttonText: "For More Details",
     },
     {
       title: "Deluxe",
-      imageSrc: BedIcon,
+      imageSrc: '/assets/bed.webp',
       description:
         "Aliquam vulputate ligula et nisl dapibus ultrices sed dolores ipsums.",
       buttonText: "For More Details",
     },
     {
       title: "Premium",
-      imageSrc: BedIcon,
+      imageSrc: '/assets/bed.webp',
       description:
         "Aliquam vulputate ligula et nisl dapibus ultrices sed dolores ipsums.",
       buttonText: "For More Details",
@@ -269,28 +257,28 @@ export const Fern = {
   rooms: [
     {
       title: "Residential",
-      imageSrc: tent,
+      imageSrc: '/assets/tent.jpg',
       description:
         "The Residential Tent at The Fern Seaside Luxurious Tent Resort offers a perfect blend of nature-inspired luxury and modern comfort, designed for guests seeking a unique, upscale glamping experience. ",
       buttonText: "For More Details",
     },
     {
       title: "Executive",
-      imageSrc: tent2,
+      imageSrc: '/assets/tent2.jpg',
       description:
         "The Exclusive Tent at The Fern Seaside Luxurious Tent Resort offers a premium, elevated glamping experience for guests who seek the finest in luxury and privacy. ",
       buttonText: "For More Details",
     },
     {
       title: "Deluxe",
-      imageSrc: tent3,
+      imageSrc: '/assets/tent3.jpg',
       description:
         "The Exclusive Tent at The Fern Seaside Luxurious Tent Resort offers an unparalleled blend of elegance, comfort, and exclusivity, providing an extraordinary glamping experience for those seeking the highest level of luxury and privacy. ",
       buttonText: "For More Details",
     },
     {
       title: "Premium",
-      imageSrc: tent4,
+      imageSrc: '/assets/tent4.jpg',
       description:
         "The Premium Tent at The Fern Seaside Luxurious Tent Resort offers a superior glamping experience with a perfect blend of comfort, style, and nature. Designed for guests who desire a luxurious and immersive experience while maintaining a connection to the outdoors.",
       buttonText: "For More Details",
@@ -358,28 +346,28 @@ export const Earthern = {
   roomGrid: [
     {
       title: "Residential",
-      imageSrc: BedIcon,
+      imageSrc: '/assets/bed.webp',
       description:
         "Aliquam vulputate ligula et nisl dapibus ultrices sed dolores ipsums.",
       buttonText: "For More Details",
     },
     {
       title: "Executive",
-      imageSrc: BedIcon,
+      imageSrc: '/assets/bed.webp',
       description:
         "Aliquam vulputate ligula et nisl dapibus ultrices sed dolores ipsums.",
       buttonText: "For More Details",
     },
     {
       title: "Deluxe",
-      imageSrc: BedIcon,
+      imageSrc: '/assets/bed.webp',
       description:
         "Aliquam vulputate ligula et nisl dapibus ultrices sed dolores ipsums.",
       buttonText: "For More Details",
     },
     {
       title: "Premium",
-      imageSrc: BedIcon,
+      imageSrc: '/assets/bed.webp',
       description:
         "Aliquam vulputate ligula et nisl dapibus ultrices sed dolores ipsums.",
       buttonText: "For More Details",
@@ -413,28 +401,28 @@ export const Earthern = {
   rooms: [
     {
       title: "Residential",
-      imageSrc: mud,
+      imageSrc: '/assets/mud.jpg',
       description:
         "The Earthen Echo Mud House is rooted in the concept of sustainable living, offering a natural, earthy aesthetic while maintaining modern comforts. The house is primarily built using earth-based materials such as mud bricks, clay, stone, straw, and cob, creating an atmosphere that is both rustic and environmentally conscious. The architectural design is inspired by traditional earthen houses but integrates contemporary features to ensure practicality and comfort..",
       buttonText: "For More Details",
     },
     {
       title: "Executive",
-      imageSrc: mud1,
+      imageSrc: '/assets/mud1.jpg',
       description:
         "An Exclusive Earthen Echo Mud House takes the concept of sustainability and eco-friendly living to a whole new level, offering a luxurious, private, and bespoke experience. It combines the natural charm of mud houses with upscale amenities, personalized design, and high-end features for a unique and exclusive living experience.",
       buttonText: "For More Details",
     },
     {
       title: "Deluxe",
-      imageSrc: mud2,
+      imageSrc: '/assets/mud2.jpg',
       description:
         "A Deluxe Earthen Echo Mud House offers a refined and sophisticated approach to eco-luxury living. This type of mud house combines sustainable materials and building techniques with premium finishes and cutting-edge amenities. It focuses on providing ultimate comfort, luxury, and exclusivity while staying true to eco-friendly principles.",
       buttonText: "For More Details",
     },
     {
       title: "Premium",
-      imageSrc: mud3,
+      imageSrc: '/assets/mud3.webp',
       description:
         "A Premium Earthen Echo Mud House offers an elevated yet still eco-conscious living experience, where luxury is paired with sustainable building practices. It’s designed to cater to those who want the charm and environmental benefits of mud houses with high-end finishes and advanced comforts.",
       buttonText: "For More Details",

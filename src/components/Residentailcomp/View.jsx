@@ -6,7 +6,7 @@ const View = ({ viewData }) => {
       <div className="md:w-1/2 flex justify-center items-center">
         <div
           style={{ backgroundColor : "#D69D52" }}
-          className="p-8 relative md:left-[20%] lg:w-4/5 md:w-full w-4/5 top-[100px] z-10"
+          className="p-8 relative md:left-[20%] lg:w-4/5 md:w-full w-4/5 top-[100px] z-10 rounded-2xl md:rounded-[2vw] overflow-hidden"
         >
           <h3 className="text-white font-lato font-bold mb-2 text-2xl">{viewData.title}</h3>
           <h2 className="text-white text-2xl lg:text-4xl font-AbhayaLibre mb-6 font-normal">

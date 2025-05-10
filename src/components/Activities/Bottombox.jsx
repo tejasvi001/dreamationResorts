@@ -61,7 +61,7 @@ const Bottombox = () => {
       </div>
 
       {/* Booking Section */}
-      <div className="bg-[#D69D52] text-white text-center py-16 px-10 md:px-32 mx-2 md:mx-20">
+      <div className="bg-[#D69D52] text-white text-center py-16 px-10 md:px-32 mx-2 md:mx-20 rounded-t-2xl md:rounded-t-[2vw] overflow-hidden">
         <div className="flex flex-col items-center gap-8">
           <h2 className="text-3xl font-bold">Book Your Next Vacation!</h2>
           <button className="px-6 py-2 cursor-pointer border border-white rounded-full text-lg hover:bg-white hover:text-orange-500 transition"  onClick={() => router.push("/Contact")}>

@@ -88,20 +88,20 @@ export default function Activities() {
 
       {/* Left Arrow */}
       <div
-        className="absolute top-1/2 -left-4 md:left-8 -translate-y-1/2 cursor-pointer"
+        className="absolute top-1/2 -left-2 md:left-20 -translate-y-1/2  cursor-pointer"
         onClick={prevSlide}
       >
-        <div className="w-14 h-14  flex items-center justify-center  text-white hover:scale-110 hover:text-black transition-colors">
+        <div className="w-10 md:w-14 h-10 md:h-14 flex items-center justify-center  text-white hover:scale-110 hover:text-black transition-colors">
           <img src="/activities/left.png" alt="" />
         </div>
       </div>
 
       {/* Right Arrow */}
       <div
-        className="absolute top-1/2 -right-4 md:right-8 -translate-y-1/2 cursor-pointer"
+        className="absolute top-1/2 -right-2 md:right-20 -translate-y-1/2 cursor-pointer"
         onClick={nextSlide}
       >
-        <div className="w-14 h-14  flex items-center justify-center  text-white hover:scale-110 hover:text-black transition-colors">
+        <div className="w-10 md:w-14 h-10 md:h-14 flex items-center justify-center  text-white hover:scale-110 hover:text-black transition-colors">
           <img src="/activities/right.png" alt="" />
         </div>
       </div>

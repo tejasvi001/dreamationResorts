@@ -5,7 +5,7 @@ export default function Coffee({ Coffeedata }) {
     <section className="py-16">
       <div className="container mx-auto flex flex-col md:flex-row items-center px-4 md:px-0">
         {/* Left Image */}
-        <div className="md:w-1/2 w-full mb-8 md:mb-0">
+        <div className="md:w-1/2 w-full mb-8 md:mb-0 rounded-r-xl md:rounded-r-[1vw] overflow-hidden">
           <div className="relative w-full h-96">
             <Image
               src={Coffeedata.image}

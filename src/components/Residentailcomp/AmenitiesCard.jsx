@@ -9,7 +9,7 @@ const AmenitiesCard = ({ amenititesData }) => {
     <div className="grid lg:grid-cols-2 gap-5">
       <div className="relative h-[600px] half-background-2 flex justify-center flex-col">
         <div
-          className={`p-8 min-h-[300px] break-words max-w-[530px] ${containerClass}`}
+          className={`p-8 min-h-[300px] break-words max-w-[530px] ${containerClass} rounded-2xl md:rounded-[2vw] overflow-hidden`}
           style={{ backgroundColor: amenititesData.backgroundColor }}
         >
           {/* Aligning title text to the left */}

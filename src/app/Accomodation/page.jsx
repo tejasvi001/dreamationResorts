@@ -1,13 +1,6 @@
-import React from "react";
-// import BedIcon from "../../assets/bed.png";
-import DuBedIcon from "../../assets/dubed.png";
-import roomImage from "../../assets/room.png";
-import Image from "next/image";
 import RoomGrid from "../../components/Residentailcomp/RoomGrid.jsx";
 import AttractionEvents from "../../components/HomePageComp/AttractionEvents";
 import FeaturedRoom from "../../components/Accomodation/FeaturedRoom.jsx";
-import BlackBackground from "../../components/Accomodation/BlackBackground.jsx";
-import ImageContainer from "../../components/Accomodation/ImageContainer.jsx";
 import Header from "../../components/Accomodation/Header.jsx";
 
 const rooms = [

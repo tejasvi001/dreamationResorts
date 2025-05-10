@@ -1,12 +1,8 @@
-import React from "react";
-import Image from "next/image";
-import DuBedIcon from "../../assets/dubed.png"; 
-
 const FeaturedRoom = () => {
   return (
     <div className='horiztalBetimage my-16 relative min-h-[480px] h-full'>
-      <Image
-        src={DuBedIcon}
+      <img
+        src='/assets/dubed.png'
         alt="Featured Room"
         className='absolute inset-0 w-full min-h-[450px] py-8 h-auto -z-10'
       />

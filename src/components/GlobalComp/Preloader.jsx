@@ -1,16 +1,12 @@
 "use client";
 import { useState, useEffect } from "react";
 
+// Use only 5 images in the array
 const images = [
   "/images/Rectangle4559.webp",
   "/images/Rectangle4560.webp",
   "/bg.webp",
-  "/Facility3.webp",
   "/bbg2.webp",
-  "/cutlery.png",
-  "/Facility1.webp",
-  "/Facility2.webp",
-  "/Facility3.webp",
   "/bbg1.webp",
 ];
 
@@ -49,7 +45,7 @@ const Preloader = () => {
             setTimeout(() => {
               setScaleUp(true);
               setTimeout(() => setIsVisible(false), 500);
-            }, 1000);
+            }, 500);
             return 100;
           }
           return prev + 1;
@@ -60,7 +56,10 @@ const Preloader = () => {
     }
   }, [loading]);
 
-  const currentImage = images[Math.floor(progress / 10)] || images[9];
+  // Calculate the current image index based on progress.
+  // For 5 images, each image is shown for 20% of the progress (100/5).
+  const imageIndex = Math.floor(progress / (100 / images.length));
+  const currentImage = images[imageIndex] || images[images.length - 1];
 
   if (!isVisible) return null;
 
@@ -71,7 +70,7 @@ const Preloader = () => {
         className="relative flex items-center justify-center"
         style={{
           transform: scaleUp ? "scale(50)" : loading ? "scale(1)" : "scale(1.5)",
-          transition: "transform 3s ease-in-out",
+          transition: "transform 2s ease-in-out",
         }}
       >
         <svg
@@ -122,3 +121,6 @@ const Preloader = () => {
 };
 
 export default Preloader;
+
+
+

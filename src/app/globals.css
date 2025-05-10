@@ -85,7 +85,7 @@
 
 
 .half-background {
-  background-image: url("../assets/dubed.png");
+  background-image: url("/assets/dubed.png");
   background-repeat: no-repeat;
   background-position: top left;
   background-size: 100% 50%;
@@ -93,7 +93,7 @@
 }
 
 .half-background-2 {
-  background-image: url("../assets/room.png");
+  background-image: url("/assets/room.png");
   background-repeat: no-repeat;
   background-position: top left;
   background-size: 60% 100%;
