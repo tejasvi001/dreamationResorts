@@ -123,7 +123,7 @@ export const Acorn = {
     },
     {
       title: "Executive",
-      imageSrc: '/assets/bed1.webp',
+      imageSrc: '/assets/bed2.webp',
       description:
         "An Executive Room in an Acorn Luxury Cottage is designed to offer a premium blend of comfort, functionality, and understated luxury. ",
       buttonText: "For More Details",
