@@ -66,7 +66,7 @@ export default function Activities() {
         </h1>
 
         {/* Main Content */}
-        <div className="flex  flex-col items-center max-w-2xl text-center  md:mt-1 h-full overflow-hidden gap-4">
+        <div className="flex  flex-col items-center max-w-2xl text-center  md:mt-1 h-full overflow-hidden gap-2">
           <div className="w-full h-full flex justify-center relative">
             <div className="absolute w-72 h-72 rounded-2xl opacity-30 bg-black"></div>
           <img src={slides[currentIndex].image} alt="" className="w-72 h-72 rounded-2xl" />
@@ -74,7 +74,7 @@ export default function Activities() {
           <h2 className="text-2xl md:text-4xl font-bold absolute font-AbhayaLibre top-[40%] md:top-[50%] ">
             {slides[currentIndex].title}
           </h2>
-          <p className="text-md md:text-xl mb-2 font-semibold font-Lato">
+          <p className="text-md md:text-[1vw]  font-semibold font-Lato">
             {slides[currentIndex].description}
           </p>
           <button
