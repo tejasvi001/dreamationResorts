@@ -344,13 +344,13 @@ export default function ResponsiveNavbar() {
                           className="relative group"
                         >
                           <div className="flex items-center gap-2">
-                            <a
+                            <Link
                               href={page.path}
                               className={`text-3xl md:text-4xl font-bold text-black hover:text-gray-500 transition-colors duration-300 ${hoveredIndex === index ? "text-gray-500" : "text-black"
                                 }`}
                             >
                               {page.name}
-                            </a>
+                            </Link>
                             {page.submenu && (
                               <div className="text-black cursor-pointer">
                                 <ChevronDown
@@ -388,13 +388,13 @@ export default function ResponsiveNavbar() {
                                           setActiveImage(page.image);
                                         }}
                                       >
-                                        <a
+                                        <Link
                                           href={subitem.path}
                                           className="text-xl text-black hover:text-gray-700 transition-colors duration-200 block py-1"
                                           onClick={() => setIsOpen(false)}
                                         >
                                           {subitem.name}
-                                        </a>
+                                        </Link>
                                       </motion.li>
                                     ))}
                                   </ul>
