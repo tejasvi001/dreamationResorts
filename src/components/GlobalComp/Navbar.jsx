@@ -466,11 +466,11 @@ export default function ResponsiveNavbar() {
                       className="flex items-center space-x-4"
                     >
                       <Phone className="" size={24} />
-                      <a href="tel:7837000888 ">
+                      <Link href="tel:7837000888 ">
                         <span className="text-xl ">
                           +91 7837000888
                         </span>
-                      </a>
+                      </Link>
                     </motion.div>
 
                     <motion.div
@@ -480,11 +480,11 @@ export default function ResponsiveNavbar() {
                       className="flex items-center space-x-4"
                     >
                       <Mail className="" size={24} />
-                      <a href="mailto:info@dreamationresorts.com">
+                      <Link href="mailto:info@dreamationresorts.com">
                         <span className="text-xl ">
                           info@dreamationresorts.com
                         </span>
-                      </a>
+                      </Link>
                     </motion.div>
 
                     <motion.div
@@ -494,11 +494,11 @@ export default function ResponsiveNavbar() {
                       className="flex items-center space-x-4"
                     >
                       <MapPin className="" size={24} />
-                      <a href="https://maps.app.goo.gl/xiUZZVMoVkXfCZtb8">
+                      <Link href="https://maps.app.goo.gl/xiUZZVMoVkXfCZtb8">
                         <span className="text-xl ">
                           Dreamation Resorts, Ghornala,<br /> Bir, Baijnath, Kangra
                         </span>
-                      </a>
+                      </Link>
                     </motion.div>
                   </div>
                 </motion.div>
