@@ -10,7 +10,7 @@ const rooms = [
     width: 500,
     height: 500,
     description: "Aliquam vulputate ligula et nisl dapibus ultrices sed dolores ipsums.",
-    buttonText: "View More Details",
+    buttonText: "For More Details",
     imgAlt: "Residential Room",
   },
   {
@@ -19,21 +19,21 @@ const rooms = [
     width: 500,
     height: 500,
     description: "Aliquam vulputate ligula et nisl dapibus ultrices sed dolores ipsums.",
-    buttonText: "View More Details",
+    buttonText: "For More Details",
     imgAlt: "Executive Room",
   },
   {
     title: "Deluxe",
     imageSrc: "/images/Accomodationimg/wmm1on7se9tjvjncr10e.webp",
     description: "Aliquam vulputate ligula et nisl dapibus ultrices sed dolores ipsums.",
-    buttonText: "View More Details",
+    buttonText: "For More Details",
     imgAlt: "Deluxe Room",
   },
   {
     title: "Premium",
     imageSrc: "/images/Accomodationimg/nrdauuexkyqsyeuhhx0q.webp",
     description: "Aliquam vulputate ligula et nisl dapibus ultrices sed dolores ipsums.",
-    buttonText: "View More Details",
+    buttonText: "For More Details",
     imgAlt: "Premium Room",
   },
 ];
