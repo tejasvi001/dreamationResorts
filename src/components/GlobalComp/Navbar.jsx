@@ -39,7 +39,7 @@ const pages = [
   {
     name: "Dine/Drink",
     path: "/Dinning",
-    image: "/activities/Rectangle 67.jpg",
+    image: "/images/brew/frzvnlsxnjkzulajhzk8_1_11zon.webp",
     submenu: [
       {
         name: "Bamboo And Brew Café ",
@@ -49,12 +49,12 @@ const pages = [
       {
         name: "Akhada Bar",
         path: "/AkhadaBar",
-        image: "/activities/Rectangle 59.jpg",
+        image: "/images/akhada/NIK00294_6_11zon.webp",
       },
       {
         name: "Hamlet Eatery",
         path: "/HamletEatery",
-        image: "/activities/Rectangle 61.webp",
+        image: "/images/brew/9c518dbb8b940a7fb6077b3fbeba14a5.webp",
       },
     ],
   },
@@ -310,9 +310,10 @@ export default function ResponsiveNavbar() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.3 }}
-              className="fixed inset-0 z-40 bg-white  flex items-center justify-center"
+              className="fixed inset-0 z-40 bg-white flex items-center justify-center"
             >
-              <div className="w-full h-full max-w-7xl  mx-auto flex flex-col md:flex-row">
+              <div className="w-full h-full max-w-7xl mx-auto flex flex-col md:flex-row">
+                {/* Left nav section */}
                 <motion.div
                   initial={{ x: -100, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
@@ -344,13 +345,15 @@ export default function ResponsiveNavbar() {
                           className="relative group"
                         >
                           <div className="flex items-center gap-2">
-                            <Link
-                              href={page.path}
-                              className={`text-3xl md:text-4xl font-bold text-black hover:text-gray-500 transition-colors duration-300 ${hoveredIndex === index ? "text-gray-500" : "text-black"
-                                }`}
-                            >
-                              {page.name}
-                            </Link>
+                            <div onClick={() => setIsOpen(false)}>
+                              <Link
+                                href={page.path}
+                                className={`text-3xl md:text-4xl font-bold text-black hover:text-gray-500 transition-colors duration-300 ${hoveredIndex === index ? "text-gray-500" : "text-black"
+                                  }`}
+                              >
+                                {page.name}
+                              </Link>
+                            </div>
                             {page.submenu && (
                               <div className="text-black cursor-pointer">
                                 <ChevronDown
@@ -388,13 +391,14 @@ export default function ResponsiveNavbar() {
                                           setActiveImage(page.image);
                                         }}
                                       >
-                                        <Link
-                                          href={subitem.path}
-                                          className="text-xl text-black hover:text-gray-700 transition-colors duration-200 block py-1"
-                                          onClick={() => setIsOpen(false)}
-                                        >
-                                          {subitem.name}
-                                        </Link>
+                                        <div onClick={() => setIsOpen(false)}>
+                                          <Link
+                                            href={subitem.path}
+                                            className="text-xl text-black hover:text-gray-700 transition-colors duration-200 block py-1"
+                                          >
+                                            {subitem.name}
+                                          </Link>
+                                        </div>
                                       </motion.li>
                                     ))}
                                   </ul>
@@ -408,22 +412,13 @@ export default function ResponsiveNavbar() {
                   </nav>
                 </motion.div>
 
+                {/* Middle image */}
                 <motion.div
                   initial={{ scale: 0, opacity: 0 }}
                   animate={{ scale: 1, opacity: 1 }}
                   transition={{ delay: 0.4, duration: 0.5 }}
                   className="flex-1 flex justify-center items-center p-4"
                 >
-                  {/* <div className="relative w-64 h-80 md:w-80 md:h-96">
-                    <div className="absolute w-full h-full z-50 overflow-hidden rounded-[2vw] hover:rounded-[5vw] duration-1000">
-                      <img
-                        src={activeImage || "/Facility1.png"}
-                        alt="Navigation preview"
-                        className="object-cover w-full h-full"
-                      />
-                    </div>
-                    <div className="absolute inset-0 keyhole-mask" />
-                  </div> */}
                   <div className="hidden md:flex scale-90 hover:scale-105 duration-1000 cursor-pointer">
                     <svg
                       width="33vw"
@@ -433,10 +428,7 @@ export default function ResponsiveNavbar() {
                       style={{ maxWidth: "100%", maxHeight: "100%" }}
                     >
                       <defs>
-                        <clipPath
-                          id="keyholeClip"
-                          clipPathUnits="userSpaceOnUse"
-                        >
+                        <clipPath id="keyholeClip" clipPathUnits="userSpaceOnUse">
                           <path d="M 150 0 C 210 0, 270 60, 270 120 C 270 180, 210 240, 150 240 C 90 240, 30 180, 30 120 C 30 60, 90 0, 150 0 Z M 90 220 L 210 220 L 240 450 L 60 450 Z" />
                         </clipPath>
                       </defs>
@@ -452,6 +444,7 @@ export default function ResponsiveNavbar() {
                   </div>
                 </motion.div>
 
+                {/* Contact Info */}
                 <motion.div
                   initial={{ x: 100, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
@@ -465,11 +458,9 @@ export default function ResponsiveNavbar() {
                       transition={{ delay: 0.3, duration: 0.5 }}
                       className="flex items-center space-x-4"
                     >
-                      <Phone className="" size={24} />
-                      <Link href="tel:7837000888 ">
-                        <span className="text-xl ">
-                          +91 7837000888
-                        </span>
+                      <Phone size={24} />
+                      <Link href="tel:7837000888">
+                        <span className="text-xl">+91 7837000888</span>
                       </Link>
                     </motion.div>
 
@@ -479,11 +470,9 @@ export default function ResponsiveNavbar() {
                       transition={{ delay: 0.4, duration: 0.5 }}
                       className="flex items-center space-x-4"
                     >
-                      <Mail className="" size={24} />
+                      <Mail size={24} />
                       <Link href="mailto:info@dreamationresorts.com">
-                        <span className="text-xl ">
-                          info@dreamationresorts.com
-                        </span>
+                        <span className="text-xl">info@dreamationresorts.com</span>
                       </Link>
                     </motion.div>
 
@@ -493,9 +482,9 @@ export default function ResponsiveNavbar() {
                       transition={{ delay: 0.5, duration: 0.5 }}
                       className="flex items-center space-x-4"
                     >
-                      <MapPin className="" size={24} />
+                      <MapPin size={24} />
                       <Link href="https://maps.app.goo.gl/xiUZZVMoVkXfCZtb8">
-                        <span className="text-xl ">
+                        <span className="text-xl">
                           Dreamation Resorts, Ghornala,<br /> Bir, Baijnath, Kangra
                         </span>
                       </Link>
@@ -506,6 +495,7 @@ export default function ResponsiveNavbar() {
             </motion.div>
           )}
         </AnimatePresence>
+
       </div>
 
       {/* Spacer for fixed mobile header */}
