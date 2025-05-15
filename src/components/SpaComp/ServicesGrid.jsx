@@ -4,14 +4,14 @@ import { div } from 'framer-motion/client';
 import Image from 'next/image';
 
 const services = [
-  { title: 'Good Health', image: '/images/Spaimg/Rectangle 81.png' },
+  { title: 'Good Health', image: '/images/Spaimg/Rectangle57.png' },
   { title: 'Wellness', image: '' },
-  { title: 'Steam Room', image: '/images/Spaimg/Rectangle 81.png' },
+  { title: 'Steam Room', image: '/images/Spaimg/Rectangle8.png' },
   { title: 'Boutique', image: '' },
   { title: 'Relaxation', image: '' },
-  { title: 'Yoga Classes', image: '/images/Spaimg/Rectangle 81.png' },
+  { title: 'Yoga Classes', image: '/activities/Rectangle 61.webp' },
   { title: 'Massages', image: '' },
-  { title: 'Private Spa', image: '/images/Spaimg/Rectangle 81.png' }
+  { title: 'Private Spa', image: '/images/Spaimg/Rectangle81.png' }
   ];
 
 export default function ServicesGrid() {
@@ -36,7 +36,7 @@ export default function ServicesGrid() {
           )}
           <div className="relative z-10 text-center">
             <h3 className="text-xl font-semibold text-gold-500">{service.title}</h3>
-            <p className="text-sm">Mauris quam turpis, tinci ac congue quis, rutrum in tellus. Suspendisse potenti</p>
+            <p className="text-sm">Enjoy </p>
           </div>
         </div>
       ))}

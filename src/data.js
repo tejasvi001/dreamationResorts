@@ -132,7 +132,7 @@ export const Acorn = {
       title: "Luxury",
       imageSrc: '/assets/bed2.webp',
       description:
-        "A Deluxe Room in an Acorn Luxury Cottage offers a spacious, thoughtfully designed environment focused on comfort, elegance, and a touch of rustic charm.",
+        "A Luxury Room in an Acorn Luxury Cottage offers a spacious, thoughtfully designed environment focused on comfort, elegance, and a touch of rustic charm.",
       buttonText: "For More Details",
     },
     {
@@ -433,254 +433,258 @@ export const BrewPageData = {
           "/images/brew/NIK00271.webp",
         alt: "Coffee Machine",
         title: "Discover the taste of real coffee",
-        subtitle: "A real Italian cafe",
+        // subtitle: "A real Italian cafe",
       },
       {
         image: "/images/brew/NIK00272.webp",
         alt: "Beans",
         title: "Explore the history of the cafe",
-        subtitle: "A real Italian cafe",
+        // subtitle: "A real Italian cafe",
       },
       {
         image: "/images/brew/NIK00273.webp",
         alt: "Coffee Machine",
         title: "Discover our unique coffee",
-        subtitle: "A real Italian cafe",
+        // subtitle: "A real Italian cafe",
       },
     ],
   },
 
-  CoffeeFeature: {
-    image: "/images/brew/NIK00274.webp",
-    altText: "Coffee brewing",
-    heading: "Vivamus in diam\ncondimentum\nmaximus",
-    paragraph:
-      "Maecenas non laoreet odio. Fusce lobortis porttitor purus, vel vestibulum libero pharetra vel. Pellentesque lorem augue, fermentum nec nibh et, fringilla sollicitudin orci. Integer pharetra magna non ante blandit lobortis. Sed mollis.",
-  },
+ CoffeeFeature: {
+  image: "/images/brew/NIK00274.webp",
+  altText: "Coffee brewing",
+  heading: "Brewed in the Hills,\nInspired by the Himalayas",
+  paragraph:
+    "At BrewCafe, every cup is a tribute to the serene Himalayan spirit. From single-origin beans to local herbal infusions, our brews are crafted to awaken your senses and calm your soul. Sit back, sip slow, and savor the mountains in every flavor.",
+},
 
-  Coff: {
-    title: "Integer pharetra magna non ante blandit lobortis",
+Coff: {
+  title: "A Cozy Mountain Escape with Every Cup",
+  description:
+    "Nestled within Dreamation Resort, BrewCafe invites you to experience warmth, aroma, and comfort like never before. From handcrafted coffees to oven-fresh treats, it's the perfect spot to relax, reconnect, and recharge.",
+  buttonText: "SEE MENU CART",
+  image: "/images/brew/NIK00275.webp",
+  imageAlt: "Guests enjoying coffee at BrewCafe",
+},
+
+Cup: {
+  leftColumn: {
+    icon: {
+      path: "M5 21h14M12 17v4M8 5h8M7 9h10v6H7z",
+      size: "w-16 h-16 text-white",
+    },
+    title: "Signature Brews with a Local Touch",
     description:
-      "Libero pharetra vel. Pellentesque lorem augue, fermentum nec nibh et, fringilla sollicitudin orci. Integer pharetra magna non ante blandit lobortis. Sed mollis.",
-    buttonText: "SEE MENU CART",
-    image:
-      "/images/brew/NIK00275.webp",
-    imageAlt: "Reading group",
+      "Our signature blends are curated with care—featuring locally sourced ingredients and flavors that reflect the soul of the Himalayas. Whether hot or iced, each sip delivers a moment of bliss.",
+    backgroundColor: "bg-orange-500",
+    padding: "p-10",
+    textColor: "text-gray-50",
   },
+  centerImage: {
+    src: "/images/brew/home_coffee2_pic4.png",
+    alt: "Coffee Cup",
+    width: 300,
+    height: 300,
+    className: "rounded-full shadow-2xl",
+  },
+  rightColumn: {
+    title: "House Special: Himalayan Spiced Latte",
+    price: "₹599",
+    buttonText: "READ MORE",
+    buttonLink: "#",
+    textColor: "text-gray-800",
+    buttonColor: "text-orange-500",
+  },
+},
 
-  Cup: {
-    leftColumn: {
-      icon: {
-        path: "M5 21h14M12 17v4M8 5h8M7 9h10v6H7z",
-        size: "w-16 h-16 text-white",
-      },
-      title: "Fusce interdum justo quis libero ultricies",
-      description:
-        "Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros.",
-      backgroundColor: "bg-orange-500",
-      padding: "p-10",
-      textColor: "text-gray-500",
-    },
-    centerImage: {
-      src: "/images/brew/home_coffee2_pic4.png",
-      alt: "Coffee Cup",
-      width: 300,
-      height: 300,
-      className: "rounded-full shadow-2xl",
-    },
-    rightColumn: {
-      title: "Fusce ut velit",
-      price: "599",
-      buttonText: "READ MORE",
-      buttonLink: "#",
-      textColor: "text-gray-800",
-      buttonColor: "text-orange-500",
-    },
-  },
-
-  CoffeeInfoSection: {
-    title: "Curabitur sed iaculis dolor, non congue ligula.",
-    subtitle: "Maecenas imperdiet ante eget",
-    paragraph:
-      "Nunc urna libero, congue porta nibh a, semper feugiat sem. Sed auctor dui eleifend, scelerisque eros ut, pellentesque nibh. Nam lacinia suscipit accumsan. Donec sodales, neque.",
-    listItems: [
-      "Suspendisse a pellentesque dui, non felis.",
-      "Quisque lorem tortor fringilla sed.",
-      "Quisque cursus et, porttitor risus.",
-      "Nulla ipsum dolor lacus, suscipit adipiscing.",
-    ],
-    image: "/images/brew/NIK00281.webp",
-    imageAlt: "Coffee Beans",
-  },
+CoffeeInfoSection: {
+  title: "BrewCafe: Where Every Sip Feels Like Home",
+  subtitle: "A Café Crafted for Moments That Matter",
+  paragraph:
+    "Whether you're catching up with friends, diving into a book, or enjoying the scenic views, BrewCafe is your perfect hideaway. We believe coffee isn’t just a drink—it’s a pause, a conversation, a memory in the making.",
+  listItems: [
+    "Locally sourced Himalayan herbs and beans",
+    "Freshly baked pastries and gourmet snacks",
+    "Vegan and gluten-free options available",
+    "Scenic indoor & outdoor seating areas",
+  ],
+  image: "/images/brew/NIK00281.webp",
+  imageAlt: "Coffee Beans",
+}
 };
 
 export const AkhadaPageData = {
-  Page: {
-        buttonText: "MEET US",
-      cards: [
-      {
-        image: "/images/akhada/NIK00289-Enhanced-NR_1_11zon.webp",
-        alt: "Beans",
-        title: "Donec gravida elit ac porta interdum. ",
-        subtitle: "A USA cafe",
-      },
-      {
-        image: "/images/akhada/NIK00290_2_11zon.webp",
-        alt: "Beans",
-        title: "The history of the cafe",
-        subtitle: "A USA cafe",
-      },
-      {
-        image: "/images/akhada/NIK00291_3_11zon.webp",
-        alt: "Coffee Machine",
-        title: " our unique coffee",
-        subtitle: "A USA cafe",
-      },
-    ],
-  },
+ Page: {
+  buttonText: "MEET US",
+  cards: [
+    {
+      image: "/images/akhada/NIK00289-Enhanced-NR_1_11zon.webp",
+      alt: "Akhada Bar Interior",
+      title: "Sip, Socialize & Celebrate in Style",
+      subtitle: "A Himalayan Retreat Experience",
+    },
+    {
+      image: "/images/akhada/NIK00290_2_11zon.webp",
+      alt: "Bar Ambiance",
+      title: "A Story Brewed with Culture & Spirit",
+      subtitle: "Crafted for the Free-Spirited Traveler",
+    },
+    {
+      image: "/images/akhada/NIK00291_3_11zon.webp",
+      alt: "Craft Cocktails",
+      title: "Crafted Cocktails, Local Flair",
+      subtitle: "Infused with Himalayan Botanicals",
+    },
+  ],
+},
 
-  CoffeeFeature: {
-    image: "/images/akhada/NIK00292_4_11zon.webp",
-    altText: "Coffee brewing",
-    heading: "Vivamus in nmaximus",
-    paragraph:
-      "Aliquam sit amet erat ut nulla ultrices dignissim. Praesent congue justo vel eros blandit, nec efficitur leo egestas.",
-  },
+CoffeeFeature: {
+  image: "/images/akhada/NIK00292_4_11zon.webp",
+  altText: "Bar Counter",
+  heading: "Raise a Glass to\nHimalayan Evenings",
+  paragraph:
+    "The Akhada Bar is where mountain charm meets spirited evenings. From craft cocktails to locally brewed infusions, we serve bold flavors and unforgettable vibes—all against a backdrop of starry skies and scenic peaks.",
+},
 
-  Coff: {
-    title: " Pharetra magna non ante blandit lobortis",
+Coff: {
+  title: "Crafted Spirits. Cozy Vibes. Mountain Energy.",
+  description:
+    "At Akhada Bar, every drink is an experience. Whether you're in the mood for a handcrafted cocktail, Himalayan fruit-infused spirits, or a classic whiskey sour, we blend tradition with modern flair.",
+  buttonText: "SEE MENU CART",
+  image: "/images/brew/NIK00281.webp",
+  imageAlt: "Cocktail Presentation",
+},
+
+Cup: {
+  leftColumn: {
+    icon: {
+      path: "M5 21h14M12 17v4M8 5h8M7 9h10v6H7z",
+      size: "w-16 h-16 text-white",
+    },
+    title: "Himalayan Infusions & Global Spirits",
     description:
-      "Pellentesque habitant morbi tristique senectus et netus. Curabitur tincidunt eros nec justo vulputate, nec fermentum nisl pharetra.",
-    buttonText: "SEE MENU CART",
-    image: "/images/brew/NIK00281.webp",
-    imageAlt: "Reading group",
+      "From herbal gin blends to firewood-smoked whiskey, our menu showcases a fusion of local ingredients and world-class spirits. The perfect sip awaits you.",
+    backgroundColor: "bg-orange-500",
+    padding: "p-10",
+    textColor: "text-gray-50",
   },
-  Cup: {
-    leftColumn: {
-      icon: {
-        path: "M5 21h14M12 17v4M8 5h8M7 9h10v6H7z",
-        size: "w-16 h-16 text-white",
-      },
-      title: " justo quis libero ultricies",
-      description:
-        "Sed euismod sapien ac risus tincidunt, ac fermentum massa gravida. Morbi in libero sed nisi convallis malesuada",
-      backgroundColor: "bg-orange-500",
-      padding: "p-10",
-      textColor: "text-gray-500",
-    },
-    centerImage: {
-      src: "/images/brew/download (3).jpeg",
-      alt: "Coffee Cup",
-      width: 300,
-      height: 300,
-      className: "rounded-full shadow-2xl",
-    },
-    rightColumn: {
-      title: "velit",
-      price: "99",
-      buttonText: "READ MORE",
-      buttonLink: "#",
-      textColor: "text-gray-800",
-      buttonColor: "text-orange-500",
-    },
+  centerImage: {
+    src: "/images/brew/download (3).jpeg",
+    alt: "Bar Cocktail",
+    width: 300,
+    height: 300,
+    className: "rounded-full shadow-2xl",
   },
-  CoffeeInfoSection: {
-    title: "Curabitur sed iaculis dolor, non congue ligula.",
-    subtitle: "Maecenas imperdiet ante eget",
-    paragraph:
-      "Nunc urna libero, congue porta nibh a, semper feugiat sem. Sed auctor dui eleifend, scelerisque eros ut, pellentesque nibh. Nam lacinia suscipit accumsan. Donec sodales, neque.",
-    listItems: [
-      "Vestibulum ante ipsum primis in faucibus.",
-      "Mauris euismod nulla sed sapien varius.",
-      "Curabitur vel sem sit amet magna fermentum.",
-      "Praesent id metus at dolor tincidunt.",
-    ],
-    image: "/images/akhada/NIK00293_5_11zon.webp",
-    imageAlt: "Coffee Beans",
+  rightColumn: {
+    title: "Akhada Special: Himalayan Smoke",
+    price: "₹499",
+    buttonText: "READ MORE",
+    buttonLink: "#",
+    textColor: "text-gray-800",
+    buttonColor: "text-orange-500",
   },
+},
+
+CoffeeInfoSection: {
+  title: "Your Evenings, Elevated",
+  subtitle: "Unwind at Akhada Bar",
+  paragraph:
+    "Whether you're celebrating with friends, relaxing after a trek, or simply soaking in the mountain mood, Akhada Bar offers the perfect ambiance. Cozy lighting, local music, and a curated selection of drinks await you.",
+  listItems: [
+    "Live music nights and themed events",
+    "Signature cocktails with local ingredients",
+    "Indoor & outdoor bar seating",
+    "Ideal for group celebrations & private gatherings",
+  ],
+  image: "/images/akhada/NIK00293_5_11zon.webp",
+  imageAlt: "Cocktail and Bar Tools",
+}
 };
 
 export const IndoorPageData = {
-  Page: {
-    buttonText: "MEET US",
-    cards: [
-      {
-        image: "/images/brew/fvxbywipxxrn4uyxhlhh_2_11zon.webp",
-        alt: "Beans",
-        subtitle: "A real Hamlet Eatery",
-        title: "Explore the history of the Eatery",
-      },
-      {
-        image: "/images/brew/fvxbywipxxrn4uyxhlhh_2_11zon.webp",
-        alt: "Beans",
-        subtitle: "A real Hamlet Eatery",
-        title: "Explore the history of the Eatery",
-      },
-      {
-        image: "/images/brew/vj7xmxtadx03ipjcu0zq_3_11zon.webp",
-        alt: "Coffee Machine",
-        subtitle: "A real Hamlet Eatery",
-        title: "Detailed descriptions and prices",
-      },
-    ],
-  },
-  CoffeeFeature: {
-    image: "/images/brew/fvxbywipxxrn4uyxhlhh_2_11zon.webp",
-    altText: "Hamlet Eatery",
-    heading: "Story of theEatery and its origins ",
-    paragraph:
-      "Brief overview of the Eatery mission and valuevel vestibulum libero pharetra vel. Pellentesque lorem augue, fermentum nec nibh et, fringilla sollicitudin orci. Integer pharetra magna non ante blandit lobortis. Sed mollis.",
-  },
-  Coff: {
-    title:
-      "Use easy-to-read fonts and a clear visual hierarchy to ensure information is readily accessible. ",
+ Page: {
+  buttonText: "MEET US",
+  cards: [
+    {
+      image: "/images/brew/fvxbywipxxrn4uyxhlhh_2_11zon.webp",
+      alt: "Restaurant Interior",
+      subtitle: "A Real Hamlet Eatery",
+      title: "Explore the Story Behind Our Cuisine",
+    },
+    {
+      image: "/images/brew/fvxbywipxxrn4uyxhlhh_2_11zon.webp",
+      alt: "Gourmet Plate",
+      subtitle: "A Real Hamlet Eatery",
+      title: "Locally Sourced, Lovingly Served",
+    },
+    {
+      image: "/images/brew/vj7xmxtadx03ipjcu0zq_3_11zon.webp",
+      alt: "Dish Presentation",
+      subtitle: "A Real Hamlet Eatery",
+      title: "Explore Our Menu & Signature Dishes",
+    },
+  ],
+},
+
+CoffeeFeature: {
+  image: "/images/brew/fvxbywipxxrn4uyxhlhh_2_11zon.webp",
+  altText: "Restaurant Seating",
+  heading: "Where Flavors Tell Stories",
+  paragraph:
+    "Rooted in tradition, our Hamlet Eatery is more than a place to dine—it's a journey through taste, culture, and care. We believe in honest ingredients, bold flavors, and heartwarming hospitality that lingers beyond the meal.",
+},
+
+Coff: {
+  title: "Savor Every Bite, Relive Every Moment",
+  description:
+    "From farm-fresh ingredients to curated spices, our chefs craft dishes that blend Himalayan inspiration with global flair. Explore our seasonal menu and join us for gastronomic storytelling.",
+  buttonText: "SEE MENU CART",
+  image: "/images/brew/vsod9uur68oucbirmp9b_4_11zon.webp",
+  imageAlt: "Gourmet Meal",
+},
+
+Cup: {
+  leftColumn: {
+    icon: {
+      path: "M5 21h14M12 17v4M8 5h8M7 9h10v6H7z",
+      size: "w-16 h-16 text-white",
+    },
+    title: "A Culinary Philosophy Built on Heart & Heritage",
     description:
-      "A blog section to share insights about coffee, promotions, or special events,",
-    buttonText: "SEE MENU CART",
-    image: "/images/brew/vsod9uur68oucbirmp9b_4_11zon.webp",
-    imageAlt: "Reading group",
+      "Our restaurant is built on warmth, simplicity, and seasonal ingredients. Each meal is a celebration of both community and craft.",
+    backgroundColor: "bg-orange-500",
+    padding: "p-10",
+    textColor: "text-white",
   },
-  Cup: {
-    leftColumn: {
-      icon: {
-        path: "M5 21h14M12 17v4M8 5h8M7 9h10v6H7z",
-        size: "w-16 h-16 text-white",
-      },
-      title:
-        "A section that tells the story of the cafe, its mission, and its dedication to quality coffee and customer service.",
-      description: "Fusce  faucibus lorem eget, egestas eros.",
-      backgroundColor: "bg-orange-500",
-      padding: "p-10",
-      textColor: "text-gray-500",
-    },
-    centerImage: {
-      src: "/images/brew/feature_image_88786a36-1b01-40fb-a4d2-b6f0a661d850 copy.webp",
-      alt: "Coffee Cup",
-      width: 300,
-      height: 300,
-      className: "rounded-full shadow-2xl",
-    },
-    rightColumn: {
-      title: "Maecenas imperdiet ante eget",
-      price: "299",
-      buttonText: "READ MORE",
-      buttonLink: "#",
-      textColor: "text-gray-800",
-      buttonColor: "text-orange-500",
-    },
+  centerImage: {
+    src: "/images/brew/feature_image_88786a36-1b01-40fb-a4d2-b6f0a661d850 copy.webp",
+    alt: "Signature Dish",
+    width: 300,
+    height: 300,
+    className: "rounded-full shadow-2xl",
   },
-  CoffeeInfoSection: {
-    title: "Curabitur sed iaculis dolor, non congue ligula.",
-    subtitle: "Maecenas imperdiet ante eget",
-    paragraph:
-      "Nunc urna libero, congue porta nibh a, semper feugiat sem. Sed auctor dui eleifend, scelerisque eros ut, pellentesque nibh. Nam lacinia suscipit accumsan. Donec sodales, neque.",
-    listItems: [
-      "Integer a sapien vitae nisl tristique scelerisque",
-      "Maecenas eu arcu nec justo dictum posuere..",
-      "Quisque cursus et, porttitor risus.",
-      "Nulla ipsum dolor lacus, suscipit adipiscing.",
-    ],
-    image: "/images/brew/ybcmos0kbnizas6ib2t1_5_11zon.webp",
-    imageAlt: "Coffee Beans",
+  rightColumn: {
+    title: "Chef’s Special: Forest Herb Grilled Trout",
+    price: "₹299",
+    buttonText: "READ MORE",
+    buttonLink: "#",
+    textColor: "text-gray-800",
+    buttonColor: "text-orange-500",
   },
+},
+
+CoffeeInfoSection: {
+  title: "Inspired by the Land, Crafted with Love",
+  subtitle: "Our Food Philosophy",
+  paragraph:
+    "Every dish served at the Hamlet Eatery reflects our passion for storytelling through food. With a balance of taste, texture, and nutrition, our kitchen turns fresh produce into memorable experiences.",
+  listItems: [
+    "Locally sourced vegetables and herbs",
+    "Organic and sustainable cooking practices",
+    "Daily chef’s specials inspired by the season",
+    "Indoor and courtyard dining options",
+  ],
+  image: "/images/brew/ybcmos0kbnizas6ib2t1_5_11zon.webp",
+  imageAlt: "Seasonal Ingredients",
+},
 };

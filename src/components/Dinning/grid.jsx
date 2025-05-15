@@ -21,13 +21,15 @@ const bottle = ({ image, title }) => {
                 {/* Right Text Content (No Padding Around Section) */}
             <div className="w-full lg:w-1/2 bg-[#D69D52] px-6 py-8 sm:px-8 sm:py-12 md:px-10 md:py-16 text-white flex flex-col justify-baseline mt-8 lg:mt-0 h-auto min-h-[300px]">
       {/* <h3 className="text-sm sm:text-base md:text-lg ">Best Service</h3> */}
-      <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mt-6">Dinnig Service</h2>
+      <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mt-6">          Dine & Drink Experience
+</h2>
       <p className="mt-4 text-xs sm:text-sm md:text-base leading-relaxed">
-        Mauris varius interdum erat, et ultrices justo imperdiet nec. <br />
-        Cras ac porttitor tortor, id iaculis neque. <br />
-        Fusce et malesuada nibh, et consectetur risus. <br />
-        Suspendisse dictum orci eget cursus viverra. <br />
-        Vestibulum a mauris urna. Aliquam eget risus vitae lorem.
+                  Welcome to an unforgettable dining journey in the heart of nature. <br />
+          From locally sourced ingredients to handcrafted cocktails, <br />
+          every bite and sip celebrates taste, tradition, and togetherness. <br />
+          Whether you're enjoying breakfast with a view or an evening under the stars, <br />
+          our Hamlet Eatery delivers exceptional hospitality in every meal.
+
       </p>
 
       <button

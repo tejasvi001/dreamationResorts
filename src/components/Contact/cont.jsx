@@ -38,11 +38,7 @@ const Contact = () => {
             Book Your Next Vacation!
           </h2>
           <p className="mt-4 text-xs sm:text-sm md:text-base leading-relaxed">
-            Mauris varius interdum erat, et ultrices justo imperdiet nec. <br />
-            Cras ac porttitor tortor, id iaculis neque. <br />
-            Fusce et malesuada nibh, et consectetur risus. <br />
-            Suspendisse dictum orci eget cursus viverra. <br />
-            Vestibulum a mauris urna. Aliquam eget risus vitae lorem.
+           Nestled in the heart of the majestic Himalayas, Dreamation Resort is more than just a destination—it’s an experience. Whether you have questions, special requests, or simply wish to plan your stay, we’re here to help. From savoring traditional mountain delicacies to indulging in global cuisine with a local twist, every moment at our resort is designed to delight your senses. Reach out to us and let us guide you on your next unforgettable Himalayan escape.
           </p>
         </div>
       </div>
