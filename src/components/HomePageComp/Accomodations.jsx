@@ -10,7 +10,7 @@ const Accommodations = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-8 w-full max-w-6xl">
         {/* Left Image */}
         <div className="flex justify-center">
-          <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 transform rotate-[15deg]">
+          <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 ">
             <Image
               src="/Acc1.webp"
               alt="Accommodation 1"
@@ -33,7 +33,7 @@ const Accommodations = () => {
 
         {/* Right Image */}
         <div className="flex justify-center">
-          <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 transform -rotate-[15deg]">
+          <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48">
             <Image
               src="/Acc2.webp"
               alt="Accommodation 2"

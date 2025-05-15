@@ -21,9 +21,9 @@ const page = () => {
       <div ref={sectionRef}>
         <Coff Coffdata ={AkhadaPageData.Coff}/>
       </div>
-      <div>
+      {/* <div>
         <Cup Cupdata ={AkhadaPageData.Cup}/>
-      </div>
+      </div> */}
       <div>
         <Cot Cotdata ={AkhadaPageData.CoffeeInfoSection}/>
       </div>

@@ -50,7 +50,7 @@ const ClientsSay = ({ clientsSayData }) => {
 
         <div className="md:ml-28 md:block ">
           <div className="w-20 h-20 md:w-40 md:h-40 relative -rotate-6 ">
-            <Image
+            {/* <Image
               src={
                 testimonials[
                   (currentIndex - 1 + testimonials.length) % testimonials.length
@@ -60,7 +60,7 @@ const ClientsSay = ({ clientsSayData }) => {
               width={100}
               height={100}
               className="object-cover border-4 border-white shadow-md rounded-md"
-            />
+            /> */}
           </div>
         </div>
 
@@ -74,13 +74,13 @@ const ClientsSay = ({ clientsSayData }) => {
         {/* Right image */}
         <div className="md:block  mt-4 ">
           <div className="w-20 h-20  md:w-40 md:h-40 relative rotate-6 mt-4">
-            <Image
+            {/* <Image
               src={testimonials[(currentIndex + 1) % testimonials.length].image}
               alt="Next Testimonial"
               width={100}
               height={100}
               className="object-cover border-4 border-white shadow-md rounded-md"
-            />
+            /> */}
           </div>
         </div>
       </div>
