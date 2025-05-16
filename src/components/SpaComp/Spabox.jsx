@@ -8,7 +8,7 @@ const Spabox = () => {
         {/* First Box */}
         <div className="relative w-full md:w-1/2 h-[400px] md:h-[600px] overflow-hidden shadow-lg">
           <Image
-            src="/images/Spaimg/Frame 1618873205.png"
+            src="/images/Spaimg/Frame1618873205.webp"
             alt="Spa Accessories"
             layout="fill"
             objectFit="cover"
@@ -18,7 +18,7 @@ const Spabox = () => {
         {/* Second Box */}
         <div className="relative w-full md:w-1/2 h-[400px] md:h-[600px] overflow-hidden shadow-lg">
           <Image
-            src="/images/Spaimg/Frame 1618873206.png"
+            src="/images/Spaimg/Frame1618873206.webp"
             alt="Spa Menu"
             layout="fill"
             objectFit="cover"
