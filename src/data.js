@@ -551,7 +551,7 @@ Coff: {
   description:
     "At Akhada Bar, every drink is an experience. Whether you're in the mood for a handcrafted cocktail, Himalayan fruit-infused spirits, or a classic whiskey sour, we blend tradition with modern flair.",
   buttonText: "SEE MENU CART",
-  image: "/images/brew/NIK00281.webp",
+  image: "/images/brew/Bar.webp",
   imageAlt: "Cocktail Presentation",
 },
 
@@ -569,7 +569,7 @@ Cup: {
     textColor: "text-gray-50",
   },
   centerImage: {
-    src: "/images/brew/download (3).jpeg",
+    src: "/images/brew/download (3).jpg",
     alt: "Bar Cocktail",
     width: 300,
     height: 300,
