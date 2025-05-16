@@ -148,7 +148,7 @@ export const Acorn = {
 export const Fern = {
   heroData: {
     title: "Fern Luxury Swisstents",
-    backgroundImage: "/tent.jpg",
+    backgroundImage: "/tent.webp",
   },
 
   roomOverview: {
@@ -198,7 +198,7 @@ export const Fern = {
   roomGrid: [
     {
       title: "Residential",
-      imageSrc: '/assets/tent.jpg',
+      imageSrc: '/assets/tent.webp',
       description:
         "Aliquam vulputate ligula et nisl dapibus ultrices sed dolores ipsums.",
       buttonText: "For More Details",
@@ -253,28 +253,28 @@ export const Fern = {
   rooms: [
     {
       title: "Residential",
-      imageSrc: '/assets/tent.jpg',
+      imageSrc: '/assets/tent.webp',
       description:
         "The Residential Tent at The Fern Seaside Luxurious Tent Resort offers a perfect blend of nature-inspired luxury and modern comfort, designed for guests seeking a unique, upscale glamping experience. ",
       buttonText: "For More Details",
     },
     {
       title: "Executive",
-      imageSrc: '/assets/tent2.jpg',
+      imageSrc: '/assets/tent2.webp',
       description:
         "The Exclusive Tent at The Fern Seaside Luxurious Tent Resort offers a premium, elevated glamping experience for guests who seek the finest in luxury and privacy. ",
       buttonText: "For More Details",
     },
     {
       title: "Deluxe",
-      imageSrc: '/assets/tent3.jpg',
+      imageSrc: '/assets/tent3.webp',
       description:
         "The Exclusive Tent at The Fern Seaside Luxurious Tent Resort offers an unparalleled blend of elegance, comfort, and exclusivity, providing an extraordinary glamping experience for those seeking the highest level of luxury and privacy. ",
       buttonText: "For More Details",
     },
     {
       title: "Premium",
-      imageSrc: '/assets/tent4.jpg',
+      imageSrc: '/assets/tent4.webp',
       description:
         "The Premium Tent at The Fern Seaside Luxurious Tent Resort offers a superior glamping experience with a perfect blend of comfort, style, and nature. Designed for guests who desire a luxurious and immersive experience while maintaining a connection to the outdoors.",
       buttonText: "For More Details",

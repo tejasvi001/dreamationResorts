@@ -2,7 +2,7 @@ const FeaturedRoom = () => {
   return (
     <div className='horiztalBetimage my-16 relative min-h-[480px] h-full'>
       <img
-        src='/assets/dubed.png'
+        src='/assets/dubed.webp'
         alt="Featured Room"
         className='absolute inset-0 w-full min-h-[450px] py-8 h-auto -z-10'
       />
