@@ -4,20 +4,22 @@ import { div } from 'framer-motion/client';
 import Image from 'next/image';
 
 const services = [
-  { title: 'Good Health', image: '/images/Spaimg/Rectangle57.png' },
-  { title: 'Wellness', image: '' },
-  { title: 'Steam Room', image: '/images/Spaimg/Rectangle8.png' },
-  { title: 'Boutique', image: '' },
-  { title: 'Relaxation', image: '' },
-  { title: 'Yoga Classes', image: '/activities/Rectangle 61.webp' },
-  { title: 'Massages', image: '' },
-  { title: 'Private Spa', image: '/images/Spaimg/Rectangle81.png' }
-  ];
+ 
+  { title: 'Fine Dining', image: '/images/fine.webp' },
+  { title: 'Family Seating', image: '/images/family.webp' },
+  { title: 'Live Kitchen', image: '/images/lk.webp' },
+  { title: 'Outdoor Seating', image: '/images/od.webp' },
+  { title: 'Private Dining', image: '/images/pd.webp' },
+  // { title: 'Buffet Section', image: '/images/restaurant/buffet.png' },
+  // { title: 'Bar & Lounge', image: '/images/restaurant/bar-lounge.png' },
+  { title: 'Chef’s Specials', image: '/images/cs.webp' }
+]
+
 
 export default function ServicesGrid() {
   return (
   <div className='w-full h-full p-4 md:p-8'>
-    <div className="grid grid-cols-2 gap-4 md:gap-6 md:grid-cols-4 ">
+    <div className="grid grid-cols-2 gap-4 md:gap-6 md:grid-cols-3 ">
       {services.map((service, index) => (
         <div
           key={index}

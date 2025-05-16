@@ -19,7 +19,7 @@ const FeaturedRoom = () => {
             <li>Shared Swimming Pool</li>
             <li>Spa Service for Free</li>
             <li>King Size Bed (1.80 x 1.70)</li>
-            <li>Balcony to Sea View</li>
+            <li>Mountain View</li>
           </ul>
         </div>
       </div>
