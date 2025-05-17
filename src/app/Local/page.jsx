@@ -85,9 +85,7 @@ const HimachalLocalAttractionsPage = () => {
               <p className="text-sm md:text-lg text-gray-200 mb-4 drop-shadow hidden sm:block">
                 {attraction.description}
               </p>
-              <button className="bg-blue-700 text-white py-2 px-4 md:px-6 rounded-full hover:bg-blue-800 transition mt-auto shadow-lg">
-                Discover More
-              </button>
+              
             </div>
           </div>
         ))}
