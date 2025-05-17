@@ -4,12 +4,12 @@ const attractions = [
   {
     name: 'Shimla Ridge',
     description: 'A wide open space in the heart of Shimla offering stunning views of the snow-capped mountains.',
-    image: '/image/d9a89dd4b69b590866f8c27044f6795c_1000x1000.png'
+    image: '/images/Local/the-ridge.webp'
   },
   {
     name: 'Solang Valley',
     description: 'A beautiful valley near Manali known for adventure sports like paragliding, skiing, and zorbing.',
-    image: '/images/solang-valley.jpg'
+    image: '/images/Local/manali-9202425.webp'
   },
   {
     name: 'Triund Hill',

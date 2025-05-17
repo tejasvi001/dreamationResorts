@@ -10,7 +10,7 @@ const AttractionEvents = () => {
           alt=""
         />
         <div className="absolute z-20">
-          onClick={() => router.push("/Local")}
+          onClick={() => router.push("/Local-page")}
           <p className="text-white text-[8vw] leading-[8vw] md:text-[4vw] text-center md:leading-[4vw] hover:scale-125 duration-2000 cursor-pointer">
             Local <br /> Attraction
           </p>
