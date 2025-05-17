@@ -6,7 +6,7 @@ const Contact = () => {
       {/* Top Hero Section */}
       <div className="relative w-full h-[500px] flex items-center justify-center">
         <Image
-          src="/images/Accomodationimg/b5wrkonddwzymupskqto.webp"
+          src="/images/Accomodationimg/b5wrkonddwzymupskqto_1_11zon.webp"
           alt="Room Background"
           fill
           className="object-cover"
@@ -22,7 +22,7 @@ const Contact = () => {
            
             <div className="relative w-full lg:w-1/2 h-[529.px] -mt-32 z-20">
           <Image
-            src="/images/Accomodationimg/zrr34yc0jw1ip47byz0u.webp"
+            src="/images/Accomodationimg/zrr34yc0jw1ip47byz0u_8_11zon.webp"
             alt="Vacation Image"
             fill
             className="object-cover rounded-t-3xl"

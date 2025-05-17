@@ -58,7 +58,7 @@ export const Acorn = {
       "  Outdoor Dining Area: A patio or deck with furniture for al fresco dining.",
       " Fire Pit or BBQ Grill: For cozy evenings or casual cookouts.",
     ],
-    imageUrl: "/images/ResidentialRoom/Rectangle20.webp",
+    imageUrl: "/images/ResidentialRoom/Rectangle20_1_11zon.webp",
     backgroundColor: "#D69D52",
   },
 
@@ -191,7 +191,7 @@ export const Fern = {
     subheading: "Amazing Views",
     description:
       "The Fern Seaside Luxurious Tent Resort offers an incredible outdoor patio experience that enhances the overall glamping adventure. Each of the luxury tents is designed with an attached private outdoor patio, where guests can unwind and soak in the serene views of the surrounding landscapes. ",
-    imageUrl: "/images/ResidentialRoom/Rectangle56.jpg",
+    imageUrl: "/images/ResidentialRoom/Rectangle56_3_11zon.jpg",
     backgroundColor: "#D69D52",
   },
 
@@ -333,7 +333,7 @@ export const Earthern = {
     subheading: "Amazing Views",
     description:
       "Earthen Echo Mud House should serve as a living extension of the home, embodying the principles of sustainability,embodying the principles of sustainability embodying the principles of sustainability  .",
-    imageUrl: "/images/ResidentialRoom/Rectangle21.webp",
+    imageUrl: "/images/ResidentialRoom/Rectangle21_2_11zon.webp",
     backgroundColor: "#D69D52",
   },
 
@@ -518,19 +518,19 @@ export const AkhadaPageData = {
   buttonText: "MEET US",
   cards: [
     {
-      image: "/images/akhada/NIK00289-Enhanced-NR_1_11zon.webp",
+      image: "/images/akhada/NIK00289-Enhanced-NR_1_11zon_1_11zon.webp",
       alt: "Akhada Bar Interior",
       title: "Sip, Socialize & Celebrate in Style",
       subtitle: "A Himalayan Retreat Experience",
     },
     {
-      image: "/images/akhada/NIK00290_2_11zon.webp",
+      image: "/images/akhada/NIK00290_2_11zon_2_11zon.webp",
       alt: "Bar Ambiance",
       title: "A Story Brewed with Culture & Spirit",
       subtitle: "Crafted for the Free-Spirited Traveler",
     },
     {
-      image: "/images/akhada/NIK00291_3_11zon.webp",
+      image: "/images/akhada/NIK00291_3_11zon_3_11zon.webp",
       alt: "Craft Cocktails",
       title: "Crafted Cocktails, Local Flair",
       subtitle: "Infused with Himalayan Botanicals",
@@ -539,7 +539,7 @@ export const AkhadaPageData = {
 },
 
 CoffeeFeature: {
-  image: "/images/akhada/NIK00292_4_11zon.webp",
+  image: "/images/akhada/NIK00292_4_11zon_4_11zon.webp",
   altText: "Bar Counter",
   heading: "Raise a Glass to\nHimalayan Evenings",
   paragraph:
@@ -596,7 +596,7 @@ CoffeeInfoSection: {
     "Indoor & outdoor bar seating",
     "Ideal for group celebrations & private gatherings",
   ],
-  image: "/images/akhada/NIK00293_5_11zon.webp",
+  image: "/images/akhada/NIK00293_5_11zon_5_11zon.webp",
   imageAlt: "Cocktail and Bar Tools",
 }
 };

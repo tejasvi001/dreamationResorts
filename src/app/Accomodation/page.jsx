@@ -6,7 +6,7 @@ import Header from "../../components/Accomodation/Header.jsx";
 const rooms = [
   {
     title: "Residential",
-    imageSrc: "/images/Accomodationimg/zrr34yc0jw1ip47byz0u.webp",
+    imageSrc: "/images/Accomodationimg/zrr34yc0jw1ip47byz0u_8_11zon.webp",
     width: 500,
     height: 500,
     description: "Residential rooms in an Acorn Luxury Cottage are thoughtfully designed to blend comfort, elegance, and functionality, making guests feel at home while offering a premium lodging experience.",
@@ -15,7 +15,7 @@ const rooms = [
   },
   {
     title: "Executive",
-    imageSrc: "/images/Accomodationimg/ofqa9cva1kkgkizumnsi.webp",
+    imageSrc: "/images/Accomodationimg/ofqa9cva1kkgkizumnsi_5_11zon.webp",
     width: 500,
     height: 500,
     description: "An Executive Room in an Acorn Luxury Cottage is designed to offer a premium blend of comfort, functionality, and understated luxury. ",
@@ -24,14 +24,14 @@ const rooms = [
   },
   {
     title: "Deluxe",
-    imageSrc: "/images/Accomodationimg/wmm1on7se9tjvjncr10e.webp",
+    imageSrc: "/images/Accomodationimg/wmm1on7se9tjvjncr10e_7_11zon.webp",
     description: "A Deluxe Room in an Acorn Luxury Cottage offers a spacious, thoughtfully designed environment focused on comfort, elegance, and a touch of rustic charm.",
     buttonText: "For More Details",
     imgAlt: "Deluxe Room",
   },
   {
     title: "Premium",
-    imageSrc: "/images/Accomodationimg/nrdauuexkyqsyeuhhx0q.webp",
+    imageSrc: "/images/Accomodationimg/nrdauuexkyqsyeuhhx0q_4_11zon.webp",
     description: "A Premium Room in an Acorn Luxury Cottage represents the highest tier of luxury and comfort, designed for guests seeking an indulgent, exclusive, and immersive experience.",
     buttonText: "For More Details",
     imgAlt: "Premium Room",

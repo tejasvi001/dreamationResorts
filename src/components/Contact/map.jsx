@@ -122,7 +122,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="flex flex-col h-full bg-gray-200">
+    <div className="flex flex-col h-full">
       {/* Left: Contact Info */}
       <div className="flex flex-col-reverse md:flex-row relative w-full p-[5vw] md:p-0 md:h-[70vh] gap-[5vw] md:gap-0">
         <div className="bg-orange-50 w-full lg:w-1/2 flex items-center justify-center px-6 py-10">

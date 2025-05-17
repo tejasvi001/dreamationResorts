@@ -3,40 +3,40 @@ import HeroSection from "../../components/Activities/Topbox.jsx";
 
 const Gallerydata = [
   {
-    image: "/activities/Rectangle57.jpg",
+    image: "/images/Detivonal/aj5mdntuqq9ml17runur.webp",
     title: "Nature Trails & Hiking",
     description:
       "Nature trails and hiking adventures offer a rejuvenating escape from daily life...",
   },
   {
-    image: "/activities/Rectangle 59.jpg",
-    title: "Avi Fauna Exploration",
+    image: "/images/Detivonal/c2nz9a7j6lyy90xs3kcg.webp",
+    title: "carved wooden temple",
     description:
-      "Chirping is a serene and rewarding activity that invites individuals...",
+      "A beautifully carved wooden temple entrance...",
   },
   {
-    image: "/activities/Rectangle 61.webp",
-    title: "Yoga & Meditation",
+    image: "/images/Detivonal/jjx5cu0vuvjrrty0md24.webp",
+    title: "Buddhist stupa (chorten)",
     description:
-      "Yoga and meditation are transformative practices that promote physical...",
+      " Buddhist stupa (chorten) surrounded by vibrant prayer flags...",
   },
   {
-    image: "/activities/Rectangle 63.jpg",
-    title: "Bonfire Nights",
+    image: "/images/Detivonal/kg41o5etpsqwy4isw6mv.webp",
+    title: " Baijnath Temple",
     description:
-      "Bonfire nights are enchanting gatherings that bring people together...",
+      " Dedicated to Lord Shiva as Vaidyanath (the Lord of Physicians) ...",
   },
   {
-    image: "/activities/Rectangle 65.webp",
+    image: "/images/Detivonal/sakrhohmug44q974bkxl.webp",
     title: "Painting & Sketching Sessions",
     description:
       "Painting and sketching sessions provide a creative outlet for self-expression...",
   },
   {
-    image: "/activities/Rectangle 67.jpg",
-    title: "Photography Walks",
+    image: "/images/Detivonal/yldqgfotu1oxfnbl9uck.webp",
+    title: "Tibetan Buddhist monastery building",
     description:
-      "Photography walks are immersive experiences that blend exploration and creativity...",
+      "likely part of a major monastic complex in India, such as the Mindrolling ...",
   },
 ];
 
@@ -45,8 +45,8 @@ export default function Page() {
     <div>
       <HeroSection
         backgroundImages={[
-          "/activities/xgvgq4sol9lhmxwby2ye.webp",
-          "/activities/xkwaq8gonythkoznkxxd.webp",
+          "/images/Detivonal/sakrhohmug44q974bkxl.webp",
+          "/images/Detivonal/kg41o5etpsqwy4isw6mv.webp",
         ]}
         heading="Welcome to Devotional Attraction"
       />

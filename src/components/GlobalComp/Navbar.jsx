@@ -44,12 +44,12 @@ const pages = [
       {
         name: "Bamboo And Brew Café ",
         path: "/BrewCafe",
-        image: "/images/brew/download (2).jpeg",
+        image: "/images/brew/NIK00271copy.webp",
       },
       {
         name: "Akhada Bar",
         path: "/AkhadaBar",
-        image: "/images/akhada/NIK00294_6_11zon.webp",
+        image: "/images/akhada/NIK00294_6_11zon_6_11zon.webp",
       },
       {
         name: "Hamlet Eatery",

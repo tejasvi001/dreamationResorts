@@ -15,10 +15,6 @@ export default function RoomHighlight() {
         <li><span className="text-[#B16C11] text-2xl font-bold mr-2">•</span>Shared Pool</li>
         <li><span className="text-[#B16C11] text-2xl font-bold mr-2">•</span>Mountain View</li>
       </ul>
-
-      <button className="border border-[#B16C11] text-[#B16C11] text-sm px-4 py-2 w-full sm:w-[180px]  hover:bg-amber-400 transition rounded-3xl">
-        For More Details
-      </button>
     </div>
   );
 }

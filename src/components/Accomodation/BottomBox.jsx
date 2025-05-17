@@ -1,4 +1,9 @@
+'use client'
+import { useRouter } from "next/navigation";
+
 export default function BottomBox() {
+  const router = useRouter();
+
   return (
     <div className="w-full bg-black text-white text-center py-6 px-4">
       <h2 className="text-lg md:text-xl font-semibold mb-2">
@@ -6,7 +11,8 @@ export default function BottomBox() {
       </h2>
       <p className="text-xs md:text-sm mb-4">
 Choose from a variety of accommodation options to your preferences. From spacious campsites for tents to cozy Bamboo Nests in the woods, we offer a range of choices for your stay. Each accommodation is equipped with modern amenities to ensure a comfortable and enjoyable experience.      </p>
-      <button className="border px-4 py-2 rounded hover:bg-white hover:text-black transition">
+      <button onClick={()=>router.push('/Contact')}
+       className="border px-4 py-2 rounded hover:bg-white hover:text-black transition cursor-pointer">
         Get Started
       </button>
     </div>
