@@ -8,7 +8,7 @@ const Pricing = () => {
       <div
         className="bg-gray-100 py-24 mt-10 w-full overflow-hidden"
         style={{
-          backgroundImage: "url('images/Spaimg/Rectangle 8.png')",
+          backgroundImage: "url('images/Spaimg/Rectangle8.webp')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           height: "350px",

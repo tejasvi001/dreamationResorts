@@ -9,7 +9,7 @@ const SpaHero = () => {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="/images/Spaimg/Rectangle 8.png"
+          src="/images/Spaimg/Rectangle8.webp"
           alt="Spa Image"
           width={1920}
           height={1600}
@@ -27,7 +27,7 @@ const SpaHero = () => {
         <div className="mt-52 flex flex-col md:flex-row items-center gap-32 md:ml-[-8%]">
           <div className="w-full md:w-1/2">
             <Image
-              src="/images/Spaimg/Rectangle 57.png"
+              src="/images/Spaimg/Rectangle57.webp"
               alt="Spa card Image"
               width={876}
               height={962}

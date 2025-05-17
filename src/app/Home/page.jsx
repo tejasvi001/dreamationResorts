@@ -9,23 +9,23 @@ import Activities from "../../components/HomePageComp/Activities.jsx";
 import { useRef } from "react";
 
 const Page = () => {
-const HomeRef = useRef(null)
+  const HomeRef = useRef(null);
   return (
     <div className="w-full h-full relative">
-        <HeroSection HomeRef={HomeRef} />
-        <Accomodations />
-        <div ref={HomeRef} >
-        <Facilities/>
-        </div>
-        <AttractionEvents />
-        <Banner />
-        <div className="bg-amber-50 py-[6vw] md:py-[3vw]">
+      <HeroSection HomeRef={HomeRef} />
+      <Accomodations />
+      <div ref={HomeRef}>
+        <Facilities />
+      </div>
+      <AttractionEvents />
+      <Banner />
+      <div className="bg-amber-50 py-[6vw] md:py-[3vw]">
         <ClientsSay />
         <div className="w-full">
-        <Activities />
-        </div>
+          <Activities />
         </div>
       </div>
+    </div>
   );
 };
 

@@ -13,7 +13,7 @@ const Gallery = () => {
       <div className="flex flex-col gap-20 px-0 mt-[250px]">  
         
       <GalleryItemLeft 
-      image="/activities/Rectangle 57.jpg" 
+      image="/activities/Rectangle57.jpg" 
       title="Nature Trails & Hiking" 
       description="Nature trails and hiking adventures offer a rejuvenating escape from daily life, allowing individuals to connect with the natural world while promoting physical health and mental well-being. Whether through dense forests, mountain ridges, coastal paths, or serene meadows, hiking provides an opportunity to explore breathtaking landscapes, observe wildlife, and experience the rhythm of nature firsthand."
       />
