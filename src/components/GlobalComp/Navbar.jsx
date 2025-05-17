@@ -54,7 +54,7 @@ const pages = [
       {
         name: "Hamlet Eatery",
         path: "/HamletEatery",
-        image: "/images/brew/9c518dbb8b940a7fb6077b3fbeba14a5.webp",
+        image: "/images/brew/vj7xmxtadx03ipjcu0zq_3_11zon.webp",
       },
     ],
   },
