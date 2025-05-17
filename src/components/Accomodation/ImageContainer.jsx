@@ -23,7 +23,7 @@ export default function ImageContainer() {
         />
         
         {/* RoomHighlight */}
-        <div className="absolute h-full top-[30%] z-40  md:top-[50%] left-[60%] md:left-[71%] w-full md:w-2/3 transform -translate-x-1/2 p-4">
+        <div className="absolute h-full top-[30%] z-[999]  md:top-[50%] left-[60%] md:left-[71%] w-full md:w-2/3 transform -translate-x-1/2 p-4">
           <RoomHighlight />
         </div>
       </div>
