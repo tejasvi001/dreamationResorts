@@ -3,54 +3,85 @@ import HeroSection from "../../components/Activities/Topbox.jsx";
 
 const Gallerydata = [
   {
-    image: "/images/Detivonal/IMG_5024.webp",
-    title: "Chintpurni Temple",
+    image: "/images/Detivonal/cm.webp",
+    title: "Chamunda Devi Temple",
     description:
-      "the Chintpurni Temple complex, a prominent Hindu pilgrimage site in the Una district of Himachal Pradesh, India. It is one of the 51 Shakti Peethas and is dedicated to Mata Chintpurni, a form of the Hindu goddess Durga. ...",
+      "Chamunda Devi Temple is a renowned Hindu temple located near Dharamshala in Himachal Pradesh. Dedicated to Goddess Chamunda, a fierce form of Durga, the temple is set against the backdrop of the Dhauladhar mountain range and the Baner River. It is a sacred Shakti Peeth and attracts devotees seeking blessings and spiritual peace. The temple complex also features a scenic pond and offers a tranquil atmosphere for meditation and worship.",
   },
-  {
-    image: "/images/Detivonal/IMG_4940.webp",
-    title: "carved wooden temple",
-    description:
-      "A beautifully carved wooden temple entrance, likely from a Himalayan region like Himachal Pradesh or Uttarakhand in India, known for its distinct architectural style. ...",
-  },
+  
   {
     image: "/images/Detivonal/IMG_4955.webp",
-    title: "Buddhist stupa (chorten)",
+    title: "Buddhist Stupa (Chorten)",
     description:
-      " a beautiful Buddhist stupa (chorten) surrounded by vibrant prayer flags, likely from a Himalayan region, possibly Sikkim, Himachal Pradesh, or Ladakh in India. The stupa, a symbol of peace and enlightenment,...",
+      "A Buddhist stupa, also known as a chorten in Tibetan culture, is a dome-shaped structure that serves as a sacred monument housing relics, scriptures, or ashes of revered monks and teachers. It symbolizes the enlightened mind of the Buddha and is used as a place for meditation and spiritual reflection. The design of a stupa typically represents the five elements—earth, water, fire, air, and space—and follows a symbolic path to enlightenment. ",
   },
   {
     image: "/images/Detivonal/IMG_5013.webp",
     title: " Baijnath Temple",
     description:
-      " This image captures the ancient Baijnath Temple in the Kangra district of Himachal Pradesh, India. Dedicated to Lord Shiva as Vaidyanath (the Lord of Physicians), this 13th-century temple is a stunning example of early medieval North Indian temple architecture.  ...",
+      "Baijnath Temple, located in Himachal Pradesh’s Kangra district, is an ancient Hindu shrine dedicated to Lord Shiva, worshipped here as Vaidyanath, the 'Lord of Healing.'' Built in 1204 AD, the temple showcases classic Nagara-style architecture with intricately carved stone walls and a towering shikhara. ",
   },
   {
     image: "/images/Detivonal/IMG_5036.webp",
     title: " Tapt Kund",
     description:
-      " the Tapt Kund hot water springs near the famous Baijnath Temple in Himachal Pradesh, India. These natural sulfur springs are considered sacred, with visitors...",
+      "Tattapani, located in Himachal Pradesh, is famous for its natural hot water springs along the banks of the Sutlej River. These springs are believed to have healing properties and attract visitors for both spiritual and wellness reasons. The site also features beautifully crafted shelters and temples, making it a serene spot for bathing and offering prayers. ",
   },
   {
     image: "/images/Detivonal/IMG_5009.webp",
-    title: "Tibetan Buddhist monastery building",
+    title: "Tibetan Buddhist Monastery Building",
     description:
-      "Tibetan Buddhist monastery building, likely part of a major monastic complex in India, such as the Mindrolling Monastery in Dehradun or a similar institute in the Himalayan region.  ...",
+      "A Tibetan Buddhist monastery building is a spiritual center where monks live, study, and practice the teachings of the Buddha. These monasteries, often called gompas, are characterized by their vibrant architecture, prayer halls (dukhang) with large statues of Buddhas and Bodhisattvas, colorful thangka paintings, and rows of prayer wheels outside.",
+  },
+  {
+    image: "/images/Detivonal/vt.webp",
+    title: "Vindheshwari Temple",
+    description:
+      "Vindhyeshwari Temple in Himachal Pradesh is a sacred shrine dedicated to Goddess Vindhyeshwari, a form of Goddess Durga. Located near Kangra, this temple holds religious significance for devotees, especially during Navratri. Surrounded by natural beauty and peaceful surroundings, it offers a serene place for worship and reflection.",
+  },
+  {
+    image: "/images/Detivonal/jt.webp",
+    title: "Jwalamukhi Temple",
+    description:
+      "The Jwalamukhi Temple, located in the Kangra district of Himachal Pradesh, is one of the 51 Shakti Peethas and is dedicated to Goddess Jwalamukhi, the deity of flame. Unlike other temples, it does not have a traditional idol—instead, natural eternal flames emerge from the rock inside the sanctum, believed to be the manifestation of the goddess. ",
+  },
+   {
+    image: "/images/Detivonal/dl.webp",
+    title: "Little Lhasa",
+    description:
+      "In Himachal Pradesh, the Dalai Lama resides in McLeod Ganj, near Dharamshala, which is often referred to as 'Little Lhasa' due to its large Tibetan population. This area is home to the Tsuglagkhang Complex, which includes the Dalai Lama’s residence, Namgyal Monastery, and a Tibetan museum. It serves as the spiritual and administrative center of the Tibetan government-in-exile. ",
+  },
+   {
+    image: "/images/Detivonal/bt.webp",
+    title: "Bhagsunath Temple",
+    description:
+      "The Bhagsunath Temple, also known as Bhagsu Nag Temple, is an ancient and revered shrine located in the village of Bhagsu, approximately 2–3 kilometers from McLeod Ganj in the Kangra district of Himachal Pradesh. Dedicated to Lord Shiva and the serpent deity Bhagsu Nag, the temple holds significant spiritual and historical importance, especially among the local Gorkha and Hindu communities.",
+  },
+   {
+    image: "/images/Detivonal/kt.webp",
+    title: "Kalachakra Temple",
+    description:
+      "The Kalachakra Temple in McLeod Ganj, Dharamshala, is a significant spiritual and cultural center for Tibetan Buddhism. Established in 1992 under the guidance of His Holiness the 14th Dalai Lama, the temple is dedicated to the Kalachakra Tantra, or 'Wheel of Time,' a complex Buddhist teaching that emphasizes the interdependence of the universe and the individual.",
+  },
+   {
+    image: "/images/Detivonal/bmm.webp",
+    title: "Mata Baglamukhi Temple",
+    description:
+      "The Maa Baglamukhi Temple in Bankhandi, Kangra district, Himachal Pradesh, is a revered Siddha Shaktipeeth dedicated to Goddess Baglamukhi, one of the ten Mahavidyas in Hinduism. Known for her power to paralyze enemies and remove obstacles, the goddess is often associated with the color yellow and is also referred to as Pitambara. ",
   },
 ];
 
 export default function Page() {
   return (
-    <div>
+    <div className="">
       <HeroSection
         backgroundImages={[
-          "/images/Detivonal/IMG_5004.webp",
+          "/images/Detivonal/IMG_5036.webp",
           "/images/Detivonal/IMG_5010.webp",
         ]}
         heading="Welcome to Devotional Attraction"
       />
-      <GalleryItems data={Gallerydata} />
+      <GalleryItems data={Gallerydata} className/>
     </div>
   );
 }
