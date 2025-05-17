@@ -12,7 +12,7 @@ const Gallerydata = [
     image: "/images/Detivonal/c2nz9a7j6lyy90xs3kcg.webp",
     title: "carved wooden temple",
     description:
-      "A beautifully carved wooden temple entrance, likely from a Himalayan region like Himachal Pradesh...",
+      "A beautifully carved wooden temple entrance...",
   },
   {
     image: "/images/Detivonal/jjx5cu0vuvjrrty0md24.webp",
@@ -24,7 +24,7 @@ const Gallerydata = [
     image: "/images/Detivonal/kg41o5etpsqwy4isw6mv.webp",
     title: " Baijnath Temple",
     description:
-      " Dedicated to Lord Shiva as Vaidyanath (the Lord of Physicians), this 13th-century temple ...",
+      " Dedicated to Lord Shiva as Vaidyanath (the Lord of Physicians) ...",
   },
   {
     image: "/images/Detivonal/sakrhohmug44q974bkxl.webp",
@@ -36,7 +36,7 @@ const Gallerydata = [
     image: "/images/Detivonal/yldqgfotu1oxfnbl9uck.webp",
     title: "Tibetan Buddhist monastery building",
     description:
-      "likely part of a major monastic complex in India, such as the Mindrolling Monastery in Dehradun or a similar institute in the Himalayan region...",
+      "likely part of a major monastic complex in India, such as the Mindrolling ...",
   },
 ];
 
