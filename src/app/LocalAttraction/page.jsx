@@ -3,40 +3,40 @@ import HeroSection from "../../components/Activities/Topbox.jsx";
 
 const Gallerydata = [
   {
-    image: "/activities/Rectangle57.jpg",
-    title: "Nature Trails & Hiking",
+    image: "/rr.webp",
+    title: "The Ridge",
     description:
-      "Nature trails and hiking adventures offer a rejuvenating escape from daily life...",
+      "Scenic open space with views of the mountains.",
   },
   {
-    image: "/activities/Rectangle 59.jpg",
-    title: "Avi Fauna Exploration",
+    image: "/sv.webp",
+    title: "Solang Valley",
     description:
-      "Chirping is a serene and rewarding activity that invites individuals...",
+      "Paragliding, skiing, and other adventure sports.",
   },
   {
-    image: "/activities/Rectangle 61.webp",
-    title: "Yoga & Meditation",
+    image: "/kf.webp",
+    title: "Kangra Fort",
     description:
-      "Yoga and meditation are transformative practices that promote physical...",
+      "Ancient fort with great valley views.",
   },
   {
-    image: "/activities/Rectangle 63.jpg",
-    title: "Bonfire Nights",
+    image: "/cl.webp",
+    title: "Chandratal Lake",
     description:
-      "Bonfire nights are enchanting gatherings that bring people together...",
+      "High-altitude lake with crystal-clear water.",
   },
   {
-    image: "/activities/Rectangle 65.webp",
-    title: "Painting & Sketching Sessions",
+    image: "/tv.webp",
+    title: "Tirthan Valley",
     description:
-      "Painting and sketching sessions provide a creative outlet for self-expression...",
+      "Pristine nature, fishing, and homestays.",
   },
   {
-    image: "/activities/Rectangle 67.jpg",
-    title: "Photography Walks",
+    image: "/pg.webp",
+    title: "Bir Billing",
     description:
-      "Photography walks are immersive experiences that blend exploration and creativity...",
+      "Asia’s best spot for paragliding.",
   },
 ];
 
@@ -45,9 +45,11 @@ export default function Page() {
     <div>
       <HeroSection
         backgroundImages={[
-          "/activities/xgvgq4sol9lhmxwby2ye.webp",
-          "/activities/xkwaq8gonythkoznkxxd.webp",
-        ]}
+          // "/activities/xgvgq4sol9lhmxwby2ye.webp",
+          // "/activities/xkwaq8gonythkoznkxxd.webp",
+          "/rr.webp",
+          "/lbg.webp",
+        ]}Painting
         heading="Welcome to Local Attraction"
       />
       <GalleryItems data={Gallerydata} />
