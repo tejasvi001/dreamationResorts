@@ -21,8 +21,8 @@ const GalleryItems = ({data}) => {
             />
             <div
               className="sm:absolute sm:left-[85%] sm:top-1/2 sm:transform sm:-translate-y-1/2
-              bg-[#D69D52] text-white p-4 rounded-lg shadow-lg 
-              w-full sm:w-[400px] xl:w-[500px] h-[60vh]
+              bg-[#D69D52] text-white p-6 rounded-lg shadow-lg 
+              w-full sm:w-[400px] xl:w-[500px] 
               flex flex-col justify-center items-center text-center sm:items-center sm:text-center 
               mt-6 sm:mt-6"
             >
