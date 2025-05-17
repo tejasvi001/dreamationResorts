@@ -3,40 +3,40 @@ import HeroSection from "../../components/Activities/Topbox.jsx";
 
 const Gallerydata = [
   {
-    image: "/images/Detivonal/aj5mdntuqq9ml17runur.webp",
-    title: "Nature Trails & Hiking",
+    image: "/images/Detivonal/IMG_5024.webp",
+    title: "Chintpurni Temple",
     description:
-      "Nature trails and hiking adventures offer a rejuvenating escape from daily life...",
+      "the Chintpurni Temple complex, a prominent Hindu pilgrimage site in the Una district of Himachal Pradesh, India. It is one of the 51 Shakti Peethas and is dedicated to Mata Chintpurni, a form of the Hindu goddess Durga. ...",
   },
   {
-    image: "/images/Detivonal/c2nz9a7j6lyy90xs3kcg.webp",
+    image: "/images/Detivonal/IMG_4940.webp",
     title: "carved wooden temple",
     description:
-      "A beautifully carved wooden temple entrance...",
+      "A beautifully carved wooden temple entrance, likely from a Himalayan region like Himachal Pradesh or Uttarakhand in India, known for its distinct architectural style. ...",
   },
   {
-    image: "/images/Detivonal/jjx5cu0vuvjrrty0md24.webp",
+    image: "/images/Detivonal/IMG_4955.webp",
     title: "Buddhist stupa (chorten)",
     description:
-      " Buddhist stupa (chorten) surrounded by vibrant prayer flags...",
+      " a beautiful Buddhist stupa (chorten) surrounded by vibrant prayer flags, likely from a Himalayan region, possibly Sikkim, Himachal Pradesh, or Ladakh in India. The stupa, a symbol of peace and enlightenment,...",
   },
   {
-    image: "/images/Detivonal/kg41o5etpsqwy4isw6mv.webp",
+    image: "/images/Detivonal/IMG_5013.webp",
     title: " Baijnath Temple",
     description:
-      " Dedicated to Lord Shiva as Vaidyanath (the Lord of Physicians) ...",
+      " This image captures the ancient Baijnath Temple in the Kangra district of Himachal Pradesh, India. Dedicated to Lord Shiva as Vaidyanath (the Lord of Physicians), this 13th-century temple is a stunning example of early medieval North Indian temple architecture.  ...",
   },
   {
-    image: "/images/Detivonal/sakrhohmug44q974bkxl.webp",
-    title: "Painting & Sketching Sessions",
+    image: "/images/Detivonal/IMG_5036.webp",
+    title: " Tapt Kund",
     description:
-      "Painting and sketching sessions provide a creative outlet for self-expression...",
+      " the Tapt Kund hot water springs near the famous Baijnath Temple in Himachal Pradesh, India. These natural sulfur springs are considered sacred, with visitors...",
   },
   {
-    image: "/images/Detivonal/yldqgfotu1oxfnbl9uck.webp",
+    image: "/images/Detivonal/IMG_5009.webp",
     title: "Tibetan Buddhist monastery building",
     description:
-      "likely part of a major monastic complex in India, such as the Mindrolling ...",
+      "Tibetan Buddhist monastery building, likely part of a major monastic complex in India, such as the Mindrolling Monastery in Dehradun or a similar institute in the Himalayan region.  ...",
   },
 ];
 
@@ -45,8 +45,8 @@ export default function Page() {
     <div>
       <HeroSection
         backgroundImages={[
-          "/images/Detivonal/sakrhohmug44q974bkxl.webp",
-          "/images/Detivonal/kg41o5etpsqwy4isw6mv.webp",
+          "/images/Detivonal/IMG_5004.webp",
+          "/images/Detivonal/IMG_5010.webp",
         ]}
         heading="Welcome to Devotional Attraction"
       />
