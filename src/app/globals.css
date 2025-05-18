@@ -93,7 +93,7 @@ background-image: url("/assets/dubed.webp");
 }
 
 .half-background-2 {
-  background-image: url("/assets/room.png");
+  background-image: url("/assets/room.webp");
   background-repeat: no-repeat;
   background-position: top left;
   background-size: 60% 100%;

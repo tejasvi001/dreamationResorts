@@ -4,7 +4,7 @@ const FeaturedRoom = () => {
       <img
         src='/assets/dubed.webp'
         alt="Featured Room"
-        className='absolute inset-0 w-full min-h-[450px] py-8 h-auto -z-10'
+        className='absolute inset-0 w-full min-h-[450px] py-8 h-[4vw] -z-10'
       />
       <div className='md:w-1/2 w-2/3 ml-auto flex items-center flex-col justify-center'>
         <div className='bg-[#d69d52] h-full min-h-[460px] w-full z-50 max-w-lg p-10'>

@@ -35,9 +35,9 @@ const Gallerydata = [
   },
   {
     image: "/images/Detivonal/vt.webp",
-    title: "Vindheshwari Temple",
+    title: "Shaktipeeth Shri Brijeshwari Devi Temple",
     description:
-      "Vindhyeshwari Temple in Himachal Pradesh is a sacred shrine dedicated to Goddess Vindhyeshwari, a form of Goddess Durga. Located near Kangra, this temple holds religious significance for devotees, especially during Navratri. Surrounded by natural beauty and peaceful surroundings, it offers a serene place for worship and reflection.",
+      "Shaktipeeth Shri Brijeshwari Devi Temple, located in Kangra, Himachal Pradesh, is one of the 51 sacred Shaktipeeths in India. It is believed to be the site where the goddess Sati’s breast fell, making it a powerful center of divine feminine energy and devotion. The temple is renowned for its rich history, spiritual significance, and vibrant Navratri celebrations.",
   },
   {
     image: "/images/Detivonal/jt.webp",
