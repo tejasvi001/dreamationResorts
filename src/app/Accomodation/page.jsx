@@ -6,7 +6,7 @@ import Header from "../../components/Accomodation/Header.jsx";
 const rooms = [
   {
     title: "Residential",
-    imageSrc: "/images/Accomodationimg/zrr34yc0jw1ip47byz0u_8_11zon.webp",
+    imageSrc: "/images/Accomodationimg/reg.webp",
     width: 500,
     height: 500,
     description: "Residential rooms in an Acorn Luxury Cottage are thoughtfully designed to blend comfort, elegance, and functionality, making guests feel at home while offering a premium lodging experience.",

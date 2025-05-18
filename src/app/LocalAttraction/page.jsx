@@ -24,7 +24,7 @@ const Gallerydata = [
 
   {
     image: "/images/Local/tg.webp",
-    title: "The Tea Gardens",
+    title: "Tea Estates",
     description:
       "Himachal Pradesh is renowned for its picturesque tea gardens, particularly in the Kangra Valley region. The most notable tea gardens are located in Palampur and Dharamshala, offering visitors a blend of natural beauty and cultural heritage.",
   },

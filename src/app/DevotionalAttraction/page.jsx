@@ -41,9 +41,9 @@ const Gallerydata = [
   },
   {
     image: "/images/Detivonal/jt.webp",
-    title: "Jwalamukhi Temple",
+    title: "Jawalamukhi Temple",
     description:
-      "The Jwalamukhi Temple, located in the Kangra district of Himachal Pradesh, is one of the 51 Shakti Peethas and is dedicated to Goddess Jwalamukhi, the deity of flame. Unlike other temples, it does not have a traditional idol—instead, natural eternal flames emerge from the rock inside the sanctum, believed to be the manifestation of the goddess. ",
+      "The Jawalamukhi Temple, located in the Kangra district of Himachal Pradesh, is one of the 51 Shakti Peethas and is dedicated to Goddess Jwalamukhi, the deity of flame. Unlike other temples, it does not have a traditional idol—instead, natural eternal flames emerge from the rock inside the sanctum, believed to be the manifestation of the goddess. ",
   },
    {
     image: "/images/Detivonal/dl.webp",

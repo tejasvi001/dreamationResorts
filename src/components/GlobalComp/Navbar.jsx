@@ -223,7 +223,7 @@ export default function ResponsiveNavbar() {
                     <MapPin className="text-gray-400" size={18} />
                     <a href="https://maps.app.goo.gl/xiUZZVMoVkXfCZtb8">
                       <span className="text-sm">
-                        Dreamation Resorts, Ghornala, Bir, Baijnath, Kangra
+                        Dreamation Resorts, Ghornala, Bir, Baijnath, Himachal Pradesh
                       </span>
                     </a>
                   </div>
