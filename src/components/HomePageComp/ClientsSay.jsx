@@ -1,9 +1,8 @@
 "use client";
-import { useState } from "react";
-
+import { useState, useCallback, useMemo } from "react";
 import Image from "next/image";
 
-const testimonials = [
+const defaultTestimonials = [
   {
     id: 1,
     name: "Anuj Kumar",
@@ -28,96 +27,77 @@ const testimonials = [
 ];
 
 const ClientsSay = ({ clientsSayData }) => {
+  const data = clientsSayData || defaultTestimonials;
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const goToPrevious = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
-    );
-  };
+  const goToPrevious = useCallback(() => {
+    setCurrentIndex((prev) => (prev === 0 ? data.length - 1 : prev - 1));
+  }, [data.length]);
 
-  const goToNext = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
-    );
-  };
+  const goToNext = useCallback(() => {
+    setCurrentIndex((prev) => (prev === data.length - 1 ? 0 : prev + 1));
+  }, [data.length]);
+
+  // Memoize current testimonial to avoid re-render on unrelated changes
+  const currentTestimonial = useMemo(() => data[currentIndex], [data, currentIndex]);
 
   return (
-    <div className="relative w-full mx-auto px-4 py-12 text-center bg-amber-50">
-
-      <div className=" flex justify-between">
-        {/* Left Image */}
-
-        <div className="md:ml-28 md:block ">
-          <div className="w-20 h-20 md:w-40 md:h-40 relative -rotate-6 ">
-            {/* <Image
-              src={
-                testimonials[
-                  (currentIndex - 1 + testimonials.length) % testimonials.length
-                ].image
-              }
-              alt="Previous Testimonial"
-              width={100}
-              height={100}
-              className="object-cover border-4 border-white shadow-md rounded-md"
-            /> */}
-          </div>
-        </div>
-
-        <div className=" ">
-          <img
+    <section className="relative w-full mx-auto px-4 py-12 text-center bg-amber-50" aria-label="Client testimonials">
+      <div className="flex justify-center items-center">
+        <div className="h-20 md:h-28 md:w-28 w-20 overflow-hidden relative">
+          <Image
             src="/getQuote.png"
-            alt=""
-            className="h-20 md:h-28 md:w-28 w-20 relative top-14"
+            alt="Quote symbol"
+            fill
+            style={{ objectFit: "cover" }}
+            priority
           />
         </div>
-        {/* Right image */}
-        <div className="md:block  mt-4 ">
-          <div className="w-20 h-20  md:w-40 md:h-40 relative rotate-6 mt-4">
-            {/* <Image
-              src={testimonials[(currentIndex + 1) % testimonials.length].image}
-              alt="Next Testimonial"
-              width={100}
-              height={100}
-              className="object-cover border-4 border-white shadow-md rounded-md"
-            /> */}
-          </div>
-        </div>
       </div>
 
-      <div className="mt-4">
-        <div>
-          <h2 className="text-4xl font-serif text-amber-700 mb-6">
-            What Our Clients Say?
-          </h2>
-        </div>
-        <div className="flex items-center justify-center mt-9  "></div>
-      </div>
+      <h2 className="text-4xl font-serif text-amber-700 mb-6 mt-4">
+        What Our Clients Say?
+      </h2>
 
-      {/* Navigation Arrows */}
-      <div className="flex justify-between items-center w-[90%] mx-auto h-60 md:h-[10vw] ">
+      <div className="flex justify-between items-center w-[90%] mx-auto h-60 md:h-[10vw]">
         <button
           onClick={goToPrevious}
           className="text-amber-700 hover:text-amber-500 transition transform scale-110 cursor-pointer"
+          aria-label="Previous testimonial"
         >
-          <img src="/leftButton.svg" alt="" className="w-12 h-12" />
+          <Image
+            src="/leftButton.svg"
+            alt="Previous"
+            width={100}
+            height={100}
+            priority
+            className="scale-150 md:scale-40"
+          />
         </button>
-        <div className="max-w-lg px-4">
-          <p className="text-lg text-gray-800 italic">
-            "{testimonials[currentIndex].quote}"
-          </p>
-          <p className="mt-4 text-amber-700 font-medium text-lg">
-            {testimonials[currentIndex].name}
-          </p>
-        </div>
+
+        <blockquote className="max-w-lg px-4">
+          <p className="text-lg text-gray-800 italic">"{currentTestimonial.quote}"</p>
+          <footer className="mt-4 text-amber-700 font-medium text-lg">
+            — {currentTestimonial.name}
+          </footer>
+        </blockquote>
+
         <button
           onClick={goToNext}
           className="text-amber-700 hover:text-amber-500 transition transform scale-110 cursor-pointer"
+          aria-label="Next testimonial"
         >
-          <img src="/rightButton.svg" alt="" className="w-12 h-12" />
+          <Image
+            src="/rightButton.svg"
+            alt="Next"
+            width={100}
+            height={100}
+            priority
+            className="scale-150 md:scale-40"
+          />
         </button>
       </div>
-    </div>
+    </section>
   );
 };
 

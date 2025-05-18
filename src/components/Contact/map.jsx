@@ -1,21 +1,19 @@
 "use client";
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import emailjs from "@emailjs/browser";
 import { FaSearchLocation } from "react-icons/fa";
 import { MdAddCall } from "react-icons/md";
 import { IoMdMailUnread } from "react-icons/io";
-
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 
-const containerStyle = {
-  width: "100%",
-  height: "70vh",
-};
+const containerStyle = { width: "100%", height: "70vh" };
+const fixedPosition = { lat: 32.06119913221474, lng: 76.71209094477592 };
 
-const fixedPosition = {
-  lat: 32.06119913221474,
-  lng: 76.71209094477592,
-};
+const emailJsServiceID = "service_6qdd0uh";
+const emailJsPublicKey = "u1JJ_0wWpDDp-jC36";
+const templateIdRegistrationForm = "template_csd9hn1";
+const googleSheetURL =
+  "https://script.google.com/macros/s/AKfycbx-dszRsgRKfvFgCAWCh9G6bQ_HkvbrKBBakjsZobII8alisfBc8fbuVuI42q2UgkvH/exec";
 
 export default function Contact() {
   const [selectedPackage, setSelectedPackage] = useState("");
@@ -35,116 +33,118 @@ export default function Contact() {
     Message: "",
   });
 
-  const validate = () => {
-    const errors = {};
+  const validate = useCallback(() => {
+    const errs = {};
     const EmailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const PhoneNoRegex = /^[0-9]{10}$/;
     const NumberOfPeopleRegex = /^[1-9][0-9]*$/;
     const DateRegex = /^\d{4}-\d{2}-\d{2}$/;
 
-    if (!formData.Name.trim()) errors.Name = "Name is required.";
-    if (!EmailRegex.test(formData.Email))
-      errors.Email = "Invalid email address.";
+    if (!formData.Name.trim()) errs.Name = "Name is required.";
+    if (!EmailRegex.test(formData.Email)) errs.Email = "Invalid email address.";
     if (!PhoneNoRegex.test(formData.PhoneNo))
-      errors.PhoneNo = "Phone number must be 10 digits.";
+      errs.PhoneNo = "Phone number must be 10 digits.";
     if (formData.Message.length > 200)
-      errors.Message = "Message cannot exceed 200 characters.";
+      errs.Message = "Message cannot exceed 200 characters.";
     if (
       formData.NumberOfPeople &&
-      !NumberOfPeopleRegex.test(formData.NumberOfPeople) &&
-      formData.NumberOfPeople > 0
+      (!NumberOfPeopleRegex.test(formData.NumberOfPeople) ||
+        Number(formData.NumberOfPeople) <= 0)
     )
-      errors.NumberOfPeople = "Invalid number of people.";
+      errs.NumberOfPeople = "Invalid number of people.";
     if (formData.ArrivingDate && !DateRegex.test(formData.ArrivingDate))
-      errors.ArrivingDate = "Invalid arriving date.";
+      errs.ArrivingDate = "Invalid arriving date.";
     if (formData.DepartingDate && !DateRegex.test(formData.DepartingDate))
-      errors.DepartingDate = "Invalid departing date.";
+      errs.DepartingDate = "Invalid departing date.";
 
-    return errors;
-  };
+    return errs;
+  }, [formData]);
 
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
+  const handleChange = useCallback((e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+    if (name === "PackageName") setSelectedPackage(value);
+  }, []);
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setErrors({});
-    setSuccessMessage("");
+  const handleSubmit = useCallback(
+    async (e) => {
+      e.preventDefault();
+      setIsSubmitting(true);
+      setErrors({});
+      setSuccessMessage("");
 
-    const validationErrors = validate();
-    if (Object.keys(validationErrors).length > 0) {
-      setErrors(validationErrors);
-      setIsSubmitting(false);
-      return;
-    }
-
-    try {
-      const googleSheetURL =
-        "https://script.google.com/macros/s/AKfycbx-dszRsgRKfvFgCAWCh9G6bQ_HkvbrKBBakjsZobII8alisfBc8fbuVuI42q2UgkvH/exec";
-      const emailJsServiceID = "service_6qdd0uh";
-      const emailJsPublicKey = "u1JJ_0wWpDDp-jC36";
-      const templateIdRegistrationForm = "template_csd9hn1";
-
-      const googleResponse = await fetch(googleSheetURL, {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(formData),
-      });
-
-      const emailJSResponse = await emailjs.send(
-        emailJsServiceID,
-        templateIdRegistrationForm,
-        formData,
-        emailJsPublicKey
-      );
-
-      if (googleResponse.ok && emailJSResponse.status === 200) {
-        setSuccessMessage("Message sent successfully!");
-        setFormData({
-          Name: "",
-          Email: "",
-          PhoneNo: "",
-          PackageName: "",
-          OtherPackage: "",
-          NumberOfPeople: "",
-          ArrivingDate: "",
-          DepartingDate: "",
-          Message: "",
-        });
-        setSelectedPackage("");
+      const validationErrors = validate();
+      if (Object.keys(validationErrors).length) {
+        setErrors(validationErrors);
+        setIsSubmitting(false);
+        return;
       }
-    } catch (error) {
-      console.error("Error submitting form:", error);
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
+
+      try {
+        const googleResponse = await fetch(googleSheetURL, {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: new URLSearchParams(formData),
+        });
+
+        const emailJSResponse = await emailjs.send(
+          emailJsServiceID,
+          templateIdRegistrationForm,
+          formData,
+          emailJsPublicKey
+        );
+
+        if (googleResponse.ok && emailJSResponse.status === 200) {
+          setSuccessMessage("Message sent successfully!");
+          setFormData({
+            Name: "",
+            Email: "",
+            PhoneNo: "",
+            PackageName: "",
+            OtherPackage: "",
+            NumberOfPeople: "",
+            ArrivingDate: "",
+            DepartingDate: "",
+            Message: "",
+          });
+          setSelectedPackage("");
+        }
+      } catch (error) {
+        console.error("Error submitting form:", error);
+      } finally {
+        setIsSubmitting(false);
+      }
+    },
+    [formData, validate]
+  );
 
   return (
-    <div className="flex flex-col h-full">
-      {/* Left: Contact Info */}
+    <div className="flex flex-col h-full mt-8 md:mt-0">
       <div className="flex flex-col-reverse md:flex-row relative w-full p-[5vw] md:p-0 md:h-[70vh] gap-[5vw] md:gap-0">
-        <div className="bg-orange-50 w-full lg:w-1/2 flex items-center justify-center px-6 py-10">
-          <div className="max-w-md w-full space-y-5 text-center lg:text-left flex flex-col gap-1">
+        <div className="bg-orange-100 w-full lg:w-1/2 flex items-center justify-center px-6 py-10">
+          <div className="max-w-md w-full space-y-5 lg:text-left flex flex-col gap-1">
             <h2 className="text-2xl sm:text-3xl font-bold">Get in Touch!</h2>
-            <a href="https://maps.app.goo.gl/xiUZZVMoVkXfCZtb8">
+            <a
+              href="https://maps.app.goo.gl/xiUZZVMoVkXfCZtb8"
+              className="hover:underline"
+            >
               <div className="flex items-center gap-2 text-sm sm:text-base">
                 <FaSearchLocation className="text-[#d69d52]" />
                 <strong>Location</strong>
               </div>
-              <p>Dreamation Resorts, Ghornala, Bir, Baijnath, Kangra </p>
+              <p>Dreamation Resorts, Ghornala, Bir, Baijnath, Kangra, Himachal Pradesh</p>
             </a>
-            <a href="tel:7837000888">
+            <a href="tel:7837000888" className="hover:underline">
               <div className="flex items-center gap-2 text-sm sm:text-base">
                 <MdAddCall className="text-[#d69d52]" />
                 <strong>Call Us at</strong>
               </div>
               <p>+91 7837000888</p>
             </a>
-            <a href="mailto:info@dreamationresorts.com">
-              {" "}
+            <a
+              href="mailto:info@dreamationresorts.com"
+              className="hover:underline"
+            >
               <div className="flex items-center gap-2 text-sm sm:text-base">
                 <IoMdMailUnread className="text-[#d69d52]" />
                 <strong>Email Us at</strong>
@@ -154,10 +154,14 @@ export default function Contact() {
           </div>
         </div>
 
-        {/* Right: Form */}
         <div className="w-full hidden md:flex h-full lg:w-1/2 items-center justify-center px-4 sm:px-6 py-10"></div>
+
         <div className="md:absolute right-[8vw] top-[2vw] w-full md:w-[35vw] bg-white shadow-lg rounded-3xl p-6 md:p-[3vw] space-y-4 z-10">
-          <form onSubmit={handleSubmit} className=" space-y-3 md:space-y-4">
+          <form
+            onSubmit={handleSubmit}
+            className="space-y-3 md:space-y-4"
+            noValidate
+          >
             <input
               name="Name"
               value={formData.Name}
@@ -186,20 +190,19 @@ export default function Contact() {
               name="PhoneNo"
               value={formData.PhoneNo}
               onChange={handleChange}
-              className="w-full border  p-1 md:p-2 rounded"
+              className="w-full border p-1 md:p-2 rounded"
               type="tel"
               placeholder="Contact No"
             />
+            {errors.PhoneNo && (
+              <p className="text-red-500 text-sm">{errors.PhoneNo}</p>
+            )}
 
             <select
               name="PackageName"
-              className="w-full border  p-1 md:p-2 rounded"
+              className="w-full border p-1 md:p-2 rounded"
               value={formData.PackageName}
-              onChange={(e) => {
-                const value = e.target.value;
-                setSelectedPackage(value);
-                handleChange(e);
-              }}
+              onChange={handleChange}
             >
               <option value="">Select Service</option>
               <option value="Ultra Luxury Acorn Cottages">
@@ -222,7 +225,7 @@ export default function Contact() {
                 name="OtherPackage"
                 value={formData.OtherPackage}
                 onChange={handleChange}
-                className="w-full border  p-1 md:p-2 rounded"
+                className="w-full border p-1 md:p-2 rounded"
                 type="text"
                 placeholder="Please specify your package"
               />
@@ -232,36 +235,49 @@ export default function Contact() {
               name="NumberOfPeople"
               value={formData.NumberOfPeople}
               onChange={handleChange}
-              className="w-full border  p-1 md:p-2 rounded"
+              className="w-full border p-1 md:p-2 rounded"
               type="number"
               placeholder="No. of People"
             />
+            {errors.NumberOfPeople && (
+              <p className="text-red-500 text-sm">{errors.NumberOfPeople}</p>
+            )}
 
-            <div>
-              <label className="block text-sm font-medium mb-1">
-                Arriving Date
-              </label>
-              <input
-                name="ArrivingDate"
-                value={formData.ArrivingDate}
-                onChange={handleChange}
-                className="w-full border  p-1 md:p-2 rounded"
-                type="date"
-              />
-            </div>
+            <label
+              className="block text-sm font-medium mb-1"
+              htmlFor="ArrivingDate"
+            >
+              Arriving Date
+            </label>
+            <input
+              id="ArrivingDate"
+              name="ArrivingDate"
+              value={formData.ArrivingDate}
+              onChange={handleChange}
+              className="w-full border p-1 md:p-2 rounded"
+              type="date"
+            />
+            {errors.ArrivingDate && (
+              <p className="text-red-500 text-sm">{errors.ArrivingDate}</p>
+            )}
 
-            <div>
-              <label className="block text-sm font-medium mb-1">
-                Departing Date
-              </label>
-              <input
-                name="DepartingDate"
-                value={formData.DepartingDate}
-                onChange={handleChange}
-                className="w-full border p-1 md:p-2 rounded"
-                type="date"
-              />
-            </div>
+            <label
+              className="block text-sm font-medium mb-1"
+              htmlFor="DepartingDate"
+            >
+              Departing Date
+            </label>
+            <input
+              id="DepartingDate"
+              name="DepartingDate"
+              value={formData.DepartingDate}
+              onChange={handleChange}
+              className="w-full border p-1 md:p-2 rounded"
+              type="date"
+            />
+            {errors.DepartingDate && (
+              <p className="text-red-500 text-sm">{errors.DepartingDate}</p>
+            )}
 
             <textarea
               name="Message"
@@ -270,7 +286,7 @@ export default function Contact() {
               className="w-full border p-1 md:p-2 rounded"
               rows="3"
               placeholder="Your Message"
-            ></textarea>
+            />
             {errors.Message && (
               <p className="text-red-500 text-sm">{errors.Message}</p>
             )}
@@ -278,7 +294,7 @@ export default function Contact() {
             <button
               disabled={isSubmitting}
               type="submit"
-              className="w-full bg-orange-500 text-white py-2 cursor-pointer rounded hover:bg-orange-600 transition disabled:opacity-50"
+              className="w-full bg-orange-500 text-white py-2 rounded hover:bg-orange-600 transition disabled:opacity-50"
             >
               {isSubmitting ? "Sending..." : "Send Message"}
             </button>
@@ -290,13 +306,12 @@ export default function Contact() {
         </div>
       </div>
 
-      {/* map */}
       <div className="w-full h-full">
         <LoadScript googleMapsApiKey="AIzaSyAYeUr7IJ2HLtjaDebKgMlTIWcmKqqcsBY">
           <GoogleMap
             mapContainerStyle={containerStyle}
             center={fixedPosition}
-            zoom={16}
+            zoom={15}
           >
             <Marker position={fixedPosition} />
           </GoogleMap>

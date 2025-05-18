@@ -1,76 +1,91 @@
-"use client";
-import React, { useState, useEffect } from "react";
+'use client';
+
+import Image from 'next/image';
+import React, { useState, useEffect, useMemo, useCallback } from 'react';
 
 const Page = ({ sectionRef, Pagedata }) => {
+  const { cards = [], buttonText = '' } = Pagedata || {};
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
+    if (cards.length <= 1) return;
     const interval = setInterval(() => {
-      setActiveIndex((prevIndex) => (prevIndex + 1) % Pagedata.cards.length);
+      setActiveIndex((prev) => (prev + 1) % cards.length);
     }, 4000);
-
     return () => clearInterval(interval);
-  }, [Pagedata.cards.length]);
+  }, [cards.length]);
 
-  const getInactiveCards = () => {
-    return Pagedata.cards
-      .map((card, i) => ({ ...card, index: i }))
-      .filter((_, i) => i !== activeIndex);
-  };
+  const inactiveCards = useMemo(
+    () =>
+      cards
+        .map((card, index) => ({ ...card, index }))
+        .filter((_, index) => index !== activeIndex),
+    [activeIndex, cards]
+  );
 
-  const handleCardClick = (clickedIndex) => {
-    if (clickedIndex === activeIndex) return;
-    setActiveIndex(clickedIndex);
-  };
+  const activeCardData = useMemo(() => cards[activeIndex], [activeIndex, cards]);
 
-  const activeCardData = Pagedata.cards[activeIndex];
-  const inactiveCards = getInactiveCards();
+  const handleCardClick = useCallback(
+    (index) => {
+      if (index !== activeIndex) setActiveIndex(index);
+    },
+    [activeIndex]
+  );
 
   return (
     <section className="relative h-[90vh] md:h-screen w-full bg-black text-white overflow-hidden">
+      {/* Background Images */}
       <div className="absolute inset-0 z-0">
-        {Pagedata.cards.map((card, index) => (
-          <img
+        {cards.map((card, index) => (
+          <div
             key={index}
-            src={card.image}
-            alt={`Background ${index}`}
-            className={`object-cover w-full h-full absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-              index === activeIndex ? "opacity-60 z-10" : "opacity-0 z-0"
+            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+              index === activeIndex ? 'opacity-60 z-10' : 'opacity-0 z-0'
             }`}
-          />
+          >
+            <Image
+              src={card.image}
+              alt={`Background ${index}`}
+              fill
+              className="object-cover"
+              priority={index === 0}
+              sizes="100vw"
+            />
+          </div>
         ))}
       </div>
 
+      {/* Foreground Content */}
       <div className="relative z-20 flex flex-col md:flex-row justify-between items-center h-full px-6 md:px-20 py-10">
-        <div className="max-w-xl space-y-6 text-sm md:text-xl">
-          {/* <p className="text-orange-500 font-semibold">{activeCardData.subtitle}</p> */}
-          <h1 className="text-2xl md:text-5xl font-bold leading-tight">
-            {activeCardData.title}
+        {/* Active Card */}
+        <div className="max-w-xl mt-[20vh] md:mt-0 space-y-6 text-sm md:text-xl">
+          <h1 className="text-3xl md:text-5xl font-bold leading-tight">
+            {activeCardData?.title}
           </h1>
           <button
-            onClick={() => {
-              sectionRef.current.scrollIntoView({ behavior: "smooth" });
-            }}
-            className="mt-3 md:mt-6 px-6 py-3 border border-orange-500 text-white hover:bg-orange-500 transition rounded-xl cursor-pointer"
+            onClick={() => sectionRef?.current?.scrollIntoView({ behavior: 'smooth' })}
+            className="mt-3 md:mt-6 px-6 py-3 border border-orange-400 bg-orange-400 text-white hover:bg-orange-600 hover:border-orange-600 transition rounded-xl"
           >
-            {Pagedata.buttonText} <span className="ml-1">▼</span>
+            {buttonText} <span className="ml-1">▼</span>
           </button>
         </div>
 
+        {/* Inactive Cards */}
         <div className="flex gap-4 mt-6 md:mt-0">
-          {inactiveCards.map((card) => (
+          {inactiveCards.map(({ index, image, text }) => (
             <div
-              key={card.index}
-              onClick={() => handleCardClick(card.index)}
-              className="bg-white bg-opacity-10 backdrop-blur-sm p-4 h-48 w-28 md:w-48 flex flex-col justify-end text-white relative overflow-hidden group cursor-pointer rounded-xl shadow-2xl"
+              key={index}
+              onClick={() => handleCardClick(index)}
+              className="relative bg-white bg-opacity-10 backdrop-blur-sm p-4 h-48 w-28 md:w-48 flex flex-col justify-end text-white overflow-hidden group cursor-pointer rounded-xl shadow-2xl"
             >
-              <img
-                src={card.image}
-                alt={`Card ${card.index + 1}`}
-                className="absolute inset-0 object-cover w-full h-full z-0 transition-transform duration-300 group-hover:scale-105"
+              <Image
+                src={image}
+                alt={`Card ${index + 1}`}
+                fill
+                className="object-cover z-0 transition-transform duration-300 group-hover:scale-105"
               />
               <div className="relative z-10">
-                <p className="text-sm font-medium">{card.text}</p>
+                <p className="text-sm font-medium">{text}</p>
                 <span className="text-orange-400 text-xl">→</span>
               </div>
             </div>
@@ -80,4 +95,5 @@ const Page = ({ sectionRef, Pagedata }) => {
     </section>
   );
 };
+
 export default Page;

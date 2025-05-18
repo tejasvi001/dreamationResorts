@@ -1,48 +1,48 @@
+"use client";
 import Image from "next/image";
 
-const Contact = () => {
+const Contact = ({ data }) => {
+
   return (
-    <div className="w-full min-h-screen">
-      {/* Top Hero Section */}
-      <div className="relative w-full h-[500px] flex items-center justify-center">
+    <main className="w-full min-h-screen">
+      {/* Hero Section */}
+      <section className="relative w-full h-[500px] flex items-center justify-center overflow-hidden">
         <Image
-          src="/images/Accomodationimg/b5wrkonddwzymupskqto_1_11zon.webp"
-          alt="Room Background"
+          src={data.heroImage}
+          alt={data.heroAlt}
           fill
           className="object-cover"
+          priority
         />
-        <div className="absolute inset-0 bg-black/40"></div>
-        <h1 className="absolute text-white text-4xl md:text-6xl font-semibold z-10">
-          Contact Us
+        <div className="absolute inset-0 bg-black/40" />
+        <h1 className="absolute z-10 text-white text-4xl md:text-6xl font-semibold">
+          {data.mainHeading}
         </h1>
-      </div>
+      </section>
 
-    
-        <div className="w-full flex flex-col lg:flex-row mt-0">
-           
-            <div className="relative w-full lg:w-1/2 h-[529.px] -mt-32 z-20">
+      <section className="flex flex-col md:flex-row w-full">
+        {/* Image side */}
+        <div className="relative w-full md:w-1/2 h-[529px] mt-8 md:-mt-32 md:rounded-tr-3xl overflow-hidden z-20">
           <Image
-            src="/images/Accomodationimg/zrr34yc0jw1ip47byz0u_8_11zon.webp"
-            alt="Vacation Image"
+            src={data.sectionImage}
+            alt={data.sectionAlt}
             fill
-            className="object-cover rounded-t-3xl"
+            className="object-cover"
+            loading="lazy"
+            sizes="(min-width: 768px) 50vw, 100vw"
           />
-            </div>
-
-            {/* Right Text Content (No Padding Around Section) */}
-        <div className="w-full lg:w-1/2 bg-[#D69D52] px-6 py-10 sm:px-8 sm:py-12 md:px-10 md:py-16 text-white flex flex-col justify-center mt-8 lg:mt-0 h-auto min-h-[400px]">
-          <h3 className="text-sm sm:text-base md:text-lg mb-2">
-            Contact Us Today
-          </h3>
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold">
-            Book Your Next Vacation!
-          </h2>
-          <p className="mt-4 text-xs sm:text-sm md:text-base leading-relaxed">
-           Nestled in the heart of the majestic Himalayas, Dreamation Resort is more than just a destination—it’s an experience. Whether you have questions, special requests, or simply wish to plan your stay, we’re here to help. From savoring traditional mountain delicacies to indulging in global cuisine with a local twist, every moment at our resort is designed to delight your senses. Reach out to us and let us guide you on your next unforgettable Himalayan escape.
-          </p>
         </div>
-      </div>
-    </div>
+
+        {/* Text side */}
+        <article className="w-full md:w-1/2 bg-[#D69D52] text-white flex flex-col justify-center p-6 md:p-10 mt-8 md:mt-0 min-h-[400px]">
+          <h3 className="text-sm md:text-lg mb-2">{data.preTitle}</h3>
+          <h2 className="text-xl md:text-2xl font-semibold">{data.title}</h2>
+          <p className="mt-4 text-sm md:text-lg leading-relaxed">
+            {data.description}
+          </p>
+        </article>
+      </section>
+    </main>
   );
 };
 

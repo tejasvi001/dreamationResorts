@@ -7,8 +7,13 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 4000);
-    return () => clearTimeout(timer);
+    if (sessionStorage.getItem("visited")) {
+      setLoading(false);
+    } else {
+      sessionStorage.setItem("visited", "true");
+      const timer = setTimeout(() => setLoading(false), 2500);
+      return () => clearTimeout(timer);
+    }
   }, []);
 
   return (

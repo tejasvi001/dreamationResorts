@@ -1,12 +1,10 @@
 "use client";
-
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Phone, Mail, MapPin, ChevronDown } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
-// Navigation data
 const pages = [
   { name: "Home", path: "/", image: "/Facility1.webp" },
   {
@@ -158,8 +156,9 @@ export default function ResponsiveNavbar() {
                             </span>
                             <ChevronDown
                               size={20}
-                              className={`transition-transform  duration-300 ${mobileSubmenu === index ? "rotate-180" : ""
-                                }`}
+                              className={`transition-transform  duration-300 ${
+                                mobileSubmenu === index ? "rotate-180" : ""
+                              }`}
                             />
                           </div>
                           <AnimatePresence>
@@ -215,13 +214,17 @@ export default function ResponsiveNavbar() {
                   <div className="flex items-center space-x-3">
                     <Mail className="text-gray-400" size={18} />
                     <a href="mailto:info@dreamationresorts.com">
-                      <span className="text-sm">info@dreamationresorts.com</span>
+                      <span className="text-sm">
+                        info@dreamationresorts.com
+                      </span>
                     </a>
                   </div>
                   <div className="flex items-center space-x-3">
                     <MapPin className="text-gray-400" size={18} />
                     <a href="https://maps.app.goo.gl/xiUZZVMoVkXfCZtb8">
-                      <span className="text-sm">Dreamation Resorts, Ghornala, Bir, Baijnath, Kangra</span>
+                      <span className="text-sm">
+                        Dreamation Resorts, Ghornala, Bir, Baijnath, Kangra
+                      </span>
                     </a>
                   </div>
                 </div>
@@ -234,24 +237,6 @@ export default function ResponsiveNavbar() {
       {/* Desktop Keyhole Navbar (lg screens) */}
       <div className="hidden lg:block">
         <div className="px-10 cursor-pointer">
-          {/* <button
-            onClick={() => setIsOpen(!isOpen)}
-            className={`fixed top-4 left-1/2 -translate-x-1/2 z-50 p-2 border-4 bg-white border-gray-800 rounded-full cursor-pointer ${
-              isHoveredd ?  "text-white" : "text-black"
-            }` }
-            onMouseEnter={() => setIsHoveredd(true)}
-              onMouseLeave={() => setIsHoveredd(false)}
-            aria-label={isOpen ? "Close menu" : "Open menu"}
-          >
-            {isOpen ? <X size={28} /> : <Menu size={28} />}
-            <motion.span
-                initial={{ height: 0 }}
-                animate={{ height: isHoveredd ? "100%" : "0%" }}
-                transition={{ duration: 0.4, ease: "easeInOut" }}
-                className="absolute bottom-0 left-0 w-full rounded-full bg-black z-0"
-              />
-          </button> */}
-
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="fixed top-4 left-1/2 -translate-x-1/2 z-50 p-2 border-2  cursor-pointer overflow-hidden  rounded-full  border-black bg-white font-medium group"
@@ -259,10 +244,12 @@ export default function ResponsiveNavbar() {
             onMouseLeave={() => setIsHoveredd(false)}
           >
             <span
-              className={`relative z-10 transition-colors duration-300 ${isHoveredd ? "text-white" : "text-black"
-                }`}
+              className={`relative z-10 transition-colors duration-300 ${
+                isHoveredd ? "text-white" : "text-black"
+              }`}
             >
-              {isOpen ? <X size={28} /> : <Menu size={28} />}              </span>
+              {isOpen ? <X size={28} /> : <Menu size={28} />}{" "}
+            </span>
             <motion.span
               initial={{ height: 0 }}
               animate={{ height: isHoveredd ? "100%" : "0%" }}
@@ -288,8 +275,9 @@ export default function ResponsiveNavbar() {
               onMouseLeave={() => setIsHovered(false)}
             >
               <span
-                className={`relative z-10 transition-colors duration-300 ${isHovered ? "text-white" : "text-black"
-                  }`}
+                className={`relative z-10 transition-colors duration-300 ${
+                  isHovered ? "text-white" : "text-black"
+                }`}
               >
                 GET IN TOUCH
               </span>
@@ -348,8 +336,11 @@ export default function ResponsiveNavbar() {
                             <div onClick={() => setIsOpen(false)}>
                               <Link
                                 href={page.path}
-                                className={`text-3xl md:text-4xl font-bold text-black hover:text-gray-500 transition-colors duration-300 ${hoveredIndex === index ? "text-gray-500" : "text-black"
-                                  }`}
+                                className={`text-3xl md:text-4xl font-bold text-black hover:text-gray-500 transition-colors duration-300 ${
+                                  hoveredIndex === index
+                                    ? "text-gray-500"
+                                    : "text-black"
+                                }`}
                               >
                                 {page.name}
                               </Link>
@@ -358,8 +349,9 @@ export default function ResponsiveNavbar() {
                               <div className="text-black cursor-pointer">
                                 <ChevronDown
                                   size={24}
-                                  className={`transition-transform duration-300 ${openSubmenu === index ? "rotate-180" : ""
-                                    }`}
+                                  className={`transition-transform duration-300 ${
+                                    openSubmenu === index ? "rotate-180" : ""
+                                  }`}
                                 />
                               </div>
                             )}
@@ -428,7 +420,10 @@ export default function ResponsiveNavbar() {
                       style={{ maxWidth: "100%", maxHeight: "100%" }}
                     >
                       <defs>
-                        <clipPath id="keyholeClip" clipPathUnits="userSpaceOnUse">
+                        <clipPath
+                          id="keyholeClip"
+                          clipPathUnits="userSpaceOnUse"
+                        >
                           <path d="M 150 0 C 210 0, 270 60, 270 120 C 270 180, 210 240, 150 240 C 90 240, 30 180, 30 120 C 30 60, 90 0, 150 0 Z M 90 220 L 210 220 L 240 450 L 60 450 Z" />
                         </clipPath>
                       </defs>
@@ -472,7 +467,9 @@ export default function ResponsiveNavbar() {
                     >
                       <Mail size={24} />
                       <Link href="mailto:info@dreamationresorts.com">
-                        <span className="text-xl">info@dreamationresorts.com</span>
+                        <span className="text-xl">
+                          info@dreamationresorts.com
+                        </span>
                       </Link>
                     </motion.div>
 
@@ -485,7 +482,8 @@ export default function ResponsiveNavbar() {
                       <MapPin size={24} />
                       <Link href="https://maps.app.goo.gl/xiUZZVMoVkXfCZtb8">
                         <span className="text-xl">
-                          Dreamation Resorts, Ghornala,<br /> Bir, Baijnath, Kangra
+                          Dreamation Resorts, Ghornala,
+                          <br /> Bir, Baijnath, Kangra, Himachal Pradesh
                         </span>
                       </Link>
                     </motion.div>
@@ -495,11 +493,7 @@ export default function ResponsiveNavbar() {
             </motion.div>
           )}
         </AnimatePresence>
-
       </div>
-
-      {/* Spacer for fixed mobile header */}
-      <div className="h-20 lg:h-0"></div>
     </>
   );
 }
