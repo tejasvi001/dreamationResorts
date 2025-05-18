@@ -15,7 +15,7 @@ const slides = [
   {
     title: "Fern Luxury Swisstents",
     description:
-      "The Fern Seaside Luxurious Tent Resort offers a unique blend of upscale comfort and eco-conscious design, providing guests with an exceptional glamping experience along the scenic coasts.",
+      "The Fern Luxurious Tent Resort offers a unique blend of upscale comfort and eco-conscious design, providing guests with an exceptional glamping experience amidst scenic mountain landscapes.",
     image: "/activities/img1.webp", // You'll replace this with your actual image
     redirectTo: "/Fern",
   },

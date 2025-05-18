@@ -155,7 +155,7 @@ export const Fern = {
     heading: "Room Overview",
     subheading: "Fern Luxury Swisstents",
     paragraphs: [
-      "The Fern Seaside Luxurious Tent Resort offers a unique blend of upscale comfort and eco-conscious design, providing guests with an exceptional glamping experience along the scenic coasts. The resort is meticulously designed to offer a harmonious balance between nature and luxury, featuring spacious, fully furnished luxury tents that provide an immersive experience in nature without sacrificing the comforts of modern living. With elegant interiors, plush bedding, and state-of-the-art amenities, guests can enjoy a five-star experience while surrounded by the tranquil beauty of the sea, beaches, and lush greenery. The resort also emphasizes sustainability by using eco-friendly materials, energy-efficient systems, and water conservation practices, ensuring that guests can enjoy their stay while minimizing their environmental footprint.",
+      "The Fern Luxurious Tent Resort offers a unique blend of upscale comfort and eco-conscious design, providing guests with an exceptional glamping experience amidst serene mountain landscapes. The resort is meticulously crafted to maintain a harmonious balance between nature and luxury, featuring spacious, fully furnished luxury tents that immerse guests in nature without compromising modern comforts. With elegant interiors, plush bedding, and state-of-the-art amenities, guests can enjoy a four-star retreat surrounded by tranquil hills, dense forests, and lush greenery. Emphasizing sustainability, the resort uses eco-friendly materials, energy-efficient systems, and water conservation practices, allowing guests to indulge in luxury while minimizing their environmental footprint.",
     ],
     backgroundColor: "#d69d52",
     textColor: "text-white",
@@ -190,7 +190,7 @@ export const Fern = {
     title: "Outdoor Patio",
     subheading: "Amazing Views",
     description:
-      "The Fern Seaside Luxurious Tent Resort offers an incredible outdoor patio experience that enhances the overall glamping adventure. Each of the luxury tents is designed with an attached private outdoor patio, where guests can unwind and soak in the serene views of the surrounding landscapes. ",
+      "The Fern Luxurious Tent Resort offers an incredible outdoor patio experience that enhances the overall glamping adventure. Each of the luxury tents is designed with an attached private outdoor patio, where guests can unwind and soak in the serene views of the surrounding landscapes. ",
     imageUrl: "/images/ResidentialRoom/Rectangle56_3_11zon.jpg",
     backgroundColor: "#D69D52",
   },
@@ -255,28 +255,28 @@ export const Fern = {
       title: "Residential",
       imageSrc: '/assets/tent.jpg',
       description:
-        "The Residential Tent at The Fern Seaside Luxurious Tent Resort offers a perfect blend of nature-inspired luxury and modern comfort, designed for guests seeking a unique, upscale glamping experience. ",
+        "The Residential Tent at The Fern Luxurious Tent Resort offers a perfect blend of nature-inspired luxury and modern comfort, thoughtfully designed for guests seeking a unique, upscale glamping experience in the heart of the mountains.",
       buttonText: "For More Details",
     },
     {
       title: "Executive",
       imageSrc: '/assets/tent2.jpg',
       description:
-        "The Exclusive Tent at The Fern Seaside Luxurious Tent Resort offers a premium, elevated glamping experience for guests who seek the finest in luxury and privacy. ",
+        "The Exclusive Tent at The Fern Luxurious Tent Resort offers a premium, elevated glamping experience for guests seeking the finest in luxury, seclusion, and natural beauty amidst the mountains.",
       buttonText: "For More Details",
     },
     {
       title: "Deluxe",
       imageSrc: '/assets/tent3.jpg',
       description:
-        "The Exclusive Tent at The Fern Seaside Luxurious Tent Resort offers an unparalleled blend of elegance, comfort, and exclusivity, providing an extraordinary glamping experience for those seeking the highest level of luxury and privacy. ",
+        "The Exclusive Tent at The Fern Luxurious Tent Resort offers an unparalleled blend of elegance, comfort, and exclusivity, delivering an extraordinary glamping experience for those seeking the highest level of luxury and privacy amidst serene mountain surroundings.",
       buttonText: "For More Details",
     },
     {
       title: "Premium",
       imageSrc: '/assets/tent4.jpg',
       description:
-        "The Premium Tent at The Fern Seaside Luxurious Tent Resort offers a superior glamping experience with a perfect blend of comfort, style, and nature. Designed for guests who desire a luxurious and immersive experience while maintaining a connection to the outdoors.",
+        "The Premium Tent at The Fern Luxurious Tent Resort offers a superior glamping experience with a perfect blend of comfort, style, and nature. Designed for guests who seek a luxurious and immersive stay while staying closely connected to the serene beauty of the mountains.",
       buttonText: "For More Details",
     },
   ],
