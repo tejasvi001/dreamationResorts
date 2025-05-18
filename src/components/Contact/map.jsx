@@ -13,8 +13,8 @@ const containerStyle = {
 };
 
 const fixedPosition = {
-  lat: 32.06127147066075,
-  lng: 76.71208370502602,
+  lat: 32.06119913221474,
+  lng: 76.71209094477592,
 };
 
 export default function Contact() {
@@ -51,7 +51,8 @@ export default function Contact() {
       errors.Message = "Message cannot exceed 200 characters.";
     if (
       formData.NumberOfPeople &&
-      !NumberOfPeopleRegex.test(formData.NumberOfPeople) && formData.NumberOfPeople > 0
+      !NumberOfPeopleRegex.test(formData.NumberOfPeople) &&
+      formData.NumberOfPeople > 0
     )
       errors.NumberOfPeople = "Invalid number of people.";
     if (formData.ArrivingDate && !DateRegex.test(formData.ArrivingDate))
@@ -129,34 +130,26 @@ export default function Contact() {
           <div className="max-w-md w-full space-y-5 text-center lg:text-left flex flex-col gap-1">
             <h2 className="text-2xl sm:text-3xl font-bold">Get in Touch!</h2>
             <a href="https://maps.app.goo.gl/xiUZZVMoVkXfCZtb8">
-
               <div className="flex items-center gap-2 text-sm sm:text-base">
-                <FaSearchLocation className="text-[#d69d52]"/>
+                <FaSearchLocation className="text-[#d69d52]" />
                 <strong>Location</strong>
               </div>
-              <p>
-                Dreamation Resorts, Ghornala, Bir, Baijnath, Kangra{" "}
-              </p>
+              <p>Dreamation Resorts, Ghornala, Bir, Baijnath, Kangra </p>
             </a>
             <a href="tel:7837000888">
               <div className="flex items-center gap-2 text-sm sm:text-base">
-              <MdAddCall className="text-[#d69d52]"/>
-              <strong>Call Us</strong>
-
+                <MdAddCall className="text-[#d69d52]" />
+                <strong>Call Us</strong>
               </div>
-              <p>
-                +91 7837000888
-              </p>
+              <p>+91 7837000888</p>
             </a>
             <a href="mailto:info@dreamationresorts.com">
               {" "}
               <div className="flex items-center gap-2 text-sm sm:text-base">
-              <IoMdMailUnread  className="text-[#d69d52]"/>
-              <strong>Email</strong>
+                <IoMdMailUnread className="text-[#d69d52]" />
+                <strong>Email</strong>
               </div>
-              <p>
-                              info@dreamationresorts.com
-              </p>
+              <p>info@dreamationresorts.com</p>
             </a>
           </div>
         </div>

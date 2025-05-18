@@ -1,65 +1,51 @@
-import Image from "next/image";
-
-
 
 const GalleryItems = ({data}) => {
-  return (
-    <div className="w-full h-full flex flex-col gap-[10vw] md:gap-20 mt-[15vw] md:mt-[10vw]">
-      {data.map((item, index) =>
-        index % 2 === 0 ? (
-          // Left Section
-          <div
-            key={index}
-            className="relative w-full sm:w-1/2 mt-[-5vh] sm:mt-[-11vh]"
-          >
-            <Image
-              src={item.image}
-              alt={item.title}
-              width={960}
-              height={640}
-              className="w-full h-[60vh] sm:h-[80vh] object-cover"
-            />
-            <div
-              className="sm:absolute sm:left-[85%] sm:top-1/2 sm:transform sm:-translate-y-1/2
-              bg-[#D69D52] text-white p-6 rounded-lg shadow-lg 
-              w-full sm:w-[400px] xl:w-[500px] 
-              flex flex-col justify-center items-center text-center sm:items-center sm:text-center 
-              mt-6 sm:mt-6"
-            >
-              <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 sm:mb-6">
-                {item.title}
-              </h3>
-              <p className="text-sm sm:text-md md:text-lg mb-4">{item.description}</p>
+   return (
+    <div className="w-full h-full py-[5vw]">
+      {data.map((item, index) => (
+        <div className="w-full h-full" key={index}>
+          {index % 2 == 0 ? (
+            <div className="relative w-full h-[70vh] md:h-[80vh] flex overflow-hidden items-center ">
+              <div className="absolute text-center flex flex-col gap-[1vw] p-4 bg-[#D69D52] md:p-[2vw] text-white max-w-[60vw] md:max-w-[35vw] right-[5vw] md:right-[20vw] rounded-xl overflow-hidden h-auto">
+                <h1 className=" text-lg md:text-[2vw]">
+                  {item.title}
+                </h1>
+                <p className=" text-sm md:text-[1.2vw]">
+                  {item.description}
+                </p>
+              </div>
+
+              <div className="w-full h-full">
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className={`w-full h-full object-cover  ${item.isPortrait ? 'object-right-bottom' : 'object-center' }`}
+                />
+              </div>
+              <div className="w-full h-full"></div>
             </div>
-          </div>
-        ) : (
-          // Right Section
-          <div
-            key={index}
-            className="relative w-full sm:w-1/2 mt-[-5vh] sm:mt-[-11vh] sm:ml-auto"
-          >
-            <Image
-              src={item.image}
-              alt={item.title}
-              width={960}
-              height={640}
-              className="w-full h-[60vh] sm:h-[80vh] object-cover"
-            />
-            <div
-              className="sm:absolute sm:right-[85%] sm:top-1/2 sm:transform sm:-translate-y-1/2
-              bg-black text-white p-6 rounded-lg shadow-lg 
-              w-full sm:w-[400px] xl:w-[500px] 
-              flex flex-col justify-center items-center text-center sm:items-center sm:text-center 
-              mt-6 sm:mt-6"
-            >
-              <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 sm:mb-6">
-                {item.title}
-              </h3>
-              <p className="text-sm sm:text-md md:text-lg mb-4">{item.description}</p>
+          ) : (
+            <div className="relative w-full h-[70vh] md:h-[80vh] flex overflow-hidden items-center ">
+              <div className="absolute text-center flex flex-col gap-[1vw] p-4 bg-black md:p-[2vw] text-white max-w-[60vw] md:max-w-[35vw] left-[5vw] md:left-[20vw] rounded-xl overflow-hidden h-auto">
+                <h1 className=" text-lg md:text-[2vw]">
+                  {item.title}
+                </h1>
+                <p className=" text-sm md:text-[1.2vw]">
+                  {item.description}
+                </p>
+              </div>
+              <div className="w-full h-full"></div>
+              <div className="w-full h-full">
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className={`w-full h-full object-cover  ${item.isPortrait ? 'object-right-bottom' : 'object-center' }`}
+                />
+              </div>
             </div>
-          </div>
-        )
-      )}
+          )}
+        </div>
+      ))}
     </div>
   );
 };

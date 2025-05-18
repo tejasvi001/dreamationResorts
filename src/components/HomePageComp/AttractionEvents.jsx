@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React from "react";
 import { useRouter } from "next/navigation"; // for App Router (use 'next/router' for Pages Router)
 
@@ -14,14 +14,14 @@ const AttractionEvents = () => {
           src="/images/Accomodationimg/nheiyd6dycyhbdagjsac_3_11zon.webp"
           alt=""
         />
-<div className="absolute z-20">
-  <p
-    onClick={() => router.push("/LocalAttraction")}
-    className="text-white text-[8vw] leading-[8vw] md:text-[4vw] text-center md:leading-[4vw] hover:scale-125 duration-2000 cursor-pointer"
-  >
-    Local <br /> Attraction
-  </p>
-</div>
+        <div className="absolute z-20">
+          <p
+            onClick={() => router.push("/LocalAttraction")}
+            className="text-white text-[8vw] leading-[8vw] md:text-[4vw] text-center md:leading-[4vw] hover:scale-125 duration-2000 cursor-pointer"
+          >
+            Local <br /> Attraction
+          </p>
+        </div>
         <div className="absolute w-full h-full bg-black opacity-50 z-10"></div>
       </div>
 
@@ -34,8 +34,9 @@ const AttractionEvents = () => {
         />
         <div className="absolute z-20">
           <p
-          onClick={() => router.push("/DevotionalAttraction")}
-           className="text-white text-[8vw] leading-[8vw] md:text-[4vw] text-center md:leading-[4vw] hover:scale-125 duration-2000 cursor-pointer">
+            onClick={() => router.push("/DevotionalAttraction")}
+            className="text-white text-[8vw] leading-[8vw] md:text-[4vw] text-center md:leading-[4vw] hover:scale-125 duration-2000 cursor-pointer"
+          >
             Devotional <br /> Attraction
           </p>
         </div>
@@ -44,5 +45,4 @@ const AttractionEvents = () => {
     </div>
   );
 };
-
 export default AttractionEvents;

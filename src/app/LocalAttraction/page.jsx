@@ -2,7 +2,6 @@ import GalleryItems from "../../components/Activities/GalleryItems.jsx";
 import HeroSection from "../../components/Activities/Topbox.jsx";
 
 const Gallerydata = [
-
   {
     image: "/images/Local/bll.webp",
     title: "Bir Billing Landing Location",
@@ -14,6 +13,7 @@ const Gallerydata = [
     title: "Take of Point Billing",
     description:
       "Billing, in Himachal Pradesh, is the takeoff point for paragliding in the famous Bir Billing area, located in the Kangra district. It is perched at an altitude of around 2,400 meters (7,874 feet) above sea level and is considered one of the best paragliding takeoff sites in the world.",
+      isPortrait : true
   },
   {
     image: "/images/Local/bbv.webp",
@@ -47,9 +47,6 @@ const Gallerydata = [
     description:
       "Gunehar Waterfall is a serene natural cascade located near Gunehar village in Bir, Himachal Pradesh. Surrounded by lush greenery, it offers a peaceful escape and is accessible via a short, scenic trek. Its tranquil ambiance and untouched beauty make it a favorite spot for nature lovers and photographers.",
   },
- 
- 
-
 ];
 
 export default function Page() {
