@@ -43,7 +43,7 @@ const Page = ({ sectionRef, Pagedata }) => {
 
       <div className="relative z-20 flex flex-col md:flex-row justify-between items-center h-full px-6 md:px-20 py-10">
         <div className="max-w-xl space-y-6 text-sm md:text-xl">
-          <p className="text-orange-500 font-semibold">{activeCardData.subtitle}</p>
+          {/* <p className="text-orange-500 font-semibold">{activeCardData.subtitle}</p> */}
           <h1 className="text-2xl md:text-5xl font-bold leading-tight">
             {activeCardData.title}
           </h1>

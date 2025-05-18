@@ -8,9 +8,9 @@ const Bottombox = () => {
   const router = useRouter();
 
   return (
-    <div className="w-full flex flex-col gap-30 mt-20"> 
+    <div className="w-full flex flex-col gap-[5vw]"> 
       {/* Orange Grid Section */}
-      <div className="relative w-full h-[300px] flex items-center justify-center mt-12">
+      <div className="relative w-full h-[300px] flex items-center justify-center">
         <Image 
           src="/activities/Rectangle 77.jpg" 
           alt="Background" 
@@ -54,8 +54,8 @@ const Bottombox = () => {
           {/* Email */}
           <div className="flex flex-col items-center">
             <FaEnvelope className="text-3xl mb-4" />
-            <h3 className="text-lg font-semibold">Email Us</h3>
-            <p>info@dreamationresorts.com Today!</p>
+            <h3 className="text-lg font-semibold">Email Us at</h3>
+            <p>info@dreamationresorts.com</p>
           </div>
         </div>
       </div>

@@ -80,7 +80,7 @@ const Facilities = () => {
           <button className="text-sm md:text-[1.35vw] border-2 py-[1vw] w-40 md:w-[18vw] border-gray-300 hover:text-black hover:bg-white rounded-full cursor-pointer hover:scale-105 duration-1000"
           onClick={()=>router.push('/Contact')}>
             
-            Get started with Avava
+            Get started with us
           </button>
         </div>
 

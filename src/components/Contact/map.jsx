@@ -139,7 +139,7 @@ export default function Contact() {
             <a href="tel:7837000888">
               <div className="flex items-center gap-2 text-sm sm:text-base">
                 <MdAddCall className="text-[#d69d52]" />
-                <strong>Call Us</strong>
+                <strong>Call Us at</strong>
               </div>
               <p>+91 7837000888</p>
             </a>
@@ -147,7 +147,7 @@ export default function Contact() {
               {" "}
               <div className="flex items-center gap-2 text-sm sm:text-base">
                 <IoMdMailUnread className="text-[#d69d52]" />
-                <strong>Email</strong>
+                <strong>Email Us at</strong>
               </div>
               <p>info@dreamationresorts.com</p>
             </a>
