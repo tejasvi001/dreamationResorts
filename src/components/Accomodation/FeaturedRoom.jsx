@@ -1,4 +1,8 @@
+'use client'
+import { useRouter } from "next/navigation";
+
 const FeaturedRoom = () => {
+  const router = useRouter();
   return (
     <div className="relative h-full px-6 md:px-0 py-[5vw] flex flex-col gap-8 md:gap-0">
       <div className="w-full h-[40vh] overflow-hidden rounded-2xl md:rounded-none">
@@ -20,10 +24,15 @@ const FeaturedRoom = () => {
             <li>55 Sq Metres of interior space</li>
             <li>Shared Swimming Pool</li>
             <li>Free Mini Bar</li>
-            <li>Handmade King Size Beds
-</li>
+            <li>Handmade King Size Beds</li>
             <li>Mountain View</li>
           </ul>
+          <button
+            className="mt-4 px-4 w-full max-w-[340px] cursor-pointer py-2 border font-normal border-white hover:bg-white text-white hover:text-black text-sm rounded-full transition-all"
+            onClick={() => router.push('/Activities')}
+          >
+            Let's Explore More
+          </button>
         </div>
       </div>
     </div>
