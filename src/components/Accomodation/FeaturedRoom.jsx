@@ -21,11 +21,16 @@ const FeaturedRoom = () => {
             View & Dense Forest
           </div>
           <ul className="list list-disc text-white list-inside text-xl md:text-[1.2vw]">
-  <li>Forest Views</li>
-  <li>Mountain Panorama</li>
-  <li>Eco-Friendly Luxury Amenities</li>
-  <li>Fresh Air</li>
-            <li>Mountain View</li>
+  <li>Nature Trails & Hiking
+</li>
+  <li>Avi Fauna Exploration
+</li>
+  <li>Yoga & Meditation
+</li>
+  <li>Bonfire Nights
+</li>
+            <li>Photography Walks
+</li>
           </ul>
           <button
             className="mt-4 px-4 w-full max-w-[340px] cursor-pointer py-2 border font-normal border-white hover:bg-white text-white hover:text-black text-sm rounded-full transition-all"
