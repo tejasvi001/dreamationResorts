@@ -1,12 +1,12 @@
 const RoomOverview = ({ roomOverview }) => {
-  const { backgroundColor, textColor, heading, subheading, paragraphs } = roomOverview;
+  const { backgroundColor, textColor, heading, subheading, paragraphs, overviewimg } = roomOverview;
 
   return (
     <div className="flex flex-col justify-center items-center py-8 md:py-[5vw] w-full h-full px-6 md:px-0">
       {/* Image */}
       <div className="w-full h-[50vh] overflow-hidden rounded-3xl md:rounded-none">
         <img
-          src="/assets/dubed.webp"
+          src={overviewimg}
           alt="Room Overview"
           className="w-full h-full object-cover"
         />

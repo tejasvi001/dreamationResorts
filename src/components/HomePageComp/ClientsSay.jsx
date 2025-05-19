@@ -12,16 +12,30 @@ const defaultTestimonials = [
   },
   {
     id: 2,
-    name: "Sarah Johnson",
+    name: "Anil Verma",
     quote:
       "The attention to detail was remarkable. The staff anticipated our needs before we even had to ask. I've never experienced such personalized service anywhere else.",
     image: "/user2.jpg",
   },
   {
     id: 3,
-    name: "Michael Chen",
+    name: "Shreya Sharma",
     quote:
       "From the gourmet breakfast to the sunset views from our balcony, everything exceeded our expectations. We're already planning our return visit!",
+    image: "/user3.jpg",
+  },
+  {
+    id: 3,
+    name: "Parul chauhan",
+    quote:
+      "A perfect retreat nestled in the scenic hills of Himachal! The resort offers stunning views, warm hospitality, and delicious local cuisine—an ideal spot to relax and reconnect with nature. Highly recommended for a peaceful getaway!",
+    image: "/user3.jpg",
+  },
+    {
+    id: 3,
+    name: "Ravi Singh",
+    quote:
+      "An absolute gem in Himachal! Surrounded by nature, the resort provides cozy stays, breathtaking views, and exceptional service. A must-visit for anyone seeking tranquility and comfort.",
     image: "/user3.jpg",
   },
 ];

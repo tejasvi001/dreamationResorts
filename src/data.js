@@ -15,6 +15,7 @@ export const Acorn = {
       "Privacy and Comfort: Often detached or semi-detached with private outdoor spaces, scenic views, and minimal disturbance — ideal for couples, small families, or solo travelers seeking peace.",
       "Tech and Entertainment: Bravia, High-speed Wi-Fi, Bluetooth speakers, and sometimes curated book or game selections.",
     ],
+    overviewimg: "/images/ResidentialRoom/aov.webp",
     backgroundColor: "#d69d52",
     textColor: "text-white",
   },
@@ -91,26 +92,40 @@ export const Acorn = {
 
   clientSay: [
     {
-      id: 1,
-      name: "Anuj Kumar",
-      quote:
-        "Staying at Dreamation was an absolute delight! From the warm welcome at check-in to the impeccable service throughout my stay, every moment felt like a luxurious escape.",
-      image: "/user1.jpg",
-    },
+    id: 1,
+    name: "Anuj Kumar",
+    quote:
+      "Staying at Dreamation was an absolute delight! From the warm welcome at check-in to the impeccable service throughout my stay, every moment felt like a luxurious escape.",
+    image: "/user1.jpg",
+  },
+  {
+    id: 2,
+    name: "Anil Verma",
+    quote:
+      "The attention to detail was remarkable. The staff anticipated our needs before we even had to ask. I've never experienced such personalized service anywhere else.",
+    image: "/user2.jpg",
+  },
+  {
+    id: 3,
+    name: "Shreya Sharma",
+    quote:
+      "From the gourmet breakfast to the sunset views from our balcony, everything exceeded our expectations. We're already planning our return visit!",
+    image: "/user3.jpg",
+  },
+  {
+    id: 3,
+    name: "Parul chauhan",
+    quote:
+      "A perfect retreat nestled in the scenic hills of Himachal! The resort offers stunning views, warm hospitality, and delicious local cuisine—an ideal spot to relax and reconnect with nature. Highly recommended for a peaceful getaway!",
+    image: "/user3.jpg",
+  },
     {
-      id: 2,
-      name: "Sarah Johnson",
-      quote:
-        "The attention to detail was remarkable. The staff anticipated our needs before we even had to ask. I've never experienced such personalized service anywhere else.",
-      image: "/user2.jpg",
-    },
-    {
-      id: 3,
-      name: "Michael Chen",
-      quote:
-        "From the gourmet breakfast to the sunset views from our balcony, everything exceeded our expectations. We're already planning our return visit!",
-      image: "/user3.jpg",
-    },
+    id: 3,
+    name: "Ravi Singh",
+    quote:
+      "An absolute gem in Himachal! Surrounded by nature, the resort provides cozy stays, breathtaking views, and exceptional service. A must-visit for anyone seeking tranquility and comfort.",
+    image: "/user3.jpg",
+  },
   ],
 
   rooms: [
@@ -157,6 +172,8 @@ export const Fern = {
     paragraphs: [
       "The Fern Luxurious Tent Resort offers a unique blend of upscale comfort and eco-conscious design, providing guests with an exceptional glamping experience amidst serene mountain landscapes. The resort is meticulously crafted to maintain a harmonious balance between nature and luxury, featuring spacious, fully furnished luxury tents that immerse guests in nature without compromising modern comforts. With elegant interiors, plush bedding, and state-of-the-art amenities, guests can enjoy a four-star retreat surrounded by tranquil hills, dense forests, and lush greenery. Emphasizing sustainability, the resort uses eco-friendly materials, energy-efficient systems, and water conservation practices, allowing guests to indulge in luxury while minimizing their environmental footprint.",
     ],
+        overviewimg: "/images/ResidentialRoom/ot.webp",
+
     backgroundColor: "#d69d52",
     textColor: "text-white",
   },
@@ -191,7 +208,7 @@ export const Fern = {
     subheading: "Amazing Views",
     description:
       "The Fern Luxurious Tent Resort offers an incredible outdoor patio experience that enhances the overall glamping adventure. Each of the luxury tents is designed with an attached private outdoor patio, where guests can unwind and soak in the serene views of the surrounding landscapes. ",
-    imageUrl: "/images/ResidentialRoom/Rectangle56_3_11zon.jpg",
+    imageUrl: "/images/ResidentialRoom/ot.webp",
     backgroundColor: "#D69D52",
   },
 
@@ -227,56 +244,70 @@ export const Fern = {
   ],
 
   clientSay: [
+   {
+    id: 1,
+    name: "Anuj Kumar",
+    quote:
+      "Staying at Dreamation was an absolute delight! From the warm welcome at check-in to the impeccable service throughout my stay, every moment felt like a luxurious escape.",
+    image: "/user1.jpg",
+  },
+  {
+    id: 2,
+    name: "Anil Verma",
+    quote:
+      "The attention to detail was remarkable. The staff anticipated our needs before we even had to ask. I've never experienced such personalized service anywhere else.",
+    image: "/user2.jpg",
+  },
+  {
+    id: 3,
+    name: "Shreya Sharma",
+    quote:
+      "From the gourmet breakfast to the sunset views from our balcony, everything exceeded our expectations. We're already planning our return visit!",
+    image: "/user3.jpg",
+  },
+  {
+    id: 3,
+    name: "Parul chauhan",
+    quote:
+      "A perfect retreat nestled in the scenic hills of Himachal! The resort offers stunning views, warm hospitality, and delicious local cuisine—an ideal spot to relax and reconnect with nature. Highly recommended for a peaceful getaway!",
+    image: "/user3.jpg",
+  },
     {
-      id: 1,
-      name: "Anuj Kumar",
-      quote:
-        "Staying at Dreamation was an absolute delight! From the warm welcome at check-in to the impeccable service throughout my stay, every moment felt like a luxurious escape.",
-      image: "/user1.jpg",
-    },
-    {
-      id: 2,
-      name: "Sarah Johnson",
-      quote:
-        "The attention to detail was remarkable. The staff anticipated our needs before we even had to ask. I've never experienced such personalized service anywhere else.",
-      image: "/user2.jpg",
-    },
-    {
-      id: 3,
-      name: "Michael Chen",
-      quote:
-        "From the gourmet breakfast to the sunset views from our balcony, everything exceeded our expectations. We're already planning our return visit!",
-      image: "/user3.jpg",
-    },
+    id: 3,
+    name: "Ravi Singh",
+    quote:
+      "An absolute gem in Himachal! Surrounded by nature, the resort provides cozy stays, breathtaking views, and exceptional service. A must-visit for anyone seeking tranquility and comfort.",
+    image: "/user3.jpg",
+  },
   ],
 
   rooms: [
     {
-      title: "Residential",
+      title: "Luxury and Cozy Swisstents",
       imageSrc: '/assets/tent.jpg',
       description:
         "The Residential Tent at The Fern Luxurious Tent Resort offers a perfect blend of nature-inspired luxury and modern comfort, thoughtfully designed for guests seeking a unique, upscale glamping experience in the heart of the mountains.",
       buttonText: "For More Details",
     },
     {
-      title: "Executive",
+      title: "Handmade King Size Bed",
       imageSrc: '/assets/tent2.jpg',
       description:
         "The Exclusive Tent at The Fern Luxurious Tent Resort offers a premium, elevated glamping experience for guests seeking the finest in luxury, seclusion, and natural beauty amidst the mountains.",
       buttonText: "For More Details",
     },
     {
-      title: "Deluxe",
+      title: "Swiss View",
       imageSrc: '/assets/tent3.jpg',
       description:
         "The Exclusive Tent at The Fern Luxurious Tent Resort offers an unparalleled blend of elegance, comfort, and exclusivity, delivering an extraordinary glamping experience for those seeking the highest level of luxury and privacy amidst serene mountain surroundings.",
       buttonText: "For More Details",
     },
     {
-      title: "Premium",
+      title: "Swiss Tent For It Workholics",
       imageSrc: '/assets/tent4.jpg',
       description:
-        "The Premium Tent at The Fern Luxurious Tent Resort offers a superior glamping experience with a perfect blend of comfort, style, and nature. Designed for guests who seek a luxurious and immersive stay while staying closely connected to the serene beauty of the mountains.",
+        "The Premium Tent at The Fern Luxurious Tent Resort offers a superior glamping experience with a perfect blend of comfort, style, and nature. Designed for guests who seek a luxurious and immersive stay while staying closely connected to the serene beauty of the mountains. Also have high-speed internet connectivity.",
       buttonText: "For More Details",
     },
   ],
@@ -298,6 +329,8 @@ export const Earthern = {
       "Durability: When constructed properly with proper finishing, mud houses can be quite durable. The mud can withstand varying weather conditions and even earthquakes due to its flexible nature.",
       "Low Cost: Using local and readily available materials makes these homes more affordable, which is especially beneficial in low-income or rural areas.",
     ],
+            overviewimg: "/images/ResidentialRoom/Rectangle21_2_11zon.webp",
+
     backgroundColor: "#d69d52",
     textColor: "text-white",
   },
@@ -370,26 +403,40 @@ export const Earthern = {
 
   clientSay: [
     {
-      id: 1,
-      name: "Anuj Kumar",
-      quote:
-        "Staying at Dreamation was an absolute delight! From the warm welcome at check-in to the impeccable service throughout my stay, every moment felt like a luxurious escape.",
-      image: "/user1.jpg",
-    },
+    id: 1,
+    name: "Anuj Kumar",
+    quote:
+      "Staying at Dreamation was an absolute delight! From the warm welcome at check-in to the impeccable service throughout my stay, every moment felt like a luxurious escape.",
+    image: "/user1.jpg",
+  },
+  {
+    id: 2,
+    name: "Anil Verma",
+    quote:
+      "The attention to detail was remarkable. The staff anticipated our needs before we even had to ask. I've never experienced such personalized service anywhere else.",
+    image: "/user2.jpg",
+  },
+  {
+    id: 3,
+    name: "Shreya Sharma",
+    quote:
+      "From the gourmet breakfast to the sunset views from our balcony, everything exceeded our expectations. We're already planning our return visit!",
+    image: "/user3.jpg",
+  },
+  {
+    id: 3,
+    name: "Parul chauhan",
+    quote:
+      "A perfect retreat nestled in the scenic hills of Himachal! The resort offers stunning views, warm hospitality, and delicious local cuisine—an ideal spot to relax and reconnect with nature. Highly recommended for a peaceful getaway!",
+    image: "/user3.jpg",
+  },
     {
-      id: 2,
-      name: "Sarah Johnson",
-      quote:
-        "The attention to detail was remarkable. The staff anticipated our needs before we even had to ask. I've never experienced such personalized service anywhere else.",
-      image: "/user2.jpg",
-    },
-    {
-      id: 3,
-      name: "Michael Chen",
-      quote:
-        "From the gourmet breakfast to the sunset views from our balcony, everything exceeded our expectations. We're already planning our return visit!",
-      image: "/user3.jpg",
-    },
+    id: 3,
+    name: "Ravi Singh",
+    quote:
+      "An absolute gem in Himachal! Surrounded by nature, the resort provides cozy stays, breathtaking views, and exceptional service. A must-visit for anyone seeking tranquility and comfort.",
+    image: "/user3.jpg",
+  },
   ],
 
   rooms: [
@@ -438,7 +485,7 @@ export const BrewPageData = {
       {
         image: "/images/brew/NIK00272.webp",
         alt: "Beans",
-        title: "Explore the history of the cafe",
+        title: "Explore the history of the Café",
         // subtitle: "A real Italian cafe",
       },
       {
@@ -453,7 +500,7 @@ export const BrewPageData = {
  CoffeeFeature: {
   image: "/images/brew/NIK00274.webp",
   altText: "Coffee brewing",
-  heading: "Brewed in the Hills,\nInspired by the Himalayas",
+  heading: "Bamboo & Brew Café",
   paragraph:
     "At BrewCafe, every cup is a tribute to the serene Himalayan spirit. From single-origin beans to local herbal infusions, our brews are crafted to awaken your senses and calm your soul. Sit back, sip slow, and savor the mountains in every flavor.",
 },
@@ -635,7 +682,7 @@ CoffeeFeature: {
 },
 
 Coff: {
-  title: "Savor Every Bite, Relive Every Moment",
+  title: "Delicious delicacys, Crafted with Care",
   description:
     "From farm-fresh ingredients to curated spices, our chefs craft dishes that blend Himalayan inspiration with global flair. Explore our seasonal menu and join us for gastronomic storytelling.",
   buttonText: "SEE MENU CART",
@@ -674,7 +721,7 @@ Cup: {
 },
 
 CoffeeInfoSection: {
-  title: "Inspired by the Land, Crafted with Love",
+  title: "Himalayan's Traditional Recipes & Taste",
   subtitle: "Our Food Philosophy",
   paragraph:
     "Every dish served at the Hamlet Eatery reflects our passion for storytelling through food. With a balance of taste, texture, and nutrition, our kitchen turns fresh produce into memorable experiences.",

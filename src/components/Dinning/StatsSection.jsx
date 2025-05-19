@@ -3,7 +3,7 @@ import React, { memo } from "react";
 const stats = [
   { id: 1, value: 73, label: "Food Dishes" },
   { id: 2, value: 45, label: "Types of Drinks" },
-  { id: 3, value: 17, label: "Restaurants" },
+  { id: 3, value: 3, label: "Seating Area" },
 ];
 
 const StatsSection = () => {
