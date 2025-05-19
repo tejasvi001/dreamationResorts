@@ -24,6 +24,7 @@ export const Acorn = {
     title: "Cottage Room Amenities",
     backgroundColor: "#D69D52",
     textColor: "text-white",
+    image: "/images/ResidentialRoom/aac.webp",
     layout: "right",
     amenities: [
       "Centeral Heated",
@@ -180,6 +181,8 @@ export const Fern = {
 
   amenititesData: {
     title: "Fern Luxury Swisstents Amenities",
+        image: "/images/ResidentialRoom/ast.webp",
+
     backgroundColor: "#D69D52",
     textColor: "text-white",
     layout: "right",
@@ -304,7 +307,7 @@ export const Fern = {
       buttonText: "For More Details",
     },
     {
-      title: "Swiss Tent For It Workholics",
+      title: "Swiss Tent For IT Workholics",
       imageSrc: '/assets/tent4.jpg',
       description:
         "The Premium Tent at The Fern Luxurious Tent Resort offers a superior glamping experience with a perfect blend of comfort, style, and nature. Designed for guests who seek a luxurious and immersive stay while staying closely connected to the serene beauty of the mountains. Also have high-speed internet connectivity.",
@@ -337,6 +340,8 @@ export const Earthern = {
 
   amenititesData: {
     title: "Earthen echo mud house Amenities",
+            image: "/earth.webp",
+
     backgroundColor: "#D69D52",
     textColor: "text-white",
     layout: "right",

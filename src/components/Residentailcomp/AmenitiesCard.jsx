@@ -5,7 +5,7 @@ const AmenitiesCard = ({ amenititesData }) => {
     <div className="relative w-full h-full md:h-[70vh] overflow-hidden flex flex-col md:flex-row px-6 gap-8 md:gap-[5vw] md:px-0 items-center">
       <div className="w-full md:w-full h-full rounded-3xl md:rounded-none overflow-hidden md:rounded-r-[1.5vw]">
         <img
-          src="/assets/room.webp"
+          src={amenititesData.image}
           alt="img"
           className="w-full h-full object-cover"
         />
