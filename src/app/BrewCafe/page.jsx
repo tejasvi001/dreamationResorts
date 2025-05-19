@@ -6,7 +6,7 @@ import Coff from "../../components/Brew/coff.jsx";
 import Cot from "../../components/Brew/cot.jsx";
 import { BrewPageData } from "../../data.js";
 
-const BrewPage = () => {
+const BrewCafe = () => {
   const sectionRef = useRef(null);
 
   return (
@@ -21,4 +21,4 @@ const BrewPage = () => {
   );
 };
 
-export default BrewPage;
+export default BrewCafe;
