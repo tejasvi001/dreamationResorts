@@ -7,7 +7,7 @@ const FeaturedRoom = () => {
     <div className="relative h-full px-6 md:px-0 py-[5vw] flex flex-col gap-8 md:gap-0">
       <div className="w-full h-[40vh] overflow-hidden rounded-2xl md:rounded-none">
         <img
-          src="/images/akhada/NIK00291_3_11zon_3_11zon.webp"
+          src="/activities/xkwaq8gonythkoznkxxd.webp"
           alt="Featured Room"
           className=" w-full h-full object-cover"
         />
