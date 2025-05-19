@@ -9,26 +9,6 @@ const Bottombox = () => {
 
   return (
     <div className="w-full flex flex-col gap-[5vw]"> 
-      {/* Orange Grid Section */}
-      <div className="relative w-full h-[300px] flex items-center justify-center">
-        <Image 
-          src="/activities/Rectangle 77.jpg" 
-          alt="Background" 
-          width={1920} 
-          height={1080} 
-          className="absolute w-full h-full object-cover" 
-        />
-        
-        {/* <div className="relative bg-[#D69D52] grid grid-cols-3 w-340 h-110 gap-x-19 gap-y-1 text-white text-lg mt-1 p-15 m-5">
-          {Array.from({ length: 15 }).map((_, index) => (
-            <div key={index} className="flex items-center gap-x-6 gap-y-10 mr-2 ">
-              <span className="w-3 h-3 bg-white rounded-full inline-block mr-3 mt-2 ml-4 mb-3 aspect-square"></span>
-              <h2 className="mb-3 whitespace-nowrap">Lorem ipsum dolor sit amet</h2>
-            </div>
-          ))}
-        </div> */}
-      </div>
-
       {/* Contact Info Section */}
       <div 
         className="relative bg-cover bg-center py-16 px-8" 
