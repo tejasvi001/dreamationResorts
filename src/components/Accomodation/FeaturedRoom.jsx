@@ -13,13 +13,8 @@ const FeaturedRoom = () => {
           <div className="justify-start text-white text-2xl md:text-[1.5vw] font-bold font-Lato">
             Featured Room
           </div>
-<<<<<<< HEAD
-          <div className='justify-start text-white text-3xl font-normal font-Abhaya_Libre'>
-            Ultra Luxury Rooms
-=======
           <div className="justify-start text-white text-3xl md:text-[2vw] font-normal font-Abhaya_Libre">
             Deluxe Rooms
->>>>>>> 5f3c155f78c4ebd597e471d8a7753b14e6e5f589
           </div>
           <ul className="list list-disc text-white list-inside text-xl md:text-[1.2vw]">
             <li>55 Sq Metres of interior space</li>
