@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function CoffeeInfoSection({ Cotdata }) {
   return (
-    <section className="flex flex-col md:flex-row items-center bg-white py-12 px-8 md:px-0 gap-8 md:gap-0">
+    <section className="flex flex-col md:flex-row items-center bg-white py-12 px-6 md:px-0 gap-8 md:gap-0">
       {/* Text Block */}
       <div className="md:w-1/2 bg-[#F8F6F2] p-10 rounded-xl md:rounded-none">
         <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">

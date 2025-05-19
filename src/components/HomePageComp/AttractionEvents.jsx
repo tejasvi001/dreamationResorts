@@ -6,7 +6,7 @@ const AttractionEvents = () => {
   const router = useRouter();
 
   return (
-    <div className="w-full h-full py-[5vw] px-[10vw] flex flex-col md:flex-row gap-[3vw]">
+    <div className="w-full h-full py-[5vw] px-6 md:px-[10vw] flex flex-col md:flex-row gap-[3vw]">
       {/* Local Attraction */}
       <div className="w-full h-[60vw] sm:h-[30vw] relative flex items-center justify-center rounded-2xl md:rounded-[2vw] overflow-hidden shadow-gray-400 shadow-2xl">
         <img

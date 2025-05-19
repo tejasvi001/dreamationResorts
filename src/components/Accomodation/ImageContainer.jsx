@@ -4,7 +4,7 @@ import BottomBox from "./BottomBox";
 export default function ImageContainer() {
   return (
     <div
-      className="absolute right-0 w-full max-w-[1200px] mx-auto h-full shadow-lg z-10 overflow-hidden"
+      className="md:absolute right-0 w-full max-w-[1200px] mx-auto h-full shadow-lg z-10 overflow-hidden"
       style={{
         backgroundImage: "url('/images/Accomodationimg/b5wrkonddwzymupskqto_1_11zon.webp')",
         backgroundSize: "cover",
@@ -23,13 +23,13 @@ export default function ImageContainer() {
         />
         
         {/* RoomHighlight */}
-        <div className="absolute h-full top-[30%] z-[999]  md:top-[50%] left-[60%] md:left-[71%] w-full md:w-2/3 transform -translate-x-1/2 p-4">
+        <div className="md:absolute h-full z-[999]  md:top-[50%] left-[60%] md:left-[71%] w-full md:w-2/3 md:transform md:-translate-x-1/2 p-4">
           <RoomHighlight />
         </div>
       </div>
 
       {/* Bottom Box */}
-      <div className="absolute bottom-0 left-0 w-full md:w-[1000px] mt-8 sm:mt-12 md:mt-0 z-40">
+      <div className="md:absolute bottom-0 left-0 w-full md:w-[1000px] mt-8 sm:mt-12 md:mt-0 z-40">
         <BottomBox />
       </div>
     </div>

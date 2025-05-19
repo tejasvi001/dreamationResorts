@@ -42,7 +42,7 @@ const ClientsSay = ({ clientsSayData }) => {
   const currentTestimonial = useMemo(() => data[currentIndex], [data, currentIndex]);
 
   return (
-    <section className="relative w-full mx-auto px-4 py-12 text-center bg-amber-50" aria-label="Client testimonials">
+    <section className="relative w-full mx-auto px-4 py-12 text-center bg-amber-50 flex flex-col gap-4" aria-label="Client testimonials">
       <div className="flex justify-center items-center">
         <div className="h-20 md:h-28 md:w-28 w-20 overflow-hidden relative">
           <Image
@@ -71,7 +71,7 @@ const ClientsSay = ({ clientsSayData }) => {
             width={100}
             height={100}
             priority
-            className="scale-150 md:scale-40"
+            className="scale-150 sm:scale-60 md:scale-40"
           />
         </button>
 
@@ -93,7 +93,7 @@ const ClientsSay = ({ clientsSayData }) => {
             width={100}
             height={100}
             priority
-            className="scale-150 md:scale-40"
+            className="scale-150 sm:scale-60 md:scale-40"
           />
         </button>
       </div>

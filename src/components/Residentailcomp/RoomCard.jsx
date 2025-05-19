@@ -8,7 +8,7 @@ const RoomCard = ({ order, title, imageSrc, description, buttonText }) => {
 
   return (
     <div className="relative flex flex-col sm:flex-row w-full h-full md:h-[70vh] gap-4 md:gap-0">
-      <div className="w-full md:w-1/2 h-full overflow-hidden">
+      <div className="w-full md:w-1/2 h-full overflow-hidden rounded-3xl md:rounded-none">
         <Image
           src={imageSrc}
           width={500} 
@@ -19,7 +19,7 @@ const RoomCard = ({ order, title, imageSrc, description, buttonText }) => {
           } object-cover  grid `}
         />
       </div>
-      <div className="w-full md:w-1/2 p-6 bg-white text-black flex flex-col justify-center">
+      <div className="w-full md:w-1/2 p-6 bg-white text-black flex flex-col justify-center shadow-2xl rounded-3xl md:rounded-none">
         <h2 className="justify-start text-[#484848] text-5xl font-normal font-Abhaya_Libre">
           {title}
         </h2>
