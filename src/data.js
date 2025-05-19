@@ -118,7 +118,7 @@ export const Acorn = {
       title: "Ultra Luxury",
       imageSrc: '/assets/bed.webp',
       description:
-        "Residential rooms in an Acorn Luxury Cottage are thoughtfully designed to blend comfort, elegance, and functionality, making guests feel at home while offering a premium lodging experience.",
+        "Ultra Luxury rooms in an Acorn Luxury Cottage are thoughtfully designed to blend comfort, elegance, and functionality, making guests feel at home while offering a premium lodging experience. Each room features a private balcony for a serene outdoor escape, along with a more spacious layout and a luxurious, well-appointed washroom for ultimate relaxation and convenience. ",
       buttonText: "For More Details",
     },
     // {

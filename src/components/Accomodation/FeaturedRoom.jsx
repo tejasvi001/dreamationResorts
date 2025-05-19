@@ -12,13 +12,14 @@ const FeaturedRoom = () => {
             Featured Room
           </div>
           <div className='justify-start text-white text-3xl font-normal font-Abhaya_Libre'>
-            Deluxe Rooms
+            Ultra Luxury Rooms
           </div>
           <ul className='list list-disc text-white list-inside'>
             <li>55 Sq Metres of interior space</li>
             <li>Shared Swimming Pool</li>
-            <li>Spa Service for Free</li>
-            <li>King Size Bed (1.80 x 1.70)</li>
+            <li>Free Mini Bar</li>
+            <li>Handmade King Size Beds
+</li>
             <li>Mountain View</li>
           </ul>
         </div>
