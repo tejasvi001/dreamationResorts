@@ -44,7 +44,6 @@ export default function page() {
       <RoomGrid rooms={rooms} />
       <FeaturedRoom />
       <AttractionEvents />
-        
       </div>
   );
 }

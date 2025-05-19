@@ -1,20 +1,27 @@
 const FeaturedRoom = () => {
   return (
-    <div className='horiztalBetimage my-16 relative min-h-[480px] h-full'>
-      <img
-        src='/assets/dubed.webp'
-        alt="Featured Room"
-        className='absolute inset-0 w-full min-h-[450px] py-8 h-[4vw] -z-10'
-      />
-      <div className='md:w-1/2 w-2/3 ml-auto flex items-center flex-col justify-center'>
-        <div className='bg-[#d69d52] h-full min-h-[460px] w-full z-50 max-w-lg p-10'>
-          <div className='justify-start text-white text-2xl font-bold font-Lato'>
+    <div className="relative h-full px-6 md:px-0 py-[5vw] flex flex-col gap-8 md:gap-0">
+      <div className="w-full h-[40vh] overflow-hidden rounded-2xl md:rounded-none">
+        <img
+          src="/assets/dubed.webp"
+          alt="Featured Room"
+          className=" w-full h-full object-cover"
+        />
+      </div>
+      <div className="md:absolute right-[20vw] top-0 md:w-1/4 w-full ml-auto flex items-center flex-col justify-center rounded-2xl overflow-hidden">
+        <div className="bg-[#d69d52] min-h-[50vh] lg:min-h-[60vh] w-full z-20 p-10 flex flex-col gap-2">
+          <div className="justify-start text-white text-2xl md:text-[1.5vw] font-bold font-Lato">
             Featured Room
           </div>
+<<<<<<< HEAD
           <div className='justify-start text-white text-3xl font-normal font-Abhaya_Libre'>
             Ultra Luxury Rooms
+=======
+          <div className="justify-start text-white text-3xl md:text-[2vw] font-normal font-Abhaya_Libre">
+            Deluxe Rooms
+>>>>>>> 5f3c155f78c4ebd597e471d8a7753b14e6e5f589
           </div>
-          <ul className='list list-disc text-white list-inside'>
+          <ul className="list list-disc text-white list-inside text-xl md:text-[1.2vw]">
             <li>55 Sq Metres of interior space</li>
             <li>Shared Swimming Pool</li>
             <li>Free Mini Bar</li>

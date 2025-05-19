@@ -83,23 +83,6 @@
   font-display: swap;
 }
 
-
-.half-background {
-background-image: url("/assets/dubed.webp");
-  background-repeat: no-repeat;
-  background-position: top left;
-  background-size: 100% 50%;
-  background-color: white;
-}
-
-.half-background-2 {
-  background-image: url("/assets/room.webp");
-  background-repeat: no-repeat;
-  background-position: top left;
-  background-size: 60% 100%;
-  background-color: white;
-}
-
 *{
   font-family: 'memv2';
 }
@@ -109,7 +92,6 @@ button{
 h1{
   font-family: 'jazminRegular';
 }
-
 
 @theme {
   --font-Lato: "Lato", sans-serif;

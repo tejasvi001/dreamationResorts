@@ -1,27 +1,30 @@
 import AmenitiesList from "./AmenitiesList";
 
 const AmenitiesCard = ({ amenititesData }) => {
-  const containerClass =
-    amenititesData.layout === "right"
-      ? "ml-auto text-right"
-      : "mr-auto text-left";
   return (
-    <div className="grid lg:grid-cols-2 gap-5">
-      <div className="relative h-[600px] half-background-2 flex justify-center flex-col">
+    <div className="relative w-full h-full md:h-[70vh] overflow-hidden flex flex-col md:flex-row px-6 gap-8 md:gap-[5vw] md:px-0 items-center">
+      <div className="w-full md:w-full h-full rounded-3xl md:rounded-none overflow-hidden md:rounded-r-[1.5vw]">
+        <img
+          src="/assets/room.webp"
+          alt="img"
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <div
+        className="md:absolute h-full w-full md:w-auto md:h-auto md:right-[45%] flex justify-center flex-col items-center  p-8 md:p-[3vw] rounded-2xl md:rounded-[2vw] overflow-hidden"
+        style={{ backgroundColor: amenititesData.backgroundColor }}
+      >
+        {/* Aligning title text to the left */}
         <div
-          className={`p-8 min-h-[300px] break-words max-w-[530px] ${containerClass} rounded-2xl md:rounded-[2vw] overflow-hidden`}
-          style={{ backgroundColor: amenititesData.backgroundColor }}
+          className={`text-2xl md:text-[2vw] font-normal font-Abhaya_Libre ${amenititesData.textColor} text-left`}
         >
-          {/* Aligning title text to the left */}
-          <div
-            className={`text-[60px] font-normal font-Abhaya_Libre ${amenititesData.textColor} text-left`}
-          >
-            {amenititesData.title}
-          </div>
+          {amenititesData.title}
         </div>
       </div>
 
-      <AmenitiesList amenities={amenititesData.amenities} />
+      <div className="w-full h-full">
+        <AmenitiesList amenities={amenititesData.amenities} />
+      </div>
     </div>
   );
 };

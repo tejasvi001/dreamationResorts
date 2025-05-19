@@ -4,7 +4,7 @@ import RoomCardRTL from "./RoomCardRTL";
 
 const RoomGrid = ({ rooms }) => {
   return (
-    <div className="grid grid-cols-1 my-8 p-4 mx-auto">
+    <div className="grid grid-cols-1 my-8 px-6 md:px-0 mx-auto gap-8 md:gap-0">
       {rooms.map((room, index) => {
         const Component = index % 2 === 0 ? RoomCard : RoomCardRTL;
         return (

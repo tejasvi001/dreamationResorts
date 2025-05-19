@@ -7,8 +7,8 @@ const RoomCardRTL = ({ order, title, imageSrc, description, buttonText }) => {
   const router = useRouter();
 
   return (
-    <div className="relative flex flex-col sm:flex-row w-full h-full md:h-[70vh] gap-4 md:gap-0">
-      <div className="w-full md:w-1/2 bg-[#d69d52] p-6 text-white flex flex-col justify-center">
+    <div className="relative flex flex-col-reverse sm:flex-row w-full h-full md:h-[70vh] gap-4 md:gap-0">
+      <div className="w-full md:w-1/2 bg-[#d69d52] p-6 text-white flex flex-col justify-center rounded-3xl md:rounded-none">
         <div className="w-full mx-auto">
           <h2 className="justify-start text-5xl font-normal font-Abhaya_Libre">
             {title}
@@ -24,7 +24,7 @@ const RoomCardRTL = ({ order, title, imageSrc, description, buttonText }) => {
           </button>
         </div>
       </div>
-      <div className="w-full md:w-1/2 h-full overflow-hidden">
+      <div className="w-full md:w-1/2 h-full overflow-hidden rounded-3xl md:rounded-none">
         <Image
           src={imageSrc}
           width={500}

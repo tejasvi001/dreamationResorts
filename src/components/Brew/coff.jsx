@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function Coff({ Coffdata }) {
   return (
-    <section className="max-w-7xl mx-auto px-8 md:px-0 py-4 md:py-8 grid md:grid-cols-2 gap-10 items-center">
+    <section className="max-w-7xl mx-auto px-6 md:px-0 py-4 md:py-8 grid md:grid-cols-2 gap-10 items-center">
       <div>
         <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
           {Coffdata.title}
