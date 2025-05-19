@@ -10,8 +10,8 @@ const StatsSection = () => {
   return (
     <section
       aria-label="Statistics"
-      className="relative bg-cover bg-center text-white"
-      style={{ backgroundImage: 'url("/activities/Rectangle 4561.png")' }}
+      className="relative bg-cover bg-center  text-white"
+      style={{ backgroundImage: 'url("/activities/Rectangle 4561.webp")' }}
     >
       <div className="absolute inset-0 bg-black/50" aria-hidden="true" />
       <div className="relative z-10 flex flex-col md:flex-row justify-around items-center text-center py-12 md:py-20 space-y-8 md:space-y-0">
