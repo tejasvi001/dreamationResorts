@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
-const RoomCard = ({ order, title, imageSrc, description, buttonText }) => {
+const RoomCard = ({ order, title, imageSrc, description, buttonText,redirectLink }) => {
   const router = useRouter();
 
   return (
@@ -28,7 +28,7 @@ const RoomCard = ({ order, title, imageSrc, description, buttonText }) => {
         </p>
         <button
           className="mt-4 px-4 w-full max-w-[340px] py-2 border border-[#b16c11] text-sm rounded-full hover:text-white hover:bg-[#b16c11] text-[#b16c11] transition-all cursor-pointer"
-          onClick={() => router.push("/Contact")}
+          onClick={() => router.push(redirectLink || '/Contact')}
         >
           {buttonText}
         </button>

@@ -122,7 +122,7 @@ const Facilities = () => {
 
       {/* black opacity */}
 
-      <div className="absolute w-full h-full bg-black opacity-70 top-0 -z-10"></div>
+      <div className="absolute w-full h-full bg-gradient-to-r from-zinc-950 via-zinc-800 to-zinc-700 opacity-70 top-0 -z-10"></div>
 
       <div className="w-full h-full overflow-hidden absolute top-0 -z-20">
         <img

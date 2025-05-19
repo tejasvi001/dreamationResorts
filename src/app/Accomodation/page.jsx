@@ -12,6 +12,7 @@ const rooms = [
     description: "Ultra Luxury rooms in an Acorn Luxury Cottage are thoughtfully designed to blend comfort, elegance, and functionality, making guests feel at home while offering a premium lodging experience.",
     buttonText: "For More Details",
     imgAlt: "Residential Room",
+    redirectLink:'/Acorn'
   },
   {
     title: "Luxury",
@@ -21,6 +22,7 @@ const rooms = [
     description: "A Luxury Room in an Acorn Luxury Cottage offers a spacious, thoughtfully designed environment focused on comfort, elegance, and a touch of rustic charm. ",
     buttonText: "For More Details",
     imgAlt: "Executive Room",
+    redirectLink:'/Acorn'
   },
   {
     title: "Fern Luxury Swisstents",
@@ -28,6 +30,7 @@ const rooms = [
     description: "The Fern Luxurious Tent Resort offers a unique blend of upscale comfort and eco-conscious design, providing guests with an exceptional glamping experience amidst serene mountain landscapes.",
     buttonText: "For More Details",
     imgAlt: "Deluxe Room",
+    redirectLink:'/Fern'
   },
   {
     title: "Earthen echo mud house",
@@ -35,6 +38,7 @@ const rooms = [
     description: "The Earthen Echo Mud House is rooted in the concept of sustainable living, offering a natural, earthy aesthetic while maintaining modern comforts.",
     buttonText: "For More Details",
     imgAlt: "Premium Room",
+    redirectLink:'/Eathern'
   },
 ];
 export default function page() {

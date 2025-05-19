@@ -15,6 +15,7 @@ const RoomGrid = ({ rooms }) => {
             imageSrc={room.imageSrc}
             description={room.description}
             buttonText={room.buttonText}
+            redirectLink={room.redirectLink}
             />
         );
       })}
