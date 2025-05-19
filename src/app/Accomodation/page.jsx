@@ -6,7 +6,7 @@ import Header from "../../components/Accomodation/Header.jsx";
 const rooms = [
   {
     title: "Ultra Luxury",
-    imageSrc: "/images/Accomodationimg/reg.webp",
+    imageSrc: "/images/Accomodationimg/ul.webp",
     width: 500,
     height: 500,
     description: "Ultra Luxury rooms in an Acorn Luxury Cottage are thoughtfully designed to blend comfort, elegance, and functionality, making guests feel at home while offering a premium lodging experience.",
@@ -15,7 +15,7 @@ const rooms = [
   },
   {
     title: "Luxury",
-    imageSrc: "/images/Accomodationimg/ofqa9cva1kkgkizumnsi_5_11zon.webp",
+    imageSrc: "/images/Accomodationimg/reg.webp",
     width: 500,
     height: 500,
     description: "A Luxury Room in an Acorn Luxury Cottage offers a spacious, thoughtfully designed environment focused on comfort, elegance, and a touch of rustic charm. ",
@@ -31,7 +31,7 @@ const rooms = [
   },
   {
     title: "Earthen echo mud house",
-    imageSrc: '/assets/mud.jpg',
+    imageSrc: '/earth.webp',
     description: "The Earthen Echo Mud House is rooted in the concept of sustainable living, offering a natural, earthy aesthetic while maintaining modern comforts.",
     buttonText: "For More Details",
     imgAlt: "Premium Room",
