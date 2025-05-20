@@ -7,7 +7,7 @@ const AccomodationData = {
   mainHeading: "Accomodation",
   heroImage: "/images/Accomodationimg/b5wrkonddwzymupskqto_1_11zon.webp",
   heroAlt: "Room at Dreamation Resort",
-  sectionImage: "/images/Accomodationimg/zrr34yc0jw1ip47byz0u_8_11zon.webp",
+  sectionImage: "/images/Accomodationimg/aabb.webp",
   sectionAlt: "Vacation at Dreamation Resort",
   preTitle: "Contact Us Today",
   title: "Book Your Next Vacation!",
