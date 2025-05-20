@@ -5,14 +5,14 @@ import Hero from "../../components/Contact/cont";
 
 const AccomodationData = {
   mainHeading: "Accomodation",
-  heroImage: "/images/Accomodationimg/b5wrkonddwzymupskqto_1_11zon.webp",
+  heroImage: "/assets/bed3.webp",
   heroAlt: "Room at Dreamation Resort",
   sectionImage: "/images/Accomodationimg/aabb.webp",
   sectionAlt: "Vacation at Dreamation Resort",
-  preTitle: "Contact Us Today",
-  title: "Book Your Next Vacation!",
+  preTitle: "",
+  title: "Experience Diverse Stays in Nature’s Lap",
   description:
-    "Nestled in the heart of the majestic Himalayas, Dreamation Resort is more than just a destination—it’s an experience. Whether you have questions, special requests, or simply wish to plan your stay, we’re here to help. From savoring traditional mountain delicacies to indulging in global cuisine with a local twist, every moment at our resort is designed to delight your senses. Reach out to us and let us guide you on your next unforgettable Himalayan escape.",
+    "At our resort, we offer four exceptional accommodation options tailored to your preferences. Indulge in the lavish comfort of our Ultra Luxury rooms, where elegance meets modern amenities. Opt for our Luxury rooms for a spacious, stylish stay with rustic charm. For a unique glamping experience, the Fern Luxury Swisstents combine eco-conscious living with upscale design amidst serene mountains. Finally, embrace sustainability in our Earthen Echo Mud House, built with natural materials and modern comforts. Each option offers a distinct experience, ensuring your stay is as memorable as the breathtaking surroundings that envelop you.",
 };
 
 const rooms = [
