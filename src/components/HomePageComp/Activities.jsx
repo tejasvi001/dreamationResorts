@@ -16,7 +16,7 @@ const slides = [
     title: "Fern Luxury Swisstents",
     description:
       "The Fern Luxurious Tent Resort offers a unique blend of upscale comfort and eco-conscious design, providing guests with an exceptional glamping experience amidst scenic mountain landscapes.",
-    image: "/activities/img1.webp", // You'll replace this with your actual image
+    image: "/Activities/img1.webp", // You'll replace this with your actual image
     redirectTo: "/Fern",
   },
   {
@@ -49,7 +49,7 @@ export default function Activities() {
       <div
         className="absolute inset-0 bg-cover bg-center rounded-4xl overflow-hidden"
         style={{
-          backgroundImage: `url(/activities/background.webp)`,
+          backgroundImage: `url(/Activities/background.webp)`,
           backgroundPosition: "center",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
@@ -92,7 +92,7 @@ export default function Activities() {
         onClick={prevSlide}
       >
         <div className="w-10 md:w-14 h-10 md:h-14 flex items-center justify-center  text-white hover:scale-110 hover:text-black transition-colors">
-          <img src="/activities/left.png" alt="" />
+          <img src="/Activities/left.png" alt="" />
         </div>
       </div>
 
@@ -102,7 +102,7 @@ export default function Activities() {
         onClick={nextSlide}
       >
         <div className="w-10 md:w-14 h-10 md:h-14 flex items-center justify-center  text-white hover:scale-110 hover:text-black transition-colors">
-          <img src="/activities/right.png" alt="" />
+          <img src="/Activities/right.png" alt="" />
         </div>
       </div>
     </div>

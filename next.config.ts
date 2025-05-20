@@ -12,10 +12,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
- output: "export",
- reactStrictMode: true,
- images: {
-  unoptimized: true,
- }
+  output: "export",
+  trailingSlash: true,
+  images: {
+    unoptimized: true,
+  },
 };
+
 export default nextConfig;

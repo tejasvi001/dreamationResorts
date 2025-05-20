@@ -12,7 +12,7 @@ const Bottombox = () => {
       {/* Contact Info Section */}
       <div 
         className="relative bg-cover bg-center py-16 px-8" 
-        style={{ backgroundImage: "url('/activities/Rectangle 63.jpg')" }}
+        style={{ backgroundImage: "url('/Activities/Rectangle 63.jpg')" }}
       >
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="relative z-10 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-white text-center">
