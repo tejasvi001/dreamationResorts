@@ -45,8 +45,8 @@ export const Acorn = {
       "Bath Cosmetics",
       "Handmade King Size Beds ",
       
-      "Lower Cottage: Room- 13'2 * 18'6, Bathroom - 5' * 13'2",
-      "Upper Cottage: Room - 17'6 * 14', Bathroom - 5' * 7'4, Balcony - 5'8 * 8' ",
+      "Lower Cottage: Room- 13.2 * 18.6, Bathroom - 5 * 13.2",
+      "Upper Cottage: Room - 17.6 * 14, Bathroom - 5 * 7.4, Balcony - 5.8 * 8 ",
       
     ],
   },
@@ -200,7 +200,7 @@ export const Fern = {
       "Valley View",
       "Bath Cosmetics",
       "Handmade King Size Beds ",
-          "Hut: Room - 12' * 15'6 (including bathroom), Balcony - 6' * 13'8",
+          "Hut: Room - 12 * 15.6 (including bathroom), Balcony - 6 * 13.8",
 
 
     ],
