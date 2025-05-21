@@ -59,36 +59,38 @@ export default function Activities() {
       </div>
 
       {/* Content Container */}
-      <div className="relative h-full flex flex-col items-center justify-between py-4 md:py-8 px-8 text-white gap-4 md:gap-0">
+      <div className="relative  flex flex-col items-center justify-between py-4 md:py-8  text-white gap-4 md:gap-16">
         {/* Heading */}
         <h1 className="text-2xl md:text-5xl font-normal md:mt-8 font-Abhaya-Libre text-center">
           Activities & Properties
         </h1>
 
         {/* Main Content */}
-        <div className="flex  flex-col items-center max-w-2xl text-center  md:mt-1 h-full overflow-hidden gap-2">
+        <div className="flex  flex-col items-center max-w-2xl text-center  overflow-hidden gap-2">
           <div className="w-full h-full flex justify-center relative">
-            <div className="absolute w-72 h-72 rounded-2xl opacity-30 bg-black"></div>
-          <img src={slides[currentIndex].image} alt="" className="w-72 h-72 rounded-2xl" />
+            <div className="absolute  w-52 h-52 md:w-72 md:h-72 rounded-2xl opacity-30 bg-black"></div>
+          <img src={slides[currentIndex].image} alt="" className="w-52 h-52 md:w-72 md:h-72 rounded-2xl" />
           </div>
-          <h2 className="text-2xl md:text-4xl font-bold absolute font-AbhayaLibre top-[40%] md:top-[50%] ">
+          <button className="text-[4vw] md:text-[3vw] font-bold absolute  cursor-pointer font-AbhayaLibre top-[40%] md:top-[50%] "             onClick={() => router.push(slides[currentIndex].redirectTo)}
+>
             {slides[currentIndex].title}
-          </h2>
-          <p className="text-md md:text-[1vw]  font-semibold font-Lato">
+          </button>
+          <p className="text-[2vw] md:text-[1vw]  font-semibold font-Lato">
             {slides[currentIndex].description}
           </p>
           <button
             className="border-2 border-white hover:bg-white hover:text-black transition-colors px-8 py-3 rounded-full cursor-pointer"
-            onClick={() => router.push(slides[currentIndex].redirectTo)}
+                  onClick={() => router.push('/Activities')}
+
           >
-            Find Properties
+            More Activities to do 
           </button>
         </div>
       </div>
 
       {/* Left Arrow */}
       <div
-        className="absolute top-1/2 -left-2 md:left-20 -translate-y-1/2  cursor-pointer"
+        className="absolute top-1/2 -left-0 md:left-10 -translate-y-1/2  cursor-pointer"
         onClick={prevSlide}
       >
         <div className="w-10 md:w-14 h-10 md:h-14 flex items-center justify-center  text-white hover:scale-110 hover:text-black transition-colors">
@@ -98,7 +100,7 @@ export default function Activities() {
 
       {/* Right Arrow */}
       <div
-        className="absolute top-1/2 -right-2 md:right-20 -translate-y-1/2 cursor-pointer"
+        className="absolute top-1/2 -right-0 md:right-10 -translate-y-1/2 cursor-pointer"
         onClick={nextSlide}
       >
         <div className="w-10 md:w-14 h-10 md:h-14 flex items-center justify-center  text-white hover:scale-110 hover:text-black transition-colors">
