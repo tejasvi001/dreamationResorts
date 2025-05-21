@@ -11,7 +11,7 @@ export default function BottomBox() {
       </h2>
       <p className="text-xs md:text-sm mb-4">
         Choose from a variety of accommodation options to your preferences. From
-        spacious campsites for tents to cozy Bamboo Nests in the woods, we offer
+        spacious campsites for tents to cozy Pinewood Nests in the woods, we offer
         a range of choices for your stay. Each accommodation is equipped with
         modern amenities to ensure a comfortable and enjoyable experience.{" "}
       </p>

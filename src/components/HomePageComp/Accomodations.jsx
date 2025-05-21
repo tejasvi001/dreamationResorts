@@ -4,7 +4,7 @@ import Image from "next/image";
 const Accommodations = () => {
   return (
     <div className="bg-gray-100 py-12 px-6 md:px-16 lg:px-24 flex flex-col items-center text-center">
-      <h4 className="text-orange-600 font-semibold">Available Apartments</h4>
+      {/* <h4 className="text-orange-600 font-semibold">Available Apartments</h4> */}
       <h2 className="text-3xl md:text-4xl font-semibold mt-2 mb-8">
         Accommodations
       </h2>
@@ -25,7 +25,7 @@ const Accommodations = () => {
         <div className="text-gray-700 text-lg md:text-xl leading-relaxed px-2">
           <p>
             Choose from a variety of accommodation options to your preferences.
-            From spacious campsites for tents to cozy Bamboo Nests in the woods,
+            From spacious campsites for tents to cozy Pinewood Nests in the woods,
             we offer a range of choices for your stay. Each accommodation is
             equipped with modern amenities to ensure a comfortable and enjoyable
             experience.
