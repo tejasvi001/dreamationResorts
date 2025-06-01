@@ -45,8 +45,8 @@ export const Acorn = {
       "Bath Cosmetics",
       "Handmade King Size Beds ",
       
-      "Lower Cottage: Room- 13.2 X 18.6, Bathroom - 5 X 13.2",
-      "Upper Cottage: Room - 17.6 X 14, Bathroom - 5 X 7.4, Balcony - 5.8 X 8 ",
+      "Lower Cottage: Room- 13.2' X 18.6', Bathroom - 5' X 13.2'",
+      "Upper Cottage: Room - 17.6' X 14', Bathroom - 5' X 7.4', Balcony - 5.8' X 8' ",
       
     ],
   },
@@ -163,13 +163,13 @@ export const Acorn = {
 
 export const Fern = {
   heroData: {
-    title: "Fern Luxury Swisstents",
+    title: "Fern Luxury Swiss Tents",
     backgroundImage: "/assets/tent.jpg",
   },
 
   roomOverview: {
     heading: "Room Overview",
-    subheading: "Fern Luxury Swisstents",
+    subheading: "Fern Luxury Swiss Tents",
     paragraphs: [
       "The Fern Luxurious Tent Resort offers a unique blend of upscale comfort and eco-conscious design, providing guests with an exceptional glamping experience amidst serene mountain landscapes. The resort is meticulously crafted to maintain a harmonious balance between nature and luxury, featuring spacious, fully furnished luxury tents that immerse guests in nature without compromising modern comforts. With elegant interiors, plush bedding, and state-of-the-art amenities, guests can enjoy a four-star retreat surrounded by tranquil hills, dense forests, and lush greenery. Emphasizing sustainability, the resort uses eco-friendly materials, energy-efficient systems, and water conservation practices, allowing guests to indulge in luxury while minimizing their environmental footprint.",
     ],
@@ -180,7 +180,7 @@ export const Fern = {
   },
 
   amenititesData: {
-    title: "Fern Luxury Swisstents Amenities",
+    title: "Fern Luxury Swiss Tents Amenities",
         image: "/images/ResidentialRoom/ast.webp",
 
     backgroundColor: "#D69D52",
@@ -200,7 +200,7 @@ export const Fern = {
       "Valley View",
       "Bath Cosmetics",
       "Handmade King Size Beds ",
-          "Hut: Room - 12 X 15.6 (including bathroom), Balcony - 6 X 13.8",
+          "Hut: Room - 12' X 15.6' (including bathroom), Balcony - 6' X 13.8'",
 
 
     ],
@@ -286,7 +286,7 @@ export const Fern = {
 
   rooms: [
     {
-      title: "Luxury and Cozy Swisstents",
+      title: "Luxury and Cozy Swiss Tents",
       imageSrc: '/assets/tent.jpg',
       description:
         "The Residential Tent at The Fern Luxurious Tent Resort offers a perfect blend of nature-inspired luxury and modern comfort, thoughtfully designed for guests seeking a unique, upscale glamping experience in the heart of the mountains.",
@@ -591,7 +591,7 @@ export const AkhadaPageData = {
 },
 
 CoffeeFeature: {
-  image: "/images/akhada/NIK00292_4_11zon_4_11zon.webp",
+  image: "/images/akhada/NIK00292.webp",
   altText: "Bar Counter",
   heading: "Raise a Glass to\nHimalayan Evenings",
   paragraph:
@@ -648,7 +648,7 @@ CoffeeInfoSection: {
     "Indoor & outdoor bar seating",
     "Ideal for group celebrations & private gatherings",
   ],
-  image: "/images/akhada/NIK00293_5_11zon_5_11zon.webp",
+  image: "/images/akhada/NIK00293.webp",
   imageAlt: "Cocktail and Bar Tools",
 }
 };

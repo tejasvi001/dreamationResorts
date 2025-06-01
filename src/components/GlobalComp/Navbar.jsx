@@ -18,7 +18,7 @@ const pages = [
         image: "/Facility4.webp",
       },
       {
-        name: "Fern Luxury Swisstents",
+        name: "Fern Luxury Swiss Tents",
         path: "/Fern",
         image: "/Facility3.webp",
       },
@@ -42,12 +42,12 @@ const pages = [
       {
         name: "Bamboo And Brew Café ",
         path: "/BrewCafe",
-        image: "/images/brew/NIK00271copy.webp",
+        image: "/images/brew/NIK00271.webp",
       },
       {
         name: "Akhada Bar",
         path: "/AkhadaBar",
-        image: "/images/akhada/NIK00294_6_11zon_6_11zon.webp",
+        image: "/images/akhada/NIK00293.webp",
       },
       {
         name: "Hamlet Eatery",

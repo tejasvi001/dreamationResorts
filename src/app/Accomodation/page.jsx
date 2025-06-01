@@ -12,7 +12,7 @@ const AccomodationData = {
   preTitle: "",
   title: "Experience Diverse Stays in Nature’s Lap",
   description:
-    "At our resort, we offer four exceptional accommodation options tailored to your preferences. Indulge in the lavish comfort of our Ultra Luxury rooms, where elegance meets modern amenities. Opt for our Luxury rooms for a spacious, stylish stay with rustic charm. For a unique glamping experience, the Fern Luxury Swisstents combine eco-conscious living with upscale design amidst serene mountains. Finally, embrace sustainability in our Earthen Echo Mud House, built with natural materials and modern comforts. Each option offers a distinct experience, ensuring your stay is as memorable as the breathtaking surroundings that envelop you.",
+    "At our resort, we offer four exceptional accommodation options tailored to your preferences. Indulge in the lavish comfort of our Ultra Luxury rooms, where elegance meets modern amenities. Opt for our Luxury rooms for a spacious, stylish stay with rustic charm. For a unique glamping experience, the Fern Luxury Swiss Tents combine eco-conscious living with upscale design amidst serene mountains. Finally, embrace sustainability in our Earthen Echo Mud House, built with natural materials and modern comforts. Each option offers a distinct experience, ensuring your stay is as memorable as the breathtaking surroundings that envelop you.",
 };
 
 const rooms = [
@@ -39,7 +39,7 @@ const rooms = [
     redirectLink: "/Acorn",
   },
   {
-    title: "Fern Luxury Swisstents",
+    title: "Fern Luxury Swiss Tents",
     imageSrc: "/assets/tent.jpg",
     description:
       "The Fern Luxurious Tent Resort offers a unique blend of upscale comfort and eco-conscious design, providing guests with an exceptional glamping experience amidst serene mountain landscapes.",

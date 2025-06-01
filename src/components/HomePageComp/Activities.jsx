@@ -13,7 +13,7 @@ const slides = [
     redirectTo: "/Acorn",
   },
   {
-    title: "Fern Luxury Swisstents",
+    title: "Fern Luxury Swiss Tents",
     description:
       "The Fern Luxurious Tent Resort offers a unique blend of upscale comfort and eco-conscious design, providing guests with an exceptional glamping experience amidst scenic mountain landscapes.",
     image: "/Activities/img1.webp", // You'll replace this with your actual image

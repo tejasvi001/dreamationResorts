@@ -212,7 +212,7 @@ export default function Contact() {
                 Luxury Acorn Cottages
               </option>
               <option value="Fern Luxury Swisstents">
-                Fern Luxury Swisstents
+                Fern Luxury Swiss Tents
               </option>
               <option value="Earthen Echo Mud House">
                 Earthen Echo Mud House
