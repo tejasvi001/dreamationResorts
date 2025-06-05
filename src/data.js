@@ -507,13 +507,21 @@ export const BrewPageData = {
   altText: "Coffee brewing",
   heading: "Bamboo & Brew Café",
   paragraph:
-    "At BrewCafe, every cup is a tribute to the serene Himalayan spirit. From single-origin beans to local herbal infusions, our brews are crafted to awaken your senses and calm your soul. Sit back, sip slow, and savor the mountains in every flavor.",
+    "At Brew Cafe, every cup is a tribute to the serene Himalayan spirit. From single-origin beans to local herbal infusions, our brews are crafted to awaken your senses and calm your soul. Sit back, sip slow, and savor the mountains in every flavor.",
+},
+
+ TeaFeature: {
+  image: "/images/brew/Tea.webp",
+  altText: "Coffee brewing",
+  heading: "Chai Tapri",
+  paragraph:
+    "Café Tapri blends the charm of a traditional tea stall with a modern, cozy vibe. Known for its unique tea blends and quirky snacks like Khakhra Pizza and Bun Muska, it's a perfect spot to relax and unwind.",
 },
 
 Coff: {
   title: "A Cozy Mountain Escape with Every Cup",
   description:
-    "Nestled within Dreamation Resort, BrewCafe invites you to experience warmth, aroma, and comfort like never before. From handcrafted coffees to oven-fresh treats, it's the perfect spot to relax, reconnect, and recharge.",
+    "Nestled within Dreamation Resorts, Brew Cafe invites you to experience warmth, aroma, and comfort like never before. From handcrafted coffees to oven-fresh treats, it's the perfect spot to relax, reconnect, and recharge.",
   buttonText: "SEE MENU CART",
   image: "/images/brew/NIK00275.webp",
   imageAlt: "Guests enjoying coffee at BrewCafe",

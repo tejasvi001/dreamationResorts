@@ -16,6 +16,8 @@ const BrewCafe = () => {
       <div ref={sectionRef}>
         <Coff Coffdata={BrewPageData.Coff} />
       </div>
+            <Coffee Coffeedata={BrewPageData.TeaFeature} />
+
       <Cot Cotdata={BrewPageData.CoffeeInfoSection} />
     </div>
   );
