@@ -75,8 +75,8 @@ export default function Home() {
     <div>
       <HeroSection
         backgroundImages={[
-          "/Activities/xgvgq4sol9lhmxwby2ye.webp",
-          "/Activities/xkwaq8gonythkoznkxxd.webp",
+          "/xgvgq4sol9lhmxwby2ye.webp",
+          "/xkwaq8gonythkoznkxxd.webp",
         ]}
         heading="Welcome to Activities"
       />
