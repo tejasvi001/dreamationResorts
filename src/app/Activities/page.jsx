@@ -8,7 +8,7 @@ const data = [
     title: "Pool Side Sunbath",
     description:
       "Relax and unwind by our stunning pool, set against the breathtaking backdrop of the mountains. Enjoy the warmth of the sun as you lounge on comfortable chairs, sip on refreshing drinks, and take in the peaceful surroundings. Whether you're catching up on a good book or simply soaking up the view, our poolside area offers the perfect escape. Embrace the calm, breathe in the fresh mountain air, and let the sunshine rejuvenate your soul.",
-    image: "/Activities/Pool.webp",
+    image: "/Pool.webp",
   },
   {
     title: "Nature Trails & Hiking",
