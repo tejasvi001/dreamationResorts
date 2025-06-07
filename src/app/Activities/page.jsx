@@ -1,6 +1,6 @@
 import HeroSection from "../../components/Activities/Topbox.jsx";
 import Bottombox from "../../components/Activities/Bottombox.jsx";
-import GalleryItems from "@/components/Activities/GalleryItems.jsx";
+import GalleryItems from "../../components/Activities/GalleryItems.jsx";
 import Parallax from "../../components/Activities/Parallax.jsx";
 
 const data = [

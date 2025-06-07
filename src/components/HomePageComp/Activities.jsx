@@ -104,9 +104,10 @@ export default function Activities() {
         className="absolute top-1/2 -right-0 md:right-10 -translate-y-1/2 cursor-pointer"
         onClick={nextSlide}
       >
-        <div className="w-10 md:w-14 h-10 md:h-14 flex items-center justify-center  text-white hover:scale-110 hover:text-black transition-colors">
-          <img src="/Activities/right.png" alt="" className="w-6 h-6 md:w-8 md:h-8" />
-        </div>
+       <div className="w-10 md:w-14 h-10 md:h-14 flex items-center justify-center text-white hover:scale-110 hover:text-black transform transition-all duration-300">
+  <img src="/Activities/right.png" alt="Right Arrow" className="w-6 h-6 md:w-8 md:h-8" />
+</div>
+
       </div>
     </div>
   );
