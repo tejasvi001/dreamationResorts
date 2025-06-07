@@ -14,59 +14,59 @@ const data = [
     title: "Nature Trails & Hiking",
     description:
       "Nature trails and hiking adventures offer a rejuvenating escape from daily life, allowing individuals to connect with the natural world while promoting physical health and mental well-being. Whether through dense forests, mountain ridges, coastal paths, or serene meadows, hiking provides an opportunity to explore breathtaking landscapes, observe wildlife, and experience the rhythm of nature firsthand.",
-    image: "/Activities/Rectangle57.jpg",
+    image: "/activities/Rectangle57.jpg",
     isPortrait: true,
   },
   {
     title: "Avi Fauna Exploration",
     description:
       "Chirping is a serene and rewarding activity that invites individuals to connect with nature while observing the beauty and diversity of avian life. Whether in urban parks, wetlands, forests, or coastal areas, bird watchers can enjoy the thrill of spotting various species, learning about their behaviors, and appreciating their unique adaptations.",
-    image: "/Activities/Rectangle 59.jpg",
+    image: "/activities/Rectangle 59.jpg",
   },
   {
     title: "Yoga & Meditation",
     description:
       "Yoga and meditation are transformative practices that promote physical, mental, and emotional well-being. Yoga combines physical postures, breath control, and mindfulness to enhance flexibility, strength, and relaxation. Meditation cultivates inner peace and clarity through focused attention and awareness.",
-    image: "/Activities/Rectangle 61.webp",
+    image: "/activities/Rectangle 61.webp",
   },
   {
     title: "Bonfire Nights",
     description:
       "Bonfire nights are enchanting gatherings that bring people together around a warm, crackling fire under the stars. These evenings are filled with laughter, storytelling, and the comforting aroma of roasting marshmallows. The flickering flames create a cozy ambiance, fostering connections and camaraderie among friends and family.",
-    image: "/Activities/Rectangle 63.jpg",
+    image: "/activities/Rectangle 63.jpg",
   },
   {
     title: "Painting & Sketching Sessions",
     description:
       "Painting and sketching sessions provide a creative outlet for self-expression, mindfulness, and artistic exploration. Whether you're a seasoned artist or a curious beginner, these sessions offer a space to unwind, observe, and translate emotions or surroundings onto paper or canvas. Guided or freeform, they encourage focus, patience, and a deeper appreciation for color, form, and perspective.",
-    image: "/Activities/Rectangle 65.webp",
+    image: "/activities/Rectangle 65.webp",
   },
   {
     title: "Photography Walks",
     description:
       "Photography walks are immersive experiences that blend exploration and creativity, inviting individuals to capture the beauty of their surroundings through the lens of a camera. These walks encourage participants to observe details often overlooked in daily life, fostering a deeper connection to nature and urban environments.",
-    image: "/Activities/Rectangle 67.jpg",
+    image: "/activities/Rectangle 67.jpg",
   },
 ];
 
 const sampleImages = [
   {
-    src: "/Activities/Ludo.webp",
+    src: "/activities/Ludo.webp",
   },
   {
-    src: "/Activities/Chess.webp",
+    src: "/activities/Chess.webp",
   },
   {
-    src: "/Activities/Reading.webp",
+    src: "/activities/Reading.webp",
   },
   {
-    src: "/Activities/Tennis.webp",
+    src: "/activities/Tennis.webp",
   },
   {
-    src: "/Activities/Billards.webp",
+    src: "/activities/Billards.webp",
   },
   {
-    src: "/Activities/Foosball.webp",
+    src: "/activities/Foosball.webp",
   },
 ];
 
