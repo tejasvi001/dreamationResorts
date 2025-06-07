@@ -93,9 +93,10 @@ export default function Activities() {
         className="absolute top-1/2 -left-0 md:left-10 -translate-y-1/2  cursor-pointer"
         onClick={prevSlide}
       >
-        <div className="w-10 md:w-14 h-10 md:h-14 flex items-center justify-center  text-white hover:scale-110 hover:text-black transition-colors">
-          <img src="/Activities/left.png" alt="" />
-        </div>
+        <div className="w-10 md:w-14 h-10 md:h-14 flex items-center justify-center transition-transform hover:scale-110">
+  <img src="/Activities/left.png" alt="left arrow" className="w-6 h-6 md:w-8 md:h-8" />
+</div>
+
       </div>
 
       {/* Right Arrow */}
@@ -104,7 +105,7 @@ export default function Activities() {
         onClick={nextSlide}
       >
         <div className="w-10 md:w-14 h-10 md:h-14 flex items-center justify-center  text-white hover:scale-110 hover:text-black transition-colors">
-          <img src="/Activities/right.png" alt="" />
+          <img src="/Activities/right.png" alt="" className="w-6 h-6 md:w-8 md:h-8" />
         </div>
       </div>
     </div>
