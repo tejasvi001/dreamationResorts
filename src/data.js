@@ -511,7 +511,7 @@ export const BrewPageData = {
 },
 
  TeaFeature: {
-  image: "/images/brew/Tea.webp",
+  image: "/images/brew/tea.webp",
   altText: "Coffee brewing",
   heading: "Chai Tapri",
   paragraph:
